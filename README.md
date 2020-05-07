@@ -9,19 +9,24 @@ Until release this repo will stay public.
 ## Tech Used
 - PS
 - C#
+- C++
 - WinForms
 
 ## Structure and Features
 
 The C# desktop app runs various PS scripts to change states, connect to services and apply changes to the environment.
 Some of the following might not be done due to limitations:<br>
-- Connect to VPN
-- Connect to Socks
-- Change Mac Address
-- RDP
-- Geolocation spoofing
+- Connect to VPN 
+- Connect to Proxy 🟢
+- Connect to RDP 🟢
+- Spoof Mac Address 🟢
+- Change/spoof Sys Language
 - IP spoofing
-- Notification of Windows Language befitting Geolocation, Chrome current settings
+
+Additional:<br>
+- Force scripts to elevated mode 🟢
+- Notification on Windows Language befitting Geolocation
+- Save/read session data to and fro- XML to facilitate automatic connections
 
 ## Usage
 
