@@ -66,7 +66,7 @@ switch ($IsFlush) {
         Enable-Proxy
         return "Connected to proxy."
     }
-    Default {
+    default {
         Disable-Proxy
         Clear-Proxy
         return "Flushed proxy settings."

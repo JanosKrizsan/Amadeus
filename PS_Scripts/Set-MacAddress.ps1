@@ -52,7 +52,7 @@ switch ($IsReset) {
         
         return $AdapterInfo
      }
-    Default {
+    default {
         return $Adapters | Set-Adapter-Mac
     }
 }
