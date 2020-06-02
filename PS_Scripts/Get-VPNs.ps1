@@ -7,5 +7,11 @@
     Get vpns
     Return needed data
 #>
+[CmdletBinding()]
+param (
+    [Parameter(ValueFromPipelineByPropertyName)]
+    [string]
+    $SearchTerm
+)
 
-return Get-VpnConnection | Format-Table
+return Get-VpnConnection | Where-Object {$_.ServerAddress -eq $SearchTerm -or $_.ServerName -eq $SearchTerm} | Format-Table

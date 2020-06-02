@@ -6,17 +6,17 @@
 .Notes
     Get parameters
     Add vpn
-    if successful, return true, else false
+    If successful, return true, else false
 #>
 [CmdletBinding()]
 param (
-    [Parameter(Mandatory=$true)][string]$Name,
-    [Parameter(Mandatory=$true)][string]$Address,
-    [Parameter()][string]$TunnelType,
-    [Parameter()][string]$EncryptionLvl,
-    [Parameter()][string]$AuthMethod,
-    [Parameter(Mandatory=$true)][bool]$SplitTunnel,
-    [Parameter(Mandatory=$true)][bool]$AllUsersAvail
+    [Parameter(ValueFromPipelineByPropertyName,Mandatory=$true)][string]$Name,
+    [Parameter(ValueFromPipelineByPropertyName,Mandatory=$true)][string]$Address,
+    [Parameter(ValueFromPipelineByPropertyName)][string]$TunnelType,
+    [Parameter(ValueFromPipelineByPropertyName)][string]$EncryptionLvl,
+    [Parameter(ValueFromPipelineByPropertyName)][string]$AuthMethod,
+    [Parameter(ValueFromPipelineByPropertyName,Mandatory=$true)][bool]$SplitTunnel,
+    [Parameter(ValueFromPipelineByPropertyName,Mandatory=$true)][bool]$AllUsersAvail
 )
 
 function Is-Present {
@@ -38,4 +38,4 @@ $Expression = "Add-VpnConnection -Name $Name -ServerAddress $Address $Optionals 
 
 try {Invoke-Expression $Expression}
 catch {return $false}
-return $true;
+return $true
