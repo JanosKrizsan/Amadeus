@@ -4,7 +4,7 @@
 
 ## What is this
 
-Until release this repo will stay public.
+A handy tool to access anonimizing settings within the Win. Environment.
 
 ## Tech Used
 - PS
@@ -20,13 +20,13 @@ Some of the following might not be done due to limitations:<br>
 - Connect to Proxy 🟢
 - Connect to RDP 🟢
 - Spoof Mac Address 🟢
-- Change/spoof Sys Language 🟢
+- Change Sys Language 🟢
 - IP spoofing
 
 Additional:<br>
-- Force scripts to elevated mode 🟢
-- Notification on Windows Language befitting Geolocation
-- Save/read session data to and fro- XML to facilitate automatic connections
+- Force scripts to run in elevated mode 🟢
+- Notification if Windows language does not fit current Geolocation
+- Password choices, encrypted saving
 
 ## Usage
 
