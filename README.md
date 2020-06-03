@@ -20,7 +20,7 @@ Some of the following might not be done due to limitations:<br>
 - Connect to Proxy 🟢
 - Connect to RDP 🟢
 - Spoof Mac Address 🟢
-- Change/spoof Sys Language 
+- Change/spoof Sys Language 🟢
 - IP spoofing
 
 Additional:<br>
