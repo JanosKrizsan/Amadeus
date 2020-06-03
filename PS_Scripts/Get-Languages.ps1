@@ -10,6 +10,6 @@
 $LanguageInfos = Get-WinUserLanguageList
 $SortedLangs = New-Object -TypeName "System.Collections.ArrayList"
 
-$LanguageInfos | ForEach-Object -Process {$SortedLangs.Add(@($_.LanguageTag, $_.EnglishName, $_.ScriptName))}
+$LanguageInfos | ForEach-Object -Process {$SortedLangs.Add(@($_.LanguageTag, $_.EnglishName, $_.ScriptName)) | Out-Null}
 
 return $SortedLangs
