@@ -21,7 +21,7 @@ Some of the following might not be done due to limitations:<br>
 - Connect to RDP 🟢
 - Spoof Mac Address 🟢
 - Change Sys Language 🟢
-- Change IP
+- Change IP 🟡
 
 Additional:<br>
 - Force scripts to run in elevated mode 🟢
@@ -38,9 +38,11 @@ This readme will be updated consistently.
 
 ## Resources / Info
 
-[VPN Protocols](https://proprivacy.com/vpn/guides/vpn-encryption-the-complete-guide#vpn-encryption-protocols)
-[Set IP Basics](https://mcpmag.com/articles/2018/02/28/set-ip-address-with-powershell.aspx)
-[Set IP In-Depth](http://itproguru.com/expert/2012/01/using-powershell-to-get-or-set-networkadapterconfiguration-view-and-change-network-settings-including-dhcp-dns-ip-address-and-more-dynamic-and-static-step-by-step/)
-[Set Static & DHCP Part 1](https://www.pdq.com/blog/using-powershell-to-set-static-and-dhcp-ip-addresses-part-1/)
-[Set Static & DHCP Part 2](https://www.pdq.com/blog/using-powershell-to-set-static-and-dhcp-ip-addresses-part-2/)
-[IP Spoofing is Hard](https://www.codeproject.com/articles/800872/spoofing-an-ip-is-hard)
+[VPN Protocols](https://proprivacy.com/vpn/guides/vpn-encryption-the-complete-guide#vpn-encryption-protocols)<br>
+[Set IP Basics](https://mcpmag.com/articles/2018/02/28/set-ip-address-with-powershell.aspx)<br>
+[Set IP In-Depth](http://itproguru.com/expert/2012/01/using-powershell-to-get-or-set-networkadapterconfiguration-view-and-change-network-settings-including-dhcp-dns-ip-address-and-more-dynamic-and-static-step-by-step/)<br>
+[Set Static & DHCP Part 1](https://www.pdq.com/blog/using-powershell-to-set-static-and-dhcp-ip-addresses-part-1/)<br>
+[Set Static & DHCP Part 2](https://www.pdq.com/blog/using-powershell-to-set-static-and-dhcp-ip-addresses-part-2/)<br>
+[IP Spoofing is Hard](https://www.codeproject.com/articles/800872/spoofing-an-ip-is-hard)<br>
+[WMI](https://en.wikipedia.org/wiki/Windows_Management_Instrumentation)<br>
+[Powershell Operators](https://www.tutorialspoint.com/powershell/powershell_operators.htm)<br>
