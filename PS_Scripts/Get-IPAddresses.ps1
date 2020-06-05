@@ -23,4 +23,6 @@ if ($IsNewerOs) {
     $IPs = Get-WmiObject Win32_NetworkAdapterConfiguration -Filter "Description = '$NetAdapter'"
 }
 
+#$CurrentNetWInf = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object IpEnabled | Select-Object -Property IPSubnet, IPAddress
+
 return $IPs

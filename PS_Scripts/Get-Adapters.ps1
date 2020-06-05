@@ -28,3 +28,5 @@ switch ($ReturnAll) {
         return Get-NetAdapter | Where-Object {$_.Status -eq "Up"} | Get-NetIPConfiguration -Detailed | Select-Object -ExcludeProperty $SelectItems$
     }
 }
+
+#Get-WmiObject -Class Win32_NetworkAdapter -Filter "netconnectionstatus = 2 "
