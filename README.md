@@ -25,8 +25,9 @@ Some of the following might not be done due to limitations:<br>
 
 Additional:<br>
 - Force scripts to run in elevated mode 🟢
-- Notification if Windows language does not fit current Geolocation
+- Notification of system language and location language 🟢
 - Password choices, encrypted saving
+- PS scripts are protected
 
 ## Usage
 
@@ -48,3 +49,4 @@ This readme will be updated consistently.
 [Powershell Operators](https://www.tutorialspoint.com/powershell/powershell_operators.htm)<br>
 [IPV4](https://docs.oracle.com/cd/E19683-01/806-4075/ipref-1/index.htmlhttps://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
 [IPV6](https://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
+[Powershell Sweeps](https://devblogs.microsoft.com/scripting/use-powershell-for-network-host-and-port-discovery-sweeps/)<br>
