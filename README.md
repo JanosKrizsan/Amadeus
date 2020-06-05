@@ -46,3 +46,5 @@ This readme will be updated consistently.
 [IP Spoofing is Hard](https://www.codeproject.com/articles/800872/spoofing-an-ip-is-hard)<br>
 [WMI](https://en.wikipedia.org/wiki/Windows_Management_Instrumentation)<br>
 [Powershell Operators](https://www.tutorialspoint.com/powershell/powershell_operators.htm)<br>
+[IPV4](https://docs.oracle.com/cd/E19683-01/806-4075/ipref-1/index.htmlhttps://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
+[IPV6](https://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
