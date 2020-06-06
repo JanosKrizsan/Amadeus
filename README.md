@@ -21,7 +21,7 @@ Some of the following might not be done due to limitations:<br>
 - Connect to RDP 🟢
 - Spoof Mac Address 🟢
 - Change Sys Language 🟢
-- Change IP 🟡
+- Change IP 🟢
 
 Additional:<br>
 - Force scripts to run in elevated mode 🟢
