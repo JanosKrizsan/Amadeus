@@ -14,8 +14,9 @@ A handy tool to access anonimizing settings within the Win. Environment.
 
 ## Structure and Features
 
+### PS Scripts
+These are ran via C#:<br>
 The C# desktop app runs various PS scripts to change states, connect to services and apply changes to the environment.
-Some of the following might not be done due to limitations:<br>
 - Connect to VPN 🟢
 - Connect to Proxy 🟢
 - Connect to RDP 🟢
@@ -28,6 +29,14 @@ Additional:<br>
 - Notification of system language and location language 🟢
 - Password choices, encrypted saving
 - PS scripts are protected
+
+### C# Core
+- Transfers and uses data
+- Runs PS scripts
+- Error Handling and all that good stuff
+
+### WinForms
+- Understanding is 80% of the battle here
 
 ## Usage
 
