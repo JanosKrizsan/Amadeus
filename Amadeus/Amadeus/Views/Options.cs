@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Amadeus
+namespace Amadeus.Views
 {
-    public partial class Form1 : Form
+    public partial class Options : Form
     {
-        public Form1()
+        public Options()
         {
             InitializeComponent();
         }
-
     }
 }
