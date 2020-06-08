@@ -48,6 +48,7 @@ This readme will be updated consistently.
 
 ## Resources / Info
 
+### PS Networking
 [VPN Protocols](https://proprivacy.com/vpn/guides/vpn-encryption-the-complete-guide#vpn-encryption-protocols)<br>
 [Set IP Basics](https://mcpmag.com/articles/2018/02/28/set-ip-address-with-powershell.aspx)<br>
 [Set IP In-Depth](http://itproguru.com/expert/2012/01/using-powershell-to-get-or-set-networkadapterconfiguration-view-and-change-network-settings-including-dhcp-dns-ip-address-and-more-dynamic-and-static-step-by-step/)<br>
@@ -59,3 +60,11 @@ This readme will be updated consistently.
 [IPV4](https://docs.oracle.com/cd/E19683-01/806-4075/ipref-1/index.htmlhttps://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
 [IPV6](https://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
 [Powershell Sweeps](https://devblogs.microsoft.com/scripting/use-powershell-for-network-host-and-port-discovery-sweeps/)<br>
+
+### WinForms
+[Possible Way to Access Control](https://stackoverflow.com/questions/12903489/is-it-allowed-to-change-code-in-windows-form-designer-generated-code-designer)<br>
+[Generated Code](https://www.codeproject.com/Articles/6020/What-s-that-quot-Windows-Form-Designer-generated-c)<br>
+[MVVM](https://softwareengineering.stackexchange.com/questions/277143/how-do-you-separate-view-from-logic-in-a-winform-application)<br>
+[General Practices](https://markheath.net/post/maintainable-winforms)<br>
+[Best Practices](https://bettersolutions.com/csharp/windows-forms/index.htm)<br>
+[Custom Controls](https://www.akadia.com/services/dotnet_user_controls.html)
