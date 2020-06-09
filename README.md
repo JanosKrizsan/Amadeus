@@ -38,6 +38,31 @@ Additional:<br>
 ### WinForms
 - Understanding is 80% of the battle here
 
+#### Windows
+Login / Register:<br>
+- Adds users
+- Logs in to Main Menu
+Main Menu:<br>
+- Is a hub for the rest of the windows
+- Textbox provides updates of operation
+- Windows that can be opened are:
+  - Options
+  - VPN
+  - Proxy
+  - RDP
+  - MAC
+  - IP
+
+Negatives so far:<br>
+- Will be a lot of code-deletion later, because some of the auto-generated will not be needed.
+- My design skills.
+Positives:<br>
+- Comfy editor.
+- Straightforward generated code
+- Not that different from WPF
+
+Note: I could structure it within a tab controller but I'm not really sure that would be the best application-design for this. It might become too beefy due to that and less clear.
+
 ## Usage
 
 1. Download the release and run the executable as Administrator
