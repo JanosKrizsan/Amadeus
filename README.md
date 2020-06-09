@@ -42,6 +42,7 @@ Additional:<br>
 Login / Register:<br>
 - Adds users
 - Logs in to Main Menu
+
 Main Menu:<br>
 - Is a hub for the rest of the windows
 - Textbox provides updates of operation
