@@ -55,7 +55,49 @@
     </Compile>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\LoginWinViewModel.cs" />
+    <Compile Include="ViewModels\IPVM.cs" />
+    <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\OptionsVM.cs" />
+    <Compile Include="ViewModels\ProxyVM.cs" />
+    <Compile Include="ViewModels\RDPVM.cs" />
+    <Compile Include="ViewModels\SysLanguageVM.cs" />
+    <Compile Include="ViewModels\VPNVM.cs" />
+    <Compile Include="Views\IP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IP.Designer.cs">
+      <DependentUpon>IP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Proxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Proxy.Designer.cs">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RDP.Designer.cs">
+      <DependentUpon>RDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SysLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SysLanguage.Designer.cs">
+      <DependentUpon>SysLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\VPN.Designer.cs">
+      <DependentUpon>VPN.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginWin.resx">
       <DependentUpon>LoginWin.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,6 +110,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Proxy.resx">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,16 +122,36 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Scripts\Add-VPNConnection.ps1" />
+    <None Include="Scripts\AddOrRemove-WindowsLanguage.ps1" />
+    <None Include="Scripts\Change-IPAddress.ps1" />
+    <None Include="Scripts\Execute-As-Admin.ps1" />
+    <None Include="Scripts\Generate-MacAddress.ps1" />
+    <None Include="Scripts\Get-Adapters.ps1" />
+    <None Include="Scripts\Get-Geolocation.ps1" />
+    <None Include="Scripts\Get-IPAddresses.ps1" />
+    <None Include="Scripts\Get-Languages.ps1" />
+    <None Include="Scripts\Get-VPNs.ps1" />
+    <None Include="Scripts\Is-Language-Contained.ps1" />
+    <None Include="Scripts\Notify-LanguageSettings.ps1" />
+    <None Include="Scripts\Remove-VPNConnection.ps1" />
+    <None Include="Scripts\Scan-AvilableIPs.ps1" />
+    <None Include="Scripts\Set-LangOverride.ps1" />
+    <None Include="Scripts\Set-MacAddress.ps1" />
+    <None Include="Scripts\Set-VPNConnection.ps1" />
+    <None Include="Scripts\Toggle-Proxy-Connection.ps1" />
+    <None Include="Scripts\Toggle-RDP-Connection.ps1" />
+    <None Include="Scripts\Toggle-VPNAutoConnectionApp.ps1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
-    <Folder Include="DataFiles\" />
-    <Folder Include="Scripts\" />
-    <Folder Include="ViewInterfaces\" />
-    <Folder Include="Views\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataFiles\macVendors.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

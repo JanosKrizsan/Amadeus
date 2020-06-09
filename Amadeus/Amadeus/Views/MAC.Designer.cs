@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.Views
 {
-    partial class Options
+    partial class MAC
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // Options
+            // MAC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Options";
-            this.Text = "Options";
+            this.Name = "MAC";
+            this.Text = "MAC";
             this.ResumeLayout(false);
 
         }

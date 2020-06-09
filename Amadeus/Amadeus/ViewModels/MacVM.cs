@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Amadeus.ViewModels
 {
-    internal class LoginVM
+    class MacVM
     {
-        internal LoginVM()
-        {
-
-        }
     }
 }

@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Amadeus
+namespace Amadeus.Views
 {
-    public partial class LoginWin : Form
+    public partial class MAC : Form
     {
-        public LoginWin()
+        public MAC()
         {
             InitializeComponent();
-        }
-
-        private void LoginWin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

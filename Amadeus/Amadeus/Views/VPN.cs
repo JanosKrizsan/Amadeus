@@ -16,5 +16,10 @@ namespace Amadeus.Views
         {
             InitializeComponent();
         }
+
+        private void VPN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
