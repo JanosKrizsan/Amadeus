@@ -30,7 +30,7 @@
         {
             this.mainMenuSelectPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.mainMenuBtn = new System.Windows.Forms.Button();
-            this.optionsBtn = new System.Windows.Forms.Button();
+            this.settingsBtn = new System.Windows.Forms.Button();
             this.proxyBtn = new System.Windows.Forms.Button();
             this.vpnBtn = new System.Windows.Forms.Button();
             this.rdpBtn = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             // mainMenuSelectPanel
             // 
             this.mainMenuSelectPanel.Controls.Add(this.mainMenuBtn);
-            this.mainMenuSelectPanel.Controls.Add(this.optionsBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.settingsBtn);
             this.mainMenuSelectPanel.Controls.Add(this.proxyBtn);
             this.mainMenuSelectPanel.Controls.Add(this.vpnBtn);
             this.mainMenuSelectPanel.Controls.Add(this.rdpBtn);
@@ -75,17 +75,17 @@
             this.mainMenuBtn.Text = "Main Menu";
             this.mainMenuBtn.UseVisualStyleBackColor = true;
             // 
-            // optionsBtn
+            // settingsBtn
             // 
-            this.optionsBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.optionsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.optionsBtn.Location = new System.Drawing.Point(0, 80);
-            this.optionsBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            this.optionsBtn.Name = "optionsBtn";
-            this.optionsBtn.Size = new System.Drawing.Size(150, 30);
-            this.optionsBtn.TabIndex = 1;
-            this.optionsBtn.Text = "Options";
-            this.optionsBtn.UseVisualStyleBackColor = true;
+            this.settingsBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.settingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsBtn.Location = new System.Drawing.Point(0, 80);
+            this.settingsBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.settingsBtn.Name = "settingsBtn";
+            this.settingsBtn.Size = new System.Drawing.Size(150, 30);
+            this.settingsBtn.TabIndex = 1;
+            this.settingsBtn.Text = "Settings";
+            this.settingsBtn.UseVisualStyleBackColor = true;
             // 
             // proxyBtn
             // 
@@ -212,7 +212,7 @@
 
         private System.Windows.Forms.FlowLayoutPanel mainMenuSelectPanel;
         private System.Windows.Forms.Button mainMenuBtn;
-        private System.Windows.Forms.Button optionsBtn;
+        private System.Windows.Forms.Button settingsBtn;
         private System.Windows.Forms.Button proxyBtn;
         private System.Windows.Forms.Button vpnBtn;
         private System.Windows.Forms.Button rdpBtn;
