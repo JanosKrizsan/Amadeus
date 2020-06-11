@@ -39,7 +39,7 @@
             this.syslangBtn = new System.Windows.Forms.Button();
             this.logoutBtn = new System.Windows.Forms.Button();
             this.quitBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.viewPanel = new System.Windows.Forms.Panel();
             this.mainMenuSelectPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,12 +183,13 @@
             this.quitBtn.Text = "Quit";
             this.quitBtn.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // viewPanel
             // 
-            this.panel1.Location = new System.Drawing.Point(153, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(632, 561);
-            this.panel1.TabIndex = 1;
+            this.viewPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.viewPanel.Location = new System.Drawing.Point(153, 0);
+            this.viewPanel.Name = "viewPanel";
+            this.viewPanel.Size = new System.Drawing.Size(632, 561);
+            this.viewPanel.TabIndex = 1;
             // 
             // SelectionScreen
             // 
@@ -196,7 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.viewPanel);
             this.Controls.Add(this.mainMenuSelectPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SelectionScreen";
@@ -220,6 +221,6 @@
         private System.Windows.Forms.Button syslangBtn;
         private System.Windows.Forms.Button logoutBtn;
         private System.Windows.Forms.Button quitBtn;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel viewPanel;
     }
 }
