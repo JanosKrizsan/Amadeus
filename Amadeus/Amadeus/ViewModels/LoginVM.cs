@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Amadeus.ViewModels
 {
-    internal class LoginVM
+    public class LoginVM
     {
-        internal LoginVM()
+        public LoginVM()
         {
 
         }

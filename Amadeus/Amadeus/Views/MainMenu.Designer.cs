@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.Views
 {
-    partial class MainMenu
+    partial class SelectionScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,158 +28,198 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuItemsPanel = new System.Windows.Forms.Panel();
-            this.vpnWinBtn = new System.Windows.Forms.Button();
-            this.ipWinBtn = new System.Windows.Forms.Button();
-            this.rdpWinBtn = new System.Windows.Forms.Button();
-            this.proxyWinBtn = new System.Windows.Forms.Button();
-            this.optionsWinBtn = new System.Windows.Forms.Button();
-            this.logoutWinBtn = new System.Windows.Forms.Button();
-            this.macWinBtn = new System.Windows.Forms.Button();
-            this.statusInfo = new System.Windows.Forms.RichTextBox();
-            this.menuItemsPanel.SuspendLayout();
+            this.mainMenuSelectPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.mainMenuBtn = new System.Windows.Forms.Button();
+            this.optionsBtn = new System.Windows.Forms.Button();
+            this.proxyBtn = new System.Windows.Forms.Button();
+            this.vpnBtn = new System.Windows.Forms.Button();
+            this.rdpBtn = new System.Windows.Forms.Button();
+            this.ipBtn = new System.Windows.Forms.Button();
+            this.macBtn = new System.Windows.Forms.Button();
+            this.syslangBtn = new System.Windows.Forms.Button();
+            this.logoutBtn = new System.Windows.Forms.Button();
+            this.quitBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.mainMenuSelectPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuItemsPanel
+            // mainMenuSelectPanel
             // 
-            this.menuItemsPanel.Controls.Add(this.macWinBtn);
-            this.menuItemsPanel.Controls.Add(this.logoutWinBtn);
-            this.menuItemsPanel.Controls.Add(this.optionsWinBtn);
-            this.menuItemsPanel.Controls.Add(this.proxyWinBtn);
-            this.menuItemsPanel.Controls.Add(this.rdpWinBtn);
-            this.menuItemsPanel.Controls.Add(this.ipWinBtn);
-            this.menuItemsPanel.Controls.Add(this.vpnWinBtn);
-            this.menuItemsPanel.Location = new System.Drawing.Point(12, 180);
-            this.menuItemsPanel.Name = "menuItemsPanel";
-            this.menuItemsPanel.Size = new System.Drawing.Size(226, 158);
-            this.menuItemsPanel.TabIndex = 0;
+            this.mainMenuSelectPanel.Controls.Add(this.mainMenuBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.optionsBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.proxyBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.vpnBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.rdpBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.ipBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.macBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.syslangBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.logoutBtn);
+            this.mainMenuSelectPanel.Controls.Add(this.quitBtn);
+            this.mainMenuSelectPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mainMenuSelectPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.mainMenuSelectPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainMenuSelectPanel.Name = "mainMenuSelectPanel";
+            this.mainMenuSelectPanel.Size = new System.Drawing.Size(150, 561);
+            this.mainMenuSelectPanel.TabIndex = 0;
+            this.mainMenuSelectPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainMenuSelectPanel_Paint);
             // 
-            // vpnWinBtn
+            // mainMenuBtn
             // 
-            this.vpnWinBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.vpnWinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.vpnWinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vpnWinBtn.Location = new System.Drawing.Point(0, 0);
-            this.vpnWinBtn.Name = "vpnWinBtn";
-            this.vpnWinBtn.Size = new System.Drawing.Size(75, 23);
-            this.vpnWinBtn.TabIndex = 0;
-            this.vpnWinBtn.Text = "VPN";
-            this.vpnWinBtn.UseVisualStyleBackColor = false;
+            this.mainMenuBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainMenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainMenuBtn.Location = new System.Drawing.Point(0, 25);
+            this.mainMenuBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.mainMenuBtn.Name = "mainMenuBtn";
+            this.mainMenuBtn.Size = new System.Drawing.Size(150, 30);
+            this.mainMenuBtn.TabIndex = 0;
+            this.mainMenuBtn.Text = "Main Menu";
+            this.mainMenuBtn.UseVisualStyleBackColor = true;
             // 
-            // ipWinBtn
+            // optionsBtn
             // 
-            this.ipWinBtn.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ipWinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ipWinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ipWinBtn.Location = new System.Drawing.Point(151, 3);
-            this.ipWinBtn.Name = "ipWinBtn";
-            this.ipWinBtn.Size = new System.Drawing.Size(75, 23);
-            this.ipWinBtn.TabIndex = 1;
-            this.ipWinBtn.Text = "IP";
-            this.ipWinBtn.UseVisualStyleBackColor = false;
+            this.optionsBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.optionsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.optionsBtn.Location = new System.Drawing.Point(0, 80);
+            this.optionsBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.optionsBtn.Name = "optionsBtn";
+            this.optionsBtn.Size = new System.Drawing.Size(150, 30);
+            this.optionsBtn.TabIndex = 1;
+            this.optionsBtn.Text = "Options";
+            this.optionsBtn.UseVisualStyleBackColor = true;
             // 
-            // rdpWinBtn
+            // proxyBtn
             // 
-            this.rdpWinBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.rdpWinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rdpWinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdpWinBtn.Location = new System.Drawing.Point(0, 32);
-            this.rdpWinBtn.Name = "rdpWinBtn";
-            this.rdpWinBtn.Size = new System.Drawing.Size(75, 23);
-            this.rdpWinBtn.TabIndex = 2;
-            this.rdpWinBtn.Text = "RDP";
-            this.rdpWinBtn.UseVisualStyleBackColor = false;
+            this.proxyBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.proxyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.proxyBtn.Location = new System.Drawing.Point(0, 135);
+            this.proxyBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.proxyBtn.Name = "proxyBtn";
+            this.proxyBtn.Size = new System.Drawing.Size(150, 30);
+            this.proxyBtn.TabIndex = 2;
+            this.proxyBtn.Text = "Proxy";
+            this.proxyBtn.UseVisualStyleBackColor = true;
             // 
-            // proxyWinBtn
+            // vpnBtn
             // 
-            this.proxyWinBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.proxyWinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.proxyWinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.proxyWinBtn.Location = new System.Drawing.Point(0, 61);
-            this.proxyWinBtn.Name = "proxyWinBtn";
-            this.proxyWinBtn.Size = new System.Drawing.Size(75, 23);
-            this.proxyWinBtn.TabIndex = 3;
-            this.proxyWinBtn.Text = "PROXY";
-            this.proxyWinBtn.UseVisualStyleBackColor = false;
+            this.vpnBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.vpnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vpnBtn.Location = new System.Drawing.Point(0, 190);
+            this.vpnBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.vpnBtn.Name = "vpnBtn";
+            this.vpnBtn.Size = new System.Drawing.Size(150, 30);
+            this.vpnBtn.TabIndex = 3;
+            this.vpnBtn.Text = "VPN";
+            this.vpnBtn.UseVisualStyleBackColor = true;
             // 
-            // optionsWinBtn
+            // rdpBtn
             // 
-            this.optionsWinBtn.BackColor = System.Drawing.Color.MediumPurple;
-            this.optionsWinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.optionsWinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optionsWinBtn.Location = new System.Drawing.Point(0, 135);
-            this.optionsWinBtn.Name = "optionsWinBtn";
-            this.optionsWinBtn.Size = new System.Drawing.Size(75, 23);
-            this.optionsWinBtn.TabIndex = 4;
-            this.optionsWinBtn.Text = "Options";
-            this.optionsWinBtn.UseVisualStyleBackColor = false;
+            this.rdpBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rdpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdpBtn.Location = new System.Drawing.Point(0, 245);
+            this.rdpBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.rdpBtn.Name = "rdpBtn";
+            this.rdpBtn.Size = new System.Drawing.Size(150, 30);
+            this.rdpBtn.TabIndex = 4;
+            this.rdpBtn.Text = "RDP";
+            this.rdpBtn.UseVisualStyleBackColor = true;
             // 
-            // logoutWinBtn
+            // ipBtn
             // 
-            this.logoutWinBtn.BackColor = System.Drawing.Color.Violet;
-            this.logoutWinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.logoutWinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutWinBtn.Location = new System.Drawing.Point(151, 135);
-            this.logoutWinBtn.Name = "logoutWinBtn";
-            this.logoutWinBtn.Size = new System.Drawing.Size(75, 23);
-            this.logoutWinBtn.TabIndex = 5;
-            this.logoutWinBtn.Text = "LogOut";
-            this.logoutWinBtn.UseVisualStyleBackColor = false;
+            this.ipBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ipBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ipBtn.Location = new System.Drawing.Point(0, 300);
+            this.ipBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.ipBtn.Name = "ipBtn";
+            this.ipBtn.Size = new System.Drawing.Size(150, 30);
+            this.ipBtn.TabIndex = 5;
+            this.ipBtn.Text = "IP Address";
+            this.ipBtn.UseVisualStyleBackColor = true;
             // 
-            // macWinBtn
+            // macBtn
             // 
-            this.macWinBtn.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.macWinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.macWinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.macWinBtn.Location = new System.Drawing.Point(151, 32);
-            this.macWinBtn.Name = "macWinBtn";
-            this.macWinBtn.Size = new System.Drawing.Size(75, 23);
-            this.macWinBtn.TabIndex = 6;
-            this.macWinBtn.Text = "MAC";
-            this.macWinBtn.UseVisualStyleBackColor = false;
+            this.macBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.macBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.macBtn.Location = new System.Drawing.Point(0, 355);
+            this.macBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.macBtn.Name = "macBtn";
+            this.macBtn.Size = new System.Drawing.Size(150, 30);
+            this.macBtn.TabIndex = 6;
+            this.macBtn.Text = "MAC Address";
+            this.macBtn.UseVisualStyleBackColor = true;
             // 
-            // statusInfo
+            // syslangBtn
             // 
-            this.statusInfo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.statusInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.statusInfo.ForeColor = System.Drawing.Color.GreenYellow;
-            this.statusInfo.Location = new System.Drawing.Point(12, 12);
-            this.statusInfo.Name = "statusInfo";
-            this.statusInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.statusInfo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.statusInfo.Size = new System.Drawing.Size(226, 150);
-            this.statusInfo.TabIndex = 1;
-            this.statusInfo.Text = "";
+            this.syslangBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.syslangBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.syslangBtn.Location = new System.Drawing.Point(0, 410);
+            this.syslangBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.syslangBtn.Name = "syslangBtn";
+            this.syslangBtn.Size = new System.Drawing.Size(150, 30);
+            this.syslangBtn.TabIndex = 7;
+            this.syslangBtn.Text = "System Language";
+            this.syslangBtn.UseVisualStyleBackColor = true;
             // 
-            // MainMenu
+            // logoutBtn
+            // 
+            this.logoutBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutBtn.Location = new System.Drawing.Point(0, 500);
+            this.logoutBtn.Margin = new System.Windows.Forms.Padding(0, 60, 0, 0);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(150, 30);
+            this.logoutBtn.TabIndex = 8;
+            this.logoutBtn.Text = "Log Out";
+            this.logoutBtn.UseVisualStyleBackColor = true;
+            // 
+            // quitBtn
+            // 
+            this.quitBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.quitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.quitBtn.Location = new System.Drawing.Point(0, 530);
+            this.quitBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.quitBtn.Name = "quitBtn";
+            this.quitBtn.Size = new System.Drawing.Size(150, 30);
+            this.quitBtn.TabIndex = 9;
+            this.quitBtn.Text = "Quit";
+            this.quitBtn.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(153, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(632, 561);
+            this.panel1.TabIndex = 1;
+            // 
+            // SelectionScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(250, 350);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.ControlBox = false;
-            this.Controls.Add(this.statusInfo);
-            this.Controls.Add(this.menuItemsPanel);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.mainMenuSelectPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MainMenu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MainMenu";
-            this.Load += new System.EventHandler(this.MainMenu_Load);
-            this.menuItemsPanel.ResumeLayout(false);
+            this.Name = "SelectionScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SelectionScreen";
+            this.mainMenuSelectPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel menuItemsPanel;
-        private System.Windows.Forms.Button logoutWinBtn;
-        private System.Windows.Forms.Button optionsWinBtn;
-        private System.Windows.Forms.Button proxyWinBtn;
-        private System.Windows.Forms.Button rdpWinBtn;
-        private System.Windows.Forms.Button ipWinBtn;
-        private System.Windows.Forms.Button vpnWinBtn;
-        private System.Windows.Forms.Button macWinBtn;
-        private System.Windows.Forms.RichTextBox statusInfo;
+        private System.Windows.Forms.FlowLayoutPanel mainMenuSelectPanel;
+        private System.Windows.Forms.Button mainMenuBtn;
+        private System.Windows.Forms.Button optionsBtn;
+        private System.Windows.Forms.Button proxyBtn;
+        private System.Windows.Forms.Button vpnBtn;
+        private System.Windows.Forms.Button rdpBtn;
+        private System.Windows.Forms.Button ipBtn;
+        private System.Windows.Forms.Button macBtn;
+        private System.Windows.Forms.Button syslangBtn;
+        private System.Windows.Forms.Button logoutBtn;
+        private System.Windows.Forms.Button quitBtn;
+        private System.Windows.Forms.Panel panel1;
     }
 }

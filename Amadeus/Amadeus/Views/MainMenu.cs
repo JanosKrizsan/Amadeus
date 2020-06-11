@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class MainMenu : Form
+    public partial class SelectionScreen : Form
     {
-        public MainMenu()
+        public SelectionScreen()
         {
             InitializeComponent();
         }
 
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void MainMenu_Load(object sender, EventArgs e)
+        private void mainMenuSelectPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
