@@ -32,8 +32,10 @@ Additional:<br>
 
 ### C# Core
 - Transfers and uses data
+- Encrypts and saves user data
+- Sends e-mail of reports
 - Runs PS scripts
-- Error Handling and all that good stuff
+- Error Handling via C#
 
 ### WinForms
 - Understanding is 80% of the battle here
@@ -46,6 +48,11 @@ Login / Register:<br>
 Main Menu:<br>
 - Is a hub for the rest of the windows
 - Textbox provides updates of operation
+- Current operation status is shown below textbox
+- Scripts can be run, added and removed (except basic ones)
+- Current operation can be stopped
+- Reports can be saved to XML, CSV or simple Text file
+- Current report can be wiped and reset
 - Windows that can be opened are:
   - Options
   - VPN
@@ -53,10 +60,17 @@ Main Menu:<br>
   - RDP
   - MAC
   - IP
+  
+Settings:<br>
+- Setting up User Data to be saved, deleted, we can add users here if we are an admin
+- Setting up operational mechanisms
+- Setting up e-mail to send to, can enforce e-mail PGP encryption
+
 
 Negatives so far:<br>
 - Will be a lot of code-deletion later, because some of the auto-generated will not be needed.
 - My design skills.
+
 Positives:<br>
 - Comfy editor.
 - Straightforward generated code
@@ -72,7 +86,7 @@ Note: I could structure it within a tab controller but I'm not really sure that 
 
 This readme will be updated consistently.
 
-## Resources / Info
+## Resources / Info / Documentation
 
 ### PS Networking
 [VPN Protocols](https://proprivacy.com/vpn/guides/vpn-encryption-the-complete-guide#vpn-encryption-protocols)<br>
@@ -89,8 +103,24 @@ This readme will be updated consistently.
 
 ### WinForms
 [Possible Way to Access Control](https://stackoverflow.com/questions/12903489/is-it-allowed-to-change-code-in-windows-form-designer-generated-code-designer)<br>
+[Winforms Structure Hints](https://softwareengineering.stackexchange.com/questions/144423/how-to-properly-structure-a-project-in-winform)<br>
 [Generated Code](https://www.codeproject.com/Articles/6020/What-s-that-quot-Windows-Form-Designer-generated-c)<br>
 [MVVM](https://softwareengineering.stackexchange.com/questions/277143/how-do-you-separate-view-from-logic-in-a-winform-application)<br>
 [General Practices](https://markheath.net/post/maintainable-winforms)<br>
-[Best Practices](https://bettersolutions.com/csharp/windows-forms/index.htm)<br>
-[Custom Controls](https://www.akadia.com/services/dotnet_user_controls.html)
+[Best Practices](https://bettersolutions.com/csharp/windows-forms/best-practies.htm)<br>
+[Custom Controls](https://www.akadia.com/services/dotnet_user_controls.html)<br>
+[Winforms Tutorial](https://riptutorial.com/winforms)
+
+
+### PGP
+
+[PGP File Encryption](https://www.codeproject.com/Questions/69856/Encrypting-and-Decrypting-files-with-PGP-and-C)<br>
+[More File Encryption](https://stackoverflow.com/questions/4192296/c-sharp-how-to-simply-encrypt-a-text-file-with-a-pgp-public-key)<br>
+[In General](https://www.codeproject.com/Articles/457453/PGP-Encryption-with-Csharp)<br>
+
+### .NET
+
+[Secure String](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring?view=netcore-3.1)<br>
+[Secure String in C#](https://blog.thedigitalgroup.com/usability-of-securestring-object-in-c)<br>
+[Encrypting Data](https://www.codeproject.com/Articles/14150/Encrypt-and-Decrypt-Data-with-C)<br>
+[Encrypting Files](https://www.codeproject.com/Articles/20564/Encrypt-Decrypt-File-or-String)<br>
