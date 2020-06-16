@@ -16,5 +16,20 @@ namespace Amadeus.Views
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void addNewPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
