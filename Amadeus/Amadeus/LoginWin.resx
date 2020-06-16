@@ -291,6 +291,9 @@
   <data name="passwordTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="passwordTxtBox.Text" xml:space="preserve">
+    <value>Password...</value>
+  </data>
   <data name="passwordTxtBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -314,6 +317,9 @@
   </data>
   <data name="usernameTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="usernameTxtBox.Text" xml:space="preserve">
+    <value>Username...</value>
   </data>
   <data name="usernameTxtBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>

@@ -64,11 +64,59 @@
     <Compile Include="ViewModels\RDPVM.cs" />
     <Compile Include="ViewModels\SysLanguageVM.cs" />
     <Compile Include="ViewModels\VPNVM.cs" />
+    <Compile Include="Views\IPAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IPAddress.Designer.cs">
+      <DependentUpon>IPAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MacAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MacAddress.Designer.cs">
+      <DependentUpon>MacAddress.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMenuSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainMenuSub.Designer.cs">
+      <DependentUpon>MainMenuSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Proxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Proxy.Designer.cs">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RDP.Designer.cs">
+      <DependentUpon>RDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SysLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SysLanguage.Designer.cs">
+      <DependentUpon>SysLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\VPN.Designer.cs">
+      <DependentUpon>VPN.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="LoginWin.resx">
       <DependentUpon>LoginWin.cs</DependentUpon>
@@ -82,8 +130,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\IPAddress.resx">
+      <DependentUpon>IPAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MacAddress.resx">
+      <DependentUpon>MacAddress.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainMenuSub.resx">
+      <DependentUpon>MainMenuSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Proxy.resx">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RDP.resx">
+      <DependentUpon>RDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SysLanguage.resx">
+      <DependentUpon>SysLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VPN.resx">
+      <DependentUpon>VPN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
