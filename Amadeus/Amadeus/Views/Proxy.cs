@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class Proxy : Form
+    public partial class RDP : Form
     {
-        public Proxy()
+        public RDP()
         {
             InitializeComponent();
         }
