@@ -94,17 +94,17 @@
     <Compile Include="Views\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Proxy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Proxy.Designer.cs">
-      <DependentUpon>Proxy.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\RDP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\RDP.Designer.cs">
       <DependentUpon>RDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Proxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Proxy.Designer.cs">
+      <DependentUpon>Proxy.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SysLanguage.cs">
       <SubType>Form</SubType>
@@ -145,11 +145,11 @@
     <EmbeddedResource Include="Views\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Proxy.resx">
-      <DependentUpon>Proxy.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\RDP.resx">
       <DependentUpon>RDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Proxy.resx">
+      <DependentUpon>Proxy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SysLanguage.resx">
       <DependentUpon>SysLanguage.cs</DependentUpon>

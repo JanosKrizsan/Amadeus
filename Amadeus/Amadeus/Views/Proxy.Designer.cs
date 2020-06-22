@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.Views
 {
-    partial class RDP
+    partial class Proxy
     {
         /// <summary>
         /// Required designer variable.
@@ -50,8 +50,12 @@
             this.deleteSavedBtn = new System.Windows.Forms.Button();
             this.savedProxiesLbl = new System.Windows.Forms.Label();
             this.proxyInfoLbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.importProxiesLbl = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -94,6 +98,9 @@
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel3.Controls.Add(this.importProxiesLbl);
+            this.flowLayoutPanel3.Controls.Add(this.button1);
+            this.flowLayoutPanel3.Controls.Add(this.button2);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -294,6 +301,37 @@
             this.proxyInfoLbl.TabIndex = 6;
             this.proxyInfoLbl.Text = "Info of Selected:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(20, 78);
+            this.button1.Margin = new System.Windows.Forms.Padding(20, 40, 20, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Select Text File";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // importProxiesLbl
+            // 
+            this.importProxiesLbl.AutoSize = true;
+            this.importProxiesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importProxiesLbl.Location = new System.Drawing.Point(18, 20);
+            this.importProxiesLbl.Margin = new System.Windows.Forms.Padding(18, 20, 0, 0);
+            this.importProxiesLbl.Name = "importProxiesLbl";
+            this.importProxiesLbl.Size = new System.Drawing.Size(104, 18);
+            this.importProxiesLbl.TabIndex = 1;
+            this.importProxiesLbl.Text = "Import Proxies";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(30, 119);
+            this.button2.Margin = new System.Windows.Forms.Padding(30, 15, 30, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Help!";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // RDP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,6 +349,8 @@
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -339,5 +379,8 @@
         private System.Windows.Forms.Button connectToSavedBtn;
         private System.Windows.Forms.Button editSavedBtn;
         private System.Windows.Forms.Button deleteSavedBtn;
+        private System.Windows.Forms.Label importProxiesLbl;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
