@@ -24,6 +24,10 @@ The C# desktop app runs various PS scripts to change states, connect to services
 - Change Sys Language 🟢
 - Change IP 🟢
 
+Additional Must Have:<br>
+- Need to update scripts in order to confirm to Winforms panels
+- Additional supplementary scripts might be required to ease the editing
+
 Additional:<br>
 - Force scripts to run in elevated mode 🟢
 - Notification of system language and location language 🟢
@@ -85,6 +89,15 @@ Note: I could structure it within a tab controller but I'm not really sure that 
 3. Be happy and rejoice
 
 This readme will be updated consistently.
+
+## Development and Testing
+
+### Development
+ - In VS Community and VS Code
+ - Separation of parts in Version Control
+ 
+### Testing
+ - Will either need a VM or an RDP to test functions without making my laptop useless
 
 ## Resources / Info / Documentation
 
