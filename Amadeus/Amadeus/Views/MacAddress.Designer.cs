@@ -42,7 +42,7 @@
             this.saveToFileBtn = new System.Windows.Forms.Button();
             this.applySelectBtn = new System.Windows.Forms.Button();
             this.removeSelectBtn = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.savedMacsCmboBox = new System.Windows.Forms.ComboBox();
             this.savedAddysLbl = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.macAddHelpBtn = new System.Windows.Forms.Button();
@@ -73,7 +73,7 @@
             // 
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanel1.Controls.Add(this.savedAddysLbl);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.savedMacsCmboBox);
             this.flowLayoutPanel1.Controls.Add(this.applySelectBtn);
             this.flowLayoutPanel1.Controls.Add(this.removeSelectBtn);
             this.flowLayoutPanel1.Controls.Add(this.macAddHelpBtn);
@@ -197,14 +197,14 @@
             this.removeSelectBtn.Text = "Remove";
             this.removeSelectBtn.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // savedMacsCmboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(5, 67);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 10, 3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.savedMacsCmboBox.FormattingEnabled = true;
+            this.savedMacsCmboBox.Location = new System.Drawing.Point(5, 67);
+            this.savedMacsCmboBox.Margin = new System.Windows.Forms.Padding(5, 10, 3, 3);
+            this.savedMacsCmboBox.Name = "savedMacsCmboBox";
+            this.savedMacsCmboBox.Size = new System.Drawing.Size(121, 21);
+            this.savedMacsCmboBox.TabIndex = 3;
             // 
             // savedAddysLbl
             // 
@@ -272,7 +272,7 @@
         private System.Windows.Forms.ListBox macVendorsLstBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label savedAddysLbl;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox savedMacsCmboBox;
         private System.Windows.Forms.Button applySelectBtn;
         private System.Windows.Forms.Button removeSelectBtn;
         private System.Windows.Forms.Button macAddHelpBtn;
