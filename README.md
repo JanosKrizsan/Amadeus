@@ -123,6 +123,10 @@ This readme will be updated consistently.
 [Best Practices](https://bettersolutions.com/csharp/windows-forms/best-practies.htm)<br>
 [Custom Controls](https://www.akadia.com/services/dotnet_user_controls.html)<br>
 [Winforms Tutorial](https://riptutorial.com/winforms)
+[MVP](https://stackoverflow.com/questions/4794121/model-view-presenter-in-winforms)<br>
+[More MVP](https://www.codeproject.com/Articles/14660/WinForms-Model-View-Presenter)<br>
+[MVP Example](https://codereview.stackexchange.com/questions/131330/model-view-presenter-winforms-app)
+
 
 
 ### PGP
