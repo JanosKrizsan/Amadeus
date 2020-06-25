@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Amadeus.ViewModels
 {
-    public class LoginVM
+    class SysLangPresenter
     {
-        public LoginVM()
-        {
-
-        }
     }
 }

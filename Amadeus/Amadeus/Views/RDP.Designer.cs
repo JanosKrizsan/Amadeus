@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.Views
 {
-    partial class RDP
+    partial class Rdp
     {
         /// <summary>
         /// Required designer variable.

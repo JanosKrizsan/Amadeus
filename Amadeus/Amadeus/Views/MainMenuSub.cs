@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Amadeus.InterfacesForViews;
+using System;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class MainMenuSub : Form
+    public partial class MainMenuSub : Form, IMainMenuSub
     {
         public MainMenuSub()
         {

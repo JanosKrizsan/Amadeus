@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Amadeus.InterfacesForViews;
+using System;
 using System.Windows.Forms;
 
 namespace Amadeus
 {
-    public partial class LoginWin : Form
+    public partial class LoginWin : Form, ILoginWin
     {
         public LoginWin()
         {

@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.Views
 {
-    partial class VPN
+    partial class Vpn
     {
         /// <summary>
         /// Required designer variable.

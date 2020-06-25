@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Amadeus.InterfacesForViews;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class VPN : Form
+    public partial class Vpn : Form, IVpn
     {
-        public VPN()
+        public Vpn()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.Views
 {
-    partial class SelectionScreen
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
