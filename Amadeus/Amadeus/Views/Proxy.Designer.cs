@@ -28,84 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.addNewProxyPnl = new System.Windows.Forms.FlowLayoutPanel();
             this.ipAddyLbl = new System.Windows.Forms.Label();
             this.ipAddyTxtBox = new System.Windows.Forms.TextBox();
+            this.portLbl = new System.Windows.Forms.Label();
+            this.portTxtBox = new System.Windows.Forms.TextBox();
             this.uNameLbl = new System.Windows.Forms.Label();
             this.uNameTxtBox = new System.Windows.Forms.TextBox();
             this.passLbl = new System.Windows.Forms.Label();
             this.passTextBox = new System.Windows.Forms.TextBox();
+            this.authReqChckBox = new System.Windows.Forms.CheckBox();
             this.saveProxyBtn = new System.Windows.Forms.Button();
             this.saveNConnectProxyBtn = new System.Windows.Forms.Button();
-            this.authReqChckBox = new System.Windows.Forms.CheckBox();
-            this.portLbl = new System.Windows.Forms.Label();
-            this.portTxtBox = new System.Windows.Forms.TextBox();
             this.proxyHelpBtn = new System.Windows.Forms.Button();
-            this.proxyInfoTxtBox = new System.Windows.Forms.RichTextBox();
+            this.savedProxiesPnl = new System.Windows.Forms.FlowLayoutPanel();
+            this.savedProxiesLbl = new System.Windows.Forms.Label();
             this.savedProxiesCombBox = new System.Windows.Forms.ComboBox();
+            this.proxyInfoLbl = new System.Windows.Forms.Label();
+            this.proxyInfoTxtBox = new System.Windows.Forms.RichTextBox();
             this.connectToSavedBtn = new System.Windows.Forms.Button();
             this.editSavedBtn = new System.Windows.Forms.Button();
             this.deleteSavedBtn = new System.Windows.Forms.Button();
-            this.savedProxiesLbl = new System.Windows.Forms.Label();
-            this.proxyInfoLbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.importProxiesPnl = new System.Windows.Forms.FlowLayoutPanel();
             this.importProxiesLbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.addNewProxyPnl.SuspendLayout();
+            this.savedProxiesPnl.SuspendLayout();
+            this.importProxiesPnl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // addNewProxyPnl
             // 
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.ipAddyLbl);
-            this.flowLayoutPanel1.Controls.Add(this.ipAddyTxtBox);
-            this.flowLayoutPanel1.Controls.Add(this.portLbl);
-            this.flowLayoutPanel1.Controls.Add(this.portTxtBox);
-            this.flowLayoutPanel1.Controls.Add(this.uNameLbl);
-            this.flowLayoutPanel1.Controls.Add(this.uNameTxtBox);
-            this.flowLayoutPanel1.Controls.Add(this.passLbl);
-            this.flowLayoutPanel1.Controls.Add(this.passTextBox);
-            this.flowLayoutPanel1.Controls.Add(this.authReqChckBox);
-            this.flowLayoutPanel1.Controls.Add(this.saveProxyBtn);
-            this.flowLayoutPanel1.Controls.Add(this.saveNConnectProxyBtn);
-            this.flowLayoutPanel1.Controls.Add(this.proxyHelpBtn);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(384, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(220, 498);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel2.Controls.Add(this.savedProxiesLbl);
-            this.flowLayoutPanel2.Controls.Add(this.savedProxiesCombBox);
-            this.flowLayoutPanel2.Controls.Add(this.proxyInfoLbl);
-            this.flowLayoutPanel2.Controls.Add(this.proxyInfoTxtBox);
-            this.flowLayoutPanel2.Controls.Add(this.connectToSavedBtn);
-            this.flowLayoutPanel2.Controls.Add(this.editSavedBtn);
-            this.flowLayoutPanel2.Controls.Add(this.deleteSavedBtn);
-            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(158, 12);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(220, 498);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel3.Controls.Add(this.importProxiesLbl);
-            this.flowLayoutPanel3.Controls.Add(this.button1);
-            this.flowLayoutPanel3.Controls.Add(this.button2);
-            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(140, 498);
-            this.flowLayoutPanel3.TabIndex = 1;
+            this.addNewProxyPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.addNewProxyPnl.Controls.Add(this.ipAddyLbl);
+            this.addNewProxyPnl.Controls.Add(this.ipAddyTxtBox);
+            this.addNewProxyPnl.Controls.Add(this.portLbl);
+            this.addNewProxyPnl.Controls.Add(this.portTxtBox);
+            this.addNewProxyPnl.Controls.Add(this.uNameLbl);
+            this.addNewProxyPnl.Controls.Add(this.uNameTxtBox);
+            this.addNewProxyPnl.Controls.Add(this.passLbl);
+            this.addNewProxyPnl.Controls.Add(this.passTextBox);
+            this.addNewProxyPnl.Controls.Add(this.authReqChckBox);
+            this.addNewProxyPnl.Controls.Add(this.saveProxyBtn);
+            this.addNewProxyPnl.Controls.Add(this.saveNConnectProxyBtn);
+            this.addNewProxyPnl.Controls.Add(this.proxyHelpBtn);
+            this.addNewProxyPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.addNewProxyPnl.Location = new System.Drawing.Point(384, 12);
+            this.addNewProxyPnl.Name = "addNewProxyPnl";
+            this.addNewProxyPnl.Size = new System.Drawing.Size(220, 498);
+            this.addNewProxyPnl.TabIndex = 0;
             // 
             // ipAddyLbl
             // 
@@ -126,6 +98,26 @@
             this.ipAddyTxtBox.Size = new System.Drawing.Size(140, 20);
             this.ipAddyTxtBox.TabIndex = 1;
             this.ipAddyTxtBox.Text = "Sample text...";
+            // 
+            // portLbl
+            // 
+            this.portLbl.AutoSize = true;
+            this.portLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.portLbl.Location = new System.Drawing.Point(40, 86);
+            this.portLbl.Margin = new System.Windows.Forms.Padding(40, 20, 3, 0);
+            this.portLbl.Name = "portLbl";
+            this.portLbl.Size = new System.Drawing.Size(40, 18);
+            this.portLbl.TabIndex = 11;
+            this.portLbl.Text = "Port:";
+            // 
+            // portTxtBox
+            // 
+            this.portTxtBox.Location = new System.Drawing.Point(40, 109);
+            this.portTxtBox.Margin = new System.Windows.Forms.Padding(40, 5, 3, 3);
+            this.portTxtBox.Name = "portTxtBox";
+            this.portTxtBox.Size = new System.Drawing.Size(140, 20);
+            this.portTxtBox.TabIndex = 12;
+            this.portTxtBox.Text = "Sample text...";
             // 
             // uNameLbl
             // 
@@ -167,6 +159,18 @@
             this.passTextBox.TabIndex = 5;
             this.passTextBox.Text = "Sample text...";
             // 
+            // authReqChckBox
+            // 
+            this.authReqChckBox.AutoSize = true;
+            this.authReqChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authReqChckBox.Location = new System.Drawing.Point(40, 284);
+            this.authReqChckBox.Margin = new System.Windows.Forms.Padding(40, 20, 3, 3);
+            this.authReqChckBox.Name = "authReqChckBox";
+            this.authReqChckBox.Size = new System.Drawing.Size(151, 19);
+            this.authReqChckBox.TabIndex = 10;
+            this.authReqChckBox.Text = "Authorization Required";
+            this.authReqChckBox.UseVisualStyleBackColor = true;
+            // 
             // saveProxyBtn
             // 
             this.saveProxyBtn.Location = new System.Drawing.Point(50, 336);
@@ -187,38 +191,6 @@
             this.saveNConnectProxyBtn.Text = "Save and Connect";
             this.saveNConnectProxyBtn.UseVisualStyleBackColor = true;
             // 
-            // authReqChckBox
-            // 
-            this.authReqChckBox.AutoSize = true;
-            this.authReqChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.authReqChckBox.Location = new System.Drawing.Point(40, 284);
-            this.authReqChckBox.Margin = new System.Windows.Forms.Padding(40, 20, 3, 3);
-            this.authReqChckBox.Name = "authReqChckBox";
-            this.authReqChckBox.Size = new System.Drawing.Size(151, 19);
-            this.authReqChckBox.TabIndex = 10;
-            this.authReqChckBox.Text = "Authorization Required";
-            this.authReqChckBox.UseVisualStyleBackColor = true;
-            // 
-            // portLbl
-            // 
-            this.portLbl.AutoSize = true;
-            this.portLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.portLbl.Location = new System.Drawing.Point(40, 86);
-            this.portLbl.Margin = new System.Windows.Forms.Padding(40, 20, 3, 0);
-            this.portLbl.Name = "portLbl";
-            this.portLbl.Size = new System.Drawing.Size(40, 18);
-            this.portLbl.TabIndex = 11;
-            this.portLbl.Text = "Port:";
-            // 
-            // portTxtBox
-            // 
-            this.portTxtBox.Location = new System.Drawing.Point(40, 109);
-            this.portTxtBox.Margin = new System.Windows.Forms.Padding(40, 5, 3, 3);
-            this.portTxtBox.Name = "portTxtBox";
-            this.portTxtBox.Size = new System.Drawing.Size(140, 20);
-            this.portTxtBox.TabIndex = 12;
-            this.portTxtBox.Text = "Sample text...";
-            // 
             // proxyHelpBtn
             // 
             this.proxyHelpBtn.Location = new System.Drawing.Point(140, 458);
@@ -228,6 +200,53 @@
             this.proxyHelpBtn.TabIndex = 13;
             this.proxyHelpBtn.Text = "Help!";
             this.proxyHelpBtn.UseVisualStyleBackColor = true;
+            // 
+            // savedProxiesPnl
+            // 
+            this.savedProxiesPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.savedProxiesPnl.Controls.Add(this.savedProxiesLbl);
+            this.savedProxiesPnl.Controls.Add(this.savedProxiesCombBox);
+            this.savedProxiesPnl.Controls.Add(this.proxyInfoLbl);
+            this.savedProxiesPnl.Controls.Add(this.proxyInfoTxtBox);
+            this.savedProxiesPnl.Controls.Add(this.connectToSavedBtn);
+            this.savedProxiesPnl.Controls.Add(this.editSavedBtn);
+            this.savedProxiesPnl.Controls.Add(this.deleteSavedBtn);
+            this.savedProxiesPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.savedProxiesPnl.Location = new System.Drawing.Point(158, 12);
+            this.savedProxiesPnl.Name = "savedProxiesPnl";
+            this.savedProxiesPnl.Size = new System.Drawing.Size(220, 498);
+            this.savedProxiesPnl.TabIndex = 1;
+            // 
+            // savedProxiesLbl
+            // 
+            this.savedProxiesLbl.AutoSize = true;
+            this.savedProxiesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savedProxiesLbl.Location = new System.Drawing.Point(10, 20);
+            this.savedProxiesLbl.Margin = new System.Windows.Forms.Padding(10, 20, 3, 0);
+            this.savedProxiesLbl.Name = "savedProxiesLbl";
+            this.savedProxiesLbl.Size = new System.Drawing.Size(107, 18);
+            this.savedProxiesLbl.TabIndex = 5;
+            this.savedProxiesLbl.Text = "Saved Proxies:";
+            // 
+            // savedProxiesCombBox
+            // 
+            this.savedProxiesCombBox.FormattingEnabled = true;
+            this.savedProxiesCombBox.Location = new System.Drawing.Point(10, 48);
+            this.savedProxiesCombBox.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.savedProxiesCombBox.Name = "savedProxiesCombBox";
+            this.savedProxiesCombBox.Size = new System.Drawing.Size(180, 21);
+            this.savedProxiesCombBox.TabIndex = 1;
+            // 
+            // proxyInfoLbl
+            // 
+            this.proxyInfoLbl.AutoSize = true;
+            this.proxyInfoLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proxyInfoLbl.Location = new System.Drawing.Point(10, 92);
+            this.proxyInfoLbl.Margin = new System.Windows.Forms.Padding(10, 20, 10, 0);
+            this.proxyInfoLbl.Name = "proxyInfoLbl";
+            this.proxyInfoLbl.Size = new System.Drawing.Size(114, 18);
+            this.proxyInfoLbl.TabIndex = 6;
+            this.proxyInfoLbl.Text = "Info of Selected:";
             // 
             // proxyInfoTxtBox
             // 
@@ -239,15 +258,6 @@
             this.proxyInfoTxtBox.Size = new System.Drawing.Size(200, 177);
             this.proxyInfoTxtBox.TabIndex = 0;
             this.proxyInfoTxtBox.Text = "Info of selected proxy comes here...";
-            // 
-            // savedProxiesCombBox
-            // 
-            this.savedProxiesCombBox.FormattingEnabled = true;
-            this.savedProxiesCombBox.Location = new System.Drawing.Point(10, 48);
-            this.savedProxiesCombBox.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
-            this.savedProxiesCombBox.Name = "savedProxiesCombBox";
-            this.savedProxiesCombBox.Size = new System.Drawing.Size(180, 21);
-            this.savedProxiesCombBox.TabIndex = 1;
             // 
             // connectToSavedBtn
             // 
@@ -279,37 +289,17 @@
             this.deleteSavedBtn.Text = "Delete";
             this.deleteSavedBtn.UseVisualStyleBackColor = true;
             // 
-            // savedProxiesLbl
+            // importProxiesPnl
             // 
-            this.savedProxiesLbl.AutoSize = true;
-            this.savedProxiesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savedProxiesLbl.Location = new System.Drawing.Point(10, 20);
-            this.savedProxiesLbl.Margin = new System.Windows.Forms.Padding(10, 20, 3, 0);
-            this.savedProxiesLbl.Name = "savedProxiesLbl";
-            this.savedProxiesLbl.Size = new System.Drawing.Size(107, 18);
-            this.savedProxiesLbl.TabIndex = 5;
-            this.savedProxiesLbl.Text = "Saved Proxies:";
-            // 
-            // proxyInfoLbl
-            // 
-            this.proxyInfoLbl.AutoSize = true;
-            this.proxyInfoLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.proxyInfoLbl.Location = new System.Drawing.Point(10, 92);
-            this.proxyInfoLbl.Margin = new System.Windows.Forms.Padding(10, 20, 10, 0);
-            this.proxyInfoLbl.Name = "proxyInfoLbl";
-            this.proxyInfoLbl.Size = new System.Drawing.Size(114, 18);
-            this.proxyInfoLbl.TabIndex = 6;
-            this.proxyInfoLbl.Text = "Info of Selected:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(20, 78);
-            this.button1.Margin = new System.Windows.Forms.Padding(20, 40, 20, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Select Text File";
-            this.button1.UseVisualStyleBackColor = true;
+            this.importProxiesPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.importProxiesPnl.Controls.Add(this.importProxiesLbl);
+            this.importProxiesPnl.Controls.Add(this.button1);
+            this.importProxiesPnl.Controls.Add(this.button2);
+            this.importProxiesPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.importProxiesPnl.Location = new System.Drawing.Point(12, 12);
+            this.importProxiesPnl.Name = "importProxiesPnl";
+            this.importProxiesPnl.Size = new System.Drawing.Size(140, 498);
+            this.importProxiesPnl.TabIndex = 1;
             // 
             // importProxiesLbl
             // 
@@ -322,6 +312,16 @@
             this.importProxiesLbl.TabIndex = 1;
             this.importProxiesLbl.Text = "Import Proxies";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(20, 78);
+            this.button1.Margin = new System.Windows.Forms.Padding(20, 40, 20, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Select Text File";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(30, 119);
@@ -332,34 +332,34 @@
             this.button2.Text = "Help!";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // RDP
+            // Proxy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 522);
             this.ControlBox = false;
-            this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.importProxiesPnl);
+            this.Controls.Add(this.savedProxiesPnl);
+            this.Controls.Add(this.addNewProxyPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RDP";
+            this.Name = "Proxy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "RDP";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
+            this.addNewProxyPnl.ResumeLayout(false);
+            this.addNewProxyPnl.PerformLayout();
+            this.savedProxiesPnl.ResumeLayout(false);
+            this.savedProxiesPnl.PerformLayout();
+            this.importProxiesPnl.ResumeLayout(false);
+            this.importProxiesPnl.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel addNewProxyPnl;
+        private System.Windows.Forms.FlowLayoutPanel savedProxiesPnl;
+        private System.Windows.Forms.FlowLayoutPanel importProxiesPnl;
         private System.Windows.Forms.Label ipAddyLbl;
         private System.Windows.Forms.TextBox ipAddyTxtBox;
         private System.Windows.Forms.Label uNameLbl;

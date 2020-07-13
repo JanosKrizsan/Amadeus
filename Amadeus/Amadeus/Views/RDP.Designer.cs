@@ -28,17 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.currentRdpsPnl = new System.Windows.Forms.Panel();
-            this.onlyRdpFilesRdio = new System.Windows.Forms.RadioButton();
-            this.savedRdpsLbl = new System.Windows.Forms.Label();
-            this.savedRdpsResults = new System.Windows.Forms.ComboBox();
-            this.refreshRdpsBtn = new System.Windows.Forms.Button();
-            this.connectCrntBtn = new System.Windows.Forms.Button();
-            this.delCrntBtn = new System.Windows.Forms.Button();
-            this.editCrntBtn = new System.Windows.Forms.Button();
-            this.isMstcRunningImgBox = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.connectionSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
             this.connLbl = new System.Windows.Forms.Label();
             this.connTxtBox = new System.Windows.Forms.TextBox();
             this.addressLbl = new System.Windows.Forms.Label();
@@ -51,9 +41,27 @@
             this.asAdminChckBox = new System.Windows.Forms.CheckBox();
             this.remGuardChckBox = new System.Windows.Forms.CheckBox();
             this.restrictedAdminChckBox = new System.Windows.Forms.CheckBox();
+            this.rdpCredsHelpBtn = new System.Windows.Forms.Button();
+            this.currentRdpsPnl = new System.Windows.Forms.Panel();
+            this.recheckConnBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.isMstcRunningImgBox = new System.Windows.Forms.PictureBox();
+            this.editCrntBtn = new System.Windows.Forms.Button();
+            this.delCrntBtn = new System.Windows.Forms.Button();
+            this.connectCrntBtn = new System.Windows.Forms.Button();
+            this.refreshRdpsBtn = new System.Windows.Forms.Button();
+            this.savedRdpsResults = new System.Windows.Forms.ComboBox();
+            this.savedRdpsLbl = new System.Windows.Forms.Label();
+            this.onlyRdpFilesRdio = new System.Windows.Forms.RadioButton();
             this.screenSettingsHolderPnl = new System.Windows.Forms.Panel();
-            this.screenSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.saveNUpdtBtn = new System.Windows.Forms.Button();
+            this.saveToRdpFileBtn = new System.Windows.Forms.Button();
+            this.saveToXmlBtn = new System.Windows.Forms.Button();
+            this.connGivenBtn = new System.Windows.Forms.Button();
+            this.resetBtn = new System.Windows.Forms.Button();
+            this.screenSettingsHelpBtn = new System.Windows.Forms.Button();
+            this.screenSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
             this.fullscreenChckBox = new System.Windows.Forms.CheckBox();
             this.multiMonitorChckBox = new System.Windows.Forms.CheckBox();
             this.spanMonitorsChckBox = new System.Windows.Forms.CheckBox();
@@ -61,146 +69,36 @@
             this.screenWidthTxtBox = new System.Windows.Forms.TextBox();
             this.screenHeightLbl = new System.Windows.Forms.Label();
             this.screenHeightTxtBox = new System.Windows.Forms.TextBox();
-            this.saveNUpdtBtn = new System.Windows.Forms.Button();
-            this.resetBtn = new System.Windows.Forms.Button();
-            this.connGivenBtn = new System.Windows.Forms.Button();
-            this.screenSettingsHelpBtn = new System.Windows.Forms.Button();
-            this.saveToXmlBtn = new System.Windows.Forms.Button();
-            this.rdpCredsHelpBtn = new System.Windows.Forms.Button();
-            this.recheckConnBtn = new System.Windows.Forms.Button();
-            this.saveToRdpFileBtn = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.connectionSettingsPnl.SuspendLayout();
             this.currentRdpsPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isMstcRunningImgBox)).BeginInit();
             this.screenSettingsHolderPnl.SuspendLayout();
-            this.screenSettingsPnl.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.screenSettingsPnl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // connectionSettingsPnl
             // 
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.connLbl);
-            this.flowLayoutPanel1.Controls.Add(this.connTxtBox);
-            this.flowLayoutPanel1.Controls.Add(this.addressLbl);
-            this.flowLayoutPanel1.Controls.Add(this.addressTxtBox);
-            this.flowLayoutPanel1.Controls.Add(this.portLbl);
-            this.flowLayoutPanel1.Controls.Add(this.portTxtBox);
-            this.flowLayoutPanel1.Controls.Add(this.gatewayLbl);
-            this.flowLayoutPanel1.Controls.Add(this.gatewTxtBox);
-            this.flowLayoutPanel1.Controls.Add(this.useGatewayChckBox);
-            this.flowLayoutPanel1.Controls.Add(this.asAdminChckBox);
-            this.flowLayoutPanel1.Controls.Add(this.remGuardChckBox);
-            this.flowLayoutPanel1.Controls.Add(this.restrictedAdminChckBox);
-            this.flowLayoutPanel1.Controls.Add(this.rdpCredsHelpBtn);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(244, 498);
-            this.flowLayoutPanel1.TabIndex = 0;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // currentRdpsPnl
-            // 
-            this.currentRdpsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.currentRdpsPnl.Controls.Add(this.recheckConnBtn);
-            this.currentRdpsPnl.Controls.Add(this.label1);
-            this.currentRdpsPnl.Controls.Add(this.isMstcRunningImgBox);
-            this.currentRdpsPnl.Controls.Add(this.editCrntBtn);
-            this.currentRdpsPnl.Controls.Add(this.delCrntBtn);
-            this.currentRdpsPnl.Controls.Add(this.connectCrntBtn);
-            this.currentRdpsPnl.Controls.Add(this.refreshRdpsBtn);
-            this.currentRdpsPnl.Controls.Add(this.savedRdpsResults);
-            this.currentRdpsPnl.Controls.Add(this.savedRdpsLbl);
-            this.currentRdpsPnl.Controls.Add(this.onlyRdpFilesRdio);
-            this.currentRdpsPnl.Location = new System.Drawing.Point(276, 12);
-            this.currentRdpsPnl.Name = "currentRdpsPnl";
-            this.currentRdpsPnl.Size = new System.Drawing.Size(327, 264);
-            this.currentRdpsPnl.TabIndex = 3;
-            // 
-            // onlyRdpFilesRdio
-            // 
-            this.onlyRdpFilesRdio.AutoSize = true;
-            this.onlyRdpFilesRdio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyRdpFilesRdio.Location = new System.Drawing.Point(173, 25);
-            this.onlyRdpFilesRdio.Name = "onlyRdpFilesRdio";
-            this.onlyRdpFilesRdio.Size = new System.Drawing.Size(125, 21);
-            this.onlyRdpFilesRdio.TabIndex = 0;
-            this.onlyRdpFilesRdio.TabStop = true;
-            this.onlyRdpFilesRdio.Text = "Only .RDP Files";
-            this.onlyRdpFilesRdio.UseVisualStyleBackColor = true;
-            // 
-            // savedRdpsLbl
-            // 
-            this.savedRdpsLbl.AutoSize = true;
-            this.savedRdpsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savedRdpsLbl.Location = new System.Drawing.Point(31, 28);
-            this.savedRdpsLbl.Name = "savedRdpsLbl";
-            this.savedRdpsLbl.Size = new System.Drawing.Size(97, 18);
-            this.savedRdpsLbl.TabIndex = 1;
-            this.savedRdpsLbl.Text = "Saved RDPs:";
-            // 
-            // savedRdpsResults
-            // 
-            this.savedRdpsResults.FormattingEnabled = true;
-            this.savedRdpsResults.Location = new System.Drawing.Point(33, 59);
-            this.savedRdpsResults.Name = "savedRdpsResults";
-            this.savedRdpsResults.Size = new System.Drawing.Size(181, 21);
-            this.savedRdpsResults.TabIndex = 2;
-            // 
-            // refreshRdpsBtn
-            // 
-            this.refreshRdpsBtn.Location = new System.Drawing.Point(237, 57);
-            this.refreshRdpsBtn.Name = "refreshRdpsBtn";
-            this.refreshRdpsBtn.Size = new System.Drawing.Size(60, 23);
-            this.refreshRdpsBtn.TabIndex = 3;
-            this.refreshRdpsBtn.Text = "Refresh";
-            this.refreshRdpsBtn.UseVisualStyleBackColor = true;
-            // 
-            // connectCrntBtn
-            // 
-            this.connectCrntBtn.Location = new System.Drawing.Point(33, 129);
-            this.connectCrntBtn.Name = "connectCrntBtn";
-            this.connectCrntBtn.Size = new System.Drawing.Size(75, 23);
-            this.connectCrntBtn.TabIndex = 4;
-            this.connectCrntBtn.Text = "Connect To";
-            this.connectCrntBtn.UseVisualStyleBackColor = true;
-            // 
-            // delCrntBtn
-            // 
-            this.delCrntBtn.Location = new System.Drawing.Point(33, 161);
-            this.delCrntBtn.Name = "delCrntBtn";
-            this.delCrntBtn.Size = new System.Drawing.Size(75, 23);
-            this.delCrntBtn.TabIndex = 5;
-            this.delCrntBtn.Text = "Delete";
-            this.delCrntBtn.UseVisualStyleBackColor = true;
-            // 
-            // editCrntBtn
-            // 
-            this.editCrntBtn.Location = new System.Drawing.Point(33, 190);
-            this.editCrntBtn.Name = "editCrntBtn";
-            this.editCrntBtn.Size = new System.Drawing.Size(75, 23);
-            this.editCrntBtn.TabIndex = 6;
-            this.editCrntBtn.Text = "Edit";
-            this.editCrntBtn.UseVisualStyleBackColor = true;
-            // 
-            // isMstcRunningImgBox
-            // 
-            this.isMstcRunningImgBox.Location = new System.Drawing.Point(191, 161);
-            this.isMstcRunningImgBox.Name = "isMstcRunningImgBox";
-            this.isMstcRunningImgBox.Size = new System.Drawing.Size(106, 90);
-            this.isMstcRunningImgBox.TabIndex = 7;
-            this.isMstcRunningImgBox.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 129);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Connection Status:";
+            this.connectionSettingsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.connectionSettingsPnl.Controls.Add(this.connLbl);
+            this.connectionSettingsPnl.Controls.Add(this.connTxtBox);
+            this.connectionSettingsPnl.Controls.Add(this.addressLbl);
+            this.connectionSettingsPnl.Controls.Add(this.addressTxtBox);
+            this.connectionSettingsPnl.Controls.Add(this.portLbl);
+            this.connectionSettingsPnl.Controls.Add(this.portTxtBox);
+            this.connectionSettingsPnl.Controls.Add(this.gatewayLbl);
+            this.connectionSettingsPnl.Controls.Add(this.gatewTxtBox);
+            this.connectionSettingsPnl.Controls.Add(this.useGatewayChckBox);
+            this.connectionSettingsPnl.Controls.Add(this.asAdminChckBox);
+            this.connectionSettingsPnl.Controls.Add(this.remGuardChckBox);
+            this.connectionSettingsPnl.Controls.Add(this.restrictedAdminChckBox);
+            this.connectionSettingsPnl.Controls.Add(this.rdpCredsHelpBtn);
+            this.connectionSettingsPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.connectionSettingsPnl.Location = new System.Drawing.Point(12, 12);
+            this.connectionSettingsPnl.Name = "connectionSettingsPnl";
+            this.connectionSettingsPnl.Size = new System.Drawing.Size(244, 498);
+            this.connectionSettingsPnl.TabIndex = 0;
+            this.connectionSettingsPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // connLbl
             // 
@@ -327,6 +225,127 @@
             this.restrictedAdminChckBox.Text = "As Restricted Admin";
             this.restrictedAdminChckBox.UseVisualStyleBackColor = true;
             // 
+            // rdpCredsHelpBtn
+            // 
+            this.rdpCredsHelpBtn.Location = new System.Drawing.Point(174, 458);
+            this.rdpCredsHelpBtn.Margin = new System.Windows.Forms.Padding(174, 55, 3, 3);
+            this.rdpCredsHelpBtn.Name = "rdpCredsHelpBtn";
+            this.rdpCredsHelpBtn.Size = new System.Drawing.Size(40, 23);
+            this.rdpCredsHelpBtn.TabIndex = 16;
+            this.rdpCredsHelpBtn.Text = "Help!";
+            this.rdpCredsHelpBtn.UseVisualStyleBackColor = true;
+            // 
+            // currentRdpsPnl
+            // 
+            this.currentRdpsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.currentRdpsPnl.Controls.Add(this.recheckConnBtn);
+            this.currentRdpsPnl.Controls.Add(this.label1);
+            this.currentRdpsPnl.Controls.Add(this.isMstcRunningImgBox);
+            this.currentRdpsPnl.Controls.Add(this.editCrntBtn);
+            this.currentRdpsPnl.Controls.Add(this.delCrntBtn);
+            this.currentRdpsPnl.Controls.Add(this.connectCrntBtn);
+            this.currentRdpsPnl.Controls.Add(this.refreshRdpsBtn);
+            this.currentRdpsPnl.Controls.Add(this.savedRdpsResults);
+            this.currentRdpsPnl.Controls.Add(this.savedRdpsLbl);
+            this.currentRdpsPnl.Controls.Add(this.onlyRdpFilesRdio);
+            this.currentRdpsPnl.Location = new System.Drawing.Point(276, 12);
+            this.currentRdpsPnl.Name = "currentRdpsPnl";
+            this.currentRdpsPnl.Size = new System.Drawing.Size(327, 264);
+            this.currentRdpsPnl.TabIndex = 3;
+            // 
+            // recheckConnBtn
+            // 
+            this.recheckConnBtn.Location = new System.Drawing.Point(33, 228);
+            this.recheckConnBtn.Name = "recheckConnBtn";
+            this.recheckConnBtn.Size = new System.Drawing.Size(120, 23);
+            this.recheckConnBtn.TabIndex = 9;
+            this.recheckConnBtn.Text = "Recheck Connection";
+            this.recheckConnBtn.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(175, 129);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Connection Status:";
+            // 
+            // isMstcRunningImgBox
+            // 
+            this.isMstcRunningImgBox.Location = new System.Drawing.Point(191, 161);
+            this.isMstcRunningImgBox.Name = "isMstcRunningImgBox";
+            this.isMstcRunningImgBox.Size = new System.Drawing.Size(106, 90);
+            this.isMstcRunningImgBox.TabIndex = 7;
+            this.isMstcRunningImgBox.TabStop = false;
+            // 
+            // editCrntBtn
+            // 
+            this.editCrntBtn.Location = new System.Drawing.Point(33, 190);
+            this.editCrntBtn.Name = "editCrntBtn";
+            this.editCrntBtn.Size = new System.Drawing.Size(75, 23);
+            this.editCrntBtn.TabIndex = 6;
+            this.editCrntBtn.Text = "Edit";
+            this.editCrntBtn.UseVisualStyleBackColor = true;
+            // 
+            // delCrntBtn
+            // 
+            this.delCrntBtn.Location = new System.Drawing.Point(33, 161);
+            this.delCrntBtn.Name = "delCrntBtn";
+            this.delCrntBtn.Size = new System.Drawing.Size(75, 23);
+            this.delCrntBtn.TabIndex = 5;
+            this.delCrntBtn.Text = "Delete";
+            this.delCrntBtn.UseVisualStyleBackColor = true;
+            // 
+            // connectCrntBtn
+            // 
+            this.connectCrntBtn.Location = new System.Drawing.Point(33, 129);
+            this.connectCrntBtn.Name = "connectCrntBtn";
+            this.connectCrntBtn.Size = new System.Drawing.Size(75, 23);
+            this.connectCrntBtn.TabIndex = 4;
+            this.connectCrntBtn.Text = "Connect To";
+            this.connectCrntBtn.UseVisualStyleBackColor = true;
+            // 
+            // refreshRdpsBtn
+            // 
+            this.refreshRdpsBtn.Location = new System.Drawing.Point(237, 57);
+            this.refreshRdpsBtn.Name = "refreshRdpsBtn";
+            this.refreshRdpsBtn.Size = new System.Drawing.Size(60, 23);
+            this.refreshRdpsBtn.TabIndex = 3;
+            this.refreshRdpsBtn.Text = "Refresh";
+            this.refreshRdpsBtn.UseVisualStyleBackColor = true;
+            // 
+            // savedRdpsResults
+            // 
+            this.savedRdpsResults.FormattingEnabled = true;
+            this.savedRdpsResults.Location = new System.Drawing.Point(33, 59);
+            this.savedRdpsResults.Name = "savedRdpsResults";
+            this.savedRdpsResults.Size = new System.Drawing.Size(181, 21);
+            this.savedRdpsResults.TabIndex = 2;
+            // 
+            // savedRdpsLbl
+            // 
+            this.savedRdpsLbl.AutoSize = true;
+            this.savedRdpsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savedRdpsLbl.Location = new System.Drawing.Point(31, 28);
+            this.savedRdpsLbl.Name = "savedRdpsLbl";
+            this.savedRdpsLbl.Size = new System.Drawing.Size(97, 18);
+            this.savedRdpsLbl.TabIndex = 1;
+            this.savedRdpsLbl.Text = "Saved RDPs:";
+            // 
+            // onlyRdpFilesRdio
+            // 
+            this.onlyRdpFilesRdio.AutoSize = true;
+            this.onlyRdpFilesRdio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.onlyRdpFilesRdio.Location = new System.Drawing.Point(173, 25);
+            this.onlyRdpFilesRdio.Name = "onlyRdpFilesRdio";
+            this.onlyRdpFilesRdio.Size = new System.Drawing.Size(125, 21);
+            this.onlyRdpFilesRdio.TabIndex = 0;
+            this.onlyRdpFilesRdio.TabStop = true;
+            this.onlyRdpFilesRdio.Text = "Only .RDP Files";
+            this.onlyRdpFilesRdio.UseVisualStyleBackColor = true;
+            // 
             // screenSettingsHolderPnl
             // 
             this.screenSettingsHolderPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -336,6 +355,79 @@
             this.screenSettingsHolderPnl.Name = "screenSettingsHolderPnl";
             this.screenSettingsHolderPnl.Size = new System.Drawing.Size(328, 225);
             this.screenSettingsHolderPnl.TabIndex = 4;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.saveNUpdtBtn);
+            this.flowLayoutPanel3.Controls.Add(this.saveToRdpFileBtn);
+            this.flowLayoutPanel3.Controls.Add(this.saveToXmlBtn);
+            this.flowLayoutPanel3.Controls.Add(this.connGivenBtn);
+            this.flowLayoutPanel3.Controls.Add(this.resetBtn);
+            this.flowLayoutPanel3.Controls.Add(this.screenSettingsHelpBtn);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(173, 3);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(148, 215);
+            this.flowLayoutPanel3.TabIndex = 1;
+            // 
+            // saveNUpdtBtn
+            // 
+            this.saveNUpdtBtn.Location = new System.Drawing.Point(19, 10);
+            this.saveNUpdtBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+            this.saveNUpdtBtn.Name = "saveNUpdtBtn";
+            this.saveNUpdtBtn.Size = new System.Drawing.Size(110, 23);
+            this.saveNUpdtBtn.TabIndex = 0;
+            this.saveNUpdtBtn.Text = "Save / Update";
+            this.saveNUpdtBtn.UseVisualStyleBackColor = true;
+            // 
+            // saveToRdpFileBtn
+            // 
+            this.saveToRdpFileBtn.Location = new System.Drawing.Point(19, 46);
+            this.saveToRdpFileBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+            this.saveToRdpFileBtn.Name = "saveToRdpFileBtn";
+            this.saveToRdpFileBtn.Size = new System.Drawing.Size(110, 23);
+            this.saveToRdpFileBtn.TabIndex = 5;
+            this.saveToRdpFileBtn.Text = "Save as .RDP";
+            this.saveToRdpFileBtn.UseVisualStyleBackColor = true;
+            // 
+            // saveToXmlBtn
+            // 
+            this.saveToXmlBtn.Location = new System.Drawing.Point(19, 82);
+            this.saveToXmlBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+            this.saveToXmlBtn.Name = "saveToXmlBtn";
+            this.saveToXmlBtn.Size = new System.Drawing.Size(110, 23);
+            this.saveToXmlBtn.TabIndex = 4;
+            this.saveToXmlBtn.Text = "Save as .XML";
+            this.saveToXmlBtn.UseVisualStyleBackColor = true;
+            // 
+            // connGivenBtn
+            // 
+            this.connGivenBtn.Location = new System.Drawing.Point(19, 118);
+            this.connGivenBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+            this.connGivenBtn.Name = "connGivenBtn";
+            this.connGivenBtn.Size = new System.Drawing.Size(110, 23);
+            this.connGivenBtn.TabIndex = 2;
+            this.connGivenBtn.Text = "Quick Connect";
+            this.connGivenBtn.UseVisualStyleBackColor = true;
+            // 
+            // resetBtn
+            // 
+            this.resetBtn.Location = new System.Drawing.Point(19, 154);
+            this.resetBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(110, 23);
+            this.resetBtn.TabIndex = 1;
+            this.resetBtn.Text = "Reset To Defaults";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            // 
+            // screenSettingsHelpBtn
+            // 
+            this.screenSettingsHelpBtn.Location = new System.Drawing.Point(88, 185);
+            this.screenSettingsHelpBtn.Margin = new System.Windows.Forms.Padding(88, 5, 3, 3);
+            this.screenSettingsHelpBtn.Name = "screenSettingsHelpBtn";
+            this.screenSettingsHelpBtn.Size = new System.Drawing.Size(40, 23);
+            this.screenSettingsHelpBtn.TabIndex = 3;
+            this.screenSettingsHelpBtn.Text = "Help!";
+            this.screenSettingsHelpBtn.UseVisualStyleBackColor = true;
             // 
             // screenSettingsPnl
             // 
@@ -350,19 +442,6 @@
             this.screenSettingsPnl.Name = "screenSettingsPnl";
             this.screenSettingsPnl.Size = new System.Drawing.Size(164, 215);
             this.screenSettingsPnl.TabIndex = 0;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.saveNUpdtBtn);
-            this.flowLayoutPanel3.Controls.Add(this.saveToRdpFileBtn);
-            this.flowLayoutPanel3.Controls.Add(this.saveToXmlBtn);
-            this.flowLayoutPanel3.Controls.Add(this.connGivenBtn);
-            this.flowLayoutPanel3.Controls.Add(this.resetBtn);
-            this.flowLayoutPanel3.Controls.Add(this.screenSettingsHelpBtn);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(173, 3);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(148, 215);
-            this.flowLayoutPanel3.TabIndex = 1;
             // 
             // fullscreenChckBox
             // 
@@ -438,86 +517,7 @@
             this.screenHeightTxtBox.Size = new System.Drawing.Size(105, 20);
             this.screenHeightTxtBox.TabIndex = 25;
             // 
-            // saveNUpdtBtn
-            // 
-            this.saveNUpdtBtn.Location = new System.Drawing.Point(19, 10);
-            this.saveNUpdtBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.saveNUpdtBtn.Name = "saveNUpdtBtn";
-            this.saveNUpdtBtn.Size = new System.Drawing.Size(110, 23);
-            this.saveNUpdtBtn.TabIndex = 0;
-            this.saveNUpdtBtn.Text = "Save / Update";
-            this.saveNUpdtBtn.UseVisualStyleBackColor = true;
-            // 
-            // resetBtn
-            // 
-            this.resetBtn.Location = new System.Drawing.Point(19, 154);
-            this.resetBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(110, 23);
-            this.resetBtn.TabIndex = 1;
-            this.resetBtn.Text = "Reset To Defaults";
-            this.resetBtn.UseVisualStyleBackColor = true;
-            // 
-            // connGivenBtn
-            // 
-            this.connGivenBtn.Location = new System.Drawing.Point(19, 118);
-            this.connGivenBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.connGivenBtn.Name = "connGivenBtn";
-            this.connGivenBtn.Size = new System.Drawing.Size(110, 23);
-            this.connGivenBtn.TabIndex = 2;
-            this.connGivenBtn.Text = "Quick Connect";
-            this.connGivenBtn.UseVisualStyleBackColor = true;
-            // 
-            // screenSettingsHelpBtn
-            // 
-            this.screenSettingsHelpBtn.Location = new System.Drawing.Point(88, 185);
-            this.screenSettingsHelpBtn.Margin = new System.Windows.Forms.Padding(88, 5, 3, 3);
-            this.screenSettingsHelpBtn.Name = "screenSettingsHelpBtn";
-            this.screenSettingsHelpBtn.Size = new System.Drawing.Size(40, 23);
-            this.screenSettingsHelpBtn.TabIndex = 3;
-            this.screenSettingsHelpBtn.Text = "Help!";
-            this.screenSettingsHelpBtn.UseVisualStyleBackColor = true;
-            // 
-            // saveToXmlBtn
-            // 
-            this.saveToXmlBtn.Location = new System.Drawing.Point(19, 82);
-            this.saveToXmlBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.saveToXmlBtn.Name = "saveToXmlBtn";
-            this.saveToXmlBtn.Size = new System.Drawing.Size(110, 23);
-            this.saveToXmlBtn.TabIndex = 4;
-            this.saveToXmlBtn.Text = "Save as .XML";
-            this.saveToXmlBtn.UseVisualStyleBackColor = true;
-            // 
-            // rdpCredsHelpBtn
-            // 
-            this.rdpCredsHelpBtn.Location = new System.Drawing.Point(174, 458);
-            this.rdpCredsHelpBtn.Margin = new System.Windows.Forms.Padding(174, 55, 3, 3);
-            this.rdpCredsHelpBtn.Name = "rdpCredsHelpBtn";
-            this.rdpCredsHelpBtn.Size = new System.Drawing.Size(40, 23);
-            this.rdpCredsHelpBtn.TabIndex = 16;
-            this.rdpCredsHelpBtn.Text = "Help!";
-            this.rdpCredsHelpBtn.UseVisualStyleBackColor = true;
-            // 
-            // recheckConnBtn
-            // 
-            this.recheckConnBtn.Location = new System.Drawing.Point(33, 228);
-            this.recheckConnBtn.Name = "recheckConnBtn";
-            this.recheckConnBtn.Size = new System.Drawing.Size(120, 23);
-            this.recheckConnBtn.TabIndex = 9;
-            this.recheckConnBtn.Text = "Recheck Connection";
-            this.recheckConnBtn.UseVisualStyleBackColor = true;
-            // 
-            // saveToRdpFileBtn
-            // 
-            this.saveToRdpFileBtn.Location = new System.Drawing.Point(19, 46);
-            this.saveToRdpFileBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.saveToRdpFileBtn.Name = "saveToRdpFileBtn";
-            this.saveToRdpFileBtn.Size = new System.Drawing.Size(110, 23);
-            this.saveToRdpFileBtn.TabIndex = 5;
-            this.saveToRdpFileBtn.Text = "Save as .RDP";
-            this.saveToRdpFileBtn.UseVisualStyleBackColor = true;
-            // 
-            // RDP
+            // Rdp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -525,27 +525,27 @@
             this.ControlBox = false;
             this.Controls.Add(this.screenSettingsHolderPnl);
             this.Controls.Add(this.currentRdpsPnl);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.connectionSettingsPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RDP";
+            this.Name = "Rdp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Proxy";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.connectionSettingsPnl.ResumeLayout(false);
+            this.connectionSettingsPnl.PerformLayout();
             this.currentRdpsPnl.ResumeLayout(false);
             this.currentRdpsPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isMstcRunningImgBox)).EndInit();
             this.screenSettingsHolderPnl.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
             this.screenSettingsPnl.ResumeLayout(false);
             this.screenSettingsPnl.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel connectionSettingsPnl;
         private System.Windows.Forms.Panel currentRdpsPnl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox isMstcRunningImgBox;
