@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class Proxy : Form, IProxy
+    public partial class MacAddress : Form, IMacAddress
     {
-        public Proxy()
+        public MacAddress()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class Options : Form
+    public partial class MAC : Form
     {
-        public Options()
+        public MAC()
         {
             InitializeComponent();
         }

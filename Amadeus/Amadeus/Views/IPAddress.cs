@@ -1,13 +1,15 @@
 ﻿using Amadeus.InterfacesForViews;
+using Amadeus.ViewModels;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class Proxy : Form, IProxy
+    public partial class IPAddress : Form, IIPAddress
     {
-        public Proxy()
+        public IPAddress()
         {
             InitializeComponent();
         }
+
     }
 }

@@ -4,19 +4,19 @@ using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class Rdp : Form, IRdp
+    public partial class MainMenuSub : Form, IMainMenuSub
     {
-        public Rdp()
+        public MainMenuSub()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void saveToFileBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

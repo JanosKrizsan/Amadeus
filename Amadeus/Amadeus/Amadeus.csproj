@@ -47,6 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfacesForViews\ISettings.cs" />
+    <Compile Include="InterfacesForViews\IMacAddress.cs" />
+    <Compile Include="InterfacesForViews\IMainMenu.cs" />
+    <Compile Include="InterfacesForViews\IMainMenuSub.cs" />
+    <Compile Include="InterfacesForViews\IProxy.cs" />
+    <Compile Include="InterfacesForViews\ISysLanguage.cs" />
+    <Compile Include="InterfacesForViews\IRdp.cs" />
+    <Compile Include="InterfacesForViews\IIpAddress.cs" />
+    <Compile Include="InterfacesForViews\IVpn.cs" />
+    <Compile Include="InterfacesForViews\ILoginWin.cs" />
     <Compile Include="LoginWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,7 +65,69 @@
     </Compile>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\LoginWinViewModel.cs" />
+    <Compile Include="Presenters\IPPresenter.cs" />
+    <Compile Include="Presenters\LoginPresenter.cs" />
+    <Compile Include="Presenters\MacPresenter.cs" />
+    <Compile Include="Presenters\MainMenuPresenter.cs" />
+    <Compile Include="Presenters\OptionsPresenter.cs" />
+    <Compile Include="Presenters\ProxyPresenter.cs" />
+    <Compile Include="Presenters\RdpPresenter.cs" />
+    <Compile Include="Presenters\SysLangPresenter.cs" />
+    <Compile Include="Presenters\VpnPresenter.cs" />
+    <Compile Include="Views\IPAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IPAddress.Designer.cs">
+      <DependentUpon>IPAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MacAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MacAddress.Designer.cs">
+      <DependentUpon>MacAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMenuSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainMenuSub.Designer.cs">
+      <DependentUpon>MainMenuSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Rdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Rdp.Designer.cs">
+      <DependentUpon>Rdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Proxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Proxy.Designer.cs">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SysLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SysLanguage.Designer.cs">
+      <DependentUpon>SysLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Vpn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Vpn.Designer.cs">
+      <DependentUpon>Vpn.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginWin.resx">
       <DependentUpon>LoginWin.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,6 +140,33 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\IPAddress.resx">
+      <DependentUpon>IPAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MacAddress.resx">
+      <DependentUpon>MacAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainMenuSub.resx">
+      <DependentUpon>MainMenuSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Rdp.resx">
+      <DependentUpon>Rdp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Proxy.resx">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SysLanguage.resx">
+      <DependentUpon>SysLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Vpn.resx">
+      <DependentUpon>Vpn.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,16 +176,38 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="DataScripts\Add-VPNConnection.ps1" />
+    <None Include="DataScripts\AddOrRemove-WindowsLanguage.ps1" />
+    <None Include="DataScripts\Change-IPAddress.ps1" />
+    <None Include="DataScripts\Execute-As-Admin.ps1" />
+    <None Include="DataScripts\Generate-MacAddress.ps1" />
+    <None Include="DataScripts\Get-Adapters.ps1" />
+    <None Include="DataScripts\Get-Geolocation.ps1" />
+    <None Include="DataScripts\Get-IPAddresses.ps1" />
+    <None Include="DataScripts\Get-Languages.ps1" />
+    <None Include="DataScripts\Get-VPNs.ps1" />
+    <None Include="DataScripts\Is-Language-Contained.ps1" />
+    <None Include="DataScripts\Notify-LanguageSettings.ps1" />
+    <None Include="DataScripts\Remove-VPNConnection.ps1" />
+    <None Include="DataScripts\Scan-AvilableIPs.ps1" />
+    <None Include="DataScripts\Set-LangOverride.ps1" />
+    <None Include="DataScripts\Set-MacAddress.ps1" />
+    <None Include="DataScripts\Set-VPNConnection.ps1" />
+    <None Include="DataScripts\Toggle-Proxy-Connection.ps1" />
+    <None Include="DataScripts\Toggle-RDP-Connection.ps1" />
+    <None Include="DataScripts\Toggle-VPNAutoConnectionApp.ps1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
-    <Folder Include="DataFiles\" />
-    <Folder Include="Scripts\" />
-    <Folder Include="ViewInterfaces\" />
-    <Folder Include="Views\" />
+    <Folder Include="InterfacesForModels\" />
+    <Folder Include="InterfacesForPresenters\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataFiles\macVendors.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

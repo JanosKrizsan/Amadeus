@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Amadeus.ViewModels
+namespace Amadeus.InterfacesForViews
 {
-    internal class LoginWinViewModel
+    interface IMainMenu
     {
-        internal LoginWinViewModel()
-        {
-
-        }
     }
 }
