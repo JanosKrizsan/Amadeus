@@ -126,6 +126,7 @@ This readme will be updated consistently.
 [MVP](https://stackoverflow.com/questions/4794121/model-view-presenter-in-winforms)<br>
 [More MVP](https://www.codeproject.com/Articles/14660/WinForms-Model-View-Presenter)<br>
 [MVP Example](https://codereview.stackexchange.com/questions/131330/model-view-presenter-winforms-app)
+[MVP MVC](https://stackoverflow.com/questions/2056/what-are-mvp-and-mvc-and-what-is-the-difference)
 
 
 
