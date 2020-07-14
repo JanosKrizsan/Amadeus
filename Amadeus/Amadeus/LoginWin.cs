@@ -1,24 +1,17 @@
 ﻿using Amadeus.InterfacesForViews;
-using System;
+using Amadeus.Models;
+using Amadeus.Presenters;
 using System.Windows.Forms;
 
 namespace Amadeus
 {
-    public partial class LoginWin : Form, ILoginWin
+    public partial class LoginWin : Form, ILoginWinPres
     {
+        private LoginPresenter _presenter;
         public LoginWin()
         {
+            _presenter = new LoginPresenter(new LoginModel(), this);
             InitializeComponent();
-        }
-
-        private void LoginWin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

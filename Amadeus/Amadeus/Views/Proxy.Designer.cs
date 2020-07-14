@@ -51,8 +51,8 @@
             this.deleteSavedBtn = new System.Windows.Forms.Button();
             this.importProxiesPnl = new System.Windows.Forms.FlowLayoutPanel();
             this.importProxiesLbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.selectTextFileBtn = new System.Windows.Forms.Button();
+            this.helpImportBtn = new System.Windows.Forms.Button();
             this.addNewProxyPnl.SuspendLayout();
             this.savedProxiesPnl.SuspendLayout();
             this.importProxiesPnl.SuspendLayout();
@@ -293,8 +293,8 @@
             // 
             this.importProxiesPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.importProxiesPnl.Controls.Add(this.importProxiesLbl);
-            this.importProxiesPnl.Controls.Add(this.button1);
-            this.importProxiesPnl.Controls.Add(this.button2);
+            this.importProxiesPnl.Controls.Add(this.selectTextFileBtn);
+            this.importProxiesPnl.Controls.Add(this.helpImportBtn);
             this.importProxiesPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.importProxiesPnl.Location = new System.Drawing.Point(12, 12);
             this.importProxiesPnl.Name = "importProxiesPnl";
@@ -312,25 +312,25 @@
             this.importProxiesLbl.TabIndex = 1;
             this.importProxiesLbl.Text = "Import Proxies";
             // 
-            // button1
+            // selectTextFileBtn
             // 
-            this.button1.Location = new System.Drawing.Point(20, 78);
-            this.button1.Margin = new System.Windows.Forms.Padding(20, 40, 20, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Select Text File";
-            this.button1.UseVisualStyleBackColor = true;
+            this.selectTextFileBtn.Location = new System.Drawing.Point(20, 78);
+            this.selectTextFileBtn.Margin = new System.Windows.Forms.Padding(20, 40, 20, 3);
+            this.selectTextFileBtn.Name = "selectTextFileBtn";
+            this.selectTextFileBtn.Size = new System.Drawing.Size(100, 23);
+            this.selectTextFileBtn.TabIndex = 0;
+            this.selectTextFileBtn.Text = "Select Text File";
+            this.selectTextFileBtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // helpImportBtn
             // 
-            this.button2.Location = new System.Drawing.Point(30, 119);
-            this.button2.Margin = new System.Windows.Forms.Padding(30, 15, 30, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Help!";
-            this.button2.UseVisualStyleBackColor = true;
+            this.helpImportBtn.Location = new System.Drawing.Point(30, 119);
+            this.helpImportBtn.Margin = new System.Windows.Forms.Padding(30, 15, 30, 3);
+            this.helpImportBtn.Name = "helpImportBtn";
+            this.helpImportBtn.Size = new System.Drawing.Size(80, 23);
+            this.helpImportBtn.TabIndex = 2;
+            this.helpImportBtn.Text = "Help!";
+            this.helpImportBtn.UseVisualStyleBackColor = true;
             // 
             // Proxy
             // 
@@ -380,7 +380,7 @@
         private System.Windows.Forms.Button editSavedBtn;
         private System.Windows.Forms.Button deleteSavedBtn;
         private System.Windows.Forms.Label importProxiesLbl;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button selectTextFileBtn;
+        private System.Windows.Forms.Button helpImportBtn;
     }
 }

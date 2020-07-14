@@ -1,4 +1,4 @@
-﻿using Amadeus.ViewModels;
+﻿using Amadeus.Presenters;
 
 namespace Amadeus
 {
@@ -81,7 +81,6 @@ namespace Amadeus
             resources.ApplyResources(this.quitButton, "quitButton");
             this.quitButton.Name = "quitButton";
             this.quitButton.UseVisualStyleBackColor = false;
-            this.quitButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // loginBottomPanel
             // 
@@ -123,7 +122,6 @@ namespace Amadeus
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginWin";
             this.ShowIcon = false;
-            this.Load += new System.EventHandler(this.LoginWin_Load);
             this.loginBottomPanel.ResumeLayout(false);
             this.loginTopPanel.ResumeLayout(false);
             this.loginTopPanel.PerformLayout();

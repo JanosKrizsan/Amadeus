@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.reportingOpersPnl = new System.Windows.Forms.Panel();
+            this.menuSubHelpBtn = new System.Windows.Forms.Button();
             this.removeSelectedBtn = new System.Windows.Forms.Button();
             this.stopCurrentBtn = new System.Windows.Forms.Button();
             this.runCustomBtn = new System.Windows.Forms.Button();
@@ -43,29 +44,37 @@
             this.currentStatusBar = new System.Windows.Forms.ProgressBar();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.procStatusLbl = new System.Windows.Forms.Label();
-            this.menuSubHelpBtn = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.reportingOpersPnl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // reportingOpersPnl
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.menuSubHelpBtn);
-            this.panel1.Controls.Add(this.removeSelectedBtn);
-            this.panel1.Controls.Add(this.stopCurrentBtn);
-            this.panel1.Controls.Add(this.runCustomBtn);
-            this.panel1.Controls.Add(this.createNewBtn);
-            this.panel1.Controls.Add(this.scriptLbl);
-            this.panel1.Controls.Add(this.saveAsCsvBtn);
-            this.panel1.Controls.Add(this.saveAsXmlBtn);
-            this.panel1.Controls.Add(this.resetCrntBtn);
-            this.panel1.Controls.Add(this.openFileBtn);
-            this.panel1.Controls.Add(this.reportingLbl);
-            this.panel1.Controls.Add(this.saveAsTxtBtn);
-            this.panel1.Location = new System.Drawing.Point(12, 308);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(592, 202);
-            this.panel1.TabIndex = 0;
+            this.reportingOpersPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.reportingOpersPnl.Controls.Add(this.menuSubHelpBtn);
+            this.reportingOpersPnl.Controls.Add(this.removeSelectedBtn);
+            this.reportingOpersPnl.Controls.Add(this.stopCurrentBtn);
+            this.reportingOpersPnl.Controls.Add(this.runCustomBtn);
+            this.reportingOpersPnl.Controls.Add(this.createNewBtn);
+            this.reportingOpersPnl.Controls.Add(this.scriptLbl);
+            this.reportingOpersPnl.Controls.Add(this.saveAsCsvBtn);
+            this.reportingOpersPnl.Controls.Add(this.saveAsXmlBtn);
+            this.reportingOpersPnl.Controls.Add(this.resetCrntBtn);
+            this.reportingOpersPnl.Controls.Add(this.openFileBtn);
+            this.reportingOpersPnl.Controls.Add(this.reportingLbl);
+            this.reportingOpersPnl.Controls.Add(this.saveAsTxtBtn);
+            this.reportingOpersPnl.Location = new System.Drawing.Point(12, 308);
+            this.reportingOpersPnl.Name = "reportingOpersPnl";
+            this.reportingOpersPnl.Size = new System.Drawing.Size(592, 202);
+            this.reportingOpersPnl.TabIndex = 0;
+            // 
+            // menuSubHelpBtn
+            // 
+            this.menuSubHelpBtn.Location = new System.Drawing.Point(502, 172);
+            this.menuSubHelpBtn.Name = "menuSubHelpBtn";
+            this.menuSubHelpBtn.Size = new System.Drawing.Size(83, 23);
+            this.menuSubHelpBtn.TabIndex = 11;
+            this.menuSubHelpBtn.Text = "Help!";
+            this.menuSubHelpBtn.UseVisualStyleBackColor = true;
             // 
             // removeSelectedBtn
             // 
@@ -167,7 +176,6 @@
             this.saveAsTxtBtn.TabIndex = 0;
             this.saveAsTxtBtn.Text = "Save as Text";
             this.saveAsTxtBtn.UseVisualStyleBackColor = true;
-            this.saveAsTxtBtn.Click += new System.EventHandler(this.saveToFileBtn_Click);
             // 
             // currentStatusBar
             // 
@@ -199,15 +207,6 @@
             this.procStatusLbl.TabIndex = 3;
             this.procStatusLbl.Text = "Idle";
             // 
-            // menuSubHelpBtn
-            // 
-            this.menuSubHelpBtn.Location = new System.Drawing.Point(502, 172);
-            this.menuSubHelpBtn.Name = "menuSubHelpBtn";
-            this.menuSubHelpBtn.Size = new System.Drawing.Size(83, 23);
-            this.menuSubHelpBtn.TabIndex = 11;
-            this.menuSubHelpBtn.Text = "Help!";
-            this.menuSubHelpBtn.UseVisualStyleBackColor = true;
-            // 
             // MainMenuSub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,13 +216,13 @@
             this.Controls.Add(this.procStatusLbl);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.currentStatusBar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.reportingOpersPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenuSub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MainMenuSub";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.reportingOpersPnl.ResumeLayout(false);
+            this.reportingOpersPnl.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,7 +230,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel reportingOpersPnl;
         private System.Windows.Forms.Label reportingLbl;
         private System.Windows.Forms.Button saveAsTxtBtn;
         private System.Windows.Forms.ProgressBar currentStatusBar;

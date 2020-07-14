@@ -3,12 +3,12 @@ using Amadeus.InterfacesForViews;
 
 namespace Amadeus.Presenters
 {
-    class ProxyPresenter
+    class SettingsPresenter
     {
-        private IProxyMod _model;
-        private IProxyPres _view;
+        private ISettingsMod _model;
+        private ISettingsPres _view;
 
-        public ProxyPresenter(IProxyMod model, IProxyPres view)
+        public SettingsPresenter(ISettingsMod model, ISettingsPres view)
         {
             _model = model;
             _view = view;

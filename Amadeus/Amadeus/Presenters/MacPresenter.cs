@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Amadeus.InterfacesForModels;
+using Amadeus.InterfacesForViews;
 
-namespace Amadeus.ViewModels
+namespace Amadeus.Presenters
 {
-    class MACVM
+    class MacPresenter
     {
+        private IMacMod _model;
+        private IMacAddressPres _view;
+
+        public MacPresenter(IMacMod model, IMacAddressPres view)
+        {
+            _model = model;
+            _view = view;
+        }
     }
 }

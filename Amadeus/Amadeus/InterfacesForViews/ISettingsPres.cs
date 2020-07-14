@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForViews
 {
-    interface IVpn
+    interface ISettingsPres
     {
     }
 }

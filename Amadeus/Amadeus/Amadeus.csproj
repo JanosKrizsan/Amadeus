@@ -47,16 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InterfacesForViews\ISettings.cs" />
-    <Compile Include="InterfacesForViews\IMacAddress.cs" />
-    <Compile Include="InterfacesForViews\IMainMenu.cs" />
-    <Compile Include="InterfacesForViews\IMainMenuSub.cs" />
-    <Compile Include="InterfacesForViews\IProxy.cs" />
-    <Compile Include="InterfacesForViews\ISysLanguage.cs" />
-    <Compile Include="InterfacesForViews\IRdp.cs" />
-    <Compile Include="InterfacesForViews\IIpAddress.cs" />
-    <Compile Include="InterfacesForViews\IVpn.cs" />
-    <Compile Include="InterfacesForViews\ILoginWin.cs" />
+    <Compile Include="InterfacesForModels\ILoginMod.cs" />
+    <Compile Include="InterfacesForModels\IMacMod.cs" />
+    <Compile Include="InterfacesForModels\IMainMenuMod.cs" />
+    <Compile Include="InterfacesForModels\IMainMenuSubMod.cs" />
+    <Compile Include="InterfacesForModels\IVpnMod.cs" />
+    <Compile Include="InterfacesForModels\ISysLanguageMod.cs" />
+    <Compile Include="InterfacesForModels\ISettingsMod.cs" />
+    <Compile Include="InterfacesForModels\IRdpMod.cs" />
+    <Compile Include="InterfacesForModels\IProxyMod.cs" />
+    <Compile Include="InterfacesForModels\IIpMod.cs" />
+    <Compile Include="InterfacesForViews\ISettingsPres.cs" />
+    <Compile Include="InterfacesForViews\IMacAddressPres.cs" />
+    <Compile Include="InterfacesForViews\IMainMenuPres.cs" />
+    <Compile Include="InterfacesForViews\IMainMenuSubPres.cs" />
+    <Compile Include="InterfacesForViews\IProxyPres.cs" />
+    <Compile Include="InterfacesForViews\ISysLanguagePRes.cs" />
+    <Compile Include="InterfacesForViews\IRdpPres.cs" />
+    <Compile Include="InterfacesForViews\IIpAddressPres.cs" />
+    <Compile Include="InterfacesForViews\IVpnPres.cs" />
+    <Compile Include="InterfacesForViews\ILoginWinPres.cs" />
     <Compile Include="LoginWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +74,23 @@
       <DependentUpon>LoginWin.cs</DependentUpon>
     </Compile>
     <Compile Include="App.cs" />
+    <Compile Include="Models\MainMenuSubModel.cs" />
+    <Compile Include="Models\MainMenuModel.cs" />
+    <Compile Include="Models\SettingsModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\VpnModel.cs" />
+    <Compile Include="Models\SysLanguageModel.cs" />
+    <Compile Include="Models\RdpModel.cs" />
+    <Compile Include="Models\ProxyModel.cs" />
+    <Compile Include="Models\MacModel.cs" />
+    <Compile Include="Models\IPModel.cs" />
+    <Compile Include="Presenters\MainMenuSubPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Presenters\IPPresenter.cs" />
     <Compile Include="Presenters\LoginPresenter.cs" />
     <Compile Include="Presenters\MacPresenter.cs" />
     <Compile Include="Presenters\MainMenuPresenter.cs" />
-    <Compile Include="Presenters\OptionsPresenter.cs" />
+    <Compile Include="Presenters\SettingsPresenter.cs" />
     <Compile Include="Presenters\ProxyPresenter.cs" />
     <Compile Include="Presenters\RdpPresenter.cs" />
     <Compile Include="Presenters\SysLangPresenter.cs" />
@@ -201,10 +222,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataAccess\" />
-    <Folder Include="InterfacesForModels\" />
-    <Folder Include="InterfacesForPresenters\" />
-    <Folder Include="Models\" />
+    <Folder Include="CommonInterfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataFiles\macVendors.txt" />

@@ -1,24 +1,17 @@
 ﻿using Amadeus.InterfacesForViews;
-using System;
+using Amadeus.Models;
+using Amadeus.Presenters;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class SysLanguage : Form, ISysLanguage
+    public partial class SysLanguage : Form, ISysLangPres
     {
+        private SysLangPresenter _presenter;
         public SysLanguage()
         {
+            _presenter = new SysLangPresenter(new SysLangModel(), this);
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

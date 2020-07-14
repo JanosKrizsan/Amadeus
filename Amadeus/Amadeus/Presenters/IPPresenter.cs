@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Amadeus.InterfacesForModels;
+using Amadeus.InterfacesForViews;
 
-namespace Amadeus.ViewModels
+namespace Amadeus.Presenters
 {
     class IPPresenter
     {
+        private IIpMod _model;
+        private IIPAddressPres _view;
 
+        public IPPresenter(IIpMod model, IIPAddressPres view)
+        {
+            _model = model;
+            _view = view;
+        }
     }
 }

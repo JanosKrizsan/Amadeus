@@ -44,7 +44,7 @@
             this.rdpCredsHelpBtn = new System.Windows.Forms.Button();
             this.currentRdpsPnl = new System.Windows.Forms.Panel();
             this.recheckConnBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.connStatusLbl = new System.Windows.Forms.Label();
             this.isMstcRunningImgBox = new System.Windows.Forms.PictureBox();
             this.editCrntBtn = new System.Windows.Forms.Button();
             this.delCrntBtn = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.savedRdpsLbl = new System.Windows.Forms.Label();
             this.onlyRdpFilesRdio = new System.Windows.Forms.RadioButton();
             this.screenSettingsHolderPnl = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.rdpButtonsPnl = new System.Windows.Forms.FlowLayoutPanel();
             this.saveNUpdtBtn = new System.Windows.Forms.Button();
             this.saveToRdpFileBtn = new System.Windows.Forms.Button();
             this.saveToXmlBtn = new System.Windows.Forms.Button();
@@ -73,7 +73,7 @@
             this.currentRdpsPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isMstcRunningImgBox)).BeginInit();
             this.screenSettingsHolderPnl.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.rdpButtonsPnl.SuspendLayout();
             this.screenSettingsPnl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +98,6 @@
             this.connectionSettingsPnl.Name = "connectionSettingsPnl";
             this.connectionSettingsPnl.Size = new System.Drawing.Size(244, 498);
             this.connectionSettingsPnl.TabIndex = 0;
-            this.connectionSettingsPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // connLbl
             // 
@@ -118,7 +117,6 @@
             this.connTxtBox.Name = "connTxtBox";
             this.connTxtBox.Size = new System.Drawing.Size(120, 20);
             this.connTxtBox.TabIndex = 1;
-            this.connTxtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // addressLbl
             // 
@@ -239,7 +237,7 @@
             // 
             this.currentRdpsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.currentRdpsPnl.Controls.Add(this.recheckConnBtn);
-            this.currentRdpsPnl.Controls.Add(this.label1);
+            this.currentRdpsPnl.Controls.Add(this.connStatusLbl);
             this.currentRdpsPnl.Controls.Add(this.isMstcRunningImgBox);
             this.currentRdpsPnl.Controls.Add(this.editCrntBtn);
             this.currentRdpsPnl.Controls.Add(this.delCrntBtn);
@@ -262,15 +260,15 @@
             this.recheckConnBtn.Text = "Recheck Connection";
             this.recheckConnBtn.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // connStatusLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 129);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Connection Status:";
+            this.connStatusLbl.AutoSize = true;
+            this.connStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connStatusLbl.Location = new System.Drawing.Point(175, 129);
+            this.connStatusLbl.Name = "connStatusLbl";
+            this.connStatusLbl.Size = new System.Drawing.Size(127, 17);
+            this.connStatusLbl.TabIndex = 8;
+            this.connStatusLbl.Text = "Connection Status:";
             // 
             // isMstcRunningImgBox
             // 
@@ -349,25 +347,25 @@
             // screenSettingsHolderPnl
             // 
             this.screenSettingsHolderPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.screenSettingsHolderPnl.Controls.Add(this.flowLayoutPanel3);
+            this.screenSettingsHolderPnl.Controls.Add(this.rdpButtonsPnl);
             this.screenSettingsHolderPnl.Controls.Add(this.screenSettingsPnl);
             this.screenSettingsHolderPnl.Location = new System.Drawing.Point(276, 285);
             this.screenSettingsHolderPnl.Name = "screenSettingsHolderPnl";
             this.screenSettingsHolderPnl.Size = new System.Drawing.Size(328, 225);
             this.screenSettingsHolderPnl.TabIndex = 4;
             // 
-            // flowLayoutPanel3
+            // rdpButtonsPnl
             // 
-            this.flowLayoutPanel3.Controls.Add(this.saveNUpdtBtn);
-            this.flowLayoutPanel3.Controls.Add(this.saveToRdpFileBtn);
-            this.flowLayoutPanel3.Controls.Add(this.saveToXmlBtn);
-            this.flowLayoutPanel3.Controls.Add(this.connGivenBtn);
-            this.flowLayoutPanel3.Controls.Add(this.resetBtn);
-            this.flowLayoutPanel3.Controls.Add(this.screenSettingsHelpBtn);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(173, 3);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(148, 215);
-            this.flowLayoutPanel3.TabIndex = 1;
+            this.rdpButtonsPnl.Controls.Add(this.saveNUpdtBtn);
+            this.rdpButtonsPnl.Controls.Add(this.saveToRdpFileBtn);
+            this.rdpButtonsPnl.Controls.Add(this.saveToXmlBtn);
+            this.rdpButtonsPnl.Controls.Add(this.connGivenBtn);
+            this.rdpButtonsPnl.Controls.Add(this.resetBtn);
+            this.rdpButtonsPnl.Controls.Add(this.screenSettingsHelpBtn);
+            this.rdpButtonsPnl.Location = new System.Drawing.Point(173, 3);
+            this.rdpButtonsPnl.Name = "rdpButtonsPnl";
+            this.rdpButtonsPnl.Size = new System.Drawing.Size(148, 215);
+            this.rdpButtonsPnl.TabIndex = 1;
             // 
             // saveNUpdtBtn
             // 
@@ -536,7 +534,7 @@
             this.currentRdpsPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isMstcRunningImgBox)).EndInit();
             this.screenSettingsHolderPnl.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this.rdpButtonsPnl.ResumeLayout(false);
             this.screenSettingsPnl.ResumeLayout(false);
             this.screenSettingsPnl.PerformLayout();
             this.ResumeLayout(false);
@@ -547,7 +545,7 @@
 
         private System.Windows.Forms.FlowLayoutPanel connectionSettingsPnl;
         private System.Windows.Forms.Panel currentRdpsPnl;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label connStatusLbl;
         private System.Windows.Forms.PictureBox isMstcRunningImgBox;
         private System.Windows.Forms.Button editCrntBtn;
         private System.Windows.Forms.Button delCrntBtn;
@@ -569,7 +567,7 @@
         private System.Windows.Forms.CheckBox remGuardChckBox;
         private System.Windows.Forms.CheckBox restrictedAdminChckBox;
         private System.Windows.Forms.Panel screenSettingsHolderPnl;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel rdpButtonsPnl;
         private System.Windows.Forms.Button saveNUpdtBtn;
         private System.Windows.Forms.Button saveToXmlBtn;
         private System.Windows.Forms.Button connGivenBtn;

@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Amadeus.InterfacesForModels;
+using Amadeus.InterfacesForViews;
 
-namespace Amadeus.ViewModels
+namespace Amadeus.Presenters
 {
     class SysLangPresenter
     {
+        private ISysLanguageMod _model;
+        private ISysLangPres _view;
+
+        public SysLangPresenter(ISysLanguageMod model, ISysLangPres view)
+        {
+            _model = model;
+            _view = view;
+        }
     }
 }

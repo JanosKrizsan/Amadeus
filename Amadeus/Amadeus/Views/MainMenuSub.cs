@@ -1,24 +1,18 @@
 ﻿using Amadeus.InterfacesForViews;
+using Amadeus.Models;
+using Amadeus.Presenters;
 using System;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    public partial class MainMenuSub : Form, IMainMenuSub
+    public partial class MainMenuSub : Form, IMainMenuSubPres
     {
+        private MainMenuSubPresenter _presenter;
         public MainMenuSub()
         {
+            _presenter = new MainMenuSubPresenter(new MainMenuSubModel(), this);
             InitializeComponent();
-        }
-
-        private void saveToFileBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

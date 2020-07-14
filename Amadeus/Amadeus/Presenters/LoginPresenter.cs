@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Amadeus.InterfacesForModels;
+using Amadeus.InterfacesForViews;
 
-namespace Amadeus.ViewModels
+namespace Amadeus.Presenters
 {
-    public class LoginPresenter
+    class LoginPresenter
     {
-        public LoginPresenter()
-        {
+        private ILoginMod _model;
+        private ILoginWinPres _view;
 
+        public LoginPresenter(ILoginMod model, ILoginWinPres view)
+        {
+            _model = model;
+            _view = view;
         }
     }
 }

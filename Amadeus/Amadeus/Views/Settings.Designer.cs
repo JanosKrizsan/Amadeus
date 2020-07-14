@@ -97,7 +97,7 @@
             // 
             // loadStngsBtn
             // 
-            this.loadStngsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.loadStngsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.loadStngsBtn.Location = new System.Drawing.Point(3, 10);
             this.loadStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
@@ -106,7 +106,6 @@
             this.loadStngsBtn.TabIndex = 7;
             this.loadStngsBtn.Text = "Load Settings";
             this.loadStngsBtn.UseVisualStyleBackColor = true;
-            this.loadStngsBtn.Click += new System.EventHandler(this.button5_Click);
             // 
             // userinfoPnl
             // 
@@ -418,7 +417,6 @@
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Options";
-            this.Load += new System.EventHandler(this.Options_Load);
             this.userinfoPnl.ResumeLayout(false);
             this.userinfoPnl.PerformLayout();
             this.settingsBtnsPnl.ResumeLayout(false);

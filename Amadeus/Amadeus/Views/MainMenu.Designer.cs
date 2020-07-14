@@ -61,7 +61,6 @@
             this.mainMenuSelectPanel.Name = "mainMenuSelectPanel";
             this.mainMenuSelectPanel.Size = new System.Drawing.Size(150, 561);
             this.mainMenuSelectPanel.TabIndex = 0;
-            this.mainMenuSelectPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainMenuSelectPanel_Paint);
             // 
             // mainMenuBtn
             // 
