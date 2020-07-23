@@ -1,4 +1,5 @@
 ﻿using Amadeus.Presenters;
+using System.Windows.Forms;
 
 namespace Amadeus
 {
@@ -30,6 +31,7 @@ namespace Amadeus
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWin));
             this.stayLoggedInChck = new System.Windows.Forms.CheckBox();
             this.loginButton = new System.Windows.Forms.Button();
