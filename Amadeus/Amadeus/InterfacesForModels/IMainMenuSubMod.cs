@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface IMainMenuSubMod
+    interface IMainMenuSubMod : ICommon
     {
     }
 }

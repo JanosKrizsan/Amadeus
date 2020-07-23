@@ -1,6 +1,7 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface IVpnMod
+    interface IVpnMod : ICommon
     {
+
     }
 }

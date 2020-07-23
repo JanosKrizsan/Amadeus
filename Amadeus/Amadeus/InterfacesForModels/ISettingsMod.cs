@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface ISettingsMod
+    interface ISettingsMod : ICommon
     {
     }
 }

@@ -3,15 +3,13 @@ using Amadeus.Models;
 using Amadeus.Presenters;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class Proxy : Form, IProxyPres
+    public partial class Proxy : Form
     {
-        private ProxyPresenter _presenter;
 
         public Proxy()
         {
-            _presenter = new ProxyPresenter(new ProxyModel(), this);
             InitializeComponent();
         }
     }

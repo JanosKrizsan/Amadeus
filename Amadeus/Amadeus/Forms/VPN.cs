@@ -3,14 +3,12 @@ using Amadeus.Models;
 using Amadeus.Presenters;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class Vpn : Form, IVpnPres
+    public partial class Vpn : Form
     {
-        private VpnPresenter _presenter;
         public Vpn()
         {
-            _presenter = new VpnPresenter(new VpnModel(), this);
             InitializeComponent();
         }
     }

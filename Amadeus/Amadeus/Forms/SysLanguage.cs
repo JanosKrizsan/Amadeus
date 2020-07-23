@@ -3,14 +3,12 @@ using Amadeus.Models;
 using Amadeus.Presenters;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class SysLanguage : Form, ISysLangPres
+    public partial class SysLanguage : Form
     {
-        private SysLangPresenter _presenter;
         public SysLanguage()
         {
-            _presenter = new SysLangPresenter(new SysLangModel(), this);
             InitializeComponent();
         }
     }

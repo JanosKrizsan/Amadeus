@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface IMacMod
+    interface IMacMod : ICommon
     {
     }
 }

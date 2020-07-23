@@ -3,16 +3,13 @@ using Amadeus.Models;
 using Amadeus.Presenters;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class IPAddress : Form, IIPAddressPres
+    public partial class IPAddress : Form
     {
-        private IPPresenter _presenter;
         public IPAddress()
         {
-            _presenter = new IPPresenter(new IPModel(), this);
             InitializeComponent();
         }
-
     }
 }

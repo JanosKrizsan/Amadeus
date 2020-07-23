@@ -4,14 +4,12 @@ using Amadeus.Presenters;
 using System;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class Settings : Form, ISettingsPres
+    public partial class Settings : Form
     {
-        private SettingsPresenter _presenter;
         public Settings()
         {
-            _presenter = new SettingsPresenter(new SettingsModel(), this);
             InitializeComponent();
         }
     }

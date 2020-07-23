@@ -4,14 +4,12 @@ using Amadeus.Presenters;
 using System;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class MainMenuSub : Form, IMainMenuSubPres
+    public partial class MainMenuSub : Form
     {
-        private MainMenuSubPresenter _presenter;
         public MainMenuSub()
         {
-            _presenter = new MainMenuSubPresenter(new MainMenuSubModel(), this);
             InitializeComponent();
         }
     }

@@ -3,14 +3,12 @@ using Amadeus.Models;
 using Amadeus.Presenters;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class MacAddress : Form, IMacAddressPres
+    public partial class MacAddress : Form
     {
-        private MacPresenter _presenter;
         public MacAddress()
         {
-            _presenter = new MacPresenter(new MacModel(), this);
             InitializeComponent();
         }
     }

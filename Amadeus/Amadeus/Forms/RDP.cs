@@ -4,14 +4,12 @@ using Amadeus.Presenters;
 using System;
 using System.Windows.Forms;
 
-namespace Amadeus.Views
+namespace Amadeus.Forms
 {
-    public partial class Rdp : Form, IRdpPres
+    public partial class Rdp : Form
     {
-        private RdpPresenter _presenter;
         public Rdp()
         {
-            _presenter = new RdpPresenter(new RdpModel(), this);
             InitializeComponent();
         }
     }

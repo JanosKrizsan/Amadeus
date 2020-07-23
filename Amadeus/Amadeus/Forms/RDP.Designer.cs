@@ -1,4 +1,4 @@
-﻿namespace Amadeus.Views
+﻿namespace Amadeus.Forms
 {
     partial class Rdp
     {

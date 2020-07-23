@@ -8,6 +8,7 @@ namespace Amadeus
     public partial class LoginWin : Form, ILoginWinPres
     {
         private LoginPresenter _presenter;
+
         public LoginWin()
         {
             _presenter = new LoginPresenter(new LoginModel(), this);
