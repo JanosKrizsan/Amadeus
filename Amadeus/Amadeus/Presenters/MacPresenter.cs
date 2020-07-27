@@ -1,13 +1,15 @@
 ﻿using Amadeus.InterfacesForModels;
+using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
 
 namespace Amadeus.Presenters
 {
-    class MacPresenter
+    class MacPresenter : CommonPresenter, IMacPres
     {
-        public MacPresenter()
+        public MacPresenter(ICommonView view, ICommonModel model)
         {
-
+            _view = view;
+            _model = model;
         }
     }
 }

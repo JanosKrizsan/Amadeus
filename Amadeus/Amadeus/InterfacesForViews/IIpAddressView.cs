@@ -2,7 +2,7 @@
 
 namespace Amadeus.InterfacesForViews
 {
-    interface IIPAddressPres
+    interface IIpAddressView
     {
 
     }

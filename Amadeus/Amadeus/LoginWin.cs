@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Amadeus
 {
-    public partial class LoginWin : Form, ILoginWinPres
+    public partial class LoginWin : Form, ILoginWinView
     {
         private LoginPresenter _presenter;
 

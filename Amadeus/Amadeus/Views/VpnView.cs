@@ -1,12 +1,14 @@
 ﻿using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    class VpnView : CommonView, IVpnPres
+    class VpnView : CommonView, IVpnView
     {
-        #region Form Objects
-        #endregion
-
+        public VpnView(Form form)
+        {
+            _form = form;
+        }
     }
 }

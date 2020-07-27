@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface ISysLanguageMod : ICommon
+    interface ISysLanguageMod : ICommonModel
     {
     }
 }

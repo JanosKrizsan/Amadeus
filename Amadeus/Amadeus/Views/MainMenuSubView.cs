@@ -1,15 +1,15 @@
 ﻿using Amadeus.InterfacesForModels;
 using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
-    abstract class CommonView : ICommonView
+    class MainMenuSubView : CommonView, IMainMenuSubView
     {
-        internal Form _form;
-        public void ShowForm()
+        public MainMenuSubView(Form form)
         {
-            _form.ShowDialog();
+            _form = form;
         }
     }
 }

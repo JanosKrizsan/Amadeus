@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface IProxyMod : ICommon
+    interface IProxyMod : ICommonModel
     {
     }
 }

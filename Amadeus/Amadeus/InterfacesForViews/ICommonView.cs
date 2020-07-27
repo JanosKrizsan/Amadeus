@@ -2,7 +2,7 @@
 
 namespace Amadeus.InterfacesForViews
 {
-    interface ICommon
+    interface ICommonView
     {
         void ShowForm();
     }

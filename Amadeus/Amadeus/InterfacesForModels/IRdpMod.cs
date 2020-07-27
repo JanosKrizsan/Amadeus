@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface IRdpMod : ICommon
+    interface IRdpMod : ICommonModel
     {
     }
 }

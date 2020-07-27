@@ -1,13 +1,15 @@
 ﻿using Amadeus.InterfacesForModels;
+using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
 
 namespace Amadeus.Presenters
 {
-    class IPPresenter
+    class IPPresenter : CommonPresenter, IIPPRes
     {
-        public IPPresenter()
+        public IPPresenter(ICommonView view, ICommonModel model)
         {
-
+            _view = view;
+            _model = model;
         }
     }
 }

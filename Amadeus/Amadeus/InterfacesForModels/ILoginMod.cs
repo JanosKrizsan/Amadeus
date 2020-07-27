@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForModels
 {
-    interface ILoginMod : ICommon
+    interface ILoginMod : ICommonModel
     {
     }
 }
