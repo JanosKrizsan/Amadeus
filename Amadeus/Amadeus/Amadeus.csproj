@@ -51,12 +51,14 @@
     <Compile Include="InterfacesForModels\IMacMod.cs" />
     <Compile Include="InterfacesForModels\IMainMenuMod.cs" />
     <Compile Include="InterfacesForModels\IMainMenuSubMod.cs" />
+    <Compile Include="InterfacesForModels\ICommon.cs" />
     <Compile Include="InterfacesForModels\IVpnMod.cs" />
     <Compile Include="InterfacesForModels\ISysLanguageMod.cs" />
     <Compile Include="InterfacesForModels\ISettingsMod.cs" />
     <Compile Include="InterfacesForModels\IRdpMod.cs" />
     <Compile Include="InterfacesForModels\IProxyMod.cs" />
     <Compile Include="InterfacesForModels\IIpMod.cs" />
+    <Compile Include="InterfacesForViews\ICommon.cs" />
     <Compile Include="InterfacesForViews\ISettingsPres.cs" />
     <Compile Include="InterfacesForViews\IMacAddressPres.cs" />
     <Compile Include="InterfacesForViews\IMainMenuPres.cs" />
@@ -95,60 +97,71 @@
     <Compile Include="Presenters\RdpPresenter.cs" />
     <Compile Include="Presenters\SysLangPresenter.cs" />
     <Compile Include="Presenters\VpnPresenter.cs" />
-    <Compile Include="Views\IPAddress.cs">
+    <Compile Include="Forms\IPAddress.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\IPAddress.Designer.cs">
+    <Compile Include="Forms\IPAddress.Designer.cs">
       <DependentUpon>IPAddress.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MacAddress.cs">
+    <Compile Include="Forms\MacAddress.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MacAddress.Designer.cs">
+    <Compile Include="Forms\MacAddress.Designer.cs">
       <DependentUpon>MacAddress.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainMenu.cs">
+    <Compile Include="Forms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainMenu.Designer.cs">
+    <Compile Include="Forms\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainMenuSub.cs">
+    <Compile Include="Forms\MainMenuSub.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainMenuSub.Designer.cs">
+    <Compile Include="Forms\MainMenuSub.Designer.cs">
       <DependentUpon>MainMenuSub.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Settings.cs">
+    <Compile Include="Forms\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Settings.Designer.cs">
+    <Compile Include="Forms\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Rdp.cs">
+    <Compile Include="Forms\Rdp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Rdp.Designer.cs">
+    <Compile Include="Forms\Rdp.Designer.cs">
       <DependentUpon>Rdp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Proxy.cs">
+    <Compile Include="Forms\Proxy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Proxy.Designer.cs">
+    <Compile Include="Forms\Proxy.Designer.cs">
       <DependentUpon>Proxy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\SysLanguage.cs">
+    <Compile Include="Forms\SysLanguage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\SysLanguage.Designer.cs">
+    <Compile Include="Forms\SysLanguage.Designer.cs">
       <DependentUpon>SysLanguage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Vpn.cs">
+    <Compile Include="Forms\Vpn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Vpn.Designer.cs">
+    <Compile Include="Forms\Vpn.Designer.cs">
       <DependentUpon>Vpn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CommonView.cs" />
+    <Compile Include="Views\IPAddressView.cs" />
+    <Compile Include="Views\LoginWinView.cs" />
+    <Compile Include="Views\MacAddressView.cs" />
+    <Compile Include="Views\MainMenuView.cs" />
+    <Compile Include="Views\IMainMenuSubPres.cs" />
+    <Compile Include="Views\ProxyView.cs" />
+    <Compile Include="Views\RdpView.cs" />
+    <Compile Include="Views\SettingsView.cs" />
+    <Compile Include="Views\SysLangView.cs" />
+    <Compile Include="Views\VpnView.cs" />
     <EmbeddedResource Include="LoginWin.resx">
       <DependentUpon>LoginWin.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,31 +174,31 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\IPAddress.resx">
+    <EmbeddedResource Include="Forms\IPAddress.resx">
       <DependentUpon>IPAddress.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MacAddress.resx">
+    <EmbeddedResource Include="Forms\MacAddress.resx">
       <DependentUpon>MacAddress.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainMenu.resx">
+    <EmbeddedResource Include="Forms\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainMenuSub.resx">
+    <EmbeddedResource Include="Forms\MainMenuSub.resx">
       <DependentUpon>MainMenuSub.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Settings.resx">
+    <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Rdp.resx">
+    <EmbeddedResource Include="Forms\Rdp.resx">
       <DependentUpon>Rdp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Proxy.resx">
+    <EmbeddedResource Include="Forms\Proxy.resx">
       <DependentUpon>Proxy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SysLanguage.resx">
+    <EmbeddedResource Include="Forms\SysLanguage.resx">
       <DependentUpon>SysLanguage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Vpn.resx">
+    <EmbeddedResource Include="Forms\Vpn.resx">
       <DependentUpon>Vpn.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

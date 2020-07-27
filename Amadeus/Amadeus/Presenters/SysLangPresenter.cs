@@ -5,13 +5,9 @@ namespace Amadeus.Presenters
 {
     class SysLangPresenter
     {
-        private ISysLanguageMod _model;
-        private ISysLangPres _view;
-
-        public SysLangPresenter(ISysLanguageMod model, ISysLangPres view)
+        public SysLangPresenter()
         {
-            _model = model;
-            _view = view;
+
         }
     }
 }

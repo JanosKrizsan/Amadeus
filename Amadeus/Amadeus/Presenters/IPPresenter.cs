@@ -5,13 +5,9 @@ namespace Amadeus.Presenters
 {
     class IPPresenter
     {
-        private IIpMod _model;
-        private IIPAddressPres _view;
-
-        public IPPresenter(IIpMod model, IIPAddressPres view)
+        public IPPresenter()
         {
-            _model = model;
-            _view = view;
+
         }
     }
 }

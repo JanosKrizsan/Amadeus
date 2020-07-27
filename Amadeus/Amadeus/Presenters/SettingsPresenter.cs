@@ -5,13 +5,9 @@ namespace Amadeus.Presenters
 {
     class SettingsPresenter
     {
-        private ISettingsMod _model;
-        private ISettingsPres _view;
-
-        public SettingsPresenter(ISettingsMod model, ISettingsPres view)
+        public SettingsPresenter()
         {
-            _model = model;
-            _view = view;
+
         }
     }
 }

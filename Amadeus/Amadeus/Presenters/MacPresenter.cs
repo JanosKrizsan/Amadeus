@@ -5,13 +5,9 @@ namespace Amadeus.Presenters
 {
     class MacPresenter
     {
-        private IMacMod _model;
-        private IMacAddressPres _view;
-
-        public MacPresenter(IMacMod model, IMacAddressPres view)
+        public MacPresenter()
         {
-            _model = model;
-            _view = view;
+
         }
     }
 }

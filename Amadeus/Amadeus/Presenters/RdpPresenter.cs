@@ -5,13 +5,9 @@ namespace Amadeus.Presenters
 {
     class RdpPresenter
     {
-        private IRdpMod _model;
-        private IRdpPres _view;
-
-        public RdpPresenter(IRdpMod model, IRdpPres view)
+        public RdpPresenter()
         {
-            _model = model;
-            _view = view;
+
         }
     }
 }

@@ -5,12 +5,9 @@ namespace Amadeus.Presenters
 {
     class MainMenuSubPresenter
     {
-        private IMainMenuSubMod _model;
-        private IMainMenuSubPres _view;
-        public MainMenuSubPresenter(IMainMenuSubMod model, IMainMenuSubPres view)
+        public MainMenuSubPresenter()
         {
-            _model = model;
-            _view = view;
+
         }
     }
 }

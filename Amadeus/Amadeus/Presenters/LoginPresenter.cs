@@ -5,13 +5,9 @@ namespace Amadeus.Presenters
 {
     class LoginPresenter
     {
-        private ILoginMod _model;
-        private ILoginWinPres _view;
-
-        public LoginPresenter(ILoginMod model, ILoginWinPres view)
+        public LoginPresenter()
         {
-            _model = model;
-            _view = view;
+
         }
     }
 }
