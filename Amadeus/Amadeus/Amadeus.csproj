@@ -36,6 +36,9 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\WindowsFormsApp1\packages\Microsoft.PowerShell.5.ReferenceAssemblies.1.1.0\lib\net4\System.Management.Automation.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,24 +54,35 @@
     <Compile Include="InterfacesForModels\IMacMod.cs" />
     <Compile Include="InterfacesForModels\IMainMenuMod.cs" />
     <Compile Include="InterfacesForModels\IMainMenuSubMod.cs" />
-    <Compile Include="InterfacesForModels\ICommon.cs" />
+    <Compile Include="InterfacesForModels\ICommonModel.cs" />
     <Compile Include="InterfacesForModels\IVpnMod.cs" />
     <Compile Include="InterfacesForModels\ISysLanguageMod.cs" />
     <Compile Include="InterfacesForModels\ISettingsMod.cs" />
     <Compile Include="InterfacesForModels\IRdpMod.cs" />
     <Compile Include="InterfacesForModels\IProxyMod.cs" />
     <Compile Include="InterfacesForModels\IIpMod.cs" />
-    <Compile Include="InterfacesForViews\ICommon.cs" />
-    <Compile Include="InterfacesForViews\ISettingsPres.cs" />
-    <Compile Include="InterfacesForViews\IMacAddressPres.cs" />
-    <Compile Include="InterfacesForViews\IMainMenuPres.cs" />
-    <Compile Include="InterfacesForViews\IMainMenuSubPres.cs" />
-    <Compile Include="InterfacesForViews\IProxyPres.cs" />
-    <Compile Include="InterfacesForViews\ISysLanguagePRes.cs" />
-    <Compile Include="InterfacesForViews\IRdpPres.cs" />
-    <Compile Include="InterfacesForViews\IIpAddressPres.cs" />
-    <Compile Include="InterfacesForViews\IVpnPres.cs" />
-    <Compile Include="InterfacesForViews\ILoginWinPres.cs" />
+    <Compile Include="InterfacesForPresenters\IIPPres.cs" />
+    <Compile Include="InterfacesForPresenters\ILoginPres.cs" />
+    <Compile Include="InterfacesForPresenters\IMacPres.cs" />
+    <Compile Include="InterfacesForPresenters\IMainMenuPres.cs" />
+    <Compile Include="InterfacesForPresenters\IMainMenuSubPres.cs" />
+    <Compile Include="InterfacesForPresenters\ICommonPres.cs" />
+    <Compile Include="InterfacesForPresenters\IProxyPres.cs" />
+    <Compile Include="InterfacesForPresenters\IRdpPres.cs" />
+    <Compile Include="InterfacesForPresenters\ISettingsPres.cs" />
+    <Compile Include="InterfacesForPresenters\ISysLangPres.cs" />
+    <Compile Include="InterfacesForPresenters\IVpnPres.cs" />
+    <Compile Include="InterfacesForViews\ICommonView.cs" />
+    <Compile Include="InterfacesForViews\ISettingsView.cs" />
+    <Compile Include="InterfacesForViews\IMacAddressView.cs" />
+    <Compile Include="InterfacesForViews\IMainMenuView.cs" />
+    <Compile Include="InterfacesForViews\IMainMenuSubView.cs" />
+    <Compile Include="InterfacesForViews\IProxyView.cs" />
+    <Compile Include="InterfacesForViews\ISysLanguageView.cs" />
+    <Compile Include="InterfacesForViews\IRdpView.cs" />
+    <Compile Include="InterfacesForViews\IIpAddressView.cs" />
+    <Compile Include="InterfacesForViews\IVpnView.cs" />
+    <Compile Include="InterfacesForViews\ILoginWinView.cs" />
     <Compile Include="LoginWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +100,7 @@
     <Compile Include="Models\ProxyModel.cs" />
     <Compile Include="Models\MacModel.cs" />
     <Compile Include="Models\IPModel.cs" />
+    <Compile Include="Presenters\CommonPresenter.cs" />
     <Compile Include="Presenters\MainMenuSubPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Presenters\IPPresenter.cs" />
@@ -151,12 +166,13 @@
     <Compile Include="Forms\Vpn.Designer.cs">
       <DependentUpon>Vpn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\DataScriptHandler.cs" />
     <Compile Include="Views\CommonView.cs" />
     <Compile Include="Views\IPAddressView.cs" />
     <Compile Include="Views\LoginWinView.cs" />
     <Compile Include="Views\MacAddressView.cs" />
     <Compile Include="Views\MainMenuView.cs" />
-    <Compile Include="Views\IMainMenuSubPres.cs" />
+    <Compile Include="Views\MainMenuSubView.cs" />
     <Compile Include="Views\ProxyView.cs" />
     <Compile Include="Views\RdpView.cs" />
     <Compile Include="Views\SettingsView.cs" />
@@ -201,6 +217,7 @@
     <EmbeddedResource Include="Forms\Vpn.resx">
       <DependentUpon>Vpn.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -234,9 +251,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CommonInterfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DataFiles\macVendors.txt" />
   </ItemGroup>

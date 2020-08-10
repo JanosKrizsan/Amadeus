@@ -1,5 +1,4 @@
-﻿using Amadeus.InterfacesForModels;
-using Amadeus.InterfacesForViews;
+﻿using Amadeus.InterfacesForViews;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
