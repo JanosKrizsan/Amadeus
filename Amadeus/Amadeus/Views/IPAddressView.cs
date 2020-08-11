@@ -1,5 +1,6 @@
 ﻿using Amadeus.InterfacesForViews;
 using Amadeus.Models;
+using System;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
@@ -10,5 +11,10 @@ namespace Amadeus.Views
         {
             _form = form;
         }
+
+        public event EventHandler SetStaticAddress;
+        public event EventHandler GenerateDynamicAddress;
+        public event EventHandler GetAdapterData;
+        public event EventHandler ShowHelp;
     }
 }

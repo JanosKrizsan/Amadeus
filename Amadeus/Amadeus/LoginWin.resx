@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="stayLoggedInChck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 7</value>
+    <value>3, 26</value>
   </data>
   <data name="stayLoggedInChck.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 17</value>
@@ -144,7 +144,7 @@
     <value>loginTopPanel</value>
   </data>
   <data name="&gt;&gt;stayLoggedInChck.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="loginButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -226,7 +226,7 @@
     <value>loginTopPanel</value>
   </data>
   <data name="&gt;&gt;usersSavedBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="quitButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -279,6 +279,36 @@
   <data name="&gt;&gt;loginBottomPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="saveUserInfoChkBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="saveUserInfoChkBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="saveUserInfoChkBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="saveUserInfoChkBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="saveUserInfoChkBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="saveUserInfoChkBox.Text" xml:space="preserve">
+    <value>Save User Info</value>
+  </data>
+  <data name="&gt;&gt;saveUserInfoChkBox.Name" xml:space="preserve">
+    <value>saveUserInfoChkBox</value>
+  </data>
+  <data name="&gt;&gt;saveUserInfoChkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveUserInfoChkBox.Parent" xml:space="preserve">
+    <value>loginTopPanel</value>
+  </data>
+  <data name="&gt;&gt;saveUserInfoChkBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="passwordTxtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 144</value>
   </data>
@@ -307,7 +337,7 @@
     <value>loginTopPanel</value>
   </data>
   <data name="&gt;&gt;passwordTxtBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="usernameTxtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 103</value>
@@ -334,7 +364,7 @@
     <value>loginTopPanel</value>
   </data>
   <data name="&gt;&gt;usernameTxtBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="loginTopPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 12</value>

@@ -1,5 +1,6 @@
 ﻿using Amadeus.InterfacesForViews;
 using Amadeus.Models;
+using System;
 using System.Windows.Forms;
 
 namespace Amadeus.Views
@@ -10,5 +11,14 @@ namespace Amadeus.Views
         {
             _form = form;
         }
+
+        public event EventHandler ToggleSplitTunnel;
+        public event EventHandler ToggleAvailableForAll;
+        public event EventHandler SaveNewOrUpdate;
+        public event EventHandler ClearValues;
+        public event EventHandler ConnectToSelected;
+        public event EventHandler EditSelected;
+        public event EventHandler RemoveSelected;
+        public event EventHandler ShowVpnHelp;
     }
 }

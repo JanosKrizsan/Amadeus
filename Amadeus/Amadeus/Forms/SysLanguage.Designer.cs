@@ -30,7 +30,7 @@
         {
             this.langTagListBox = new System.Windows.Forms.ListBox();
             this.currLangOpPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.currentLangsLbl = new System.Windows.Forms.Label();
+            this.currentInstLangsLbl = new System.Windows.Forms.Label();
             this.currentLangsCmboBox = new System.Windows.Forms.ComboBox();
             this.removeCurrBtn = new System.Windows.Forms.Button();
             this.setSelectedBtn = new System.Windows.Forms.Button();
@@ -76,7 +76,7 @@
             // currLangOpPanel
             // 
             this.currLangOpPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.currLangOpPanel.Controls.Add(this.currentLangsLbl);
+            this.currLangOpPanel.Controls.Add(this.currentInstLangsLbl);
             this.currLangOpPanel.Controls.Add(this.currentLangsCmboBox);
             this.currLangOpPanel.Controls.Add(this.removeCurrBtn);
             this.currLangOpPanel.Controls.Add(this.setSelectedBtn);
@@ -95,16 +95,16 @@
             this.currLangOpPanel.Size = new System.Drawing.Size(290, 498);
             this.currLangOpPanel.TabIndex = 1;
             // 
-            // currentLangsLbl
+            // currentInstLangsLbl
             // 
-            this.currentLangsLbl.AutoSize = true;
-            this.currentLangsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentLangsLbl.Location = new System.Drawing.Point(5, 10);
-            this.currentLangsLbl.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
-            this.currentLangsLbl.Name = "currentLangsLbl";
-            this.currentLangsLbl.Size = new System.Drawing.Size(137, 18);
-            this.currentLangsLbl.TabIndex = 1;
-            this.currentLangsLbl.Text = "Current Languages:";
+            this.currentInstLangsLbl.AutoSize = true;
+            this.currentInstLangsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentInstLangsLbl.Location = new System.Drawing.Point(5, 10);
+            this.currentInstLangsLbl.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.currentInstLangsLbl.Name = "currentInstLangsLbl";
+            this.currentInstLangsLbl.Size = new System.Drawing.Size(186, 18);
+            this.currentInstLangsLbl.TabIndex = 1;
+            this.currentInstLangsLbl.Text = "Current Intalled Languages:";
             // 
             // currentLangsCmboBox
             // 
@@ -297,7 +297,7 @@
         private System.Windows.Forms.Button addNewBtn;
         private System.Windows.Forms.Button addnSetNewBtn;
         private System.Windows.Forms.Button helpNewBtn;
-        private System.Windows.Forms.Label currentLangsLbl;
+        private System.Windows.Forms.Label currentInstLangsLbl;
         private System.Windows.Forms.ComboBox currentLangsCmboBox;
         private System.Windows.Forms.Button removeCurrBtn;
         private System.Windows.Forms.Button setToDefBtn;

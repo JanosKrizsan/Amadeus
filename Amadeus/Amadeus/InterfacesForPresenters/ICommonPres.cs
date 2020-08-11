@@ -3,5 +3,6 @@
     interface ICommonPres
     {
         void ShowView();
+        void CloseView();
     }
 }

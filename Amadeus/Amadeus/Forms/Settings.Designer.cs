@@ -33,6 +33,7 @@
             this.saveStngsBtn = new System.Windows.Forms.Button();
             this.loadStngsBtn = new System.Windows.Forms.Button();
             this.userinfoPnl = new System.Windows.Forms.Panel();
+            this.setUserinfoBtn = new System.Windows.Forms.Button();
             this.gpgTxtBox = new System.Windows.Forms.TextBox();
             this.gpgLbl = new System.Windows.Forms.Label();
             this.passwordTxtBox = new System.Windows.Forms.TextBox();
@@ -48,17 +49,16 @@
             this.doNotSaveCheck = new System.Windows.Forms.CheckBox();
             this.wipeDataQuitCheck = new System.Windows.Forms.CheckBox();
             this.resetSysDefsCheck = new System.Windows.Forms.CheckBox();
-            this.alwaysGPGCheck = new System.Windows.Forms.CheckBox();
+            this.alwaysPGPCheck = new System.Windows.Forms.CheckBox();
             this.sendRepEmailCheck = new System.Windows.Forms.CheckBox();
             this.emailPnl = new System.Windows.Forms.Panel();
-            this.emailAddLbl = new System.Windows.Forms.Label();
-            this.emailAddTxtBox = new System.Windows.Forms.TextBox();
-            this.emailAddConfLbl = new System.Windows.Forms.Label();
-            this.emailAddConfTxtBox = new System.Windows.Forms.TextBox();
-            this.forcePGPEmailCheck = new System.Windows.Forms.CheckBox();
-            this.setEmailBtn = new System.Windows.Forms.Button();
             this.helpBtn = new System.Windows.Forms.Button();
-            this.setUserinfoBtn = new System.Windows.Forms.Button();
+            this.setEmailBtn = new System.Windows.Forms.Button();
+            this.forcePGPEmailCheck = new System.Windows.Forms.CheckBox();
+            this.emailAddConfTxtBox = new System.Windows.Forms.TextBox();
+            this.emailAddConfLbl = new System.Windows.Forms.Label();
+            this.emailAddTxtBox = new System.Windows.Forms.TextBox();
+            this.emailAddLbl = new System.Windows.Forms.Label();
             this.userinfoPnl.SuspendLayout();
             this.settingsBtnsPnl.SuspendLayout();
             this.checkBoxLayoutPnl.SuspendLayout();
@@ -97,7 +97,7 @@
             // 
             // loadStngsBtn
             // 
-            this.loadStngsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.loadStngsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.loadStngsBtn.Location = new System.Drawing.Point(3, 10);
             this.loadStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
@@ -121,6 +121,16 @@
             this.userinfoPnl.Name = "userinfoPnl";
             this.userinfoPnl.Size = new System.Drawing.Size(207, 300);
             this.userinfoPnl.TabIndex = 1;
+            // 
+            // setUserinfoBtn
+            // 
+            this.setUserinfoBtn.Location = new System.Drawing.Point(114, 251);
+            this.setUserinfoBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            this.setUserinfoBtn.Name = "setUserinfoBtn";
+            this.setUserinfoBtn.Size = new System.Drawing.Size(83, 29);
+            this.setUserinfoBtn.TabIndex = 15;
+            this.setUserinfoBtn.Text = "Set User Info";
+            this.setUserinfoBtn.UseVisualStyleBackColor = true;
             // 
             // gpgTxtBox
             // 
@@ -230,7 +240,7 @@
             this.checkBoxLayoutPnl.Controls.Add(this.doNotSaveCheck);
             this.checkBoxLayoutPnl.Controls.Add(this.wipeDataQuitCheck);
             this.checkBoxLayoutPnl.Controls.Add(this.resetSysDefsCheck);
-            this.checkBoxLayoutPnl.Controls.Add(this.alwaysGPGCheck);
+            this.checkBoxLayoutPnl.Controls.Add(this.alwaysPGPCheck);
             this.checkBoxLayoutPnl.Controls.Add(this.sendRepEmailCheck);
             this.checkBoxLayoutPnl.Location = new System.Drawing.Point(12, 12);
             this.checkBoxLayoutPnl.Name = "checkBoxLayoutPnl";
@@ -285,17 +295,17 @@
             this.resetSysDefsCheck.Text = "Reset To Sys Defaults on Quit";
             this.resetSysDefsCheck.UseVisualStyleBackColor = true;
             // 
-            // alwaysGPGCheck
+            // alwaysPGPCheck
             // 
-            this.alwaysGPGCheck.AutoSize = true;
-            this.alwaysGPGCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alwaysGPGCheck.Location = new System.Drawing.Point(5, 201);
-            this.alwaysGPGCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.alwaysGPGCheck.Name = "alwaysGPGCheck";
-            this.alwaysGPGCheck.Size = new System.Drawing.Size(117, 19);
-            this.alwaysGPGCheck.TabIndex = 4;
-            this.alwaysGPGCheck.Text = "Always Use GPG";
-            this.alwaysGPGCheck.UseVisualStyleBackColor = true;
+            this.alwaysPGPCheck.AutoSize = true;
+            this.alwaysPGPCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alwaysPGPCheck.Location = new System.Drawing.Point(5, 201);
+            this.alwaysPGPCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            this.alwaysPGPCheck.Name = "alwaysPGPCheck";
+            this.alwaysPGPCheck.Size = new System.Drawing.Size(116, 19);
+            this.alwaysPGPCheck.TabIndex = 4;
+            this.alwaysPGPCheck.Text = "Always Use PGP";
+            this.alwaysPGPCheck.UseVisualStyleBackColor = true;
             // 
             // sendRepEmailCheck
             // 
@@ -325,41 +335,25 @@
             this.emailPnl.Size = new System.Drawing.Size(573, 168);
             this.emailPnl.TabIndex = 13;
             // 
-            // emailAddLbl
+            // helpBtn
             // 
-            this.emailAddLbl.AutoSize = true;
-            this.emailAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAddLbl.Location = new System.Drawing.Point(3, 12);
-            this.emailAddLbl.Name = "emailAddLbl";
-            this.emailAddLbl.Size = new System.Drawing.Size(147, 18);
-            this.emailAddLbl.TabIndex = 10;
-            this.emailAddLbl.Text = "Your E-Mail Address:";
+            this.helpBtn.Location = new System.Drawing.Point(494, 113);
+            this.helpBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            this.helpBtn.Name = "helpBtn";
+            this.helpBtn.Size = new System.Drawing.Size(70, 30);
+            this.helpBtn.TabIndex = 15;
+            this.helpBtn.Text = "Help!";
+            this.helpBtn.UseVisualStyleBackColor = true;
             // 
-            // emailAddTxtBox
+            // setEmailBtn
             // 
-            this.emailAddTxtBox.Location = new System.Drawing.Point(6, 33);
-            this.emailAddTxtBox.Name = "emailAddTxtBox";
-            this.emailAddTxtBox.Size = new System.Drawing.Size(194, 20);
-            this.emailAddTxtBox.TabIndex = 10;
-            this.emailAddTxtBox.Text = "Add your addy here";
-            // 
-            // emailAddConfLbl
-            // 
-            this.emailAddConfLbl.AutoSize = true;
-            this.emailAddConfLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAddConfLbl.Location = new System.Drawing.Point(2, 92);
-            this.emailAddConfLbl.Name = "emailAddConfLbl";
-            this.emailAddConfLbl.Size = new System.Drawing.Size(65, 18);
-            this.emailAddConfLbl.TabIndex = 11;
-            this.emailAddConfLbl.Text = "Confirm:";
-            // 
-            // emailAddConfTxtBox
-            // 
-            this.emailAddConfTxtBox.Location = new System.Drawing.Point(3, 113);
-            this.emailAddConfTxtBox.Name = "emailAddConfTxtBox";
-            this.emailAddConfTxtBox.Size = new System.Drawing.Size(194, 20);
-            this.emailAddConfTxtBox.TabIndex = 12;
-            this.emailAddConfTxtBox.Text = "Add your addy here agian";
+            this.setEmailBtn.Location = new System.Drawing.Point(494, 24);
+            this.setEmailBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            this.setEmailBtn.Name = "setEmailBtn";
+            this.setEmailBtn.Size = new System.Drawing.Size(70, 29);
+            this.setEmailBtn.TabIndex = 14;
+            this.setEmailBtn.Text = "Set Email";
+            this.setEmailBtn.UseVisualStyleBackColor = true;
             // 
             // forcePGPEmailCheck
             // 
@@ -373,35 +367,41 @@
             this.forcePGPEmailCheck.Text = "Force PGP in Email";
             this.forcePGPEmailCheck.UseVisualStyleBackColor = true;
             // 
-            // setEmailBtn
+            // emailAddConfTxtBox
             // 
-            this.setEmailBtn.Location = new System.Drawing.Point(494, 24);
-            this.setEmailBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.setEmailBtn.Name = "setEmailBtn";
-            this.setEmailBtn.Size = new System.Drawing.Size(70, 29);
-            this.setEmailBtn.TabIndex = 14;
-            this.setEmailBtn.Text = "Set Email";
-            this.setEmailBtn.UseVisualStyleBackColor = true;
+            this.emailAddConfTxtBox.Location = new System.Drawing.Point(3, 113);
+            this.emailAddConfTxtBox.Name = "emailAddConfTxtBox";
+            this.emailAddConfTxtBox.Size = new System.Drawing.Size(194, 20);
+            this.emailAddConfTxtBox.TabIndex = 12;
+            this.emailAddConfTxtBox.Text = "Add your addy here agian";
             // 
-            // helpBtn
+            // emailAddConfLbl
             // 
-            this.helpBtn.Location = new System.Drawing.Point(494, 113);
-            this.helpBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.helpBtn.Name = "helpBtn";
-            this.helpBtn.Size = new System.Drawing.Size(70, 30);
-            this.helpBtn.TabIndex = 15;
-            this.helpBtn.Text = "Help!";
-            this.helpBtn.UseVisualStyleBackColor = true;
+            this.emailAddConfLbl.AutoSize = true;
+            this.emailAddConfLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailAddConfLbl.Location = new System.Drawing.Point(2, 92);
+            this.emailAddConfLbl.Name = "emailAddConfLbl";
+            this.emailAddConfLbl.Size = new System.Drawing.Size(65, 18);
+            this.emailAddConfLbl.TabIndex = 11;
+            this.emailAddConfLbl.Text = "Confirm:";
             // 
-            // setUserinfoBtn
+            // emailAddTxtBox
             // 
-            this.setUserinfoBtn.Location = new System.Drawing.Point(114, 251);
-            this.setUserinfoBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.setUserinfoBtn.Name = "setUserinfoBtn";
-            this.setUserinfoBtn.Size = new System.Drawing.Size(83, 29);
-            this.setUserinfoBtn.TabIndex = 15;
-            this.setUserinfoBtn.Text = "Set User Info";
-            this.setUserinfoBtn.UseVisualStyleBackColor = true;
+            this.emailAddTxtBox.Location = new System.Drawing.Point(6, 33);
+            this.emailAddTxtBox.Name = "emailAddTxtBox";
+            this.emailAddTxtBox.Size = new System.Drawing.Size(194, 20);
+            this.emailAddTxtBox.TabIndex = 10;
+            this.emailAddTxtBox.Text = "Add your addy here";
+            // 
+            // emailAddLbl
+            // 
+            this.emailAddLbl.AutoSize = true;
+            this.emailAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailAddLbl.Location = new System.Drawing.Point(3, 12);
+            this.emailAddLbl.Name = "emailAddLbl";
+            this.emailAddLbl.Size = new System.Drawing.Size(147, 18);
+            this.emailAddLbl.TabIndex = 10;
+            this.emailAddLbl.Text = "Your E-Mail Address:";
             // 
             // Settings
             // 
@@ -449,7 +449,7 @@
         private System.Windows.Forms.CheckBox autoLoginCheck;
         private System.Windows.Forms.CheckBox doNotSaveCheck;
         private System.Windows.Forms.CheckBox resetSysDefsCheck;
-        private System.Windows.Forms.CheckBox alwaysGPGCheck;
+        private System.Windows.Forms.CheckBox alwaysPGPCheck;
         private System.Windows.Forms.CheckBox sendRepEmailCheck;
         private System.Windows.Forms.Button setUserinfoBtn;
         private System.Windows.Forms.Panel emailPnl;

@@ -31,7 +31,6 @@ namespace Amadeus
         /// </summary>
         void InitializeComponent()
         {
-
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWin));
             this.stayLoggedInChck = new System.Windows.Forms.CheckBox();
             this.loginButton = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@ namespace Amadeus
             this.loginTopPanel = new System.Windows.Forms.Panel();
             this.passwordTxtBox = new System.Windows.Forms.TextBox();
             this.usernameTxtBox = new System.Windows.Forms.TextBox();
+            this.saveUserInfoChkBox = new System.Windows.Forms.CheckBox();
             this.loginBottomPanel.SuspendLayout();
             this.loginTopPanel.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +94,7 @@ namespace Amadeus
             // 
             // loginTopPanel
             // 
+            this.loginTopPanel.Controls.Add(this.saveUserInfoChkBox);
             this.loginTopPanel.Controls.Add(this.passwordTxtBox);
             this.loginTopPanel.Controls.Add(this.usernameTxtBox);
             this.loginTopPanel.Controls.Add(this.stayLoggedInChck);
@@ -110,6 +111,13 @@ namespace Amadeus
             // 
             resources.ApplyResources(this.usernameTxtBox, "usernameTxtBox");
             this.usernameTxtBox.Name = "usernameTxtBox";
+            // 
+            // saveUserInfoChkBox
+            // 
+            resources.ApplyResources(this.saveUserInfoChkBox, "saveUserInfoChkBox");
+            this.saveUserInfoChkBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.saveUserInfoChkBox.Name = "saveUserInfoChkBox";
+            this.saveUserInfoChkBox.UseVisualStyleBackColor = true;
             // 
             // LoginWin
             // 
@@ -142,6 +150,7 @@ namespace Amadeus
         private System.Windows.Forms.Panel loginTopPanel;
         private System.Windows.Forms.TextBox passwordTxtBox;
         private System.Windows.Forms.TextBox usernameTxtBox;
+        private CheckBox saveUserInfoChkBox;
     }
 }
 

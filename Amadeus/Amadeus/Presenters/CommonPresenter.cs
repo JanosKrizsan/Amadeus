@@ -13,5 +13,10 @@ namespace Amadeus.Presenters
         {
             _view.ShowForm();
         }
+
+        public void CloseView()
+        {
+            _view.CloseForm();
+        }
     }
 }
