@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class VpnPresenter : CommonPresenter, IVpnPres
     {
-        public VpnPresenter(ICommonView view, ICommonModel model)
+        public VpnPresenter(IVpnView view, IVpnMod model)
         {
             _view = view;
             _model = model;

@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class SysLangPresenter : CommonPresenter, ISysLangPres
     {
-        public SysLangPresenter(ICommonView view, ICommonModel model)
+        public SysLangPresenter(ISysLanguageView view, ISysLanguageMod model)
         {
             _view = view;
             _model = model;

@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForViews
 {
-    interface IMainMenuView
+    interface IMainMenuView : ICommonView
     {
     }
 }

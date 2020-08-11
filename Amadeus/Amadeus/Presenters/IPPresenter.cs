@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class IPPresenter : CommonPresenter, IIPPRes
     {
-        public IPPresenter(ICommonView view, ICommonModel model)
+        public IPPresenter(IIpAddressView view, IIpMod model)
         {
             _view = view;
             _model = model;

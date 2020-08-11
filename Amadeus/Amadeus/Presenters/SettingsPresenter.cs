@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class SettingsPresenter : CommonPresenter, ISettingsPres
     {
-        public SettingsPresenter(ICommonView view, ICommonModel model)
+        public SettingsPresenter(ISettingsView view, ISettingsMod model)
         {
             _view = view;
             _model = model;

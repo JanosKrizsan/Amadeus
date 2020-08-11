@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class ProxyPresenter : CommonPresenter, IProxyPRes
     {
-        public ProxyPresenter(ICommonView view, ICommonModel model)
+        public ProxyPresenter(IProxyView view, IProxyMod model)
         {
             _view = view;
             _model = model;

@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class MacPresenter : CommonPresenter, IMacPres
     {
-        public MacPresenter(ICommonView view, ICommonModel model)
+        public MacPresenter(IMacAddressView view, IMacMod model)
         {
             _view = view;
             _model = model;

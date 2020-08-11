@@ -1,6 +1,8 @@
-﻿namespace Amadeus.InterfacesForViews
+﻿using System;
+
+namespace Amadeus.InterfacesForViews
 {
-    interface ILoginWinView
+    interface ILoginWinView : ICommonView
     {
     }
 }

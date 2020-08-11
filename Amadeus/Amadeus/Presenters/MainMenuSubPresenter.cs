@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class MainMenuSubPresenter : CommonPresenter, IMainMenuSubPres
     {
-        public MainMenuSubPresenter(ICommonView view, ICommonModel model)
+        public MainMenuSubPresenter(IMainMenuSubView view, IMainMenuSubMod model)
         {
             _view = view;
             _model = model;

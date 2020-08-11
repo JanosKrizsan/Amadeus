@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class LoginPresenter : CommonPresenter, ILoginPres
     {
-        public LoginPresenter(ICommonView view, ICommonModel model)
+        public LoginPresenter(ILoginWinView view, ILoginMod model)
         {
             _view = view;
             _model = model;

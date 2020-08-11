@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InterfacesForViews
 {
-    interface IProxyView
+    interface IProxyView : ICommonView
     {
     }
 }

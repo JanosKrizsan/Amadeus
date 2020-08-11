@@ -13,7 +13,7 @@ namespace Amadeus.Utilities
 
 
         private static readonly Lazy<DataScriptHandler> _instance = new Lazy<DataScriptHandler>(() => new DataScriptHandler());
-        private IList<string> _scripts;
+        private List<string> _scripts => GetScriptFiles();
         private Runspace _runspace;
 
         private DataScriptHandler()
@@ -27,12 +27,12 @@ namespace Amadeus.Utilities
             SetRunspace();
         }
 
-        private void GetScriptFiles()
+        public List<string> GetScriptFiles()
         {
             var currents = Directory.GetDirectories(Directory.GetParent(Directory.GetCurrentDirectory()).FullName);
             var scriptDir = currents.Where(dir => Directory.GetFiles(dir).FirstOrDefault().Contains(".ps1"));
-            var files = Directory.GetFiles(scriptDir.ToString());
-            _scripts = files;
+            var files = Directory.GetFiles(scriptDir.ToString()).ToList();
+            return files;
         }
 
         private void SetRunspace()
@@ -64,6 +64,11 @@ namespace Amadeus.Utilities
                 _runspace.Close();
             }
             return result;
+        }
+
+        public string GetFilesPath()
+        {
+            return Path.GetDirectoryName(_scripts.FirstOrDefault());
         }
 
         public object GetScriptResults(string script, string parameters)

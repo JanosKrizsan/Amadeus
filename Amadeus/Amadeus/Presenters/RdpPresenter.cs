@@ -6,7 +6,7 @@ namespace Amadeus.Presenters
 {
     class RdpPresenter : CommonPresenter, IRdpPres
     {
-        public RdpPresenter(ICommonView view, ICommonModel model)
+        public RdpPresenter(IRdpView view, IRdpMod model)
         {
             _view = view;
             _model = model;
