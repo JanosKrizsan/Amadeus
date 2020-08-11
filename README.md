@@ -142,3 +142,6 @@ This readme will be updated consistently.
 [Secure String in C#](https://blog.thedigitalgroup.com/usability-of-securestring-object-in-c)<br>
 [Encrypting Data](https://www.codeproject.com/Articles/14150/Encrypt-and-Decrypt-Data-with-C)<br>
 [Encrypting Files](https://www.codeproject.com/Articles/20564/Encrypt-Decrypt-File-or-String)<br>
+[AES Encryptiong](https://www.c-sharpcorner.com/article/aes-encryption-in-c-sharp/)<br>
+[Zip Files](https://stackoverflow.com/questions/13160490/decompressing-password-protected-zip-files-with-net-4-5)<br>
+[Zip Files C#](https://www.c-sharpcorner.com/UploadFile/neill1212/password-encrypted-zip-files-in-C-Sharp/)<br>
