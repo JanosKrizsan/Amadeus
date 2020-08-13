@@ -1,15 +1,14 @@
-﻿using Amadeus.InterfacesForModels;
-using Amadeus.InterfacesForPresenters;
+﻿using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 
 namespace Amadeus.Presenters
 {
     class RdpPresenter : CommonPresenter, IRdpPres
     {
-        public RdpPresenter(IRdpView view, IRdpMod model)
+        public RdpPresenter(IRdpView view) : base(view)
         {
-            _view = view;
-            _model = model;
+            _model = new RdpModel(ViewInfo);
         }
     }
 }

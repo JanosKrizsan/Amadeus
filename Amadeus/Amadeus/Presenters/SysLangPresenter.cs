@@ -1,15 +1,14 @@
-﻿using Amadeus.InterfacesForModels;
-using Amadeus.InterfacesForPresenters;
+﻿using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 
 namespace Amadeus.Presenters
 {
     class SysLangPresenter : CommonPresenter, ISysLangPres
     {
-        public SysLangPresenter(ISysLanguageView view, ISysLanguageMod model)
+        public SysLangPresenter(ISysLanguageView view) : base(view)
         {
-            _view = view;
-            _model = model;
+            _model = new SysLangModel(ViewInfo);
         }
     }
 }

@@ -1,15 +1,14 @@
-﻿using Amadeus.InterfacesForModels;
-using Amadeus.InterfacesForPresenters;
+﻿using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 
 namespace Amadeus.Presenters
 {
     class VpnPresenter : CommonPresenter, IVpnPres
     {
-        public VpnPresenter(IVpnView view, IVpnMod model)
+        public VpnPresenter(IVpnView view) : base(view)
         {
-            _view = view;
-            _model = model;
+            _model = new VpnModel(ViewInfo);
         }
     }
 }

@@ -1,15 +1,13 @@
-﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
+﻿using Amadeus.Forms;
+using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class SettingsView : CommonView, ISettingsView
     {
-        public SettingsView(Form form)
+        public SettingsView() : base(new Settings())
         {
-            _form = form;
         }
 
         public event EventHandler ToggleAutoLogin;
@@ -30,14 +28,24 @@ namespace Amadeus.Views
         public event EventHandler WipeAllData;
         public event EventHandler ShowSettingsHelp;
 
+        public override void OnLoadCheck()
+        {
+        }
+
         public void ReadEmailInfo()
         {
-            throw new NotImplementedException();
         }
 
         public void ReadUserInfo()
         {
-            throw new NotImplementedException();
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
         }
     }
 }

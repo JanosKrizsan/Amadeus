@@ -1,16 +1,13 @@
-﻿using Amadeus.InterfacesForModels;
+﻿using Amadeus.Forms;
 using Amadeus.InterfacesForViews;
-using Amadeus.Models;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class MainMenuSubView : CommonView, IMainMenuSubView
     {
-        public MainMenuSubView(Form form)
+        public MainMenuSubView() : base(new MainMenuSub())
         {
-            _form = form;
         }
 
         public event EventHandler UpdateProgressInfo;
@@ -23,5 +20,17 @@ namespace Amadeus.Views
         public event EventHandler RemoveSelectedScript;
         public event EventHandler RunCustomScript;
         public event EventHandler StopCurrentProcess;
+
+        public override void OnLoadCheck()
+        {
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
+        }
     }
 }

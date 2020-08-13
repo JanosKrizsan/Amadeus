@@ -1,15 +1,14 @@
-﻿using Amadeus.InterfacesForModels;
-using Amadeus.InterfacesForPresenters;
+﻿using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 
 namespace Amadeus.Presenters
 {
     class LoginPresenter : CommonPresenter, ILoginPres
     {
-        public LoginPresenter(ILoginWinView view, ILoginMod model)
+        public LoginPresenter(ILoginWinView view) : base(view)
         {
-            _view = view;
-            _model = model;
+            _model = new LoginModel(ViewInfo);
         }
     }
 }

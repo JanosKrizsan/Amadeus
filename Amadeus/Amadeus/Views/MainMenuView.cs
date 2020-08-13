@@ -1,15 +1,13 @@
-﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
+﻿using FormMainMenu = Amadeus.Forms.MainMenu;
+using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class MainMenuView : CommonView, IMainMenuView
     {
-        public MainMenuView(Form form)
+        public MainMenuView() : base(new FormMainMenu())
         {
-            _form = form;
         }
 
         public event EventHandler OpenMainMenu;
@@ -22,5 +20,17 @@ namespace Amadeus.Views
         public event EventHandler OpenSysLangTab;
         public event EventHandler LogOut;
         public event EventHandler Quit;
+
+        public override void OnLoadCheck()
+        {
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
+        }
     }
 }

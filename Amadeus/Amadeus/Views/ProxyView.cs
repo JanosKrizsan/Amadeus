@@ -1,15 +1,13 @@
-﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
+﻿using Amadeus.Forms;
+using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class ProxyView : CommonView, IProxyView
     {
-        public ProxyView(Form form)
+        public ProxyView() : base(new Proxy())
         {
-            _form = form;
         }
 
         public event EventHandler ImportFromTextFile;
@@ -22,5 +20,17 @@ namespace Amadeus.Views
         public event EventHandler SaveNewProxy;
         public event EventHandler SaveNewAndConnectTo;
         public event EventHandler ShowAddProxyHelp;
+
+        public override void OnLoadCheck()
+        {
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
+        }
     }
 }

@@ -1,15 +1,14 @@
-﻿using Amadeus.InterfacesForModels;
-using Amadeus.InterfacesForPresenters;
+﻿using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 
 namespace Amadeus.Presenters
 {
     class ProxyPresenter : CommonPresenter, IProxyPRes
     {
-        public ProxyPresenter(IProxyView view, IProxyMod model)
+        public ProxyPresenter(IProxyView view) : base(view)
         {
-            _view = view;
-            _model = model;
+            _model = new ProxyModel(ViewInfo);
         }
     }
 }

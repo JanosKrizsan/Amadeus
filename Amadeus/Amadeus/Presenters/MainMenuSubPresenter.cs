@@ -1,15 +1,14 @@
-﻿using Amadeus.InterfacesForModels;
-using Amadeus.InterfacesForPresenters;
+﻿using Amadeus.InterfacesForPresenters;
 using Amadeus.InterfacesForViews;
+using Amadeus.Models;
 
 namespace Amadeus.Presenters
 {
     class MainMenuSubPresenter : CommonPresenter, IMainMenuSubPres
     {
-        public MainMenuSubPresenter(IMainMenuSubView view, IMainMenuSubMod model)
+        public MainMenuSubPresenter(IMainMenuSubView view) : base(view)
         {
-            _view = view;
-            _model = model;
+            _model = new MainMenuSubModel(ViewInfo);
         }
     }
 }

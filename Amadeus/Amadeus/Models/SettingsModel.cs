@@ -2,7 +2,14 @@
 
 namespace Amadeus.Models
 {
-    class SettingsModel : ISettingsMod
+    class SettingsModel : CommonModel, ISettingsMod
     {
+        public SettingsModel(string[] ctrlInfo) : base(ctrlInfo)
+        {
+        }
+
+        public override void FillFormData(string[] dataKeys)
+        {
+        }
     }
 }

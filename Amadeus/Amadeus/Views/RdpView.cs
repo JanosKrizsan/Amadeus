@@ -1,15 +1,13 @@
-﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
+﻿using Amadeus.Forms;
+using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class RdpView : CommonView, IRdpView
     {
-        public RdpView(Form form)
+        public RdpView() : base(new Rdp())
         {
-            _form = form;
         }
 
         public event EventHandler ToggleUseGateway;
@@ -34,9 +32,20 @@ namespace Amadeus.Views
         public event EventHandler ResetFieldsToDef;
         public event EventHandler ShowRdpNewOptionsHelp;
 
+        public override void OnLoadCheck()
+        {
+        }
+
         public void ReadScreenInfo()
         {
-            throw new NotImplementedException();
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
         }
     }
 }

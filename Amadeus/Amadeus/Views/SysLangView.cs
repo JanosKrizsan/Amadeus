@@ -1,5 +1,4 @@
 ﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
 using System;
 using System.Windows.Forms;
 
@@ -7,9 +6,8 @@ namespace Amadeus.Views
 {
     class SysLangView : CommonView, ISysLanguageView
     {
-        public SysLangView(Form form)
+        public SysLangView(Form form) : base(form)
         {
-            _form = form;
         }
 
         public event EventHandler RemoveSelected;
@@ -24,5 +22,17 @@ namespace Amadeus.Views
         public event EventHandler AddNewFromList;
         public event EventHandler AddAndSetNewFromList;
         public event EventHandler ShowLangListHelp;
+
+        public override void OnLoadCheck()
+        {
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
+        }
     }
 }

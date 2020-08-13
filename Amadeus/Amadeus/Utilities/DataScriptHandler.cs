@@ -7,11 +7,12 @@ using System.Management.Automation.Runspaces;
 
 namespace Amadeus.Utilities
 {
+    /// <summary>
+    /// Responsible for handling scripts.
+    /// </summary>
     public sealed class DataScriptHandler
     {
         public static DataScriptHandler Instance { get { return _instance.Value; } }
-
-
         private static readonly Lazy<DataScriptHandler> _instance = new Lazy<DataScriptHandler>(() => new DataScriptHandler());
         private List<string> _scripts => GetScriptFiles();
         private Runspace _runspace;

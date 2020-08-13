@@ -1,14 +1,12 @@
 ﻿using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class LoginWinView : CommonView, ILoginWinView
     {
-        public LoginWinView(Form form)
+        public LoginWinView() : base(new LoginWin())
         {
-            _form = form;
         }
 
         public event EventHandler ToggleStayLoggedIn;
@@ -20,22 +18,30 @@ namespace Amadeus.Views
 
         public void AuthenticateLogin()
         {
-            throw new NotImplementedException();
         }
 
         public void CheckStayLoggedIn()
         {
-            throw new NotImplementedException();
         }
 
         public void CrossCheckRegistered()
         {
-            throw new NotImplementedException();
+        }
+
+        public override void OnLoadCheck()
+        {
         }
 
         public void SaveData()
         {
-            throw new NotImplementedException();
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
         }
     }
 }

@@ -1,15 +1,13 @@
-﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
+﻿using Amadeus.Forms;
+using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class MacAddressView : CommonView, IMacAddressView
     {
-        public MacAddressView(Form form)
+        public MacAddressView() : base(new MacAddress())
         {
-            _form = form;
         }
 
         public event EventHandler SelectionClick;
@@ -21,5 +19,17 @@ namespace Amadeus.Views
         public event EventHandler ApplySavedAddr;
         public event EventHandler RemoveSavedAddr;
         public event EventHandler ShowHelp;
+
+        public override void OnLoadCheck()
+        {
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
+        }
     }
 }

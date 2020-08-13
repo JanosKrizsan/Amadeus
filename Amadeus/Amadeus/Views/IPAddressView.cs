@@ -1,20 +1,30 @@
-﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
+﻿using Amadeus.Forms;
+using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class IPAddressView : CommonView, IIpAddressView
     {
-        public IPAddressView(Form form)
+        public IPAddressView() : base(new IPAddress())
         {
-            _form = form;
         }
 
         public event EventHandler SetStaticAddress;
         public event EventHandler GenerateDynamicAddress;
         public event EventHandler GetAdapterData;
         public event EventHandler ShowHelp;
+
+        public override void OnLoadCheck()
+        {
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
+        }
     }
 }

@@ -1,15 +1,13 @@
-﻿using Amadeus.InterfacesForViews;
-using Amadeus.Models;
+﻿using Amadeus.Forms;
+using Amadeus.InterfacesForViews;
 using System;
-using System.Windows.Forms;
 
 namespace Amadeus.Views
 {
     class VpnView : CommonView, IVpnView
     {
-        public VpnView(Form form)
+        public VpnView() : base(new Vpn())
         {
-            _form = form;
         }
 
         public event EventHandler ToggleSplitTunnel;
@@ -20,5 +18,17 @@ namespace Amadeus.Views
         public event EventHandler EditSelected;
         public event EventHandler RemoveSelected;
         public event EventHandler ShowVpnHelp;
+
+        public override void OnLoadCheck()
+        {
+        }
+
+        public override void SetViewControls()
+        {
+        }
+
+        public override void SubToEvents()
+        {
+        }
     }
 }

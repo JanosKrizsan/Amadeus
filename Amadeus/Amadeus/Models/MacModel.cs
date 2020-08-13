@@ -2,7 +2,14 @@
 
 namespace Amadeus.Models
 {
-    class MacModel : IMacMod
+    class MacModel : CommonModel, IMacMod
     {
+        public MacModel(string[] ctrlInfo) : base(ctrlInfo)
+        {
+        }
+
+        public override void FillFormData(string[] dataKeys)
+        {
+        }
     }
 }
