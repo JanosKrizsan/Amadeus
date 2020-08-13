@@ -3,17 +3,27 @@
     //TODO -> Possibly change to struct, but might not be needed
     public enum ItemTypes
     {
-        User,
-        Script,
-        Object,
-        Report
-    };
+        USER,
+        SCRIPT,
+        OBJECT,
+        REPORT
+    }
+
     public enum SaveTypes
     {
         XML,
         CSV,
+        RDP,
         TXT
+    }
 
+    public enum ObjectTypes
+    {
+        RDP,
+        VPN,
+        IP,
+        PROXY,
+        MAC
     }
 
     /// <summary>
@@ -40,7 +50,7 @@
                         return "";
                 }
             }
-            else
+            else if (enumChild.GetType() == typeof(SaveTypes))
             {
                 switch (enumPlacement)
                 {
@@ -49,7 +59,27 @@
                     case 1:
                         return ".csv";
                     case 2:
+                        return ".rdp";
+                    case 3:
                         return ".txt";
+                    default:
+                        return "";
+                }
+            }
+            else
+            {
+                switch (enumPlacement)
+                {
+                    case 0:
+                        return "rdp_obj";
+                    case 1:
+                        return "vpn_obj";
+                    case 2:
+                        return "ip_obj";
+                    case 3:
+                        return "proxy_obj";
+                    case 4:
+                        return "mac_obj";
                     default:
                         return "";
                 }

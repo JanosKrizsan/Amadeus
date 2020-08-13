@@ -19,7 +19,7 @@ namespace Amadeus.Utilities
         public void InitFolders()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (!Directory.Exists(string.Concat(parent, EnumToString(ItemTypes.User))))
+            if (!Directory.Exists(string.Concat(parent, EnumToString(ItemTypes.USER))))
             {
                 foreach (var type in Enum.GetValues(typeof(ItemTypes)).Cast<ItemTypes>())
                 {
