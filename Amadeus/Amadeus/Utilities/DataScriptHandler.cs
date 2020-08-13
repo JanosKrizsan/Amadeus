@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Amadeus.InterfacesForUtilities;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
@@ -7,10 +8,7 @@ using System.Management.Automation.Runspaces;
 
 namespace Amadeus.Utilities
 {
-    /// <summary>
-    /// Responsible for handling scripts.
-    /// </summary>
-    public sealed class DataScriptHandler
+    public sealed class DataScriptHandler : IDataScriptHandler
     {
         public static DataScriptHandler Instance { get { return _instance.Value; } }
         private static readonly Lazy<DataScriptHandler> _instance = new Lazy<DataScriptHandler>(() => new DataScriptHandler());
@@ -36,17 +34,17 @@ namespace Amadeus.Utilities
             return files;
         }
 
-        private void SetRunspace()
+        public void SetRunspace()
         {
             _runspace = RunspaceFactory.CreateRunspace();
         }
 
-        private Pipeline CreatePipeline()
+        public Pipeline CreatePipeline()
         {
             return _runspace.CreatePipeline();
         }
 
-        private object ExecuteScript(string scriptFullName, string parameters)
+        public object ExecuteScript(string scriptFullName, string parameters = null)
         {
             var elevation = _scripts.Where(script => script.Contains("Execute-As-Admin.ps1")).ToString();
             object result = null;
@@ -58,7 +56,8 @@ namespace Amadeus.Utilities
                 }
                 _runspace.Open();
                 var pipeline = CreatePipeline();
-                pipeline.Commands.Add(string.Concat(elevation, " -ExecScriptPath", scriptFullName, " -$ArgumentsForScript", parameters));
+                var arguments = parameters == null ? "" : string.Concat(" -$ArgumentsForScript", parameters);
+                pipeline.Commands.Add(string.Concat(elevation, " -ExecScriptPath", scriptFullName, arguments));
 
                 result = pipeline.Invoke();
 
@@ -67,14 +66,14 @@ namespace Amadeus.Utilities
             return result;
         }
 
-        public string GetFilesPath()
+        public string GetScriptsDirPath()
         {
             return Path.GetDirectoryName(_scripts.FirstOrDefault());
         }
 
-        public object GetScriptResults(string script, string parameters)
+        public object GetScriptResults(string script, string parameters = null)
         {
-            return ExecuteScript(_scripts.Where(name => name.Contains(script)).First()?.ToString() ?? "none", parameters) ?? "no such script found";
+            return ExecuteScript(_scripts.Where(name => name.Contains(script)).First()?.ToString() ?? "none", parameters ?? "") ?? "no such script found";
         }
     }
 }
