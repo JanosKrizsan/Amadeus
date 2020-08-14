@@ -74,6 +74,9 @@
     <Compile Include="InterfacesForPresenters\ISettingsPres.cs" />
     <Compile Include="InterfacesForPresenters\ISysLangPres.cs" />
     <Compile Include="InterfacesForPresenters\IVpnPres.cs" />
+    <Compile Include="InterfacesForUtilities\IDataScriptHandler.cs" />
+    <Compile Include="InterfacesForUtilities\IEncryptionHandler.cs" />
+    <Compile Include="InterfacesForUtilities\IFileHandler.cs" />
     <Compile Include="InterfacesForViews\ICommonView.cs" />
     <Compile Include="InterfacesForViews\ISettingsView.cs" />
     <Compile Include="InterfacesForViews\IMacAddressView.cs" />
@@ -92,6 +95,7 @@
       <DependentUpon>LoginWin.cs</DependentUpon>
     </Compile>
     <Compile Include="App.cs" />
+    <Compile Include="Models\CommonModel.cs" />
     <Compile Include="Models\MainMenuSubModel.cs" />
     <Compile Include="Models\MainMenuModel.cs" />
     <Compile Include="Models\SettingsModel.cs" />
@@ -168,7 +172,10 @@
     <Compile Include="Forms\Vpn.Designer.cs">
       <DependentUpon>Vpn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\Enums.cs" />
     <Compile Include="Utilities\DataScriptHandler.cs" />
+    <Compile Include="Utilities\EncryptionHandler.cs" />
+    <Compile Include="Utilities\FileHandler.cs" />
     <Compile Include="Views\CommonView.cs" />
     <Compile Include="Views\IPAddressView.cs" />
     <Compile Include="Views\LoginWinView.cs" />

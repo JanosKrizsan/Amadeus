@@ -3,6 +3,7 @@ using static Amadeus.Utilities.EnumsHelper;
 using System;
 using System.IO;
 using System.Linq;
+using Amadeus.InfoStructs;
 
 namespace Amadeus.Utilities
 {
@@ -28,25 +29,25 @@ namespace Amadeus.Utilities
             }
         }
 
-        public void SaveObject(SaveTypes saveType)
+        public void SaveObject(SaveTypes saveType, object obj)
         {
         }
 
-        public void SaveUser(SaveTypes saveType)
+        public void SaveUser(SaveTypes saveType, UserInfo user)
         {
         }
 
-        public void SaveScript()
+        public void SaveScript(string script)
         {
         }
 
-        public void SaveReport()
+        public void SaveReport(string report)
         {
         }
 
         public object LoadItem(ItemTypes itemType, SaveTypes saveType)
         {
-            return new object();
+            return null;
         }
     }
 }
