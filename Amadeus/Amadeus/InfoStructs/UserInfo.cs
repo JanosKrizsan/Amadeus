@@ -1,6 +1,4 @@
-﻿using Amadeus.Forms;
-
-namespace Amadeus.InfoStructs
+﻿namespace Amadeus.InfoStructs
 {
     public struct UserInfo
     {
@@ -9,10 +7,10 @@ namespace Amadeus.InfoStructs
         public string PGPKey { get; set; }
         public string EMailAddress { get; set; }
         public int MyProperty { get; set; }
-        public UserSettings SavedSettings { get; set; }
+        internal UserSettings SavedSettings { get; set; }
 
     }
-    public struct UserSettings
+    internal struct UserSettings
     {
         public bool AutoLogin { get; set; }
         public bool DoNotSaveData { get; set; }
