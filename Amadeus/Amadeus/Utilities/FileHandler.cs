@@ -6,7 +6,8 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Web.Script.Serialization;
 using CsvHelper;
-using System.Windows.Forms;
+using System.Xml.Serialization;
+using System.Text;
 
 namespace Amadeus.Utilities
 {
@@ -20,7 +21,7 @@ namespace Amadeus.Utilities
         private FileHandler()
         {
             InitFolders();
-            _helper = new HelperFunctions();
+            _helper = new HelperFunctions(_directories);
         }
 
         public void InitFolders()
@@ -40,10 +41,10 @@ namespace Amadeus.Utilities
 
         public void SaveObject(FolderTypes itemType, FileTypes saveType, ObjectTypes objType, object obj)
         {
-            if (_helper.AreValuesValid(itemType, saveType, objType)
-)
+            if (_helper.AreValuesValid(itemType, saveType, objType))
             {
-
+                var fileName = obj.GetType().Name.GetHashCode().ToString().Substring(0, 5);
+                _helper.ConstructPath(itemType, objType, fileName, saveType);
             }
         }
 
@@ -59,20 +60,28 @@ namespace Amadeus.Utilities
 
         internal sealed class HelperFunctions : IHelperFunctions
         {
-            internal HelperFunctions()
-            { }
+            private Dictionary<string, string> _dirs;
+            internal HelperFunctions(Dictionary<string, string> dirs)
+            {
+                _dirs = dirs;
+            }
 
             public void SaveToTXT(string fullPath, object data)
             {
                 var text = new JavaScriptSerializer().Serialize(data);
-                using (StreamWriter output = new StreamWriter(fullPath))
+                using (var output = new StreamWriter(fullPath))
                 {
                     output.Write(text);
                 }
             }
             public void SaveToXML(string fullPath, object data)
             {
-
+                var serializer = new XmlSerializer(data.GetType());
+                using (var output = new StreamWriter(fullPath))
+                {
+                    serializer.Serialize(output, data);
+                    output.Flush();
+                }
             }
 
             public void SaveToCSV(string fullPath, object data)
@@ -102,6 +111,30 @@ namespace Amadeus.Utilities
             {
                 string[] vals = { EnumToString(itemType), EnumToString(saveType), EnumToString(objType) };
                 return CheckVals(vals);
+            }
+
+            public string ConstructPath(FolderTypes targetFolder, ObjectTypes namePreFace, string fileName, FileTypes extension)
+            {
+                var targetDir = GetDirectory(targetFolder);
+                if (string.IsNullOrEmpty(targetDir))
+                {
+                    throw new InvalidDataException(); //TODO create normal exception handling, this is just a reminder
+                }
+                var pathBuilder = new StringBuilder();
+                pathBuilder.Append(targetDir).Append(EnumToString(namePreFace)).Append(fileName).Append(EnumToString(extension));
+                return pathBuilder.ToString();
+            }
+
+            private string GetDirectory(FolderTypes targetFolder)
+            {
+                foreach (var dir in _dirs)
+                {
+                    if (dir.Key.Equals(EnumToString(targetFolder)))
+                    {
+                        return dir.Value;
+                    }
+                }
+                return string.Empty;
             }
             private bool CheckVal(string val)
             {

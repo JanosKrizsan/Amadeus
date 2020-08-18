@@ -1,7 +1,4 @@
-﻿using CsvHelper;
-using System.CodeDom;
-
-namespace Amadeus.InfoStructs
+﻿namespace Amadeus.InfoStructs
 {
     public struct RdpInfo
     {

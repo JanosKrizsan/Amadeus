@@ -13,6 +13,7 @@ namespace Amadeus.InterfacesForUtilities
         void SaveToRDP(string fullPath, object data);
         void ChangeFileExtension(string fullPath, string newExt);
         bool AreValuesValid(FolderTypes itemType, FileTypes saveType, ObjectTypes objType);
+        string ConstructPath(FolderTypes targetFolder, ObjectTypes namePreFace, string fileName, FileTypes extension);
 
     }
 }
