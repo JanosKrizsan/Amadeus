@@ -3,13 +3,16 @@ using Amadeus.Utilities;
 
 namespace Amadeus.InterfacesForUtilities
 {
+    /// <summary>
+    /// Most function names are self-explanatory
+    /// </summary>
     interface IFileHandler
     {
+        /// <summary>
+        /// Creates folders if not found
+        /// </summary>
         void InitFolders();
-        void SaveObject(SaveTypes saveType, object obj);
-        void SaveUser(SaveTypes saveType, UserInfo user);
-        void SaveScript(string script);
-        void SaveReport(string report);
-        object LoadItem(ItemTypes itemType, SaveTypes saveType);
+        void SaveObject(FolderTypes itemType, FileTypes saveType, ObjectTypes objType, object obj);
+        object LoadObject(FolderTypes itemType, FileTypes saveType, ObjectTypes objType);
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace Amadeus.Utilities
 {
     //TODO -> Possibly change to struct, but might not be needed
-    public enum ItemTypes
+    public enum FolderTypes
     {
         USER,
         SCRIPT,
@@ -9,12 +9,13 @@
         REPORT
     }
 
-    public enum SaveTypes
+    public enum FileTypes
     {
         XML,
         CSV,
         RDP,
-        TXT
+        TXT,
+        PS1
     }
 
     public enum ObjectTypes
@@ -23,7 +24,9 @@
         VPN,
         IP,
         PROXY,
-        MAC
+        MAC,
+        REPORT,
+        SCRIPT
     }
 
     /// <summary>
@@ -34,7 +37,7 @@
         public static string EnumToString(dynamic enumChild)
         {
             var enumPlacement = (int)enumChild;
-            if (enumChild.GetType() == typeof(ItemTypes))
+            if (enumChild.GetType() == typeof(FolderTypes))
             {
                 switch (enumPlacement)
                 {
@@ -50,7 +53,7 @@
                         return "";
                 }
             }
-            else if (enumChild.GetType() == typeof(SaveTypes))
+            else if (enumChild.GetType() == typeof(FileTypes))
             {
                 switch (enumPlacement)
                 {
@@ -62,6 +65,8 @@
                         return ".rdp";
                     case 3:
                         return ".txt";
+                    case 4:
+                        return ".ps1";
                     default:
                         return "";
                 }
@@ -71,15 +76,19 @@
                 switch (enumPlacement)
                 {
                     case 0:
-                        return "rdp_obj";
+                        return "rdp_";
                     case 1:
-                        return "vpn_obj";
+                        return "vpn_";
                     case 2:
-                        return "ip_obj";
+                        return "ip_";
                     case 3:
-                        return "proxy_obj";
+                        return "proxy_";
                     case 4:
-                        return "mac_obj";
+                        return "mac_";
+                    case 5:
+                        return "report_";
+                    case 6:
+                        return "script_";
                     default:
                         return "";
                 }

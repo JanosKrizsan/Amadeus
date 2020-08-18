@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=15.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>packages\CsvHelper.15.0.5\lib\net47\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -41,6 +47,13 @@
     <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\WindowsFormsApp1\packages\Microsoft.PowerShell.5.ReferenceAssemblies.1.1.0\lib\net4\System.Management.Automation.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +65,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InfoStructs\IPInfo.cs" />
+    <Compile Include="InfoStructs\MacInfo.cs" />
+    <Compile Include="InfoStructs\ProxyInfo.cs" />
+    <Compile Include="InfoStructs\RdpInfo.cs" />
+    <Compile Include="InfoStructs\ReportInfo.cs" />
+    <Compile Include="InfoStructs\ScriptInfo.cs" />
+    <Compile Include="InfoStructs\VpnInfo.cs" />
     <Compile Include="InterfacesForModels\ILoginMod.cs" />
     <Compile Include="InterfacesForModels\IMacMod.cs" />
     <Compile Include="InterfacesForModels\IMainMenuMod.cs" />
@@ -75,8 +95,10 @@
     <Compile Include="InterfacesForPresenters\ISysLangPres.cs" />
     <Compile Include="InterfacesForPresenters\IVpnPres.cs" />
     <Compile Include="InterfacesForUtilities\IDataScriptHandler.cs" />
-    <Compile Include="InterfacesForUtilities\IEncryptionHandler.cs" />
+    <Compile Include="InterfacesForUtilities\IPGPEncryptionHandler.cs" />
     <Compile Include="InterfacesForUtilities\IFileHandler.cs" />
+    <Compile Include="InterfacesForUtilities\IHelperFunctions.cs" />
+    <Compile Include="InterfacesForUtilities\IMailHandler.cs" />
     <Compile Include="InterfacesForViews\ICommonView.cs" />
     <Compile Include="InterfacesForViews\ISettingsView.cs" />
     <Compile Include="InterfacesForViews\IMacAddressView.cs" />
@@ -174,8 +196,10 @@
     </Compile>
     <Compile Include="Utilities\Enums.cs" />
     <Compile Include="Utilities\DataScriptHandler.cs" />
-    <Compile Include="Utilities\EncryptionHandler.cs" />
+    <Compile Include="Utilities\PgpEncryptionHandler.cs" />
     <Compile Include="Utilities\FileHandler.cs" />
+    <Compile Include="InfoStructs\UserInfo.cs" />
+    <Compile Include="Utilities\MailHandler.cs" />
     <Compile Include="Views\CommonView.cs" />
     <Compile Include="Views\IPAddressView.cs" />
     <Compile Include="Views\LoginWinView.cs" />
