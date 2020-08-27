@@ -34,6 +34,24 @@ namespace Amadeus
         void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWin));
+
+            AssignControllers();
+            InitStayLoggedInChck(resources);
+            InitLoginButton(resources);
+            InitRegisterButton(resources);
+            InitUsersSaveBox(resources);
+            InitQuitButton(resources);
+            InitLoginBottomPanel(resources);
+            InitLoginTopPanel(resources);
+            InitPasswordTxtBox(resources);
+            InitUserNameTxtBox(resources);
+            InitUserInfoChkBox(Resources);
+            InitLoginWin(Resources);
+
+        }
+
+        private void AssignControllers()
+        {
             this.stayLoggedInChck = new System.Windows.Forms.CheckBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.registerButton = new System.Windows.Forms.Button();
@@ -47,55 +65,62 @@ namespace Amadeus
             this.loginBottomPanel.SuspendLayout();
             this.loginTopPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // stayLoggedInChck
-            // 
+        }
+
+        private void InitStayLoggedInChck(ComponentResourceManager resources)
+        {
             resources.ApplyResources(this.stayLoggedInChck, "stayLoggedInChck");
             this.stayLoggedInChck.Cursor = System.Windows.Forms.Cursors.Default;
             this.stayLoggedInChck.Name = "stayLoggedInChck";
             this.stayLoggedInChck.UseVisualStyleBackColor = true;
-            // 
-            // loginButton
-            // 
+        }
+
+        private void InitLoginButton(ComponentResourceManager resources)
+        {
             this.loginButton.BackColor = System.Drawing.Color.YellowGreen;
             this.loginButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.loginButton, "loginButton");
             this.loginButton.Name = "loginButton";
             this.loginButton.UseVisualStyleBackColor = false;
-            // 
-            // registerButton
-            // 
+        }
+
+        private void InitRegisterButton(ComponentResourceManager resources)
+        {
             this.registerButton.BackColor = System.Drawing.Color.DarkTurquoise;
             this.registerButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.registerButton, "registerButton");
             this.registerButton.Name = "registerButton";
             this.registerButton.UseVisualStyleBackColor = false;
-            // 
-            // usersSavedBox
-            // 
+        }
+
+        private void InitUsersSaveBox(ComponentResourceManager resources)
+        {
             this.usersSavedBox.FormattingEnabled = true;
             resources.ApplyResources(this.usersSavedBox, "usersSavedBox");
             this.usersSavedBox.Name = "usersSavedBox";
-            // 
-            // quitButton
-            // 
+        }
+
+        private void InitQuitButton(ComponentResourceManager resources)
+        {
             this.quitButton.BackColor = System.Drawing.Color.Violet;
             this.quitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.quitButton.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.quitButton, "quitButton");
             this.quitButton.Name = "quitButton";
             this.quitButton.UseVisualStyleBackColor = false;
-            // 
-            // loginBottomPanel
-            // 
+        }
+
+        private void InitLoginBottomPanel(ComponentResourceManager resources)
+        {
             this.loginBottomPanel.Controls.Add(this.loginButton);
             this.loginBottomPanel.Controls.Add(this.quitButton);
             this.loginBottomPanel.Controls.Add(this.registerButton);
             resources.ApplyResources(this.loginBottomPanel, "loginBottomPanel");
             this.loginBottomPanel.Name = "loginBottomPanel";
-            // 
-            // loginTopPanel
-            // 
+        }
+
+        private void InitLoginTopPanel(ComponentResourceManager resources)
+        {
             this.loginTopPanel.Controls.Add(this.saveUserInfoChkBox);
             this.loginTopPanel.Controls.Add(this.passwordTxtBox);
             this.loginTopPanel.Controls.Add(this.usernameTxtBox);
@@ -103,22 +128,21 @@ namespace Amadeus
             this.loginTopPanel.Controls.Add(this.usersSavedBox);
             resources.ApplyResources(this.loginTopPanel, "loginTopPanel");
             this.loginTopPanel.Name = "loginTopPanel";
-            // 
-            // passwordTxtBox
-            // 
-            resources.ApplyResources(this.passwordTxtBox, "passwordTxtBox");
-            this.passwordTxtBox.Name = "passwordTxtBox";
-            // 
-            // usernameTxtBox
-            // 
-            resources.ApplyResources(this.usernameTxtBox, "usernameTxtBox");
-            this.usernameTxtBox.Name = "usernameTxtBox";
-            InitializeUserInfoChkBox(Resources);
-            InitializeLoginWin(Resources);
-
         }
 
-        private void InitializeUserInfoChkBox(System.ComponentModel.ComponentResourceManager resources)
+        private void InitPasswordTxtBox(ComponentResourceManager resources)
+        {
+            resources.ApplyResources(this.passwordTxtBox, "passwordTxtBox");
+            this.passwordTxtBox.Name = "passwordTxtBox";
+        }
+
+        private void InitUserNameTxtBox(ComponentResourceManager resources)
+        {
+            resources.ApplyResources(this.usernameTxtBox, "usernameTxtBox");
+            this.usernameTxtBox.Name = "usernameTxtBox";
+        }
+
+        private void InitUserInfoChkBox(System.ComponentModel.ComponentResourceManager resources)
         {
             resources.ApplyResources(this.saveUserInfoChkBox, "saveUserInfoChkBox");
             this.saveUserInfoChkBox.Cursor = System.Windows.Forms.Cursors.Default;
@@ -126,7 +150,7 @@ namespace Amadeus
             this.saveUserInfoChkBox.UseVisualStyleBackColor = true;
         }
 
-        private void InitializeLoginWin(System.ComponentModel.ComponentResourceManager resources)
+        private void InitLoginWin(System.ComponentModel.ComponentResourceManager resources)
         {
             this.AcceptButton = this.loginButton;
             resources.ApplyResources(this, "$this");
