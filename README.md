@@ -113,6 +113,7 @@ This readme will be updated consistently.
 [IPV4](https://docs.oracle.com/cd/E19683-01/806-4075/ipref-1/index.htmlhttps://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
 [IPV6](https://docs.oracle.com/cd/E19253-01/816-4554/ipv6-overview-123/index.html)<br>
 [Powershell Sweeps](https://devblogs.microsoft.com/scripting/use-powershell-for-network-host-and-port-discovery-sweeps/)<br>
+[Cmdlet Writing](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/how-to-write-a-simple-cmdlet?view=powershell-7)
 
 ### WinForms
 [Possible Way to Access Control](https://stackoverflow.com/questions/12903489/is-it-allowed-to-change-code-in-windows-form-designer-generated-code-designer)<br>
@@ -127,7 +128,8 @@ This readme will be updated consistently.
 [More MVP](https://www.codeproject.com/Articles/14660/WinForms-Model-View-Presenter)<br>
 [MVP Example](https://codereview.stackexchange.com/questions/131330/model-view-presenter-winforms-app)
 [MVP MVC](https://stackoverflow.com/questions/2056/what-are-mvp-and-mvc-and-what-is-the-difference)
-
+[Winforms Controls](https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/overview-of-using-controls-in-windows-forms)<br>
+[MVP Video Series](https://www.youtube.com/watch?v=XHw4bBLM8Vk&list=WL&index=12)
 
 
 ### PGP
@@ -135,6 +137,7 @@ This readme will be updated consistently.
 [PGP File Encryption](https://www.codeproject.com/Questions/69856/Encrypting-and-Decrypting-files-with-PGP-and-C)<br>
 [More File Encryption](https://stackoverflow.com/questions/4192296/c-sharp-how-to-simply-encrypt-a-text-file-with-a-pgp-public-key)<br>
 [In General](https://www.codeproject.com/Articles/457453/PGP-Encryption-with-Csharp)<br>
+
 
 ### .NET
 
@@ -145,3 +148,4 @@ This readme will be updated consistently.
 [AES Encryptiong](https://www.c-sharpcorner.com/article/aes-encryption-in-c-sharp/)<br>
 [Zip Files](https://stackoverflow.com/questions/13160490/decompressing-password-protected-zip-files-with-net-4-5)<br>
 [Zip Files C#](https://www.c-sharpcorner.com/UploadFile/neill1212/password-encrypted-zip-files-in-C-Sharp/)<br>
+[Class or Struct](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/choosing-between-class-and-struct)
