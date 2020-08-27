@@ -1,10 +1,12 @@
 ﻿using Amadeus.Presenters;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace Amadeus
 {
     partial class LoginWin
     {
+        private readonly ComponentResourceManager Resources = new ComponentResourceManager(typeof(LoginWin));
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -111,16 +113,21 @@ namespace Amadeus
             // 
             resources.ApplyResources(this.usernameTxtBox, "usernameTxtBox");
             this.usernameTxtBox.Name = "usernameTxtBox";
-            // 
-            // saveUserInfoChkBox
-            // 
+            InitializeUserInfoChkBox(Resources);
+            InitializeLoginWin(Resources);
+
+        }
+
+        private void InitializeUserInfoChkBox(System.ComponentModel.ComponentResourceManager resources)
+        {
             resources.ApplyResources(this.saveUserInfoChkBox, "saveUserInfoChkBox");
             this.saveUserInfoChkBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.saveUserInfoChkBox.Name = "saveUserInfoChkBox";
             this.saveUserInfoChkBox.UseVisualStyleBackColor = true;
-            // 
-            // LoginWin
-            // 
+        }
+
+        private void InitializeLoginWin(System.ComponentModel.ComponentResourceManager resources)
+        {
             this.AcceptButton = this.loginButton;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,7 +143,6 @@ namespace Amadeus
             this.loginTopPanel.ResumeLayout(false);
             this.loginTopPanel.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion

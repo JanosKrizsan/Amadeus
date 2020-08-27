@@ -1,5 +1,4 @@
 ﻿using Amadeus.InterfacesForUtilities;
-using static Amadeus.Utilities.EnumsHelper;
 using System;
 using System.IO;
 using System.Linq;
@@ -15,6 +14,7 @@ namespace Amadeus.Utilities
     {
         public static FileHandler Instance { get { return _instance.Value; } }
         private static readonly Lazy<FileHandler> _instance = new Lazy<FileHandler>(() => new FileHandler());
+        private TypeHolder _holder;
         private Dictionary<string, string> _directories;
         private HelperFunctions _helper;
 
@@ -22,16 +22,17 @@ namespace Amadeus.Utilities
         {
             InitFolders();
             _helper = new HelperFunctions(_directories);
+            _holder = TypeHolder.Instance;
         }
 
         public void InitFolders()
         {
             var parentDir = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (!Directory.Exists(string.Concat(parentDir, EnumToString(FolderTypes.USER))))
+            if (!Directory.Exists(string.Concat(parentDir, _holder.Files["User"])))
             {
-                foreach (var type in Enum.GetValues(typeof(FolderTypes)).Cast<FolderTypes>())
+                foreach (var folderType in _holder.Files.Keys)
                 {
-                    var folderName = EnumToString(type);
+                    var folderName = _holder.Files[folderType];
                     var dirPath = string.Concat(parentDir, folderName);
                     Directory.CreateDirectory(dirPath);
                     _directories.Add(folderName, dirPath);
@@ -39,7 +40,7 @@ namespace Amadeus.Utilities
             }
         }
 
-        public void SaveObject(FolderTypes itemType, FileTypes saveType, ObjectTypes objType, object obj)
+        public void SaveObject(string itemType, string saveType, string objType, object obj)
         {
             if (_helper.AreValuesValid(itemType, saveType, objType))
             {
@@ -48,7 +49,7 @@ namespace Amadeus.Utilities
             }
         }
 
-        public object LoadObject(FolderTypes itemType, FileTypes saveType, ObjectTypes objType)
+        public object LoadObject(string itemType, string saveType, string objType)
         {
             if (_helper.AreValuesValid(itemType, saveType, objType))
             {
@@ -61,9 +62,11 @@ namespace Amadeus.Utilities
         internal sealed class HelperFunctions : IHelperFunctions
         {
             private Dictionary<string, string> _dirs;
+            private TypeHolder _holder;
             internal HelperFunctions(Dictionary<string, string> dirs)
             {
                 _dirs = dirs;
+                _holder = TypeHolder.Instance;
             }
 
             public void SaveToTXT(string fullPath, object data)
@@ -98,7 +101,7 @@ namespace Amadeus.Utilities
             public void SaveToRDP(string fullPath, object data)
             {
                 SaveToTXT(fullPath, data);
-                ChangeFileExtension(fullPath, EnumToString(FileTypes.RDP));
+                ChangeFileExtension(fullPath, _holder.Files["RDP"]);
             }
 
             public void ChangeFileExtension(string fullPath, string newExt)
@@ -107,13 +110,13 @@ namespace Amadeus.Utilities
             }
 
 
-            public bool AreValuesValid(FolderTypes itemType, FileTypes saveType, ObjectTypes objType)
+            public bool AreValuesValid(string itemType, string saveType, string objType)
             {
-                string[] vals = { EnumToString(itemType), EnumToString(saveType), EnumToString(objType) };
+                string[] vals = { itemType, saveType, objType };
                 return CheckVals(vals);
             }
 
-            public string ConstructPath(FolderTypes targetFolder, ObjectTypes namePreFace, string fileName, FileTypes extension)
+            public string ConstructPath(string targetFolder, string namePreFace, string fileName, string extension)
             {
                 var targetDir = GetDirectory(targetFolder);
                 if (string.IsNullOrEmpty(targetDir))
@@ -121,15 +124,15 @@ namespace Amadeus.Utilities
                     throw new InvalidDataException(); //TODO create normal exception handling, this is just a reminder
                 }
                 var pathBuilder = new StringBuilder();
-                pathBuilder.Append(targetDir).Append(EnumToString(namePreFace)).Append(fileName).Append(EnumToString(extension));
+                pathBuilder.Append(targetDir).Append(namePreFace).Append(fileName).Append(extension);
                 return pathBuilder.ToString();
             }
 
-            private string GetDirectory(FolderTypes targetFolder)
+            private string GetDirectory(string targetFolder)
             {
                 foreach (var dir in _dirs)
                 {
-                    if (dir.Key.Equals(EnumToString(targetFolder)))
+                    if (dir.Key.Equals(targetFolder))
                     {
                         return dir.Value;
                     }

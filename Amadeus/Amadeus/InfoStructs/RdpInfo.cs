@@ -2,7 +2,6 @@
 {
     public struct RdpInfo
     {
-
         public string ConnName { get; set; }
         public string IPAddress { get; set; }
         public string Port { get; set; }

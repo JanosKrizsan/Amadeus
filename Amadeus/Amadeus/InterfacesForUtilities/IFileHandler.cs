@@ -1,7 +1,4 @@
-﻿using Amadeus.InfoStructs;
-using Amadeus.Utilities;
-
-namespace Amadeus.InterfacesForUtilities
+﻿namespace Amadeus.InterfacesForUtilities
 {
     /// <summary>
     /// Most function names are self-explanatory
@@ -12,7 +9,7 @@ namespace Amadeus.InterfacesForUtilities
         /// Creates folders if not found
         /// </summary>
         void InitFolders();
-        void SaveObject(FolderTypes itemType, FileTypes saveType, ObjectTypes objType, object obj);
-        object LoadObject(FolderTypes itemType, FileTypes saveType, ObjectTypes objType);
+        void SaveObject(string itemType, string saveType, string objType, object obj);
+        object LoadObject(string itemType, string saveType, string objType);
     }
 }
