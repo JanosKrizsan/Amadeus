@@ -27,6 +27,7 @@ namespace Amadeus.Utilities
 
         public void InitFolders()
         {
+            _directories = new Dictionary<string, string>();
             var parentDir = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
             if (!Directory.Exists(string.Concat(parentDir, _holder.Files["User"])))
             {

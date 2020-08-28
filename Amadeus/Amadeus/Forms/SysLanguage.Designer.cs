@@ -58,14 +58,6 @@
             this.langTagListBox.ForeColor = System.Drawing.Color.OliveDrab;
             this.langTagListBox.FormattingEnabled = true;
             this.langTagListBox.ItemHeight = 18;
-            this.langTagListBox.Items.AddRange(new object[] {
-            "Language | language tag | english name",
-            "Language | language tag | english name",
-            "Language | language tag | english name",
-            "Language | language tag | english name",
-            "Language | language tag | english name",
-            "Language | language tag | english name",
-            "Language | language tag | english name"});
             this.langTagListBox.Location = new System.Drawing.Point(317, 12);
             this.langTagListBox.Name = "langTagListBox";
             this.langTagListBox.ScrollAlwaysVisible = true;
@@ -183,7 +175,6 @@
             this.customTagInpBox.Name = "customTagInpBox";
             this.customTagInpBox.Size = new System.Drawing.Size(270, 20);
             this.customTagInpBox.TabIndex = 8;
-            this.customTagInpBox.Text = "add language tag here...";
             // 
             // addCustomBtn
             // 

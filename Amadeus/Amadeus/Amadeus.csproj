@@ -65,6 +65,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\BaseButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="InfoStructs\IPInfo.cs" />
     <Compile Include="InfoStructs\MacInfo.cs" />
     <Compile Include="InfoStructs\ProxyInfo.cs" />

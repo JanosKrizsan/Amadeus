@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.staticPnl = new System.Windows.Forms.Panel();
-            this.dynamicPnl = new System.Windows.Forms.Panel();
-            this.staticAddLbl = new System.Windows.Forms.Label();
-            this.DynamicAddLbl = new System.Windows.Forms.Label();
-            this.ipaddressLbl = new System.Windows.Forms.Label();
-            this.maskLbl = new System.Windows.Forms.Label();
-            this.gatewayLbl = new System.Windows.Forms.Label();
-            this.dnsLbl = new System.Windows.Forms.Label();
-            this.setStaticIPBtn = new System.Windows.Forms.Button();
-            this.setDynamicIPBtn = new System.Windows.Forms.Button();
-            this.dnsTxtBox = new System.Windows.Forms.TextBox();
-            this.maskTxtBox = new System.Windows.Forms.TextBox();
-            this.ipAddTxtBox = new System.Windows.Forms.TextBox();
             this.gatewayTxtBox = new System.Windows.Forms.TextBox();
-            this.adapterIpsListBox = new System.Windows.Forms.ListBox();
-            this.selectedAdapterData = new System.Windows.Forms.RichTextBox();
+            this.ipAddTxtBox = new System.Windows.Forms.TextBox();
+            this.maskTxtBox = new System.Windows.Forms.TextBox();
+            this.dnsTxtBox = new System.Windows.Forms.TextBox();
+            this.setStaticIPBtn = new System.Windows.Forms.Button();
+            this.dnsLbl = new System.Windows.Forms.Label();
+            this.gatewayLbl = new System.Windows.Forms.Label();
+            this.maskLbl = new System.Windows.Forms.Label();
+            this.ipaddressLbl = new System.Windows.Forms.Label();
+            this.staticAddLbl = new System.Windows.Forms.Label();
+            this.dynamicPnl = new System.Windows.Forms.Panel();
             this.currNetAdDataLbl = new System.Windows.Forms.Label();
+            this.selectedAdapterData = new System.Windows.Forms.RichTextBox();
+            this.setDynamicIPBtn = new System.Windows.Forms.Button();
+            this.DynamicAddLbl = new System.Windows.Forms.Label();
+            this.adapterIpsListBox = new System.Windows.Forms.ListBox();
             this.adapterListLbl = new System.Windows.Forms.Label();
             this.ipAddressesHlpBtn = new System.Windows.Forms.Button();
             this.staticPnl.SuspendLayout();
@@ -69,6 +69,93 @@
             this.staticPnl.Size = new System.Drawing.Size(282, 289);
             this.staticPnl.TabIndex = 0;
             // 
+            // gatewayTxtBox
+            // 
+            this.gatewayTxtBox.Location = new System.Drawing.Point(7, 171);
+            this.gatewayTxtBox.Name = "gatewayTxtBox";
+            this.gatewayTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.gatewayTxtBox.TabIndex = 9;
+            // 
+            // ipAddTxtBox
+            // 
+            this.ipAddTxtBox.Location = new System.Drawing.Point(7, 95);
+            this.ipAddTxtBox.Name = "ipAddTxtBox";
+            this.ipAddTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.ipAddTxtBox.TabIndex = 8;
+            // 
+            // maskTxtBox
+            // 
+            this.maskTxtBox.Location = new System.Drawing.Point(158, 95);
+            this.maskTxtBox.Name = "maskTxtBox";
+            this.maskTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.maskTxtBox.TabIndex = 7;
+            // 
+            // dnsTxtBox
+            // 
+            this.dnsTxtBox.Location = new System.Drawing.Point(158, 171);
+            this.dnsTxtBox.Name = "dnsTxtBox";
+            this.dnsTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.dnsTxtBox.TabIndex = 6;
+            // 
+            // setStaticIPBtn
+            // 
+            this.setStaticIPBtn.Location = new System.Drawing.Point(7, 244);
+            this.setStaticIPBtn.Name = "setStaticIPBtn";
+            this.setStaticIPBtn.Size = new System.Drawing.Size(75, 23);
+            this.setStaticIPBtn.TabIndex = 5;
+            this.setStaticIPBtn.Text = "Set Address";
+            this.setStaticIPBtn.UseVisualStyleBackColor = true;
+            // 
+            // dnsLbl
+            // 
+            this.dnsLbl.AutoSize = true;
+            this.dnsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dnsLbl.Location = new System.Drawing.Point(155, 151);
+            this.dnsLbl.Name = "dnsLbl";
+            this.dnsLbl.Size = new System.Drawing.Size(41, 17);
+            this.dnsLbl.TabIndex = 4;
+            this.dnsLbl.Text = "DNS:";
+            // 
+            // gatewayLbl
+            // 
+            this.gatewayLbl.AutoSize = true;
+            this.gatewayLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gatewayLbl.Location = new System.Drawing.Point(4, 151);
+            this.gatewayLbl.Name = "gatewayLbl";
+            this.gatewayLbl.Size = new System.Drawing.Size(67, 17);
+            this.gatewayLbl.TabIndex = 3;
+            this.gatewayLbl.Text = "Gateway:";
+            // 
+            // maskLbl
+            // 
+            this.maskLbl.AutoSize = true;
+            this.maskLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskLbl.Location = new System.Drawing.Point(155, 75);
+            this.maskLbl.Name = "maskLbl";
+            this.maskLbl.Size = new System.Drawing.Size(45, 17);
+            this.maskLbl.TabIndex = 2;
+            this.maskLbl.Text = "Mask:";
+            // 
+            // ipaddressLbl
+            // 
+            this.ipaddressLbl.AutoSize = true;
+            this.ipaddressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ipaddressLbl.Location = new System.Drawing.Point(4, 75);
+            this.ipaddressLbl.Name = "ipaddressLbl";
+            this.ipaddressLbl.Size = new System.Drawing.Size(80, 17);
+            this.ipaddressLbl.TabIndex = 1;
+            this.ipaddressLbl.Text = "IP Address:";
+            // 
+            // staticAddLbl
+            // 
+            this.staticAddLbl.AutoSize = true;
+            this.staticAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staticAddLbl.Location = new System.Drawing.Point(3, 11);
+            this.staticAddLbl.Name = "staticAddLbl";
+            this.staticAddLbl.Size = new System.Drawing.Size(113, 20);
+            this.staticAddLbl.TabIndex = 0;
+            this.staticAddLbl.Text = "Static Address";
+            // 
             // dynamicPnl
             // 
             this.dynamicPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -81,128 +168,15 @@
             this.dynamicPnl.Size = new System.Drawing.Size(282, 289);
             this.dynamicPnl.TabIndex = 1;
             // 
-            // staticAddLbl
+            // currNetAdDataLbl
             // 
-            this.staticAddLbl.AutoSize = true;
-            this.staticAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.staticAddLbl.Location = new System.Drawing.Point(3, 11);
-            this.staticAddLbl.Name = "staticAddLbl";
-            this.staticAddLbl.Size = new System.Drawing.Size(113, 20);
-            this.staticAddLbl.TabIndex = 0;
-            this.staticAddLbl.Text = "Static Address";
-            // 
-            // DynamicAddLbl
-            // 
-            this.DynamicAddLbl.AutoSize = true;
-            this.DynamicAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DynamicAddLbl.Location = new System.Drawing.Point(3, 11);
-            this.DynamicAddLbl.Name = "DynamicAddLbl";
-            this.DynamicAddLbl.Size = new System.Drawing.Size(133, 20);
-            this.DynamicAddLbl.TabIndex = 1;
-            this.DynamicAddLbl.Text = "Dynamic Address";
-            // 
-            // ipaddressLbl
-            // 
-            this.ipaddressLbl.AutoSize = true;
-            this.ipaddressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ipaddressLbl.Location = new System.Drawing.Point(4, 75);
-            this.ipaddressLbl.Name = "ipaddressLbl";
-            this.ipaddressLbl.Size = new System.Drawing.Size(80, 17);
-            this.ipaddressLbl.TabIndex = 1;
-            this.ipaddressLbl.Text = "IP Address:";
-            // 
-            // maskLbl
-            // 
-            this.maskLbl.AutoSize = true;
-            this.maskLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskLbl.Location = new System.Drawing.Point(155, 75);
-            this.maskLbl.Name = "maskLbl";
-            this.maskLbl.Size = new System.Drawing.Size(45, 17);
-            this.maskLbl.TabIndex = 2;
-            this.maskLbl.Text = "Mask:";
-            // 
-            // gatewayLbl
-            // 
-            this.gatewayLbl.AutoSize = true;
-            this.gatewayLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gatewayLbl.Location = new System.Drawing.Point(4, 151);
-            this.gatewayLbl.Name = "gatewayLbl";
-            this.gatewayLbl.Size = new System.Drawing.Size(67, 17);
-            this.gatewayLbl.TabIndex = 3;
-            this.gatewayLbl.Text = "Gateway:";
-            // 
-            // dnsLbl
-            // 
-            this.dnsLbl.AutoSize = true;
-            this.dnsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dnsLbl.Location = new System.Drawing.Point(155, 151);
-            this.dnsLbl.Name = "dnsLbl";
-            this.dnsLbl.Size = new System.Drawing.Size(41, 17);
-            this.dnsLbl.TabIndex = 4;
-            this.dnsLbl.Text = "DNS:";
-            // 
-            // setStaticIPBtn
-            // 
-            this.setStaticIPBtn.Location = new System.Drawing.Point(7, 244);
-            this.setStaticIPBtn.Name = "setStaticIPBtn";
-            this.setStaticIPBtn.Size = new System.Drawing.Size(75, 23);
-            this.setStaticIPBtn.TabIndex = 5;
-            this.setStaticIPBtn.Text = "Set Address";
-            this.setStaticIPBtn.UseVisualStyleBackColor = true;
-            // 
-            // setDynamicIPBtn
-            // 
-            this.setDynamicIPBtn.Location = new System.Drawing.Point(7, 244);
-            this.setDynamicIPBtn.Name = "setDynamicIPBtn";
-            this.setDynamicIPBtn.Size = new System.Drawing.Size(75, 23);
-            this.setDynamicIPBtn.TabIndex = 6;
-            this.setDynamicIPBtn.Text = "Do Magic";
-            this.setDynamicIPBtn.UseVisualStyleBackColor = true;
-            // 
-            // dnsTxtBox
-            // 
-            this.dnsTxtBox.Location = new System.Drawing.Point(158, 171);
-            this.dnsTxtBox.Name = "dnsTxtBox";
-            this.dnsTxtBox.Size = new System.Drawing.Size(100, 20);
-            this.dnsTxtBox.TabIndex = 6;
-            // 
-            // maskTxtBox
-            // 
-            this.maskTxtBox.Location = new System.Drawing.Point(158, 95);
-            this.maskTxtBox.Name = "maskTxtBox";
-            this.maskTxtBox.Size = new System.Drawing.Size(100, 20);
-            this.maskTxtBox.TabIndex = 7;
-            // 
-            // ipAddTxtBox
-            // 
-            this.ipAddTxtBox.Location = new System.Drawing.Point(7, 95);
-            this.ipAddTxtBox.Name = "ipAddTxtBox";
-            this.ipAddTxtBox.Size = new System.Drawing.Size(100, 20);
-            this.ipAddTxtBox.TabIndex = 8;
-            // 
-            // gatewayTxtBox
-            // 
-            this.gatewayTxtBox.Location = new System.Drawing.Point(7, 171);
-            this.gatewayTxtBox.Name = "gatewayTxtBox";
-            this.gatewayTxtBox.Size = new System.Drawing.Size(100, 20);
-            this.gatewayTxtBox.TabIndex = 9;
-            // 
-            // adapterIpsListBox
-            // 
-            this.adapterIpsListBox.BackColor = System.Drawing.SystemColors.MenuText;
-            this.adapterIpsListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adapterIpsListBox.ForeColor = System.Drawing.Color.YellowGreen;
-            this.adapterIpsListBox.FormattingEnabled = true;
-            this.adapterIpsListBox.ItemHeight = 16;
-            this.adapterIpsListBox.Items.AddRange(new object[] {
-            "adapter name | adapter id | ipv4 | ipv6",
-            "adapter name | adapter id | ipv4 | ipv6",
-            "adapter name | adapter id | ipv4 | ipv6",
-            "adapter name | adapter id | ipv4 | ipv6"});
-            this.adapterIpsListBox.Location = new System.Drawing.Point(13, 358);
-            this.adapterIpsListBox.Name = "adapterIpsListBox";
-            this.adapterIpsListBox.Size = new System.Drawing.Size(591, 148);
-            this.adapterIpsListBox.TabIndex = 2;
+            this.currNetAdDataLbl.AutoSize = true;
+            this.currNetAdDataLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currNetAdDataLbl.Location = new System.Drawing.Point(4, 75);
+            this.currNetAdDataLbl.Name = "currNetAdDataLbl";
+            this.currNetAdDataLbl.Size = new System.Drawing.Size(169, 17);
+            this.currNetAdDataLbl.TabIndex = 8;
+            this.currNetAdDataLbl.Text = "Current NetAdapter Data:";
             // 
             // selectedAdapterData
             // 
@@ -214,15 +188,36 @@
             this.selectedAdapterData.TabIndex = 7;
             this.selectedAdapterData.Text = "";
             // 
-            // currNetAdDataLbl
+            // setDynamicIPBtn
             // 
-            this.currNetAdDataLbl.AutoSize = true;
-            this.currNetAdDataLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currNetAdDataLbl.Location = new System.Drawing.Point(4, 75);
-            this.currNetAdDataLbl.Name = "currNetAdDataLbl";
-            this.currNetAdDataLbl.Size = new System.Drawing.Size(169, 17);
-            this.currNetAdDataLbl.TabIndex = 8;
-            this.currNetAdDataLbl.Text = "Current NetAdapter Data:";
+            this.setDynamicIPBtn.Location = new System.Drawing.Point(7, 244);
+            this.setDynamicIPBtn.Name = "setDynamicIPBtn";
+            this.setDynamicIPBtn.Size = new System.Drawing.Size(75, 23);
+            this.setDynamicIPBtn.TabIndex = 6;
+            this.setDynamicIPBtn.Text = "Do Magic";
+            this.setDynamicIPBtn.UseVisualStyleBackColor = true;
+            // 
+            // DynamicAddLbl
+            // 
+            this.DynamicAddLbl.AutoSize = true;
+            this.DynamicAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DynamicAddLbl.Location = new System.Drawing.Point(3, 11);
+            this.DynamicAddLbl.Name = "DynamicAddLbl";
+            this.DynamicAddLbl.Size = new System.Drawing.Size(133, 20);
+            this.DynamicAddLbl.TabIndex = 1;
+            this.DynamicAddLbl.Text = "Dynamic Address";
+            // 
+            // adapterIpsListBox
+            // 
+            this.adapterIpsListBox.BackColor = System.Drawing.SystemColors.MenuText;
+            this.adapterIpsListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adapterIpsListBox.ForeColor = System.Drawing.Color.YellowGreen;
+            this.adapterIpsListBox.FormattingEnabled = true;
+            this.adapterIpsListBox.ItemHeight = 16;
+            this.adapterIpsListBox.Location = new System.Drawing.Point(13, 358);
+            this.adapterIpsListBox.Name = "adapterIpsListBox";
+            this.adapterIpsListBox.Size = new System.Drawing.Size(591, 148);
+            this.adapterIpsListBox.TabIndex = 2;
             // 
             // adapterListLbl
             // 

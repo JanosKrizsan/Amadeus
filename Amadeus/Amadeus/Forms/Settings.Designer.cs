@@ -138,7 +138,6 @@
             this.gpgTxtBox.Name = "gpgTxtBox";
             this.gpgTxtBox.Size = new System.Drawing.Size(194, 20);
             this.gpgTxtBox.TabIndex = 9;
-            this.gpgTxtBox.Text = "Add your key here";
             // 
             // gpgLbl
             // 
@@ -156,7 +155,6 @@
             this.passwordTxtBox.Name = "passwordTxtBox";
             this.passwordTxtBox.Size = new System.Drawing.Size(194, 20);
             this.passwordTxtBox.TabIndex = 7;
-            this.passwordTxtBox.Text = "Add your pass here";
             // 
             // passwordLbl
             // 
@@ -174,7 +172,6 @@
             this.usernameTxtBox.Name = "usernameTxtBox";
             this.usernameTxtBox.Size = new System.Drawing.Size(194, 20);
             this.usernameTxtBox.TabIndex = 5;
-            this.usernameTxtBox.Text = "Add your username here";
             // 
             // settingsBtnsPnl
             // 
@@ -373,7 +370,6 @@
             this.emailAddConfTxtBox.Name = "emailAddConfTxtBox";
             this.emailAddConfTxtBox.Size = new System.Drawing.Size(194, 20);
             this.emailAddConfTxtBox.TabIndex = 12;
-            this.emailAddConfTxtBox.Text = "Add your addy here agian";
             // 
             // emailAddConfLbl
             // 
@@ -391,7 +387,6 @@
             this.emailAddTxtBox.Name = "emailAddTxtBox";
             this.emailAddTxtBox.Size = new System.Drawing.Size(194, 20);
             this.emailAddTxtBox.TabIndex = 10;
-            this.emailAddTxtBox.Text = "Add your addy here";
             // 
             // emailAddLbl
             // 

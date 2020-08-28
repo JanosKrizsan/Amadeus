@@ -162,12 +162,6 @@
             // macVendorsLstBox
             // 
             this.macVendorsLstBox.FormattingEnabled = true;
-            this.macVendorsLstBox.Items.AddRange(new object[] {
-            "Mac Vendor | Mac Vendor Addy",
-            "Mac Vendor | Mac Vendor Addy",
-            "Mac Vendor | Mac Vendor Addy",
-            "Mac Vendor | Mac Vendor Addy",
-            "Mac Vendor | Mac Vendor Addy"});
             this.macVendorsLstBox.Location = new System.Drawing.Point(6, 67);
             this.macVendorsLstBox.Name = "macVendorsLstBox";
             this.macVendorsLstBox.Size = new System.Drawing.Size(350, 147);

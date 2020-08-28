@@ -97,7 +97,6 @@
             this.ipAddyTxtBox.Name = "ipAddyTxtBox";
             this.ipAddyTxtBox.Size = new System.Drawing.Size(140, 20);
             this.ipAddyTxtBox.TabIndex = 1;
-            this.ipAddyTxtBox.Text = "Sample text...";
             // 
             // portLbl
             // 
@@ -117,7 +116,6 @@
             this.portTxtBox.Name = "portTxtBox";
             this.portTxtBox.Size = new System.Drawing.Size(140, 20);
             this.portTxtBox.TabIndex = 12;
-            this.portTxtBox.Text = "Sample text...";
             // 
             // uNameLbl
             // 
@@ -137,7 +135,6 @@
             this.uNameTxtBox.Name = "uNameTxtBox";
             this.uNameTxtBox.Size = new System.Drawing.Size(140, 20);
             this.uNameTxtBox.TabIndex = 3;
-            this.uNameTxtBox.Text = "Sample text...";
             // 
             // passLbl
             // 
@@ -157,7 +154,6 @@
             this.passTextBox.Name = "passTextBox";
             this.passTextBox.Size = new System.Drawing.Size(140, 20);
             this.passTextBox.TabIndex = 5;
-            this.passTextBox.Text = "Sample text...";
             // 
             // authReqChckBox
             // 
@@ -257,7 +253,7 @@
             this.proxyInfoTxtBox.Name = "proxyInfoTxtBox";
             this.proxyInfoTxtBox.Size = new System.Drawing.Size(200, 177);
             this.proxyInfoTxtBox.TabIndex = 0;
-            this.proxyInfoTxtBox.Text = "Info of selected proxy comes here...";
+            this.proxyInfoTxtBox.Text = "";
             // 
             // connectToSavedBtn
             // 

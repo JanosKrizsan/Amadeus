@@ -155,7 +155,7 @@
             this.selectedInfoTxtBox.Name = "selectedInfoTxtBox";
             this.selectedInfoTxtBox.Size = new System.Drawing.Size(212, 134);
             this.selectedInfoTxtBox.TabIndex = 1;
-            this.selectedInfoTxtBox.Text = "Info of the selected VPN comes here...";
+            this.selectedInfoTxtBox.Text = "";
             // 
             // label2
             // 
@@ -226,7 +226,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(135, 21);
             this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "add name...";
             // 
             // nameVpnLbl
             // 
@@ -255,7 +254,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(135, 21);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "add addy...";
             // 
             // addressVpnLbl
             // 

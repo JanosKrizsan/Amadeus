@@ -1,8 +1,9 @@
-﻿namespace Amadeus.InterfacesForViews
+﻿using System;
+
+namespace Amadeus.InterfacesForViews
 {
     interface ICommonView
     {
-
         /// <summary>
         /// Shows the Form
         /// </summary>
