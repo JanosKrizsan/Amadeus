@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InfoStructs
 {
-    public struct IPInfo
+    public class IPInfo
     {
         public string IPAddress { get; set; }
         public string Mask { get; set; }

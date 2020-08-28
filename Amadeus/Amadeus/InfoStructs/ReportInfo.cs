@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InfoStructs
 {
-    public struct ReportInfo
+    public class ReportInfo
     {
         public string ReportData { get; set; }
 

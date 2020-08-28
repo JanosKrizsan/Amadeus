@@ -194,7 +194,7 @@
     <Compile Include="Forms\Vpn.Designer.cs">
       <DependentUpon>Vpn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\Enums.cs" />
+    <Compile Include="Utilities\TypeHolder.cs" />
     <Compile Include="Utilities\DataScriptHandler.cs" />
     <Compile Include="Utilities\PgpEncryptionHandler.cs" />
     <Compile Include="Utilities\FileHandler.cs" />

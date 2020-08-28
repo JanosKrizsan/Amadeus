@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InfoStructs
 {
-    public struct MacInfo
+    public class MacInfo
     {
         public string FullMacAddress { get; set; }
     }

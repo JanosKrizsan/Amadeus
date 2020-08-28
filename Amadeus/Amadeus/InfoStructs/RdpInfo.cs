@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InfoStructs
 {
-    public struct RdpInfo
+    public class RdpInfo
     {
         public string ConnName { get; set; }
         public string IPAddress { get; set; }

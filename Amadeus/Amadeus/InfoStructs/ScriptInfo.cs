@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InfoStructs
 {
-    public struct ScriptInfo
+    public class ScriptInfo
     {
         public string ScriptData { get; set; }
     }

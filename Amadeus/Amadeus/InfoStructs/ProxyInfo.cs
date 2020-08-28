@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InfoStructs
 {
-    public struct ProxyInfo
+    public class ProxyInfo
     {
         public string IPAddress { get; set; }
         public string Port { get; set; }

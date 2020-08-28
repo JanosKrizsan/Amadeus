@@ -1,6 +1,6 @@
 ﻿namespace Amadeus.InfoStructs
 {
-    public struct VpnInfo
+    public class VpnInfo
     {
         public string Name { get; set; }
         public string Address { get; set; }
