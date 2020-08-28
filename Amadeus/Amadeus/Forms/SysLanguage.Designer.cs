@@ -28,255 +28,255 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.langTagListBox = new System.Windows.Forms.ListBox();
-            this.currLangOpPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.currentInstLangsLbl = new System.Windows.Forms.Label();
-            this.currentLangsCmboBox = new System.Windows.Forms.ComboBox();
-            this.removeCurrBtn = new System.Windows.Forms.Button();
-            this.setSelectedBtn = new System.Windows.Forms.Button();
-            this.setAsDefBtn = new System.Windows.Forms.Button();
-            this.setToDefBtn = new System.Windows.Forms.Button();
-            this.checkGeoDataBtn = new System.Windows.Forms.Button();
-            this.customInpLbl = new System.Windows.Forms.Label();
-            this.customTagInpBox = new System.Windows.Forms.TextBox();
-            this.addCustomBtn = new System.Windows.Forms.Button();
-            this.addNSetCustBtn = new System.Windows.Forms.Button();
-            this.removeSimilarBtn = new System.Windows.Forms.Button();
-            this.currHelpBtn = new System.Windows.Forms.Button();
-            this.newLangListPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.addNewBtn = new System.Windows.Forms.Button();
-            this.addnSetNewBtn = new System.Windows.Forms.Button();
-            this.helpNewBtn = new System.Windows.Forms.Button();
-            this.currLangOpPanel.SuspendLayout();
-            this.newLangListPanel.SuspendLayout();
-            this.SuspendLayout();
+            langTagListBox = new System.Windows.Forms.ListBox();
+            currLangOpPanel = new System.Windows.Forms.FlowLayoutPanel();
+            currentInstLangsLbl = new System.Windows.Forms.Label();
+            currentLangsCmboBox = new System.Windows.Forms.ComboBox();
+            removeCurrBtn = new System.Windows.Forms.Button();
+            setSelectedBtn = new System.Windows.Forms.Button();
+            setAsDefBtn = new System.Windows.Forms.Button();
+            setToDefBtn = new System.Windows.Forms.Button();
+            checkGeoDataBtn = new System.Windows.Forms.Button();
+            customInpLbl = new System.Windows.Forms.Label();
+            customTagInpBox = new System.Windows.Forms.TextBox();
+            addCustomBtn = new System.Windows.Forms.Button();
+            addNSetCustBtn = new System.Windows.Forms.Button();
+            removeSimilarBtn = new System.Windows.Forms.Button();
+            currHelpBtn = new System.Windows.Forms.Button();
+            newLangListPanel = new System.Windows.Forms.FlowLayoutPanel();
+            addNewBtn = new System.Windows.Forms.Button();
+            addnSetNewBtn = new System.Windows.Forms.Button();
+            helpNewBtn = new System.Windows.Forms.Button();
+            currLangOpPanel.SuspendLayout();
+            newLangListPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // langTagListBox
             // 
-            this.langTagListBox.BackColor = System.Drawing.SystemColors.MenuText;
-            this.langTagListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.langTagListBox.ForeColor = System.Drawing.Color.OliveDrab;
-            this.langTagListBox.FormattingEnabled = true;
-            this.langTagListBox.ItemHeight = 18;
-            this.langTagListBox.Location = new System.Drawing.Point(317, 12);
-            this.langTagListBox.Name = "langTagListBox";
-            this.langTagListBox.ScrollAlwaysVisible = true;
-            this.langTagListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.langTagListBox.Size = new System.Drawing.Size(288, 346);
-            this.langTagListBox.TabIndex = 0;
+            langTagListBox.BackColor = System.Drawing.SystemColors.MenuText;
+            langTagListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            langTagListBox.ForeColor = System.Drawing.Color.OliveDrab;
+            langTagListBox.FormattingEnabled = true;
+            langTagListBox.ItemHeight = 18;
+            langTagListBox.Location = new System.Drawing.Point(317, 12);
+            langTagListBox.Name = "langTagListBox";
+            langTagListBox.ScrollAlwaysVisible = true;
+            langTagListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            langTagListBox.Size = new System.Drawing.Size(288, 346);
+            langTagListBox.TabIndex = 0;
             // 
             // currLangOpPanel
             // 
-            this.currLangOpPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.currLangOpPanel.Controls.Add(this.currentInstLangsLbl);
-            this.currLangOpPanel.Controls.Add(this.currentLangsCmboBox);
-            this.currLangOpPanel.Controls.Add(this.removeCurrBtn);
-            this.currLangOpPanel.Controls.Add(this.setSelectedBtn);
-            this.currLangOpPanel.Controls.Add(this.setAsDefBtn);
-            this.currLangOpPanel.Controls.Add(this.setToDefBtn);
-            this.currLangOpPanel.Controls.Add(this.checkGeoDataBtn);
-            this.currLangOpPanel.Controls.Add(this.customInpLbl);
-            this.currLangOpPanel.Controls.Add(this.customTagInpBox);
-            this.currLangOpPanel.Controls.Add(this.addCustomBtn);
-            this.currLangOpPanel.Controls.Add(this.addNSetCustBtn);
-            this.currLangOpPanel.Controls.Add(this.removeSimilarBtn);
-            this.currLangOpPanel.Controls.Add(this.currHelpBtn);
-            this.currLangOpPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.currLangOpPanel.Location = new System.Drawing.Point(12, 12);
-            this.currLangOpPanel.Name = "currLangOpPanel";
-            this.currLangOpPanel.Size = new System.Drawing.Size(290, 498);
-            this.currLangOpPanel.TabIndex = 1;
+            currLangOpPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            currLangOpPanel.Controls.Add(currentInstLangsLbl);
+            currLangOpPanel.Controls.Add(currentLangsCmboBox);
+            currLangOpPanel.Controls.Add(removeCurrBtn);
+            currLangOpPanel.Controls.Add(setSelectedBtn);
+            currLangOpPanel.Controls.Add(setAsDefBtn);
+            currLangOpPanel.Controls.Add(setToDefBtn);
+            currLangOpPanel.Controls.Add(checkGeoDataBtn);
+            currLangOpPanel.Controls.Add(customInpLbl);
+            currLangOpPanel.Controls.Add(customTagInpBox);
+            currLangOpPanel.Controls.Add(addCustomBtn);
+            currLangOpPanel.Controls.Add(addNSetCustBtn);
+            currLangOpPanel.Controls.Add(removeSimilarBtn);
+            currLangOpPanel.Controls.Add(currHelpBtn);
+            currLangOpPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            currLangOpPanel.Location = new System.Drawing.Point(12, 12);
+            currLangOpPanel.Name = "currLangOpPanel";
+            currLangOpPanel.Size = new System.Drawing.Size(290, 498);
+            currLangOpPanel.TabIndex = 1;
             // 
             // currentInstLangsLbl
             // 
-            this.currentInstLangsLbl.AutoSize = true;
-            this.currentInstLangsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentInstLangsLbl.Location = new System.Drawing.Point(5, 10);
-            this.currentInstLangsLbl.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
-            this.currentInstLangsLbl.Name = "currentInstLangsLbl";
-            this.currentInstLangsLbl.Size = new System.Drawing.Size(186, 18);
-            this.currentInstLangsLbl.TabIndex = 1;
-            this.currentInstLangsLbl.Text = "Current Intalled Languages:";
+            currentInstLangsLbl.AutoSize = true;
+            currentInstLangsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            currentInstLangsLbl.Location = new System.Drawing.Point(5, 10);
+            currentInstLangsLbl.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            currentInstLangsLbl.Name = "currentInstLangsLbl";
+            currentInstLangsLbl.Size = new System.Drawing.Size(186, 18);
+            currentInstLangsLbl.TabIndex = 1;
+            currentInstLangsLbl.Text = "Current Intalled Languages:";
             // 
             // currentLangsCmboBox
             // 
-            this.currentLangsCmboBox.FormattingEnabled = true;
-            this.currentLangsCmboBox.Location = new System.Drawing.Point(5, 43);
-            this.currentLangsCmboBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
-            this.currentLangsCmboBox.Name = "currentLangsCmboBox";
-            this.currentLangsCmboBox.Size = new System.Drawing.Size(270, 21);
-            this.currentLangsCmboBox.TabIndex = 0;
+            currentLangsCmboBox.FormattingEnabled = true;
+            currentLangsCmboBox.Location = new System.Drawing.Point(5, 43);
+            currentLangsCmboBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            currentLangsCmboBox.Name = "currentLangsCmboBox";
+            currentLangsCmboBox.Size = new System.Drawing.Size(270, 21);
+            currentLangsCmboBox.TabIndex = 0;
             // 
             // removeCurrBtn
             // 
-            this.removeCurrBtn.Location = new System.Drawing.Point(85, 79);
-            this.removeCurrBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.removeCurrBtn.Name = "removeCurrBtn";
-            this.removeCurrBtn.Size = new System.Drawing.Size(120, 23);
-            this.removeCurrBtn.TabIndex = 2;
-            this.removeCurrBtn.Text = "Remove Selected";
-            this.removeCurrBtn.UseVisualStyleBackColor = true;
+            removeCurrBtn.Location = new System.Drawing.Point(85, 79);
+            removeCurrBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            removeCurrBtn.Name = "removeCurrBtn";
+            removeCurrBtn.Size = new System.Drawing.Size(120, 23);
+            removeCurrBtn.TabIndex = 2;
+            removeCurrBtn.Text = "Remove Selected";
+            removeCurrBtn.UseVisualStyleBackColor = true;
             // 
             // setSelectedBtn
             // 
-            this.setSelectedBtn.Location = new System.Drawing.Point(85, 117);
-            this.setSelectedBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.setSelectedBtn.Name = "setSelectedBtn";
-            this.setSelectedBtn.Size = new System.Drawing.Size(120, 23);
-            this.setSelectedBtn.TabIndex = 11;
-            this.setSelectedBtn.Text = "Set Selected";
-            this.setSelectedBtn.UseVisualStyleBackColor = true;
+            setSelectedBtn.Location = new System.Drawing.Point(85, 117);
+            setSelectedBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            setSelectedBtn.Name = "setSelectedBtn";
+            setSelectedBtn.Size = new System.Drawing.Size(120, 23);
+            setSelectedBtn.TabIndex = 11;
+            setSelectedBtn.Text = "Set Selected";
+            setSelectedBtn.UseVisualStyleBackColor = true;
             // 
             // setAsDefBtn
             // 
-            this.setAsDefBtn.Location = new System.Drawing.Point(85, 155);
-            this.setAsDefBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.setAsDefBtn.Name = "setAsDefBtn";
-            this.setAsDefBtn.Size = new System.Drawing.Size(120, 23);
-            this.setAsDefBtn.TabIndex = 6;
-            this.setAsDefBtn.Text = "Set as Default";
-            this.setAsDefBtn.UseVisualStyleBackColor = true;
+            setAsDefBtn.Location = new System.Drawing.Point(85, 155);
+            setAsDefBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            setAsDefBtn.Name = "setAsDefBtn";
+            setAsDefBtn.Size = new System.Drawing.Size(120, 23);
+            setAsDefBtn.TabIndex = 6;
+            setAsDefBtn.Text = "Set as Default";
+            setAsDefBtn.UseVisualStyleBackColor = true;
             // 
             // setToDefBtn
             // 
-            this.setToDefBtn.Location = new System.Drawing.Point(85, 193);
-            this.setToDefBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.setToDefBtn.Name = "setToDefBtn";
-            this.setToDefBtn.Size = new System.Drawing.Size(120, 23);
-            this.setToDefBtn.TabIndex = 3;
-            this.setToDefBtn.Text = "Set to Default";
-            this.setToDefBtn.UseVisualStyleBackColor = true;
+            setToDefBtn.Location = new System.Drawing.Point(85, 193);
+            setToDefBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            setToDefBtn.Name = "setToDefBtn";
+            setToDefBtn.Size = new System.Drawing.Size(120, 23);
+            setToDefBtn.TabIndex = 3;
+            setToDefBtn.Text = "Set to Default";
+            setToDefBtn.UseVisualStyleBackColor = true;
             // 
             // checkGeoDataBtn
             // 
-            this.checkGeoDataBtn.Location = new System.Drawing.Point(85, 231);
-            this.checkGeoDataBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.checkGeoDataBtn.Name = "checkGeoDataBtn";
-            this.checkGeoDataBtn.Size = new System.Drawing.Size(120, 23);
-            this.checkGeoDataBtn.TabIndex = 5;
-            this.checkGeoDataBtn.Text = "Check Geo-Data";
-            this.checkGeoDataBtn.UseVisualStyleBackColor = true;
+            checkGeoDataBtn.Location = new System.Drawing.Point(85, 231);
+            checkGeoDataBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            checkGeoDataBtn.Name = "checkGeoDataBtn";
+            checkGeoDataBtn.Size = new System.Drawing.Size(120, 23);
+            checkGeoDataBtn.TabIndex = 5;
+            checkGeoDataBtn.Text = "Check Geo-Data";
+            checkGeoDataBtn.UseVisualStyleBackColor = true;
             // 
             // customInpLbl
             // 
-            this.customInpLbl.AutoSize = true;
-            this.customInpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customInpLbl.Location = new System.Drawing.Point(5, 269);
-            this.customInpLbl.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
-            this.customInpLbl.Name = "customInpLbl";
-            this.customInpLbl.Size = new System.Drawing.Size(96, 18);
-            this.customInpLbl.TabIndex = 7;
-            this.customInpLbl.Text = "Custom Input";
+            customInpLbl.AutoSize = true;
+            customInpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            customInpLbl.Location = new System.Drawing.Point(5, 269);
+            customInpLbl.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            customInpLbl.Name = "customInpLbl";
+            customInpLbl.Size = new System.Drawing.Size(96, 18);
+            customInpLbl.TabIndex = 7;
+            customInpLbl.Text = "Custom Input";
             // 
             // customTagInpBox
             // 
-            this.customTagInpBox.Location = new System.Drawing.Point(5, 302);
-            this.customTagInpBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
-            this.customTagInpBox.Name = "customTagInpBox";
-            this.customTagInpBox.Size = new System.Drawing.Size(270, 20);
-            this.customTagInpBox.TabIndex = 8;
+            customTagInpBox.Location = new System.Drawing.Point(5, 302);
+            customTagInpBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            customTagInpBox.Name = "customTagInpBox";
+            customTagInpBox.Size = new System.Drawing.Size(270, 20);
+            customTagInpBox.TabIndex = 8;
             // 
             // addCustomBtn
             // 
-            this.addCustomBtn.Location = new System.Drawing.Point(85, 337);
-            this.addCustomBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.addCustomBtn.Name = "addCustomBtn";
-            this.addCustomBtn.Size = new System.Drawing.Size(120, 23);
-            this.addCustomBtn.TabIndex = 9;
-            this.addCustomBtn.Text = "Add Custom";
-            this.addCustomBtn.UseVisualStyleBackColor = true;
+            addCustomBtn.Location = new System.Drawing.Point(85, 337);
+            addCustomBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            addCustomBtn.Name = "addCustomBtn";
+            addCustomBtn.Size = new System.Drawing.Size(120, 23);
+            addCustomBtn.TabIndex = 9;
+            addCustomBtn.Text = "Add Custom";
+            addCustomBtn.UseVisualStyleBackColor = true;
             // 
             // addNSetCustBtn
             // 
-            this.addNSetCustBtn.Location = new System.Drawing.Point(85, 375);
-            this.addNSetCustBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.addNSetCustBtn.Name = "addNSetCustBtn";
-            this.addNSetCustBtn.Size = new System.Drawing.Size(120, 23);
-            this.addNSetCustBtn.TabIndex = 12;
-            this.addNSetCustBtn.Text = "Add and Set Custom";
-            this.addNSetCustBtn.UseVisualStyleBackColor = true;
+            addNSetCustBtn.Location = new System.Drawing.Point(85, 375);
+            addNSetCustBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            addNSetCustBtn.Name = "addNSetCustBtn";
+            addNSetCustBtn.Size = new System.Drawing.Size(120, 23);
+            addNSetCustBtn.TabIndex = 12;
+            addNSetCustBtn.Text = "Add and Set Custom";
+            addNSetCustBtn.UseVisualStyleBackColor = true;
             // 
             // removeSimilarBtn
             // 
-            this.removeSimilarBtn.Location = new System.Drawing.Point(85, 413);
-            this.removeSimilarBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
-            this.removeSimilarBtn.Name = "removeSimilarBtn";
-            this.removeSimilarBtn.Size = new System.Drawing.Size(120, 23);
-            this.removeSimilarBtn.TabIndex = 10;
-            this.removeSimilarBtn.Text = "Remove Similar";
-            this.removeSimilarBtn.UseVisualStyleBackColor = true;
+            removeSimilarBtn.Location = new System.Drawing.Point(85, 413);
+            removeSimilarBtn.Margin = new System.Windows.Forms.Padding(85, 10, 85, 5);
+            removeSimilarBtn.Name = "removeSimilarBtn";
+            removeSimilarBtn.Size = new System.Drawing.Size(120, 23);
+            removeSimilarBtn.TabIndex = 10;
+            removeSimilarBtn.Text = "Remove Similar";
+            removeSimilarBtn.UseVisualStyleBackColor = true;
             // 
             // currHelpBtn
             // 
-            this.currHelpBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.currHelpBtn.Location = new System.Drawing.Point(190, 461);
-            this.currHelpBtn.Margin = new System.Windows.Forms.Padding(0, 20, 25, 5);
-            this.currHelpBtn.Name = "currHelpBtn";
-            this.currHelpBtn.Size = new System.Drawing.Size(75, 23);
-            this.currHelpBtn.TabIndex = 4;
-            this.currHelpBtn.Text = "Help!";
-            this.currHelpBtn.UseVisualStyleBackColor = true;
+            currHelpBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            currHelpBtn.Location = new System.Drawing.Point(190, 461);
+            currHelpBtn.Margin = new System.Windows.Forms.Padding(0, 20, 25, 5);
+            currHelpBtn.Name = "currHelpBtn";
+            currHelpBtn.Size = new System.Drawing.Size(75, 23);
+            currHelpBtn.TabIndex = 4;
+            currHelpBtn.Text = "Help!";
+            currHelpBtn.UseVisualStyleBackColor = true;
             // 
             // newLangListPanel
             // 
-            this.newLangListPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.newLangListPanel.Controls.Add(this.addNewBtn);
-            this.newLangListPanel.Controls.Add(this.addnSetNewBtn);
-            this.newLangListPanel.Controls.Add(this.helpNewBtn);
-            this.newLangListPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.newLangListPanel.Location = new System.Drawing.Point(317, 364);
-            this.newLangListPanel.Name = "newLangListPanel";
-            this.newLangListPanel.Size = new System.Drawing.Size(288, 146);
-            this.newLangListPanel.TabIndex = 2;
+            newLangListPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            newLangListPanel.Controls.Add(addNewBtn);
+            newLangListPanel.Controls.Add(addnSetNewBtn);
+            newLangListPanel.Controls.Add(helpNewBtn);
+            newLangListPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            newLangListPanel.Location = new System.Drawing.Point(317, 364);
+            newLangListPanel.Name = "newLangListPanel";
+            newLangListPanel.Size = new System.Drawing.Size(288, 146);
+            newLangListPanel.TabIndex = 2;
             // 
             // addNewBtn
             // 
-            this.addNewBtn.Location = new System.Drawing.Point(84, 15);
-            this.addNewBtn.Margin = new System.Windows.Forms.Padding(84, 15, 3, 3);
-            this.addNewBtn.Name = "addNewBtn";
-            this.addNewBtn.Size = new System.Drawing.Size(120, 23);
-            this.addNewBtn.TabIndex = 0;
-            this.addNewBtn.Text = "Add New";
-            this.addNewBtn.UseVisualStyleBackColor = true;
+            addNewBtn.Location = new System.Drawing.Point(84, 15);
+            addNewBtn.Margin = new System.Windows.Forms.Padding(84, 15, 3, 3);
+            addNewBtn.Name = "addNewBtn";
+            addNewBtn.Size = new System.Drawing.Size(120, 23);
+            addNewBtn.TabIndex = 0;
+            addNewBtn.Text = "Add New";
+            addNewBtn.UseVisualStyleBackColor = true;
             // 
             // addnSetNewBtn
             // 
-            this.addnSetNewBtn.Location = new System.Drawing.Point(84, 56);
-            this.addnSetNewBtn.Margin = new System.Windows.Forms.Padding(84, 15, 3, 3);
-            this.addnSetNewBtn.Name = "addnSetNewBtn";
-            this.addnSetNewBtn.Size = new System.Drawing.Size(120, 23);
-            this.addnSetNewBtn.TabIndex = 1;
-            this.addnSetNewBtn.Text = "Add and Set New";
-            this.addnSetNewBtn.UseVisualStyleBackColor = true;
+            addnSetNewBtn.Location = new System.Drawing.Point(84, 56);
+            addnSetNewBtn.Margin = new System.Windows.Forms.Padding(84, 15, 3, 3);
+            addnSetNewBtn.Name = "addnSetNewBtn";
+            addnSetNewBtn.Size = new System.Drawing.Size(120, 23);
+            addnSetNewBtn.TabIndex = 1;
+            addnSetNewBtn.Text = "Add and Set New";
+            addnSetNewBtn.UseVisualStyleBackColor = true;
             // 
             // helpNewBtn
             // 
-            this.helpNewBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.helpNewBtn.Location = new System.Drawing.Point(183, 107);
-            this.helpNewBtn.Margin = new System.Windows.Forms.Padding(183, 25, 15, 3);
-            this.helpNewBtn.Name = "helpNewBtn";
-            this.helpNewBtn.Size = new System.Drawing.Size(80, 23);
-            this.helpNewBtn.TabIndex = 2;
-            this.helpNewBtn.Text = "Help!";
-            this.helpNewBtn.UseVisualStyleBackColor = true;
+            helpNewBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            helpNewBtn.Location = new System.Drawing.Point(183, 107);
+            helpNewBtn.Margin = new System.Windows.Forms.Padding(183, 25, 15, 3);
+            helpNewBtn.Name = "helpNewBtn";
+            helpNewBtn.Size = new System.Drawing.Size(80, 23);
+            helpNewBtn.TabIndex = 2;
+            helpNewBtn.Text = "Help!";
+            helpNewBtn.UseVisualStyleBackColor = true;
             // 
             // SysLanguage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 522);
-            this.ControlBox = false;
-            this.Controls.Add(this.newLangListPanel);
-            this.Controls.Add(this.currLangOpPanel);
-            this.Controls.Add(this.langTagListBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SysLanguage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "SysLanguage";
-            this.currLangOpPanel.ResumeLayout(false);
-            this.currLangOpPanel.PerformLayout();
-            this.newLangListPanel.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(616, 522);
+            ControlBox = false;
+            Controls.Add(newLangListPanel);
+            Controls.Add(currLangOpPanel);
+            Controls.Add(langTagListBox);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Name = "SysLanguage";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            Text = "SysLanguage";
+            currLangOpPanel.ResumeLayout(false);
+            currLangOpPanel.PerformLayout();
+            newLangListPanel.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

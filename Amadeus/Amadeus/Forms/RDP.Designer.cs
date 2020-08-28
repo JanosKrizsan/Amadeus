@@ -28,516 +28,516 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.connectionSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.connLbl = new System.Windows.Forms.Label();
-            this.connTxtBox = new System.Windows.Forms.TextBox();
-            this.addressLbl = new System.Windows.Forms.Label();
-            this.addressTxtBox = new System.Windows.Forms.TextBox();
-            this.portLbl = new System.Windows.Forms.Label();
-            this.portTxtBox = new System.Windows.Forms.TextBox();
-            this.gatewayLbl = new System.Windows.Forms.Label();
-            this.gatewTxtBox = new System.Windows.Forms.TextBox();
-            this.useGatewayChckBox = new System.Windows.Forms.CheckBox();
-            this.asAdminChckBox = new System.Windows.Forms.CheckBox();
-            this.remGuardChckBox = new System.Windows.Forms.CheckBox();
-            this.restrictedAdminChckBox = new System.Windows.Forms.CheckBox();
-            this.rdpCredsHelpBtn = new System.Windows.Forms.Button();
-            this.currentRdpsPnl = new System.Windows.Forms.Panel();
-            this.recheckConnBtn = new System.Windows.Forms.Button();
-            this.connStatusLbl = new System.Windows.Forms.Label();
-            this.isMstcRunningImgBox = new System.Windows.Forms.PictureBox();
-            this.editCrntBtn = new System.Windows.Forms.Button();
-            this.delCrntBtn = new System.Windows.Forms.Button();
-            this.connectCrntBtn = new System.Windows.Forms.Button();
-            this.refreshRdpsBtn = new System.Windows.Forms.Button();
-            this.savedRdpsResults = new System.Windows.Forms.ComboBox();
-            this.savedRdpsLbl = new System.Windows.Forms.Label();
-            this.onlyRdpFilesRdio = new System.Windows.Forms.RadioButton();
-            this.screenSettingsHolderPnl = new System.Windows.Forms.Panel();
-            this.rdpButtonsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.saveNUpdtBtn = new System.Windows.Forms.Button();
-            this.saveToRdpFileBtn = new System.Windows.Forms.Button();
-            this.saveToXmlBtn = new System.Windows.Forms.Button();
-            this.connGivenBtn = new System.Windows.Forms.Button();
-            this.resetBtn = new System.Windows.Forms.Button();
-            this.screenSettingsHelpBtn = new System.Windows.Forms.Button();
-            this.screenSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.fullscreenChckBox = new System.Windows.Forms.CheckBox();
-            this.multiMonitorChckBox = new System.Windows.Forms.CheckBox();
-            this.spanMonitorsChckBox = new System.Windows.Forms.CheckBox();
-            this.screenWidthLbl = new System.Windows.Forms.Label();
-            this.screenWidthTxtBox = new System.Windows.Forms.TextBox();
-            this.screenHeightLbl = new System.Windows.Forms.Label();
-            this.screenHeightTxtBox = new System.Windows.Forms.TextBox();
-            this.connectionSettingsPnl.SuspendLayout();
-            this.currentRdpsPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.isMstcRunningImgBox)).BeginInit();
-            this.screenSettingsHolderPnl.SuspendLayout();
-            this.rdpButtonsPnl.SuspendLayout();
-            this.screenSettingsPnl.SuspendLayout();
-            this.SuspendLayout();
+             connectionSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
+             connLbl = new System.Windows.Forms.Label();
+             connTxtBox = new System.Windows.Forms.TextBox();
+             addressLbl = new System.Windows.Forms.Label();
+             addressTxtBox = new System.Windows.Forms.TextBox();
+             portLbl = new System.Windows.Forms.Label();
+             portTxtBox = new System.Windows.Forms.TextBox();
+             gatewayLbl = new System.Windows.Forms.Label();
+             gatewTxtBox = new System.Windows.Forms.TextBox();
+             useGatewayChckBox = new System.Windows.Forms.CheckBox();
+             asAdminChckBox = new System.Windows.Forms.CheckBox();
+             remGuardChckBox = new System.Windows.Forms.CheckBox();
+             restrictedAdminChckBox = new System.Windows.Forms.CheckBox();
+             rdpCredsHelpBtn = new System.Windows.Forms.Button();
+             currentRdpsPnl = new System.Windows.Forms.Panel();
+             recheckConnBtn = new System.Windows.Forms.Button();
+             connStatusLbl = new System.Windows.Forms.Label();
+             isMstcRunningImgBox = new System.Windows.Forms.PictureBox();
+             editCrntBtn = new System.Windows.Forms.Button();
+             delCrntBtn = new System.Windows.Forms.Button();
+             connectCrntBtn = new System.Windows.Forms.Button();
+             refreshRdpsBtn = new System.Windows.Forms.Button();
+             savedRdpsResults = new System.Windows.Forms.ComboBox();
+             savedRdpsLbl = new System.Windows.Forms.Label();
+             onlyRdpFilesRdio = new System.Windows.Forms.RadioButton();
+             screenSettingsHolderPnl = new System.Windows.Forms.Panel();
+             rdpButtonsPnl = new System.Windows.Forms.FlowLayoutPanel();
+             saveNUpdtBtn = new System.Windows.Forms.Button();
+             saveToRdpFileBtn = new System.Windows.Forms.Button();
+             saveToXmlBtn = new System.Windows.Forms.Button();
+             connGivenBtn = new System.Windows.Forms.Button();
+             resetBtn = new System.Windows.Forms.Button();
+             screenSettingsHelpBtn = new System.Windows.Forms.Button();
+             screenSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
+             fullscreenChckBox = new System.Windows.Forms.CheckBox();
+             multiMonitorChckBox = new System.Windows.Forms.CheckBox();
+             spanMonitorsChckBox = new System.Windows.Forms.CheckBox();
+             screenWidthLbl = new System.Windows.Forms.Label();
+             screenWidthTxtBox = new System.Windows.Forms.TextBox();
+             screenHeightLbl = new System.Windows.Forms.Label();
+             screenHeightTxtBox = new System.Windows.Forms.TextBox();
+             connectionSettingsPnl.SuspendLayout();
+             currentRdpsPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)( isMstcRunningImgBox)).BeginInit();
+             screenSettingsHolderPnl.SuspendLayout();
+             rdpButtonsPnl.SuspendLayout();
+             screenSettingsPnl.SuspendLayout();
+             SuspendLayout();
             // 
             // connectionSettingsPnl
             // 
-            this.connectionSettingsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.connectionSettingsPnl.Controls.Add(this.connLbl);
-            this.connectionSettingsPnl.Controls.Add(this.connTxtBox);
-            this.connectionSettingsPnl.Controls.Add(this.addressLbl);
-            this.connectionSettingsPnl.Controls.Add(this.addressTxtBox);
-            this.connectionSettingsPnl.Controls.Add(this.portLbl);
-            this.connectionSettingsPnl.Controls.Add(this.portTxtBox);
-            this.connectionSettingsPnl.Controls.Add(this.gatewayLbl);
-            this.connectionSettingsPnl.Controls.Add(this.gatewTxtBox);
-            this.connectionSettingsPnl.Controls.Add(this.useGatewayChckBox);
-            this.connectionSettingsPnl.Controls.Add(this.asAdminChckBox);
-            this.connectionSettingsPnl.Controls.Add(this.remGuardChckBox);
-            this.connectionSettingsPnl.Controls.Add(this.restrictedAdminChckBox);
-            this.connectionSettingsPnl.Controls.Add(this.rdpCredsHelpBtn);
-            this.connectionSettingsPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.connectionSettingsPnl.Location = new System.Drawing.Point(12, 12);
-            this.connectionSettingsPnl.Name = "connectionSettingsPnl";
-            this.connectionSettingsPnl.Size = new System.Drawing.Size(244, 498);
-            this.connectionSettingsPnl.TabIndex = 0;
+             connectionSettingsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+             connectionSettingsPnl.Controls.Add( connLbl);
+             connectionSettingsPnl.Controls.Add( connTxtBox);
+             connectionSettingsPnl.Controls.Add( addressLbl);
+             connectionSettingsPnl.Controls.Add( addressTxtBox);
+             connectionSettingsPnl.Controls.Add( portLbl);
+             connectionSettingsPnl.Controls.Add( portTxtBox);
+             connectionSettingsPnl.Controls.Add( gatewayLbl);
+             connectionSettingsPnl.Controls.Add( gatewTxtBox);
+             connectionSettingsPnl.Controls.Add( useGatewayChckBox);
+             connectionSettingsPnl.Controls.Add( asAdminChckBox);
+             connectionSettingsPnl.Controls.Add( remGuardChckBox);
+             connectionSettingsPnl.Controls.Add( restrictedAdminChckBox);
+             connectionSettingsPnl.Controls.Add( rdpCredsHelpBtn);
+             connectionSettingsPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+             connectionSettingsPnl.Location = new System.Drawing.Point(12, 12);
+             connectionSettingsPnl.Name = "connectionSettingsPnl";
+             connectionSettingsPnl.Size = new System.Drawing.Size(244, 498);
+             connectionSettingsPnl.TabIndex = 0;
             // 
             // connLbl
             // 
-            this.connLbl.AutoSize = true;
-            this.connLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.connLbl.Location = new System.Drawing.Point(30, 30);
-            this.connLbl.Margin = new System.Windows.Forms.Padding(30, 30, 3, 0);
-            this.connLbl.Name = "connLbl";
-            this.connLbl.Size = new System.Drawing.Size(124, 17);
-            this.connLbl.TabIndex = 0;
-            this.connLbl.Text = "Connection Name:";
+             connLbl.AutoSize = true;
+             connLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             connLbl.Location = new System.Drawing.Point(30, 30);
+             connLbl.Margin = new System.Windows.Forms.Padding(30, 30, 3, 0);
+             connLbl.Name = "connLbl";
+             connLbl.Size = new System.Drawing.Size(124, 17);
+             connLbl.TabIndex = 0;
+             connLbl.Text = "Connection Name:";
             // 
             // connTxtBox
             // 
-            this.connTxtBox.Location = new System.Drawing.Point(30, 52);
-            this.connTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            this.connTxtBox.Name = "connTxtBox";
-            this.connTxtBox.Size = new System.Drawing.Size(120, 20);
-            this.connTxtBox.TabIndex = 1;
+             connTxtBox.Location = new System.Drawing.Point(30, 52);
+             connTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
+             connTxtBox.Name = "connTxtBox";
+             connTxtBox.Size = new System.Drawing.Size(120, 20);
+             connTxtBox.TabIndex = 1;
             // 
             // addressLbl
             // 
-            this.addressLbl.AutoSize = true;
-            this.addressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressLbl.Location = new System.Drawing.Point(30, 90);
-            this.addressLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
-            this.addressLbl.Name = "addressLbl";
-            this.addressLbl.Size = new System.Drawing.Size(110, 17);
-            this.addressLbl.TabIndex = 2;
-            this.addressLbl.Text = "Server Address:";
+             addressLbl.AutoSize = true;
+             addressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             addressLbl.Location = new System.Drawing.Point(30, 90);
+             addressLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
+             addressLbl.Name = "addressLbl";
+             addressLbl.Size = new System.Drawing.Size(110, 17);
+             addressLbl.TabIndex = 2;
+             addressLbl.Text = "Server Address:";
             // 
             // addressTxtBox
             // 
-            this.addressTxtBox.Location = new System.Drawing.Point(30, 112);
-            this.addressTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            this.addressTxtBox.Name = "addressTxtBox";
-            this.addressTxtBox.Size = new System.Drawing.Size(120, 20);
-            this.addressTxtBox.TabIndex = 3;
+             addressTxtBox.Location = new System.Drawing.Point(30, 112);
+             addressTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
+             addressTxtBox.Name = "addressTxtBox";
+             addressTxtBox.Size = new System.Drawing.Size(120, 20);
+             addressTxtBox.TabIndex = 3;
             // 
             // portLbl
             // 
-            this.portLbl.AutoSize = true;
-            this.portLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.portLbl.Location = new System.Drawing.Point(30, 150);
-            this.portLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
-            this.portLbl.Name = "portLbl";
-            this.portLbl.Size = new System.Drawing.Size(84, 17);
-            this.portLbl.TabIndex = 4;
-            this.portLbl.Text = "Server Port:";
+             portLbl.AutoSize = true;
+             portLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             portLbl.Location = new System.Drawing.Point(30, 150);
+             portLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
+             portLbl.Name = "portLbl";
+             portLbl.Size = new System.Drawing.Size(84, 17);
+             portLbl.TabIndex = 4;
+             portLbl.Text = "Server Port:";
             // 
             // portTxtBox
             // 
-            this.portTxtBox.Location = new System.Drawing.Point(30, 172);
-            this.portTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            this.portTxtBox.Name = "portTxtBox";
-            this.portTxtBox.Size = new System.Drawing.Size(120, 20);
-            this.portTxtBox.TabIndex = 5;
+             portTxtBox.Location = new System.Drawing.Point(30, 172);
+             portTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
+             portTxtBox.Name = "portTxtBox";
+             portTxtBox.Size = new System.Drawing.Size(120, 20);
+             portTxtBox.TabIndex = 5;
             // 
             // gatewayLbl
             // 
-            this.gatewayLbl.AutoSize = true;
-            this.gatewayLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gatewayLbl.Location = new System.Drawing.Point(30, 210);
-            this.gatewayLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
-            this.gatewayLbl.Name = "gatewayLbl";
-            this.gatewayLbl.Size = new System.Drawing.Size(67, 17);
-            this.gatewayLbl.TabIndex = 6;
-            this.gatewayLbl.Text = "Gateway:";
+             gatewayLbl.AutoSize = true;
+             gatewayLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             gatewayLbl.Location = new System.Drawing.Point(30, 210);
+             gatewayLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
+             gatewayLbl.Name = "gatewayLbl";
+             gatewayLbl.Size = new System.Drawing.Size(67, 17);
+             gatewayLbl.TabIndex = 6;
+             gatewayLbl.Text = "Gateway:";
             // 
             // gatewTxtBox
             // 
-            this.gatewTxtBox.Location = new System.Drawing.Point(30, 232);
-            this.gatewTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            this.gatewTxtBox.Name = "gatewTxtBox";
-            this.gatewTxtBox.Size = new System.Drawing.Size(120, 20);
-            this.gatewTxtBox.TabIndex = 7;
+             gatewTxtBox.Location = new System.Drawing.Point(30, 232);
+             gatewTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
+             gatewTxtBox.Name = "gatewTxtBox";
+             gatewTxtBox.Size = new System.Drawing.Size(120, 20);
+             gatewTxtBox.TabIndex = 7;
             // 
             // useGatewayChckBox
             // 
-            this.useGatewayChckBox.AutoSize = true;
-            this.useGatewayChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.useGatewayChckBox.Location = new System.Drawing.Point(30, 285);
-            this.useGatewayChckBox.Margin = new System.Windows.Forms.Padding(30, 30, 3, 3);
-            this.useGatewayChckBox.Name = "useGatewayChckBox";
-            this.useGatewayChckBox.Size = new System.Drawing.Size(98, 19);
-            this.useGatewayChckBox.TabIndex = 8;
-            this.useGatewayChckBox.Text = "Use Gateway";
-            this.useGatewayChckBox.UseVisualStyleBackColor = true;
+             useGatewayChckBox.AutoSize = true;
+             useGatewayChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             useGatewayChckBox.Location = new System.Drawing.Point(30, 285);
+             useGatewayChckBox.Margin = new System.Windows.Forms.Padding(30, 30, 3, 3);
+             useGatewayChckBox.Name = "useGatewayChckBox";
+             useGatewayChckBox.Size = new System.Drawing.Size(98, 19);
+             useGatewayChckBox.TabIndex = 8;
+             useGatewayChckBox.Text = "Use Gateway";
+             useGatewayChckBox.UseVisualStyleBackColor = true;
             // 
             // asAdminChckBox
             // 
-            this.asAdminChckBox.AutoSize = true;
-            this.asAdminChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asAdminChckBox.Location = new System.Drawing.Point(30, 317);
-            this.asAdminChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
-            this.asAdminChckBox.Name = "asAdminChckBox";
-            this.asAdminChckBox.Size = new System.Drawing.Size(77, 19);
-            this.asAdminChckBox.TabIndex = 9;
-            this.asAdminChckBox.Text = "As Admin";
-            this.asAdminChckBox.UseVisualStyleBackColor = true;
+             asAdminChckBox.AutoSize = true;
+             asAdminChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             asAdminChckBox.Location = new System.Drawing.Point(30, 317);
+             asAdminChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
+             asAdminChckBox.Name = "asAdminChckBox";
+             asAdminChckBox.Size = new System.Drawing.Size(77, 19);
+             asAdminChckBox.TabIndex = 9;
+             asAdminChckBox.Text = "As Admin";
+             asAdminChckBox.UseVisualStyleBackColor = true;
             // 
             // remGuardChckBox
             // 
-            this.remGuardChckBox.AutoSize = true;
-            this.remGuardChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remGuardChckBox.Location = new System.Drawing.Point(30, 349);
-            this.remGuardChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
-            this.remGuardChckBox.Name = "remGuardChckBox";
-            this.remGuardChckBox.Size = new System.Drawing.Size(107, 19);
-            this.remGuardChckBox.TabIndex = 10;
-            this.remGuardChckBox.Text = "Remote Guard";
-            this.remGuardChckBox.UseVisualStyleBackColor = true;
+             remGuardChckBox.AutoSize = true;
+             remGuardChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             remGuardChckBox.Location = new System.Drawing.Point(30, 349);
+             remGuardChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
+             remGuardChckBox.Name = "remGuardChckBox";
+             remGuardChckBox.Size = new System.Drawing.Size(107, 19);
+             remGuardChckBox.TabIndex = 10;
+             remGuardChckBox.Text = "Remote Guard";
+             remGuardChckBox.UseVisualStyleBackColor = true;
             // 
             // restrictedAdminChckBox
             // 
-            this.restrictedAdminChckBox.AutoSize = true;
-            this.restrictedAdminChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.restrictedAdminChckBox.Location = new System.Drawing.Point(30, 381);
-            this.restrictedAdminChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
-            this.restrictedAdminChckBox.Name = "restrictedAdminChckBox";
-            this.restrictedAdminChckBox.Size = new System.Drawing.Size(135, 19);
-            this.restrictedAdminChckBox.TabIndex = 15;
-            this.restrictedAdminChckBox.Text = "As Restricted Admin";
-            this.restrictedAdminChckBox.UseVisualStyleBackColor = true;
+             restrictedAdminChckBox.AutoSize = true;
+             restrictedAdminChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             restrictedAdminChckBox.Location = new System.Drawing.Point(30, 381);
+             restrictedAdminChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
+             restrictedAdminChckBox.Name = "restrictedAdminChckBox";
+             restrictedAdminChckBox.Size = new System.Drawing.Size(135, 19);
+             restrictedAdminChckBox.TabIndex = 15;
+             restrictedAdminChckBox.Text = "As Restricted Admin";
+             restrictedAdminChckBox.UseVisualStyleBackColor = true;
             // 
             // rdpCredsHelpBtn
             // 
-            this.rdpCredsHelpBtn.Location = new System.Drawing.Point(174, 458);
-            this.rdpCredsHelpBtn.Margin = new System.Windows.Forms.Padding(174, 55, 3, 3);
-            this.rdpCredsHelpBtn.Name = "rdpCredsHelpBtn";
-            this.rdpCredsHelpBtn.Size = new System.Drawing.Size(40, 23);
-            this.rdpCredsHelpBtn.TabIndex = 16;
-            this.rdpCredsHelpBtn.Text = "Help!";
-            this.rdpCredsHelpBtn.UseVisualStyleBackColor = true;
+             rdpCredsHelpBtn.Location = new System.Drawing.Point(174, 458);
+             rdpCredsHelpBtn.Margin = new System.Windows.Forms.Padding(174, 55, 3, 3);
+             rdpCredsHelpBtn.Name = "rdpCredsHelpBtn";
+             rdpCredsHelpBtn.Size = new System.Drawing.Size(40, 23);
+             rdpCredsHelpBtn.TabIndex = 16;
+             rdpCredsHelpBtn.Text = "Help!";
+             rdpCredsHelpBtn.UseVisualStyleBackColor = true;
             // 
             // currentRdpsPnl
             // 
-            this.currentRdpsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.currentRdpsPnl.Controls.Add(this.recheckConnBtn);
-            this.currentRdpsPnl.Controls.Add(this.connStatusLbl);
-            this.currentRdpsPnl.Controls.Add(this.isMstcRunningImgBox);
-            this.currentRdpsPnl.Controls.Add(this.editCrntBtn);
-            this.currentRdpsPnl.Controls.Add(this.delCrntBtn);
-            this.currentRdpsPnl.Controls.Add(this.connectCrntBtn);
-            this.currentRdpsPnl.Controls.Add(this.refreshRdpsBtn);
-            this.currentRdpsPnl.Controls.Add(this.savedRdpsResults);
-            this.currentRdpsPnl.Controls.Add(this.savedRdpsLbl);
-            this.currentRdpsPnl.Controls.Add(this.onlyRdpFilesRdio);
-            this.currentRdpsPnl.Location = new System.Drawing.Point(276, 12);
-            this.currentRdpsPnl.Name = "currentRdpsPnl";
-            this.currentRdpsPnl.Size = new System.Drawing.Size(327, 264);
-            this.currentRdpsPnl.TabIndex = 3;
+             currentRdpsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+             currentRdpsPnl.Controls.Add( recheckConnBtn);
+             currentRdpsPnl.Controls.Add( connStatusLbl);
+             currentRdpsPnl.Controls.Add( isMstcRunningImgBox);
+             currentRdpsPnl.Controls.Add( editCrntBtn);
+             currentRdpsPnl.Controls.Add( delCrntBtn);
+             currentRdpsPnl.Controls.Add( connectCrntBtn);
+             currentRdpsPnl.Controls.Add( refreshRdpsBtn);
+             currentRdpsPnl.Controls.Add( savedRdpsResults);
+             currentRdpsPnl.Controls.Add( savedRdpsLbl);
+             currentRdpsPnl.Controls.Add( onlyRdpFilesRdio);
+             currentRdpsPnl.Location = new System.Drawing.Point(276, 12);
+             currentRdpsPnl.Name = "currentRdpsPnl";
+             currentRdpsPnl.Size = new System.Drawing.Size(327, 264);
+             currentRdpsPnl.TabIndex = 3;
             // 
             // recheckConnBtn
             // 
-            this.recheckConnBtn.Location = new System.Drawing.Point(33, 228);
-            this.recheckConnBtn.Name = "recheckConnBtn";
-            this.recheckConnBtn.Size = new System.Drawing.Size(120, 23);
-            this.recheckConnBtn.TabIndex = 9;
-            this.recheckConnBtn.Text = "Recheck Connection";
-            this.recheckConnBtn.UseVisualStyleBackColor = true;
+             recheckConnBtn.Location = new System.Drawing.Point(33, 228);
+             recheckConnBtn.Name = "recheckConnBtn";
+             recheckConnBtn.Size = new System.Drawing.Size(120, 23);
+             recheckConnBtn.TabIndex = 9;
+             recheckConnBtn.Text = "Recheck Connection";
+             recheckConnBtn.UseVisualStyleBackColor = true;
             // 
             // connStatusLbl
             // 
-            this.connStatusLbl.AutoSize = true;
-            this.connStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.connStatusLbl.Location = new System.Drawing.Point(175, 129);
-            this.connStatusLbl.Name = "connStatusLbl";
-            this.connStatusLbl.Size = new System.Drawing.Size(127, 17);
-            this.connStatusLbl.TabIndex = 8;
-            this.connStatusLbl.Text = "Connection Status:";
+             connStatusLbl.AutoSize = true;
+             connStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             connStatusLbl.Location = new System.Drawing.Point(175, 129);
+             connStatusLbl.Name = "connStatusLbl";
+             connStatusLbl.Size = new System.Drawing.Size(127, 17);
+             connStatusLbl.TabIndex = 8;
+             connStatusLbl.Text = "Connection Status:";
             // 
             // isMstcRunningImgBox
             // 
-            this.isMstcRunningImgBox.Location = new System.Drawing.Point(191, 161);
-            this.isMstcRunningImgBox.Name = "isMstcRunningImgBox";
-            this.isMstcRunningImgBox.Size = new System.Drawing.Size(106, 90);
-            this.isMstcRunningImgBox.TabIndex = 7;
-            this.isMstcRunningImgBox.TabStop = false;
+             isMstcRunningImgBox.Location = new System.Drawing.Point(191, 161);
+             isMstcRunningImgBox.Name = "isMstcRunningImgBox";
+             isMstcRunningImgBox.Size = new System.Drawing.Size(106, 90);
+             isMstcRunningImgBox.TabIndex = 7;
+             isMstcRunningImgBox.TabStop = false;
             // 
             // editCrntBtn
             // 
-            this.editCrntBtn.Location = new System.Drawing.Point(33, 190);
-            this.editCrntBtn.Name = "editCrntBtn";
-            this.editCrntBtn.Size = new System.Drawing.Size(75, 23);
-            this.editCrntBtn.TabIndex = 6;
-            this.editCrntBtn.Text = "Edit";
-            this.editCrntBtn.UseVisualStyleBackColor = true;
+             editCrntBtn.Location = new System.Drawing.Point(33, 190);
+             editCrntBtn.Name = "editCrntBtn";
+             editCrntBtn.Size = new System.Drawing.Size(75, 23);
+             editCrntBtn.TabIndex = 6;
+             editCrntBtn.Text = "Edit";
+             editCrntBtn.UseVisualStyleBackColor = true;
             // 
             // delCrntBtn
             // 
-            this.delCrntBtn.Location = new System.Drawing.Point(33, 161);
-            this.delCrntBtn.Name = "delCrntBtn";
-            this.delCrntBtn.Size = new System.Drawing.Size(75, 23);
-            this.delCrntBtn.TabIndex = 5;
-            this.delCrntBtn.Text = "Delete";
-            this.delCrntBtn.UseVisualStyleBackColor = true;
+             delCrntBtn.Location = new System.Drawing.Point(33, 161);
+             delCrntBtn.Name = "delCrntBtn";
+             delCrntBtn.Size = new System.Drawing.Size(75, 23);
+             delCrntBtn.TabIndex = 5;
+             delCrntBtn.Text = "Delete";
+             delCrntBtn.UseVisualStyleBackColor = true;
             // 
             // connectCrntBtn
             // 
-            this.connectCrntBtn.Location = new System.Drawing.Point(33, 129);
-            this.connectCrntBtn.Name = "connectCrntBtn";
-            this.connectCrntBtn.Size = new System.Drawing.Size(75, 23);
-            this.connectCrntBtn.TabIndex = 4;
-            this.connectCrntBtn.Text = "Connect To";
-            this.connectCrntBtn.UseVisualStyleBackColor = true;
+             connectCrntBtn.Location = new System.Drawing.Point(33, 129);
+             connectCrntBtn.Name = "connectCrntBtn";
+             connectCrntBtn.Size = new System.Drawing.Size(75, 23);
+             connectCrntBtn.TabIndex = 4;
+             connectCrntBtn.Text = "Connect To";
+             connectCrntBtn.UseVisualStyleBackColor = true;
             // 
             // refreshRdpsBtn
             // 
-            this.refreshRdpsBtn.Location = new System.Drawing.Point(237, 57);
-            this.refreshRdpsBtn.Name = "refreshRdpsBtn";
-            this.refreshRdpsBtn.Size = new System.Drawing.Size(60, 23);
-            this.refreshRdpsBtn.TabIndex = 3;
-            this.refreshRdpsBtn.Text = "Refresh";
-            this.refreshRdpsBtn.UseVisualStyleBackColor = true;
+             refreshRdpsBtn.Location = new System.Drawing.Point(237, 57);
+             refreshRdpsBtn.Name = "refreshRdpsBtn";
+             refreshRdpsBtn.Size = new System.Drawing.Size(60, 23);
+             refreshRdpsBtn.TabIndex = 3;
+             refreshRdpsBtn.Text = "Refresh";
+             refreshRdpsBtn.UseVisualStyleBackColor = true;
             // 
             // savedRdpsResults
             // 
-            this.savedRdpsResults.FormattingEnabled = true;
-            this.savedRdpsResults.Location = new System.Drawing.Point(33, 59);
-            this.savedRdpsResults.Name = "savedRdpsResults";
-            this.savedRdpsResults.Size = new System.Drawing.Size(181, 21);
-            this.savedRdpsResults.TabIndex = 2;
+             savedRdpsResults.FormattingEnabled = true;
+             savedRdpsResults.Location = new System.Drawing.Point(33, 59);
+             savedRdpsResults.Name = "savedRdpsResults";
+             savedRdpsResults.Size = new System.Drawing.Size(181, 21);
+             savedRdpsResults.TabIndex = 2;
             // 
             // savedRdpsLbl
             // 
-            this.savedRdpsLbl.AutoSize = true;
-            this.savedRdpsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savedRdpsLbl.Location = new System.Drawing.Point(31, 28);
-            this.savedRdpsLbl.Name = "savedRdpsLbl";
-            this.savedRdpsLbl.Size = new System.Drawing.Size(97, 18);
-            this.savedRdpsLbl.TabIndex = 1;
-            this.savedRdpsLbl.Text = "Saved RDPs:";
+             savedRdpsLbl.AutoSize = true;
+             savedRdpsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             savedRdpsLbl.Location = new System.Drawing.Point(31, 28);
+             savedRdpsLbl.Name = "savedRdpsLbl";
+             savedRdpsLbl.Size = new System.Drawing.Size(97, 18);
+             savedRdpsLbl.TabIndex = 1;
+             savedRdpsLbl.Text = "Saved RDPs:";
             // 
             // onlyRdpFilesRdio
             // 
-            this.onlyRdpFilesRdio.AutoSize = true;
-            this.onlyRdpFilesRdio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyRdpFilesRdio.Location = new System.Drawing.Point(173, 25);
-            this.onlyRdpFilesRdio.Name = "onlyRdpFilesRdio";
-            this.onlyRdpFilesRdio.Size = new System.Drawing.Size(125, 21);
-            this.onlyRdpFilesRdio.TabIndex = 0;
-            this.onlyRdpFilesRdio.TabStop = true;
-            this.onlyRdpFilesRdio.Text = "Only .RDP Files";
-            this.onlyRdpFilesRdio.UseVisualStyleBackColor = true;
+             onlyRdpFilesRdio.AutoSize = true;
+             onlyRdpFilesRdio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             onlyRdpFilesRdio.Location = new System.Drawing.Point(173, 25);
+             onlyRdpFilesRdio.Name = "onlyRdpFilesRdio";
+             onlyRdpFilesRdio.Size = new System.Drawing.Size(125, 21);
+             onlyRdpFilesRdio.TabIndex = 0;
+             onlyRdpFilesRdio.TabStop = true;
+             onlyRdpFilesRdio.Text = "Only .RDP Files";
+             onlyRdpFilesRdio.UseVisualStyleBackColor = true;
             // 
             // screenSettingsHolderPnl
             // 
-            this.screenSettingsHolderPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.screenSettingsHolderPnl.Controls.Add(this.rdpButtonsPnl);
-            this.screenSettingsHolderPnl.Controls.Add(this.screenSettingsPnl);
-            this.screenSettingsHolderPnl.Location = new System.Drawing.Point(276, 285);
-            this.screenSettingsHolderPnl.Name = "screenSettingsHolderPnl";
-            this.screenSettingsHolderPnl.Size = new System.Drawing.Size(328, 225);
-            this.screenSettingsHolderPnl.TabIndex = 4;
+             screenSettingsHolderPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+             screenSettingsHolderPnl.Controls.Add( rdpButtonsPnl);
+             screenSettingsHolderPnl.Controls.Add( screenSettingsPnl);
+             screenSettingsHolderPnl.Location = new System.Drawing.Point(276, 285);
+             screenSettingsHolderPnl.Name = "screenSettingsHolderPnl";
+             screenSettingsHolderPnl.Size = new System.Drawing.Size(328, 225);
+             screenSettingsHolderPnl.TabIndex = 4;
             // 
             // rdpButtonsPnl
             // 
-            this.rdpButtonsPnl.Controls.Add(this.saveNUpdtBtn);
-            this.rdpButtonsPnl.Controls.Add(this.saveToRdpFileBtn);
-            this.rdpButtonsPnl.Controls.Add(this.saveToXmlBtn);
-            this.rdpButtonsPnl.Controls.Add(this.connGivenBtn);
-            this.rdpButtonsPnl.Controls.Add(this.resetBtn);
-            this.rdpButtonsPnl.Controls.Add(this.screenSettingsHelpBtn);
-            this.rdpButtonsPnl.Location = new System.Drawing.Point(173, 3);
-            this.rdpButtonsPnl.Name = "rdpButtonsPnl";
-            this.rdpButtonsPnl.Size = new System.Drawing.Size(148, 215);
-            this.rdpButtonsPnl.TabIndex = 1;
+             rdpButtonsPnl.Controls.Add( saveNUpdtBtn);
+             rdpButtonsPnl.Controls.Add( saveToRdpFileBtn);
+             rdpButtonsPnl.Controls.Add( saveToXmlBtn);
+             rdpButtonsPnl.Controls.Add( connGivenBtn);
+             rdpButtonsPnl.Controls.Add( resetBtn);
+             rdpButtonsPnl.Controls.Add( screenSettingsHelpBtn);
+             rdpButtonsPnl.Location = new System.Drawing.Point(173, 3);
+             rdpButtonsPnl.Name = "rdpButtonsPnl";
+             rdpButtonsPnl.Size = new System.Drawing.Size(148, 215);
+             rdpButtonsPnl.TabIndex = 1;
             // 
             // saveNUpdtBtn
             // 
-            this.saveNUpdtBtn.Location = new System.Drawing.Point(19, 10);
-            this.saveNUpdtBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.saveNUpdtBtn.Name = "saveNUpdtBtn";
-            this.saveNUpdtBtn.Size = new System.Drawing.Size(110, 23);
-            this.saveNUpdtBtn.TabIndex = 0;
-            this.saveNUpdtBtn.Text = "Save / Update";
-            this.saveNUpdtBtn.UseVisualStyleBackColor = true;
+             saveNUpdtBtn.Location = new System.Drawing.Point(19, 10);
+             saveNUpdtBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+             saveNUpdtBtn.Name = "saveNUpdtBtn";
+             saveNUpdtBtn.Size = new System.Drawing.Size(110, 23);
+             saveNUpdtBtn.TabIndex = 0;
+             saveNUpdtBtn.Text = "Save / Update";
+             saveNUpdtBtn.UseVisualStyleBackColor = true;
             // 
             // saveToRdpFileBtn
             // 
-            this.saveToRdpFileBtn.Location = new System.Drawing.Point(19, 46);
-            this.saveToRdpFileBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.saveToRdpFileBtn.Name = "saveToRdpFileBtn";
-            this.saveToRdpFileBtn.Size = new System.Drawing.Size(110, 23);
-            this.saveToRdpFileBtn.TabIndex = 5;
-            this.saveToRdpFileBtn.Text = "Save as .RDP";
-            this.saveToRdpFileBtn.UseVisualStyleBackColor = true;
+             saveToRdpFileBtn.Location = new System.Drawing.Point(19, 46);
+             saveToRdpFileBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+             saveToRdpFileBtn.Name = "saveToRdpFileBtn";
+             saveToRdpFileBtn.Size = new System.Drawing.Size(110, 23);
+             saveToRdpFileBtn.TabIndex = 5;
+             saveToRdpFileBtn.Text = "Save as .RDP";
+             saveToRdpFileBtn.UseVisualStyleBackColor = true;
             // 
             // saveToXmlBtn
             // 
-            this.saveToXmlBtn.Location = new System.Drawing.Point(19, 82);
-            this.saveToXmlBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.saveToXmlBtn.Name = "saveToXmlBtn";
-            this.saveToXmlBtn.Size = new System.Drawing.Size(110, 23);
-            this.saveToXmlBtn.TabIndex = 4;
-            this.saveToXmlBtn.Text = "Save as .XML";
-            this.saveToXmlBtn.UseVisualStyleBackColor = true;
+             saveToXmlBtn.Location = new System.Drawing.Point(19, 82);
+             saveToXmlBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+             saveToXmlBtn.Name = "saveToXmlBtn";
+             saveToXmlBtn.Size = new System.Drawing.Size(110, 23);
+             saveToXmlBtn.TabIndex = 4;
+             saveToXmlBtn.Text = "Save as .XML";
+             saveToXmlBtn.UseVisualStyleBackColor = true;
             // 
             // connGivenBtn
             // 
-            this.connGivenBtn.Location = new System.Drawing.Point(19, 118);
-            this.connGivenBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.connGivenBtn.Name = "connGivenBtn";
-            this.connGivenBtn.Size = new System.Drawing.Size(110, 23);
-            this.connGivenBtn.TabIndex = 2;
-            this.connGivenBtn.Text = "Quick Connect";
-            this.connGivenBtn.UseVisualStyleBackColor = true;
+             connGivenBtn.Location = new System.Drawing.Point(19, 118);
+             connGivenBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+             connGivenBtn.Name = "connGivenBtn";
+             connGivenBtn.Size = new System.Drawing.Size(110, 23);
+             connGivenBtn.TabIndex = 2;
+             connGivenBtn.Text = "Quick Connect";
+             connGivenBtn.UseVisualStyleBackColor = true;
             // 
             // resetBtn
             // 
-            this.resetBtn.Location = new System.Drawing.Point(19, 154);
-            this.resetBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(110, 23);
-            this.resetBtn.TabIndex = 1;
-            this.resetBtn.Text = "Reset To Defaults";
-            this.resetBtn.UseVisualStyleBackColor = true;
+             resetBtn.Location = new System.Drawing.Point(19, 154);
+             resetBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
+             resetBtn.Name = "resetBtn";
+             resetBtn.Size = new System.Drawing.Size(110, 23);
+             resetBtn.TabIndex = 1;
+             resetBtn.Text = "Reset To Defaults";
+             resetBtn.UseVisualStyleBackColor = true;
             // 
             // screenSettingsHelpBtn
             // 
-            this.screenSettingsHelpBtn.Location = new System.Drawing.Point(88, 185);
-            this.screenSettingsHelpBtn.Margin = new System.Windows.Forms.Padding(88, 5, 3, 3);
-            this.screenSettingsHelpBtn.Name = "screenSettingsHelpBtn";
-            this.screenSettingsHelpBtn.Size = new System.Drawing.Size(40, 23);
-            this.screenSettingsHelpBtn.TabIndex = 3;
-            this.screenSettingsHelpBtn.Text = "Help!";
-            this.screenSettingsHelpBtn.UseVisualStyleBackColor = true;
+             screenSettingsHelpBtn.Location = new System.Drawing.Point(88, 185);
+             screenSettingsHelpBtn.Margin = new System.Windows.Forms.Padding(88, 5, 3, 3);
+             screenSettingsHelpBtn.Name = "screenSettingsHelpBtn";
+             screenSettingsHelpBtn.Size = new System.Drawing.Size(40, 23);
+             screenSettingsHelpBtn.TabIndex = 3;
+             screenSettingsHelpBtn.Text = "Help!";
+             screenSettingsHelpBtn.UseVisualStyleBackColor = true;
             // 
             // screenSettingsPnl
             // 
-            this.screenSettingsPnl.Controls.Add(this.fullscreenChckBox);
-            this.screenSettingsPnl.Controls.Add(this.multiMonitorChckBox);
-            this.screenSettingsPnl.Controls.Add(this.spanMonitorsChckBox);
-            this.screenSettingsPnl.Controls.Add(this.screenWidthLbl);
-            this.screenSettingsPnl.Controls.Add(this.screenWidthTxtBox);
-            this.screenSettingsPnl.Controls.Add(this.screenHeightLbl);
-            this.screenSettingsPnl.Controls.Add(this.screenHeightTxtBox);
-            this.screenSettingsPnl.Location = new System.Drawing.Point(3, 3);
-            this.screenSettingsPnl.Name = "screenSettingsPnl";
-            this.screenSettingsPnl.Size = new System.Drawing.Size(164, 215);
-            this.screenSettingsPnl.TabIndex = 0;
+             screenSettingsPnl.Controls.Add( fullscreenChckBox);
+             screenSettingsPnl.Controls.Add( multiMonitorChckBox);
+             screenSettingsPnl.Controls.Add( spanMonitorsChckBox);
+             screenSettingsPnl.Controls.Add( screenWidthLbl);
+             screenSettingsPnl.Controls.Add( screenWidthTxtBox);
+             screenSettingsPnl.Controls.Add( screenHeightLbl);
+             screenSettingsPnl.Controls.Add( screenHeightTxtBox);
+             screenSettingsPnl.Location = new System.Drawing.Point(3, 3);
+             screenSettingsPnl.Name = "screenSettingsPnl";
+             screenSettingsPnl.Size = new System.Drawing.Size(164, 215);
+             screenSettingsPnl.TabIndex = 0;
             // 
             // fullscreenChckBox
             // 
-            this.fullscreenChckBox.AutoSize = true;
-            this.fullscreenChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fullscreenChckBox.Location = new System.Drawing.Point(10, 15);
-            this.fullscreenChckBox.Margin = new System.Windows.Forms.Padding(10, 15, 3, 3);
-            this.fullscreenChckBox.Name = "fullscreenChckBox";
-            this.fullscreenChckBox.Size = new System.Drawing.Size(111, 19);
-            this.fullscreenChckBox.TabIndex = 19;
-            this.fullscreenChckBox.Text = "Start Fullscreen";
-            this.fullscreenChckBox.UseVisualStyleBackColor = true;
+             fullscreenChckBox.AutoSize = true;
+             fullscreenChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             fullscreenChckBox.Location = new System.Drawing.Point(10, 15);
+             fullscreenChckBox.Margin = new System.Windows.Forms.Padding(10, 15, 3, 3);
+             fullscreenChckBox.Name = "fullscreenChckBox";
+             fullscreenChckBox.Size = new System.Drawing.Size(111, 19);
+             fullscreenChckBox.TabIndex = 19;
+             fullscreenChckBox.Text = "Start Fullscreen";
+             fullscreenChckBox.UseVisualStyleBackColor = true;
             // 
             // multiMonitorChckBox
             // 
-            this.multiMonitorChckBox.AutoSize = true;
-            this.multiMonitorChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiMonitorChckBox.Location = new System.Drawing.Point(10, 40);
-            this.multiMonitorChckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.multiMonitorChckBox.Name = "multiMonitorChckBox";
-            this.multiMonitorChckBox.Size = new System.Drawing.Size(133, 19);
-            this.multiMonitorChckBox.TabIndex = 20;
-            this.multiMonitorChckBox.Text = "Multi Monitor Mode";
-            this.multiMonitorChckBox.UseVisualStyleBackColor = true;
+             multiMonitorChckBox.AutoSize = true;
+             multiMonitorChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             multiMonitorChckBox.Location = new System.Drawing.Point(10, 40);
+             multiMonitorChckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+             multiMonitorChckBox.Name = "multiMonitorChckBox";
+             multiMonitorChckBox.Size = new System.Drawing.Size(133, 19);
+             multiMonitorChckBox.TabIndex = 20;
+             multiMonitorChckBox.Text = "Multi Monitor Mode";
+             multiMonitorChckBox.UseVisualStyleBackColor = true;
             // 
             // spanMonitorsChckBox
             // 
-            this.spanMonitorsChckBox.AutoSize = true;
-            this.spanMonitorsChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spanMonitorsChckBox.Location = new System.Drawing.Point(10, 65);
-            this.spanMonitorsChckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.spanMonitorsChckBox.Name = "spanMonitorsChckBox";
-            this.spanMonitorsChckBox.Size = new System.Drawing.Size(141, 19);
-            this.spanMonitorsChckBox.TabIndex = 21;
-            this.spanMonitorsChckBox.Text = "Span Monitors Mode";
-            this.spanMonitorsChckBox.UseVisualStyleBackColor = true;
+             spanMonitorsChckBox.AutoSize = true;
+             spanMonitorsChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             spanMonitorsChckBox.Location = new System.Drawing.Point(10, 65);
+             spanMonitorsChckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+             spanMonitorsChckBox.Name = "spanMonitorsChckBox";
+             spanMonitorsChckBox.Size = new System.Drawing.Size(141, 19);
+             spanMonitorsChckBox.TabIndex = 21;
+             spanMonitorsChckBox.Text = "Span Monitors Mode";
+             spanMonitorsChckBox.UseVisualStyleBackColor = true;
             // 
             // screenWidthLbl
             // 
-            this.screenWidthLbl.AutoSize = true;
-            this.screenWidthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.screenWidthLbl.Location = new System.Drawing.Point(20, 102);
-            this.screenWidthLbl.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
-            this.screenWidthLbl.Name = "screenWidthLbl";
-            this.screenWidthLbl.Size = new System.Drawing.Size(97, 17);
-            this.screenWidthLbl.TabIndex = 22;
-            this.screenWidthLbl.Text = "Screen Width:";
+             screenWidthLbl.AutoSize = true;
+             screenWidthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             screenWidthLbl.Location = new System.Drawing.Point(20, 102);
+             screenWidthLbl.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
+             screenWidthLbl.Name = "screenWidthLbl";
+             screenWidthLbl.Size = new System.Drawing.Size(97, 17);
+             screenWidthLbl.TabIndex = 22;
+             screenWidthLbl.Text = "Screen Width:";
             // 
             // screenWidthTxtBox
             // 
-            this.screenWidthTxtBox.Location = new System.Drawing.Point(20, 124);
-            this.screenWidthTxtBox.Margin = new System.Windows.Forms.Padding(20, 5, 3, 3);
-            this.screenWidthTxtBox.Name = "screenWidthTxtBox";
-            this.screenWidthTxtBox.Size = new System.Drawing.Size(105, 20);
-            this.screenWidthTxtBox.TabIndex = 23;
+             screenWidthTxtBox.Location = new System.Drawing.Point(20, 124);
+             screenWidthTxtBox.Margin = new System.Windows.Forms.Padding(20, 5, 3, 3);
+             screenWidthTxtBox.Name = "screenWidthTxtBox";
+             screenWidthTxtBox.Size = new System.Drawing.Size(105, 20);
+             screenWidthTxtBox.TabIndex = 23;
             // 
             // screenHeightLbl
             // 
-            this.screenHeightLbl.AutoSize = true;
-            this.screenHeightLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.screenHeightLbl.Location = new System.Drawing.Point(20, 162);
-            this.screenHeightLbl.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
-            this.screenHeightLbl.Name = "screenHeightLbl";
-            this.screenHeightLbl.Size = new System.Drawing.Size(102, 17);
-            this.screenHeightLbl.TabIndex = 24;
-            this.screenHeightLbl.Text = "Screen Height:";
+             screenHeightLbl.AutoSize = true;
+             screenHeightLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+             screenHeightLbl.Location = new System.Drawing.Point(20, 162);
+             screenHeightLbl.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
+             screenHeightLbl.Name = "screenHeightLbl";
+             screenHeightLbl.Size = new System.Drawing.Size(102, 17);
+             screenHeightLbl.TabIndex = 24;
+             screenHeightLbl.Text = "Screen Height:";
             // 
             // screenHeightTxtBox
             // 
-            this.screenHeightTxtBox.Location = new System.Drawing.Point(20, 184);
-            this.screenHeightTxtBox.Margin = new System.Windows.Forms.Padding(20, 5, 3, 3);
-            this.screenHeightTxtBox.Name = "screenHeightTxtBox";
-            this.screenHeightTxtBox.Size = new System.Drawing.Size(105, 20);
-            this.screenHeightTxtBox.TabIndex = 25;
+             screenHeightTxtBox.Location = new System.Drawing.Point(20, 184);
+             screenHeightTxtBox.Margin = new System.Windows.Forms.Padding(20, 5, 3, 3);
+             screenHeightTxtBox.Name = "screenHeightTxtBox";
+             screenHeightTxtBox.Size = new System.Drawing.Size(105, 20);
+             screenHeightTxtBox.TabIndex = 25;
             // 
             // Rdp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 522);
-            this.ControlBox = false;
-            this.Controls.Add(this.screenSettingsHolderPnl);
-            this.Controls.Add(this.currentRdpsPnl);
-            this.Controls.Add(this.connectionSettingsPnl);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Rdp";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Proxy";
-            this.connectionSettingsPnl.ResumeLayout(false);
-            this.connectionSettingsPnl.PerformLayout();
-            this.currentRdpsPnl.ResumeLayout(false);
-            this.currentRdpsPnl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.isMstcRunningImgBox)).EndInit();
-            this.screenSettingsHolderPnl.ResumeLayout(false);
-            this.rdpButtonsPnl.ResumeLayout(false);
-            this.screenSettingsPnl.ResumeLayout(false);
-            this.screenSettingsPnl.PerformLayout();
-            this.ResumeLayout(false);
+             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+             ClientSize = new System.Drawing.Size(616, 522);
+             ControlBox = false;
+             Controls.Add( screenSettingsHolderPnl);
+             Controls.Add( currentRdpsPnl);
+             Controls.Add( connectionSettingsPnl);
+             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+             Name = "Rdp";
+             StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+             Text = "Proxy";
+             connectionSettingsPnl.ResumeLayout(false);
+             connectionSettingsPnl.PerformLayout();
+             currentRdpsPnl.ResumeLayout(false);
+             currentRdpsPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)( isMstcRunningImgBox)).EndInit();
+             screenSettingsHolderPnl.ResumeLayout(false);
+             rdpButtonsPnl.ResumeLayout(false);
+             screenSettingsPnl.ResumeLayout(false);
+             screenSettingsPnl.PerformLayout();
+             ResumeLayout(false);
 
         }
 

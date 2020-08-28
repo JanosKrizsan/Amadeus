@@ -28,398 +28,398 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.usrnameLbl = new System.Windows.Forms.Label();
-            this.reloadStngsBtn = new System.Windows.Forms.Button();
-            this.saveStngsBtn = new System.Windows.Forms.Button();
-            this.loadStngsBtn = new System.Windows.Forms.Button();
-            this.userinfoPnl = new System.Windows.Forms.Panel();
-            this.setUserinfoBtn = new System.Windows.Forms.Button();
-            this.gpgTxtBox = new System.Windows.Forms.TextBox();
-            this.gpgLbl = new System.Windows.Forms.Label();
-            this.passwordTxtBox = new System.Windows.Forms.TextBox();
-            this.passwordLbl = new System.Windows.Forms.Label();
-            this.usernameTxtBox = new System.Windows.Forms.TextBox();
-            this.settingsBtnsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.useRecommBtn = new System.Windows.Forms.Button();
-            this.addUserBtn = new System.Windows.Forms.Button();
-            this.removeUserBtn = new System.Windows.Forms.Button();
-            this.wipeAllnRemoveBtn = new System.Windows.Forms.Button();
-            this.checkBoxLayoutPnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.autoLoginCheck = new System.Windows.Forms.CheckBox();
-            this.doNotSaveCheck = new System.Windows.Forms.CheckBox();
-            this.wipeDataQuitCheck = new System.Windows.Forms.CheckBox();
-            this.resetSysDefsCheck = new System.Windows.Forms.CheckBox();
-            this.alwaysPGPCheck = new System.Windows.Forms.CheckBox();
-            this.sendRepEmailCheck = new System.Windows.Forms.CheckBox();
-            this.emailPnl = new System.Windows.Forms.Panel();
-            this.helpBtn = new System.Windows.Forms.Button();
-            this.setEmailBtn = new System.Windows.Forms.Button();
-            this.forcePGPEmailCheck = new System.Windows.Forms.CheckBox();
-            this.emailAddConfTxtBox = new System.Windows.Forms.TextBox();
-            this.emailAddConfLbl = new System.Windows.Forms.Label();
-            this.emailAddTxtBox = new System.Windows.Forms.TextBox();
-            this.emailAddLbl = new System.Windows.Forms.Label();
-            this.userinfoPnl.SuspendLayout();
-            this.settingsBtnsPnl.SuspendLayout();
-            this.checkBoxLayoutPnl.SuspendLayout();
-            this.emailPnl.SuspendLayout();
-            this.SuspendLayout();
+            usrnameLbl = new System.Windows.Forms.Label();
+            reloadStngsBtn = new System.Windows.Forms.Button();
+            saveStngsBtn = new System.Windows.Forms.Button();
+            loadStngsBtn = new System.Windows.Forms.Button();
+            userinfoPnl = new System.Windows.Forms.Panel();
+            setUserinfoBtn = new System.Windows.Forms.Button();
+            gpgTxtBox = new System.Windows.Forms.TextBox();
+            gpgLbl = new System.Windows.Forms.Label();
+            passwordTxtBox = new System.Windows.Forms.TextBox();
+            passwordLbl = new System.Windows.Forms.Label();
+            usernameTxtBox = new System.Windows.Forms.TextBox();
+            settingsBtnsPnl = new System.Windows.Forms.FlowLayoutPanel();
+            useRecommBtn = new System.Windows.Forms.Button();
+            addUserBtn = new System.Windows.Forms.Button();
+            removeUserBtn = new System.Windows.Forms.Button();
+            wipeAllnRemoveBtn = new System.Windows.Forms.Button();
+            checkBoxLayoutPnl = new System.Windows.Forms.FlowLayoutPanel();
+            autoLoginCheck = new System.Windows.Forms.CheckBox();
+            doNotSaveCheck = new System.Windows.Forms.CheckBox();
+            wipeDataQuitCheck = new System.Windows.Forms.CheckBox();
+            resetSysDefsCheck = new System.Windows.Forms.CheckBox();
+            alwaysPGPCheck = new System.Windows.Forms.CheckBox();
+            sendRepEmailCheck = new System.Windows.Forms.CheckBox();
+            emailPnl = new System.Windows.Forms.Panel();
+            helpBtn = new System.Windows.Forms.Button();
+            setEmailBtn = new System.Windows.Forms.Button();
+            forcePGPEmailCheck = new System.Windows.Forms.CheckBox();
+            emailAddConfTxtBox = new System.Windows.Forms.TextBox();
+            emailAddConfLbl = new System.Windows.Forms.Label();
+            emailAddTxtBox = new System.Windows.Forms.TextBox();
+            emailAddLbl = new System.Windows.Forms.Label();
+            userinfoPnl.SuspendLayout();
+            settingsBtnsPnl.SuspendLayout();
+            checkBoxLayoutPnl.SuspendLayout();
+            emailPnl.SuspendLayout();
+            SuspendLayout();
             // 
             // usrnameLbl
             // 
-            this.usrnameLbl.AutoSize = true;
-            this.usrnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usrnameLbl.Location = new System.Drawing.Point(3, 10);
-            this.usrnameLbl.Name = "usrnameLbl";
-            this.usrnameLbl.Size = new System.Drawing.Size(81, 18);
-            this.usrnameLbl.TabIndex = 4;
-            this.usrnameLbl.Text = "Username:";
+            usrnameLbl.AutoSize = true;
+            usrnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            usrnameLbl.Location = new System.Drawing.Point(3, 10);
+            usrnameLbl.Name = "usrnameLbl";
+            usrnameLbl.Size = new System.Drawing.Size(81, 18);
+            usrnameLbl.TabIndex = 4;
+            usrnameLbl.Text = "Username:";
             // 
             // reloadStngsBtn
             // 
-            this.reloadStngsBtn.Location = new System.Drawing.Point(3, 90);
-            this.reloadStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.reloadStngsBtn.Name = "reloadStngsBtn";
-            this.reloadStngsBtn.Size = new System.Drawing.Size(120, 30);
-            this.reloadStngsBtn.TabIndex = 5;
-            this.reloadStngsBtn.Text = "Reload Settings";
-            this.reloadStngsBtn.UseVisualStyleBackColor = true;
+            reloadStngsBtn.Location = new System.Drawing.Point(3, 90);
+            reloadStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            reloadStngsBtn.Name = "reloadStngsBtn";
+            reloadStngsBtn.Size = new System.Drawing.Size(120, 30);
+            reloadStngsBtn.TabIndex = 5;
+            reloadStngsBtn.Text = "Reload Settings";
+            reloadStngsBtn.UseVisualStyleBackColor = true;
             // 
             // saveStngsBtn
             // 
-            this.saveStngsBtn.Location = new System.Drawing.Point(3, 50);
-            this.saveStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.saveStngsBtn.Name = "saveStngsBtn";
-            this.saveStngsBtn.Size = new System.Drawing.Size(120, 30);
-            this.saveStngsBtn.TabIndex = 6;
-            this.saveStngsBtn.Text = "Save Settings";
-            this.saveStngsBtn.UseVisualStyleBackColor = true;
+            saveStngsBtn.Location = new System.Drawing.Point(3, 50);
+            saveStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            saveStngsBtn.Name = "saveStngsBtn";
+            saveStngsBtn.Size = new System.Drawing.Size(120, 30);
+            saveStngsBtn.TabIndex = 6;
+            saveStngsBtn.Text = "Save Settings";
+            saveStngsBtn.UseVisualStyleBackColor = true;
             // 
             // loadStngsBtn
             // 
-            this.loadStngsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.loadStngsBtn.Location = new System.Drawing.Point(3, 10);
-            this.loadStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.loadStngsBtn.Name = "loadStngsBtn";
-            this.loadStngsBtn.Size = new System.Drawing.Size(120, 30);
-            this.loadStngsBtn.TabIndex = 7;
-            this.loadStngsBtn.Text = "Load Settings";
-            this.loadStngsBtn.UseVisualStyleBackColor = true;
+            loadStngsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+           | System.Windows.Forms.AnchorStyles.Right)));
+            loadStngsBtn.Location = new System.Drawing.Point(3, 10);
+            loadStngsBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            loadStngsBtn.Name = "loadStngsBtn";
+            loadStngsBtn.Size = new System.Drawing.Size(120, 30);
+            loadStngsBtn.TabIndex = 7;
+            loadStngsBtn.Text = "Load Settings";
+            loadStngsBtn.UseVisualStyleBackColor = true;
             // 
             // userinfoPnl
             // 
-            this.userinfoPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.userinfoPnl.Controls.Add(this.setUserinfoBtn);
-            this.userinfoPnl.Controls.Add(this.gpgTxtBox);
-            this.userinfoPnl.Controls.Add(this.gpgLbl);
-            this.userinfoPnl.Controls.Add(this.passwordTxtBox);
-            this.userinfoPnl.Controls.Add(this.passwordLbl);
-            this.userinfoPnl.Controls.Add(this.usernameTxtBox);
-            this.userinfoPnl.Controls.Add(this.usrnameLbl);
-            this.userinfoPnl.Location = new System.Drawing.Point(225, 12);
-            this.userinfoPnl.Name = "userinfoPnl";
-            this.userinfoPnl.Size = new System.Drawing.Size(207, 300);
-            this.userinfoPnl.TabIndex = 1;
+            userinfoPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            userinfoPnl.Controls.Add(setUserinfoBtn);
+            userinfoPnl.Controls.Add(gpgTxtBox);
+            userinfoPnl.Controls.Add(gpgLbl);
+            userinfoPnl.Controls.Add(passwordTxtBox);
+            userinfoPnl.Controls.Add(passwordLbl);
+            userinfoPnl.Controls.Add(usernameTxtBox);
+            userinfoPnl.Controls.Add(usrnameLbl);
+            userinfoPnl.Location = new System.Drawing.Point(225, 12);
+            userinfoPnl.Name = "userinfoPnl";
+            userinfoPnl.Size = new System.Drawing.Size(207, 300);
+            userinfoPnl.TabIndex = 1;
             // 
             // setUserinfoBtn
             // 
-            this.setUserinfoBtn.Location = new System.Drawing.Point(114, 251);
-            this.setUserinfoBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.setUserinfoBtn.Name = "setUserinfoBtn";
-            this.setUserinfoBtn.Size = new System.Drawing.Size(83, 29);
-            this.setUserinfoBtn.TabIndex = 15;
-            this.setUserinfoBtn.Text = "Set User Info";
-            this.setUserinfoBtn.UseVisualStyleBackColor = true;
+            setUserinfoBtn.Location = new System.Drawing.Point(114, 251);
+            setUserinfoBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            setUserinfoBtn.Name = "setUserinfoBtn";
+            setUserinfoBtn.Size = new System.Drawing.Size(83, 29);
+            setUserinfoBtn.TabIndex = 15;
+            setUserinfoBtn.Text = "Set User Info";
+            setUserinfoBtn.UseVisualStyleBackColor = true;
             // 
             // gpgTxtBox
             // 
-            this.gpgTxtBox.Location = new System.Drawing.Point(3, 191);
-            this.gpgTxtBox.Name = "gpgTxtBox";
-            this.gpgTxtBox.Size = new System.Drawing.Size(194, 20);
-            this.gpgTxtBox.TabIndex = 9;
+            gpgTxtBox.Location = new System.Drawing.Point(3, 191);
+            gpgTxtBox.Name = "gpgTxtBox";
+            gpgTxtBox.Size = new System.Drawing.Size(194, 20);
+            gpgTxtBox.TabIndex = 9;
             // 
             // gpgLbl
             // 
-            this.gpgLbl.AutoSize = true;
-            this.gpgLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpgLbl.Location = new System.Drawing.Point(5, 170);
-            this.gpgLbl.Name = "gpgLbl";
-            this.gpgLbl.Size = new System.Drawing.Size(73, 18);
-            this.gpgLbl.TabIndex = 8;
-            this.gpgLbl.Text = "PGP Key:";
+            gpgLbl.AutoSize = true;
+            gpgLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            gpgLbl.Location = new System.Drawing.Point(5, 170);
+            gpgLbl.Name = "gpgLbl";
+            gpgLbl.Size = new System.Drawing.Size(73, 18);
+            gpgLbl.TabIndex = 8;
+            gpgLbl.Text = "PGP Key:";
             // 
             // passwordTxtBox
             // 
-            this.passwordTxtBox.Location = new System.Drawing.Point(3, 111);
-            this.passwordTxtBox.Name = "passwordTxtBox";
-            this.passwordTxtBox.Size = new System.Drawing.Size(194, 20);
-            this.passwordTxtBox.TabIndex = 7;
+            passwordTxtBox.Location = new System.Drawing.Point(3, 111);
+            passwordTxtBox.Name = "passwordTxtBox";
+            passwordTxtBox.Size = new System.Drawing.Size(194, 20);
+            passwordTxtBox.TabIndex = 7;
             // 
             // passwordLbl
             // 
-            this.passwordLbl.AutoSize = true;
-            this.passwordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLbl.Location = new System.Drawing.Point(3, 90);
-            this.passwordLbl.Name = "passwordLbl";
-            this.passwordLbl.Size = new System.Drawing.Size(79, 18);
-            this.passwordLbl.TabIndex = 6;
-            this.passwordLbl.Text = "Password:";
+            passwordLbl.AutoSize = true;
+            passwordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            passwordLbl.Location = new System.Drawing.Point(3, 90);
+            passwordLbl.Name = "passwordLbl";
+            passwordLbl.Size = new System.Drawing.Size(79, 18);
+            passwordLbl.TabIndex = 6;
+            passwordLbl.Text = "Password:";
             // 
             // usernameTxtBox
             // 
-            this.usernameTxtBox.Location = new System.Drawing.Point(3, 31);
-            this.usernameTxtBox.Name = "usernameTxtBox";
-            this.usernameTxtBox.Size = new System.Drawing.Size(194, 20);
-            this.usernameTxtBox.TabIndex = 5;
+            usernameTxtBox.Location = new System.Drawing.Point(3, 31);
+            usernameTxtBox.Name = "usernameTxtBox";
+            usernameTxtBox.Size = new System.Drawing.Size(194, 20);
+            usernameTxtBox.TabIndex = 5;
             // 
             // settingsBtnsPnl
             // 
-            this.settingsBtnsPnl.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.settingsBtnsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.settingsBtnsPnl.Controls.Add(this.loadStngsBtn);
-            this.settingsBtnsPnl.Controls.Add(this.saveStngsBtn);
-            this.settingsBtnsPnl.Controls.Add(this.reloadStngsBtn);
-            this.settingsBtnsPnl.Controls.Add(this.useRecommBtn);
-            this.settingsBtnsPnl.Controls.Add(this.addUserBtn);
-            this.settingsBtnsPnl.Controls.Add(this.removeUserBtn);
-            this.settingsBtnsPnl.Controls.Add(this.wipeAllnRemoveBtn);
-            this.settingsBtnsPnl.Location = new System.Drawing.Point(453, 12);
-            this.settingsBtnsPnl.Name = "settingsBtnsPnl";
-            this.settingsBtnsPnl.Size = new System.Drawing.Size(132, 300);
-            this.settingsBtnsPnl.TabIndex = 6;
+            settingsBtnsPnl.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            settingsBtnsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            settingsBtnsPnl.Controls.Add(loadStngsBtn);
+            settingsBtnsPnl.Controls.Add(saveStngsBtn);
+            settingsBtnsPnl.Controls.Add(reloadStngsBtn);
+            settingsBtnsPnl.Controls.Add(useRecommBtn);
+            settingsBtnsPnl.Controls.Add(addUserBtn);
+            settingsBtnsPnl.Controls.Add(removeUserBtn);
+            settingsBtnsPnl.Controls.Add(wipeAllnRemoveBtn);
+            settingsBtnsPnl.Location = new System.Drawing.Point(453, 12);
+            settingsBtnsPnl.Name = "settingsBtnsPnl";
+            settingsBtnsPnl.Size = new System.Drawing.Size(132, 300);
+            settingsBtnsPnl.TabIndex = 6;
             // 
             // useRecommBtn
             // 
-            this.useRecommBtn.Location = new System.Drawing.Point(3, 130);
-            this.useRecommBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.useRecommBtn.Name = "useRecommBtn";
-            this.useRecommBtn.Size = new System.Drawing.Size(120, 30);
-            this.useRecommBtn.TabIndex = 8;
-            this.useRecommBtn.Text = "Use Recommended";
-            this.useRecommBtn.UseVisualStyleBackColor = true;
+            useRecommBtn.Location = new System.Drawing.Point(3, 130);
+            useRecommBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            useRecommBtn.Name = "useRecommBtn";
+            useRecommBtn.Size = new System.Drawing.Size(120, 30);
+            useRecommBtn.TabIndex = 8;
+            useRecommBtn.Text = "Use Recommended";
+            useRecommBtn.UseVisualStyleBackColor = true;
             // 
             // addUserBtn
             // 
-            this.addUserBtn.Location = new System.Drawing.Point(3, 170);
-            this.addUserBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.addUserBtn.Name = "addUserBtn";
-            this.addUserBtn.Size = new System.Drawing.Size(120, 30);
-            this.addUserBtn.TabIndex = 9;
-            this.addUserBtn.Text = "Add User";
-            this.addUserBtn.UseVisualStyleBackColor = true;
+            addUserBtn.Location = new System.Drawing.Point(3, 170);
+            addUserBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            addUserBtn.Name = "addUserBtn";
+            addUserBtn.Size = new System.Drawing.Size(120, 30);
+            addUserBtn.TabIndex = 9;
+            addUserBtn.Text = "Add User";
+            addUserBtn.UseVisualStyleBackColor = true;
             // 
             // removeUserBtn
             // 
-            this.removeUserBtn.Location = new System.Drawing.Point(3, 210);
-            this.removeUserBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.removeUserBtn.Name = "removeUserBtn";
-            this.removeUserBtn.Size = new System.Drawing.Size(120, 30);
-            this.removeUserBtn.TabIndex = 10;
-            this.removeUserBtn.Text = "Remove User";
-            this.removeUserBtn.UseVisualStyleBackColor = true;
+            removeUserBtn.Location = new System.Drawing.Point(3, 210);
+            removeUserBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            removeUserBtn.Name = "removeUserBtn";
+            removeUserBtn.Size = new System.Drawing.Size(120, 30);
+            removeUserBtn.TabIndex = 10;
+            removeUserBtn.Text = "Remove User";
+            removeUserBtn.UseVisualStyleBackColor = true;
             // 
             // wipeAllnRemoveBtn
             // 
-            this.wipeAllnRemoveBtn.Location = new System.Drawing.Point(3, 250);
-            this.wipeAllnRemoveBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.wipeAllnRemoveBtn.Name = "wipeAllnRemoveBtn";
-            this.wipeAllnRemoveBtn.Size = new System.Drawing.Size(120, 30);
-            this.wipeAllnRemoveBtn.TabIndex = 11;
-            this.wipeAllnRemoveBtn.Text = "Wipe Everything";
-            this.wipeAllnRemoveBtn.UseVisualStyleBackColor = true;
+            wipeAllnRemoveBtn.Location = new System.Drawing.Point(3, 250);
+            wipeAllnRemoveBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            wipeAllnRemoveBtn.Name = "wipeAllnRemoveBtn";
+            wipeAllnRemoveBtn.Size = new System.Drawing.Size(120, 30);
+            wipeAllnRemoveBtn.TabIndex = 11;
+            wipeAllnRemoveBtn.Text = "Wipe Everything";
+            wipeAllnRemoveBtn.UseVisualStyleBackColor = true;
             // 
             // checkBoxLayoutPnl
             // 
-            this.checkBoxLayoutPnl.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBoxLayoutPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.checkBoxLayoutPnl.Controls.Add(this.autoLoginCheck);
-            this.checkBoxLayoutPnl.Controls.Add(this.doNotSaveCheck);
-            this.checkBoxLayoutPnl.Controls.Add(this.wipeDataQuitCheck);
-            this.checkBoxLayoutPnl.Controls.Add(this.resetSysDefsCheck);
-            this.checkBoxLayoutPnl.Controls.Add(this.alwaysPGPCheck);
-            this.checkBoxLayoutPnl.Controls.Add(this.sendRepEmailCheck);
-            this.checkBoxLayoutPnl.Location = new System.Drawing.Point(12, 12);
-            this.checkBoxLayoutPnl.Name = "checkBoxLayoutPnl";
-            this.checkBoxLayoutPnl.Size = new System.Drawing.Size(192, 300);
-            this.checkBoxLayoutPnl.TabIndex = 12;
+            checkBoxLayoutPnl.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            checkBoxLayoutPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            checkBoxLayoutPnl.Controls.Add(autoLoginCheck);
+            checkBoxLayoutPnl.Controls.Add(doNotSaveCheck);
+            checkBoxLayoutPnl.Controls.Add(wipeDataQuitCheck);
+            checkBoxLayoutPnl.Controls.Add(resetSysDefsCheck);
+            checkBoxLayoutPnl.Controls.Add(alwaysPGPCheck);
+            checkBoxLayoutPnl.Controls.Add(sendRepEmailCheck);
+            checkBoxLayoutPnl.Location = new System.Drawing.Point(12, 12);
+            checkBoxLayoutPnl.Name = "checkBoxLayoutPnl";
+            checkBoxLayoutPnl.Size = new System.Drawing.Size(192, 300);
+            checkBoxLayoutPnl.TabIndex = 12;
             // 
             // autoLoginCheck
             // 
-            this.autoLoginCheck.AutoSize = true;
-            this.autoLoginCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLoginCheck.Location = new System.Drawing.Point(5, 25);
-            this.autoLoginCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.autoLoginCheck.Name = "autoLoginCheck";
-            this.autoLoginCheck.Size = new System.Drawing.Size(135, 19);
-            this.autoLoginCheck.TabIndex = 1;
-            this.autoLoginCheck.Text = "Log In Automatically";
-            this.autoLoginCheck.UseVisualStyleBackColor = true;
+            autoLoginCheck.AutoSize = true;
+            autoLoginCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            autoLoginCheck.Location = new System.Drawing.Point(5, 25);
+            autoLoginCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            autoLoginCheck.Name = "autoLoginCheck";
+            autoLoginCheck.Size = new System.Drawing.Size(135, 19);
+            autoLoginCheck.TabIndex = 1;
+            autoLoginCheck.Text = "Log In Automatically";
+            autoLoginCheck.UseVisualStyleBackColor = true;
             // 
             // doNotSaveCheck
             // 
-            this.doNotSaveCheck.AutoSize = true;
-            this.doNotSaveCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doNotSaveCheck.Location = new System.Drawing.Point(5, 69);
-            this.doNotSaveCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.doNotSaveCheck.Name = "doNotSaveCheck";
-            this.doNotSaveCheck.Size = new System.Drawing.Size(123, 19);
-            this.doNotSaveCheck.TabIndex = 2;
-            this.doNotSaveCheck.Text = "Do Not Save Data";
-            this.doNotSaveCheck.UseVisualStyleBackColor = true;
+            doNotSaveCheck.AutoSize = true;
+            doNotSaveCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            doNotSaveCheck.Location = new System.Drawing.Point(5, 69);
+            doNotSaveCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            doNotSaveCheck.Name = "doNotSaveCheck";
+            doNotSaveCheck.Size = new System.Drawing.Size(123, 19);
+            doNotSaveCheck.TabIndex = 2;
+            doNotSaveCheck.Text = "Do Not Save Data";
+            doNotSaveCheck.UseVisualStyleBackColor = true;
             // 
             // wipeDataQuitCheck
             // 
-            this.wipeDataQuitCheck.AutoSize = true;
-            this.wipeDataQuitCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wipeDataQuitCheck.Location = new System.Drawing.Point(5, 113);
-            this.wipeDataQuitCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.wipeDataQuitCheck.Name = "wipeDataQuitCheck";
-            this.wipeDataQuitCheck.Size = new System.Drawing.Size(125, 19);
-            this.wipeDataQuitCheck.TabIndex = 0;
-            this.wipeDataQuitCheck.Text = "Wipe Data on Quit";
-            this.wipeDataQuitCheck.UseVisualStyleBackColor = true;
+            wipeDataQuitCheck.AutoSize = true;
+            wipeDataQuitCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            wipeDataQuitCheck.Location = new System.Drawing.Point(5, 113);
+            wipeDataQuitCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            wipeDataQuitCheck.Name = "wipeDataQuitCheck";
+            wipeDataQuitCheck.Size = new System.Drawing.Size(125, 19);
+            wipeDataQuitCheck.TabIndex = 0;
+            wipeDataQuitCheck.Text = "Wipe Data on Quit";
+            wipeDataQuitCheck.UseVisualStyleBackColor = true;
             // 
             // resetSysDefsCheck
             // 
-            this.resetSysDefsCheck.AutoSize = true;
-            this.resetSysDefsCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetSysDefsCheck.Location = new System.Drawing.Point(5, 157);
-            this.resetSysDefsCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.resetSysDefsCheck.Name = "resetSysDefsCheck";
-            this.resetSysDefsCheck.Size = new System.Drawing.Size(187, 19);
-            this.resetSysDefsCheck.TabIndex = 3;
-            this.resetSysDefsCheck.Text = "Reset To Sys Defaults on Quit";
-            this.resetSysDefsCheck.UseVisualStyleBackColor = true;
+            resetSysDefsCheck.AutoSize = true;
+            resetSysDefsCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resetSysDefsCheck.Location = new System.Drawing.Point(5, 157);
+            resetSysDefsCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            resetSysDefsCheck.Name = "resetSysDefsCheck";
+            resetSysDefsCheck.Size = new System.Drawing.Size(187, 19);
+            resetSysDefsCheck.TabIndex = 3;
+            resetSysDefsCheck.Text = "Reset To Sys Defaults on Quit";
+            resetSysDefsCheck.UseVisualStyleBackColor = true;
             // 
             // alwaysPGPCheck
             // 
-            this.alwaysPGPCheck.AutoSize = true;
-            this.alwaysPGPCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alwaysPGPCheck.Location = new System.Drawing.Point(5, 201);
-            this.alwaysPGPCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.alwaysPGPCheck.Name = "alwaysPGPCheck";
-            this.alwaysPGPCheck.Size = new System.Drawing.Size(116, 19);
-            this.alwaysPGPCheck.TabIndex = 4;
-            this.alwaysPGPCheck.Text = "Always Use PGP";
-            this.alwaysPGPCheck.UseVisualStyleBackColor = true;
+            alwaysPGPCheck.AutoSize = true;
+            alwaysPGPCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            alwaysPGPCheck.Location = new System.Drawing.Point(5, 201);
+            alwaysPGPCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            alwaysPGPCheck.Name = "alwaysPGPCheck";
+            alwaysPGPCheck.Size = new System.Drawing.Size(116, 19);
+            alwaysPGPCheck.TabIndex = 4;
+            alwaysPGPCheck.Text = "Always Use PGP";
+            alwaysPGPCheck.UseVisualStyleBackColor = true;
             // 
             // sendRepEmailCheck
             // 
-            this.sendRepEmailCheck.AutoSize = true;
-            this.sendRepEmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sendRepEmailCheck.Location = new System.Drawing.Point(5, 245);
-            this.sendRepEmailCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.sendRepEmailCheck.Name = "sendRepEmailCheck";
-            this.sendRepEmailCheck.Size = new System.Drawing.Size(149, 19);
-            this.sendRepEmailCheck.TabIndex = 5;
-            this.sendRepEmailCheck.Text = "Send Reports to Email";
-            this.sendRepEmailCheck.UseVisualStyleBackColor = true;
+            sendRepEmailCheck.AutoSize = true;
+            sendRepEmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            sendRepEmailCheck.Location = new System.Drawing.Point(5, 245);
+            sendRepEmailCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            sendRepEmailCheck.Name = "sendRepEmailCheck";
+            sendRepEmailCheck.Size = new System.Drawing.Size(149, 19);
+            sendRepEmailCheck.TabIndex = 5;
+            sendRepEmailCheck.Text = "Send Reports to Email";
+            sendRepEmailCheck.UseVisualStyleBackColor = true;
             // 
             // emailPnl
             // 
-            this.emailPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.emailPnl.Controls.Add(this.helpBtn);
-            this.emailPnl.Controls.Add(this.setEmailBtn);
-            this.emailPnl.Controls.Add(this.forcePGPEmailCheck);
-            this.emailPnl.Controls.Add(this.emailAddConfTxtBox);
-            this.emailPnl.Controls.Add(this.emailAddConfLbl);
-            this.emailPnl.Controls.Add(this.emailAddTxtBox);
-            this.emailPnl.Controls.Add(this.emailAddLbl);
-            this.emailPnl.Cursor = System.Windows.Forms.Cursors.Default;
-            this.emailPnl.Location = new System.Drawing.Point(12, 342);
-            this.emailPnl.Name = "emailPnl";
-            this.emailPnl.Size = new System.Drawing.Size(573, 168);
-            this.emailPnl.TabIndex = 13;
+            emailPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            emailPnl.Controls.Add(helpBtn);
+            emailPnl.Controls.Add(setEmailBtn);
+            emailPnl.Controls.Add(forcePGPEmailCheck);
+            emailPnl.Controls.Add(emailAddConfTxtBox);
+            emailPnl.Controls.Add(emailAddConfLbl);
+            emailPnl.Controls.Add(emailAddTxtBox);
+            emailPnl.Controls.Add(emailAddLbl);
+            emailPnl.Cursor = System.Windows.Forms.Cursors.Default;
+            emailPnl.Location = new System.Drawing.Point(12, 342);
+            emailPnl.Name = "emailPnl";
+            emailPnl.Size = new System.Drawing.Size(573, 168);
+            emailPnl.TabIndex = 13;
             // 
             // helpBtn
             // 
-            this.helpBtn.Location = new System.Drawing.Point(494, 113);
-            this.helpBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.helpBtn.Name = "helpBtn";
-            this.helpBtn.Size = new System.Drawing.Size(70, 30);
-            this.helpBtn.TabIndex = 15;
-            this.helpBtn.Text = "Help!";
-            this.helpBtn.UseVisualStyleBackColor = true;
+            helpBtn.Location = new System.Drawing.Point(494, 113);
+            helpBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            helpBtn.Name = "helpBtn";
+            helpBtn.Size = new System.Drawing.Size(70, 30);
+            helpBtn.TabIndex = 15;
+            helpBtn.Text = "Help!";
+            helpBtn.UseVisualStyleBackColor = true;
             // 
             // setEmailBtn
             // 
-            this.setEmailBtn.Location = new System.Drawing.Point(494, 24);
-            this.setEmailBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
-            this.setEmailBtn.Name = "setEmailBtn";
-            this.setEmailBtn.Size = new System.Drawing.Size(70, 29);
-            this.setEmailBtn.TabIndex = 14;
-            this.setEmailBtn.Text = "Set Email";
-            this.setEmailBtn.UseVisualStyleBackColor = true;
+            setEmailBtn.Location = new System.Drawing.Point(494, 24);
+            setEmailBtn.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
+            setEmailBtn.Name = "setEmailBtn";
+            setEmailBtn.Size = new System.Drawing.Size(70, 29);
+            setEmailBtn.TabIndex = 14;
+            setEmailBtn.Text = "Set Email";
+            setEmailBtn.UseVisualStyleBackColor = true;
             // 
             // forcePGPEmailCheck
             // 
-            this.forcePGPEmailCheck.AutoSize = true;
-            this.forcePGPEmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forcePGPEmailCheck.Location = new System.Drawing.Point(277, 72);
-            this.forcePGPEmailCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
-            this.forcePGPEmailCheck.Name = "forcePGPEmailCheck";
-            this.forcePGPEmailCheck.Size = new System.Drawing.Size(133, 19);
-            this.forcePGPEmailCheck.TabIndex = 13;
-            this.forcePGPEmailCheck.Text = "Force PGP in Email";
-            this.forcePGPEmailCheck.UseVisualStyleBackColor = true;
+            forcePGPEmailCheck.AutoSize = true;
+            forcePGPEmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            forcePGPEmailCheck.Location = new System.Drawing.Point(277, 72);
+            forcePGPEmailCheck.Margin = new System.Windows.Forms.Padding(5, 25, 0, 0);
+            forcePGPEmailCheck.Name = "forcePGPEmailCheck";
+            forcePGPEmailCheck.Size = new System.Drawing.Size(133, 19);
+            forcePGPEmailCheck.TabIndex = 13;
+            forcePGPEmailCheck.Text = "Force PGP in Email";
+            forcePGPEmailCheck.UseVisualStyleBackColor = true;
             // 
             // emailAddConfTxtBox
             // 
-            this.emailAddConfTxtBox.Location = new System.Drawing.Point(3, 113);
-            this.emailAddConfTxtBox.Name = "emailAddConfTxtBox";
-            this.emailAddConfTxtBox.Size = new System.Drawing.Size(194, 20);
-            this.emailAddConfTxtBox.TabIndex = 12;
+            emailAddConfTxtBox.Location = new System.Drawing.Point(3, 113);
+            emailAddConfTxtBox.Name = "emailAddConfTxtBox";
+            emailAddConfTxtBox.Size = new System.Drawing.Size(194, 20);
+            emailAddConfTxtBox.TabIndex = 12;
             // 
             // emailAddConfLbl
             // 
-            this.emailAddConfLbl.AutoSize = true;
-            this.emailAddConfLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAddConfLbl.Location = new System.Drawing.Point(2, 92);
-            this.emailAddConfLbl.Name = "emailAddConfLbl";
-            this.emailAddConfLbl.Size = new System.Drawing.Size(65, 18);
-            this.emailAddConfLbl.TabIndex = 11;
-            this.emailAddConfLbl.Text = "Confirm:";
+            emailAddConfLbl.AutoSize = true;
+            emailAddConfLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            emailAddConfLbl.Location = new System.Drawing.Point(2, 92);
+            emailAddConfLbl.Name = "emailAddConfLbl";
+            emailAddConfLbl.Size = new System.Drawing.Size(65, 18);
+            emailAddConfLbl.TabIndex = 11;
+            emailAddConfLbl.Text = "Confirm:";
             // 
             // emailAddTxtBox
             // 
-            this.emailAddTxtBox.Location = new System.Drawing.Point(6, 33);
-            this.emailAddTxtBox.Name = "emailAddTxtBox";
-            this.emailAddTxtBox.Size = new System.Drawing.Size(194, 20);
-            this.emailAddTxtBox.TabIndex = 10;
+            emailAddTxtBox.Location = new System.Drawing.Point(6, 33);
+            emailAddTxtBox.Name = "emailAddTxtBox";
+            emailAddTxtBox.Size = new System.Drawing.Size(194, 20);
+            emailAddTxtBox.TabIndex = 10;
             // 
             // emailAddLbl
             // 
-            this.emailAddLbl.AutoSize = true;
-            this.emailAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAddLbl.Location = new System.Drawing.Point(3, 12);
-            this.emailAddLbl.Name = "emailAddLbl";
-            this.emailAddLbl.Size = new System.Drawing.Size(147, 18);
-            this.emailAddLbl.TabIndex = 10;
-            this.emailAddLbl.Text = "Your E-Mail Address:";
+            emailAddLbl.AutoSize = true;
+            emailAddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            emailAddLbl.Location = new System.Drawing.Point(3, 12);
+            emailAddLbl.Name = "emailAddLbl";
+            emailAddLbl.Size = new System.Drawing.Size(147, 18);
+            emailAddLbl.TabIndex = 10;
+            emailAddLbl.Text = "Your E-Mail Address:";
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 522);
-            this.ControlBox = false;
-            this.Controls.Add(this.emailPnl);
-            this.Controls.Add(this.settingsBtnsPnl);
-            this.Controls.Add(this.userinfoPnl);
-            this.Controls.Add(this.checkBoxLayoutPnl);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Settings";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Options";
-            this.userinfoPnl.ResumeLayout(false);
-            this.userinfoPnl.PerformLayout();
-            this.settingsBtnsPnl.ResumeLayout(false);
-            this.checkBoxLayoutPnl.ResumeLayout(false);
-            this.checkBoxLayoutPnl.PerformLayout();
-            this.emailPnl.ResumeLayout(false);
-            this.emailPnl.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(616, 522);
+            ControlBox = false;
+            Controls.Add(emailPnl);
+            Controls.Add(settingsBtnsPnl);
+            Controls.Add(userinfoPnl);
+            Controls.Add(checkBoxLayoutPnl);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Name = "Settings";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            Text = "Options";
+            userinfoPnl.ResumeLayout(false);
+            userinfoPnl.PerformLayout();
+            settingsBtnsPnl.ResumeLayout(false);
+            checkBoxLayoutPnl.ResumeLayout(false);
+            checkBoxLayoutPnl.PerformLayout();
+            emailPnl.ResumeLayout(false);
+            emailPnl.PerformLayout();
+            ResumeLayout(false);
 
         }
 
