@@ -46,9 +46,204 @@
             procStatusLbl = new System.Windows.Forms.Label();
             reportingOpersPnl.SuspendLayout();
             SuspendLayout();
-            // 
-            // reportingOpersPnl
-            // 
+
+            InitreportingOpersPnl();
+            InitmenuSubHelpBtn();
+            InitremoveSelectedBtn();
+            InitstopCurrentBtn();
+            InitrunCustomBtn();
+            InitcreateNewBtn();
+            InitscriptLbl();
+            InitsaveAsCsvBtn();
+            InitsaveAsXmlBtn();
+            InitresetCrntBtn();
+            InitopenFileBtn();
+            InitreportingLbl();
+            InitsaveAsTxtBtn();
+            InitcurrentStatusBar();
+            InitrichTextBox1();
+            InitprocStatusLbl();
+            InitMainMenuSub();
+
+        }
+
+        private void InitMainMenuSub()
+        {
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(616, 522);
+            ControlBox = false;
+            Controls.Add(procStatusLbl);
+            Controls.Add(richTextBox1);
+            Controls.Add(currentStatusBar);
+            Controls.Add(reportingOpersPnl);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Name = "MainMenuSub";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            Text = "MainMenuSub";
+            reportingOpersPnl.ResumeLayout(false);
+            reportingOpersPnl.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        private void InitprocStatusLbl()
+        {
+            procStatusLbl.AutoSize = true;
+            procStatusLbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            procStatusLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            procStatusLbl.Location = new System.Drawing.Point(336, 270);
+            procStatusLbl.Name = "procStatusLbl";
+            procStatusLbl.Size = new System.Drawing.Size(37, 23);
+            procStatusLbl.TabIndex = 3;
+            procStatusLbl.Text = "Idle";
+        }
+
+        private void InitrichTextBox1()
+        {
+            richTextBox1.BackColor = System.Drawing.Color.Black;
+            richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            richTextBox1.ForeColor = System.Drawing.Color.LimeGreen;
+            richTextBox1.Location = new System.Drawing.Point(12, 12);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            richTextBox1.Size = new System.Drawing.Size(592, 241);
+            richTextBox1.TabIndex = 2;
+            richTextBox1.Text = "";
+        }
+
+        private void InitcurrentStatusBar()
+        {
+            currentStatusBar.Location = new System.Drawing.Point(12, 270);
+            currentStatusBar.Name = "currentStatusBar";
+            currentStatusBar.Size = new System.Drawing.Size(318, 23);
+            currentStatusBar.TabIndex = 1;
+        }
+
+        private void InitsaveAsTxtBtn()
+        {
+            saveAsTxtBtn.Location = new System.Drawing.Point(3, 41);
+            saveAsTxtBtn.Name = "saveAsTxtBtn";
+            saveAsTxtBtn.Size = new System.Drawing.Size(86, 23);
+            saveAsTxtBtn.TabIndex = 0;
+            saveAsTxtBtn.Text = "Save as Text";
+            saveAsTxtBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitreportingLbl()
+        {
+            reportingLbl.AutoSize = true;
+            reportingLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            reportingLbl.Location = new System.Drawing.Point(3, 0);
+            reportingLbl.Name = "reportingLbl";
+            reportingLbl.Size = new System.Drawing.Size(70, 17);
+            reportingLbl.TabIndex = 1;
+            reportingLbl.Text = "Reporting";
+        }
+
+        private void InitopenFileBtn()
+        {
+            openFileBtn.Location = new System.Drawing.Point(276, 41);
+            openFileBtn.Name = "openFileBtn";
+            openFileBtn.Size = new System.Drawing.Size(75, 23);
+            openFileBtn.TabIndex = 2;
+            openFileBtn.Text = "Open File";
+            openFileBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitresetCrntBtn()
+        {
+            resetCrntBtn.Location = new System.Drawing.Point(357, 41);
+            resetCrntBtn.Name = "resetCrntBtn";
+            resetCrntBtn.Size = new System.Drawing.Size(83, 23);
+            resetCrntBtn.TabIndex = 3;
+            resetCrntBtn.Text = "Reset Current";
+            resetCrntBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitsaveAsXmlBtn()
+        {
+            saveAsXmlBtn.Location = new System.Drawing.Point(98, 41);
+            saveAsXmlBtn.Name = "saveAsXmlBtn";
+            saveAsXmlBtn.Size = new System.Drawing.Size(83, 23);
+            saveAsXmlBtn.TabIndex = 4;
+            saveAsXmlBtn.Text = "Save As XML";
+            saveAsXmlBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitsaveAsCsvBtn()
+        {
+            saveAsCsvBtn.Location = new System.Drawing.Point(187, 41);
+            saveAsCsvBtn.Name = "saveAsCsvBtn";
+            saveAsCsvBtn.Size = new System.Drawing.Size(83, 23);
+            saveAsCsvBtn.TabIndex = 5;
+            saveAsCsvBtn.Text = "Save As CSV";
+            saveAsCsvBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitscriptLbl()
+        {
+            scriptLbl.AutoSize = true;
+            scriptLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            scriptLbl.Location = new System.Drawing.Point(3, 101);
+            scriptLbl.Name = "scriptLbl";
+            scriptLbl.Size = new System.Drawing.Size(107, 17);
+            scriptLbl.TabIndex = 6;
+            scriptLbl.Text = "Script / Process";
+        }
+
+        private void InitcreateNewBtn()
+        {
+            createNewBtn.Location = new System.Drawing.Point(6, 142);
+            createNewBtn.Name = "createNewBtn";
+            createNewBtn.Size = new System.Drawing.Size(83, 23);
+            createNewBtn.TabIndex = 7;
+            createNewBtn.Text = "Add New";
+            createNewBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitrunCustomBtn()
+        {
+            runCustomBtn.Location = new System.Drawing.Point(208, 142);
+            runCustomBtn.Name = "runCustomBtn";
+            runCustomBtn.Size = new System.Drawing.Size(83, 23);
+            runCustomBtn.TabIndex = 8;
+            runCustomBtn.Text = "Run Custom";
+            runCustomBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitstopCurrentBtn()
+        {
+            stopCurrentBtn.Location = new System.Drawing.Point(297, 142);
+            stopCurrentBtn.Name = "stopCurrentBtn";
+            stopCurrentBtn.Size = new System.Drawing.Size(83, 23);
+            stopCurrentBtn.TabIndex = 9;
+            stopCurrentBtn.Text = "Stop Current";
+            stopCurrentBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitremoveSelectedBtn()
+        {
+            removeSelectedBtn.Location = new System.Drawing.Point(98, 142);
+            removeSelectedBtn.Name = "removeSelectedBtn";
+            removeSelectedBtn.Size = new System.Drawing.Size(104, 23);
+            removeSelectedBtn.TabIndex = 10;
+            removeSelectedBtn.Text = "Remove Selected";
+            removeSelectedBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitmenuSubHelpBtn()
+        {
+            menuSubHelpBtn.Location = new System.Drawing.Point(502, 172);
+            menuSubHelpBtn.Name = "menuSubHelpBtn";
+            menuSubHelpBtn.Size = new System.Drawing.Size(83, 23);
+            menuSubHelpBtn.TabIndex = 11;
+            menuSubHelpBtn.Text = "Help!";
+            menuSubHelpBtn.UseVisualStyleBackColor = true;
+        }
+
+        private void InitreportingOpersPnl()
+        {
             reportingOpersPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             reportingOpersPnl.Controls.Add(menuSubHelpBtn);
             reportingOpersPnl.Controls.Add(removeSelectedBtn);
@@ -66,166 +261,6 @@
             reportingOpersPnl.Name = "reportingOpersPnl";
             reportingOpersPnl.Size = new System.Drawing.Size(592, 202);
             reportingOpersPnl.TabIndex = 0;
-            // 
-            // menuSubHelpBtn
-            // 
-            menuSubHelpBtn.Location = new System.Drawing.Point(502, 172);
-            menuSubHelpBtn.Name = "menuSubHelpBtn";
-            menuSubHelpBtn.Size = new System.Drawing.Size(83, 23);
-            menuSubHelpBtn.TabIndex = 11;
-            menuSubHelpBtn.Text = "Help!";
-            menuSubHelpBtn.UseVisualStyleBackColor = true;
-            // 
-            // removeSelectedBtn
-            // 
-            removeSelectedBtn.Location = new System.Drawing.Point(98, 142);
-            removeSelectedBtn.Name = "removeSelectedBtn";
-            removeSelectedBtn.Size = new System.Drawing.Size(104, 23);
-            removeSelectedBtn.TabIndex = 10;
-            removeSelectedBtn.Text = "Remove Selected";
-            removeSelectedBtn.UseVisualStyleBackColor = true;
-            // 
-            // stopCurrentBtn
-            // 
-            stopCurrentBtn.Location = new System.Drawing.Point(297, 142);
-            stopCurrentBtn.Name = "stopCurrentBtn";
-            stopCurrentBtn.Size = new System.Drawing.Size(83, 23);
-            stopCurrentBtn.TabIndex = 9;
-            stopCurrentBtn.Text = "Stop Current";
-            stopCurrentBtn.UseVisualStyleBackColor = true;
-            // 
-            // runCustomBtn
-            // 
-            runCustomBtn.Location = new System.Drawing.Point(208, 142);
-            runCustomBtn.Name = "runCustomBtn";
-            runCustomBtn.Size = new System.Drawing.Size(83, 23);
-            runCustomBtn.TabIndex = 8;
-            runCustomBtn.Text = "Run Custom";
-            runCustomBtn.UseVisualStyleBackColor = true;
-            // 
-            // createNewBtn
-            // 
-            createNewBtn.Location = new System.Drawing.Point(6, 142);
-            createNewBtn.Name = "createNewBtn";
-            createNewBtn.Size = new System.Drawing.Size(83, 23);
-            createNewBtn.TabIndex = 7;
-            createNewBtn.Text = "Add New";
-            createNewBtn.UseVisualStyleBackColor = true;
-            // 
-            // scriptLbl
-            // 
-            scriptLbl.AutoSize = true;
-            scriptLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            scriptLbl.Location = new System.Drawing.Point(3, 101);
-            scriptLbl.Name = "scriptLbl";
-            scriptLbl.Size = new System.Drawing.Size(107, 17);
-            scriptLbl.TabIndex = 6;
-            scriptLbl.Text = "Script / Process";
-            // 
-            // saveAsCsvBtn
-            // 
-            saveAsCsvBtn.Location = new System.Drawing.Point(187, 41);
-            saveAsCsvBtn.Name = "saveAsCsvBtn";
-            saveAsCsvBtn.Size = new System.Drawing.Size(83, 23);
-            saveAsCsvBtn.TabIndex = 5;
-            saveAsCsvBtn.Text = "Save As CSV";
-            saveAsCsvBtn.UseVisualStyleBackColor = true;
-            // 
-            // saveAsXmlBtn
-            // 
-            saveAsXmlBtn.Location = new System.Drawing.Point(98, 41);
-            saveAsXmlBtn.Name = "saveAsXmlBtn";
-            saveAsXmlBtn.Size = new System.Drawing.Size(83, 23);
-            saveAsXmlBtn.TabIndex = 4;
-            saveAsXmlBtn.Text = "Save As XML";
-            saveAsXmlBtn.UseVisualStyleBackColor = true;
-            // 
-            // resetCrntBtn
-            // 
-            resetCrntBtn.Location = new System.Drawing.Point(357, 41);
-            resetCrntBtn.Name = "resetCrntBtn";
-            resetCrntBtn.Size = new System.Drawing.Size(83, 23);
-            resetCrntBtn.TabIndex = 3;
-            resetCrntBtn.Text = "Reset Current";
-            resetCrntBtn.UseVisualStyleBackColor = true;
-            // 
-            // openFileBtn
-            // 
-            openFileBtn.Location = new System.Drawing.Point(276, 41);
-            openFileBtn.Name = "openFileBtn";
-            openFileBtn.Size = new System.Drawing.Size(75, 23);
-            openFileBtn.TabIndex = 2;
-            openFileBtn.Text = "Open File";
-            openFileBtn.UseVisualStyleBackColor = true;
-            // 
-            // reportingLbl
-            // 
-            reportingLbl.AutoSize = true;
-            reportingLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            reportingLbl.Location = new System.Drawing.Point(3, 0);
-            reportingLbl.Name = "reportingLbl";
-            reportingLbl.Size = new System.Drawing.Size(70, 17);
-            reportingLbl.TabIndex = 1;
-            reportingLbl.Text = "Reporting";
-            // 
-            // saveAsTxtBtn
-            // 
-            saveAsTxtBtn.Location = new System.Drawing.Point(3, 41);
-            saveAsTxtBtn.Name = "saveAsTxtBtn";
-            saveAsTxtBtn.Size = new System.Drawing.Size(86, 23);
-            saveAsTxtBtn.TabIndex = 0;
-            saveAsTxtBtn.Text = "Save as Text";
-            saveAsTxtBtn.UseVisualStyleBackColor = true;
-            // 
-            // currentStatusBar
-            // 
-            currentStatusBar.Location = new System.Drawing.Point(12, 270);
-            currentStatusBar.Name = "currentStatusBar";
-            currentStatusBar.Size = new System.Drawing.Size(318, 23);
-            currentStatusBar.TabIndex = 1;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.BackColor = System.Drawing.Color.Black;
-            richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            richTextBox1.ForeColor = System.Drawing.Color.LimeGreen;
-            richTextBox1.Location = new System.Drawing.Point(12, 12);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            richTextBox1.Size = new System.Drawing.Size(592, 241);
-            richTextBox1.TabIndex = 2;
-            richTextBox1.Text = "";
-            // 
-            // procStatusLbl
-            // 
-            procStatusLbl.AutoSize = true;
-            procStatusLbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            procStatusLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            procStatusLbl.Location = new System.Drawing.Point(336, 270);
-            procStatusLbl.Name = "procStatusLbl";
-            procStatusLbl.Size = new System.Drawing.Size(37, 23);
-            procStatusLbl.TabIndex = 3;
-            procStatusLbl.Text = "Idle";
-            // 
-            // MainMenuSub
-            // 
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(616, 522);
-            ControlBox = false;
-            Controls.Add(procStatusLbl);
-            Controls.Add(richTextBox1);
-            Controls.Add(currentStatusBar);
-            Controls.Add(reportingOpersPnl);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Name = "MainMenuSub";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            Text = "MainMenuSub";
-            reportingOpersPnl.ResumeLayout(false);
-            reportingOpersPnl.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
-
         }
 
         #endregion
