@@ -116,9 +116,13 @@ namespace Amadeus.Forms
             InitsaveVpnNewBtn();
             InitavailForAllCheckBox();
             InitsplitTunCheckBox();
-            // 
-            // Vpn
-            // 
+
+            InitVpnElements();
+
+        }
+
+        private void InitVpnElements()
+        {
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             CausesValidation = false;
@@ -150,7 +154,6 @@ namespace Amadeus.Forms
             btnsTopPnl.ResumeLayout(false);
             btnsTopPnl.PerformLayout();
             ResumeLayout(false);
-
         }
 
         private void InitsplitTunCheckBox()
