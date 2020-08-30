@@ -74,6 +74,7 @@
     <Compile Include="CustomControls\BaseComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomControls\BaseFlowPanel.cs" />
     <Compile Include="CustomControls\BaseLabel.cs">
       <SubType>Component</SubType>
     </Compile>

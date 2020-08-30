@@ -13,6 +13,7 @@ namespace Amadeus.CustomControls
             {
                 Controls.Add(ctrl);
             }
+            SuspendLayout();
         }
     }
 }

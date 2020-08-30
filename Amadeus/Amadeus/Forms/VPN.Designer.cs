@@ -1,13 +1,16 @@
-﻿using System.ComponentModel;
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+using System.Windows.Forms;
 using FontType = System.Drawing.Font;
-using Location = System.Drawing.Point;
+using Point = System.Drawing.Point;
 using Size = System.Drawing.Size;
+using BorderStyle = System.Windows.Forms.BorderStyle;
 
 namespace Amadeus.Forms
 {
     partial class Vpn
     {
-        private readonly ComponentResourceManager Resources = new ComponentResourceManager(typeof(Vpn));
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(Vpn));
 
         /// <summary>
         /// Required designer variable.
@@ -33,89 +36,45 @@ namespace Amadeus.Forms
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+
         private void InitializeComponent()
         {
-            bottomInfosPnl = new System.Windows.Forms.Panel();
-            currOpersPnl = new System.Windows.Forms.FlowLayoutPanel();
-            selectConnBtn = new System.Windows.Forms.Button();
-            selectEditBtn = new System.Windows.Forms.Button();
-            selectRmvBtn = new System.Windows.Forms.Button();
-            vpnHelpBtn = new System.Windows.Forms.Button();
-            currInfoPnl = new System.Windows.Forms.Panel();
-            selectedInfoTxtBox = new System.Windows.Forms.RichTextBox();
-            selectedsLbl = new System.Windows.Forms.Label();
-            currPnl = new System.Windows.Forms.Panel();
-            currentVpnsComBox = new System.Windows.Forms.ComboBox();
-            currentVpnsLbl = new System.Windows.Forms.Label();
-            vpnSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            namePnl = new System.Windows.Forms.Panel();
-            vpnsTxtBox = new System.Windows.Forms.TextBox();
-            nameVpnLbl = new System.Windows.Forms.Label();
-            addressPnl = new System.Windows.Forms.Panel();
-            vpnNameTxtBox = new System.Windows.Forms.TextBox();
-            addressVpnLbl = new System.Windows.Forms.Label();
-            tunnelPnl = new System.Windows.Forms.Panel();
-            tTypeSelectCombBox = new System.Windows.Forms.ComboBox();
-            ttypeVpnLbl = new System.Windows.Forms.Label();
-            encryptionPnl = new System.Windows.Forms.Panel();
-            encrLvlCombBox = new System.Windows.Forms.ComboBox();
-            encryptLvlVpnLbl = new System.Windows.Forms.Label();
-            authPnl = new System.Windows.Forms.Panel();
-            authMetCombBox = new System.Windows.Forms.ComboBox();
-            authMetLbl = new System.Windows.Forms.Label();
-            btnsTopPnl = new System.Windows.Forms.Panel();
-            clearValsBtn = new System.Windows.Forms.Button();
-            saveConnBtn = new System.Windows.Forms.Button();
-            saveVpnNewBtn = new System.Windows.Forms.Button();
-            availForAllCheckBox = new System.Windows.Forms.CheckBox();
-            splitTunCheckBox = new System.Windows.Forms.CheckBox();
-            bottomInfosPnl.SuspendLayout();
-            currOpersPnl.SuspendLayout();
-            currInfoPnl.SuspendLayout();
-            currPnl.SuspendLayout();
-            vpnSettingsPnl.SuspendLayout();
-            namePnl.SuspendLayout();
-            addressPnl.SuspendLayout();
-            tunnelPnl.SuspendLayout();
-            encryptionPnl.SuspendLayout();
-            authPnl.SuspendLayout();
-            btnsTopPnl.SuspendLayout();
-            SuspendLayout();
+            bottomInfosPnl = new BaseFlowPanel(_res, new Control[] { currOpersPnl, currInfoPnl, currPnl }, new Point(12, 335), new Size(590, 175), "bottomInfosPnl", 2, BorderStyle.Fixed3D);
+            currOpersPnl = new BaseFlowPanel(_res, new Control[] { selectConnBtn, selectEditBtn, selectRmvBtn, vpnHelpBtn }, new Point(383, 3), new Size(200, 170), "currOpersPnl", 6, new object[] { null, FlowDirection.TopDown });
+            selectConnBtn = new BaseButton(_res, );
+            selectEditBtn = new BaseButton(_res, );
+            selectRmvBtn = new BaseButton(_res, );
+            vpnHelpBtn = new BaseButton(_res, );
+            currInfoPnl = new Panel(_res, );
+            selectedInfoTxtBox = new BaseRichTextBox(_res, );
+            selectedsLbl = new BaseLabel(_res, );
+            currPnl = new Panel(_res, );
+            currentVpnsComBox = new BaseComboBox();
+            currentVpnsLbl = new BaseLabel(_res, );
+            vpnSettingsPnl = new BaseFlowPanel(_res, );
+            namePnl = new Panel(_res, );
+            vpnsTxtBox = new BaseTextBox(_res, );
+            nameVpnLbl = new BaseLabel(_res, );
+            addressPnl = new Panel(_res, );
+            vpnNameTxtBox = new BaseTextBox(_res, );
+            addressVpnLbl = new BaseLabel(_res, );
+            tunnelPnl = new Panel(_res, );
+            tTypeSelectCombBox = new BaseComboBox(_res, );
+            ttypeVpnLbl = new BaseLabel(_res, );
+            encryptionPnl = new Panel(_res, );
+            encrLvlCombBox = new BaseComboBox(_res, );
+            encryptLvlVpnLbl = new BaseLabel(_res, );
+            authPnl = new Panel(_res, );
+            authMetCombBox = new BaseComboBox(_res, );
+            authMetLbl = new BaseLabel(_res, );
+            btnsTopPnl = new Panel(_res, );
+            clearValsBtn = new BaseButton(_res, );
+            saveConnBtn = new BaseButton(_res, );
+            saveVpnNewBtn = new BaseButton(_res, );
+            availForAllCheckBox = new BaseCheckBox(_res, );
+            splitTunCheckBox = new BaseCheckBox(_res, );
 
-            InitbottomInfosPnl();
-            InitcurrOpersPnl();
-            InitselectConnBtn();
-            InitselectEditBtn();
-            InitselectRmvBtn();
-            InitvpnHelpBtn();
-            InitcurrInfoPnl();
-            InitselectedInfoTxtBox();
-            InitselectedsLbl();
-            InitcurrPnl();
-            InitcurrentVpnsComBox();
-            InitcurrentVpnsLbl();
-            InitvpnSettingsPnl();
-            InitnamePnl();
-            InitvpnsTxtBox();
-            InitnameVpnLbl();
-            InitaddressPnl();
-            InitvpnNameTxtBox();
-            InitaddressVpnLbl();
-            InittunnelPnl();
-            InittTypeSelectCombBox();
-            InitttypeVpnLbl();
-            InitencryptionPnl();
-            InitencrLvlCombBox();
-            InitencryptLvlVpnLbl();
-            InitauthPnl();
-            InitauthMetCombBox();
-            InitauthMetLbl();
-            InitbtnsTopPnl();
-            InitclearValsBtn();
-            InitsaveConnBtn();
-            InitsaveVpnNewBtn();
-            InitavailForAllCheckBox();
-            InitsplitTunCheckBox();
+            SuspendLayout();
 
             InitVpnElements();
 
@@ -503,30 +462,6 @@ namespace Amadeus.Forms
             selectConnBtn.UseVisualStyleBackColor = true;
         }
 
-        private void InitcurrOpersPnl()
-        {
-            currOpersPnl.Controls.Add(selectConnBtn);
-            currOpersPnl.Controls.Add(selectEditBtn);
-            currOpersPnl.Controls.Add(selectRmvBtn);
-            currOpersPnl.Controls.Add(vpnHelpBtn);
-            currOpersPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            currOpersPnl.Location = new System.Drawing.Point(383, 3);
-            currOpersPnl.Name = "currOpersPnl";
-            currOpersPnl.Size = new System.Drawing.Size(200, 170);
-            currOpersPnl.TabIndex = 6;
-        }
-
-        private void InitbottomInfosPnl()
-        {
-            bottomInfosPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            bottomInfosPnl.Controls.Add(currOpersPnl);
-            bottomInfosPnl.Controls.Add(currInfoPnl);
-            bottomInfosPnl.Controls.Add(currPnl);
-            bottomInfosPnl.Location = new System.Drawing.Point(12, 335);
-            bottomInfosPnl.Name = "bottomInfosPnl";
-            bottomInfosPnl.Size = new System.Drawing.Size(590, 175);
-            bottomInfosPnl.TabIndex = 2;
-        }
 
         #endregion
         private System.Windows.Forms.Panel bottomInfosPnl;

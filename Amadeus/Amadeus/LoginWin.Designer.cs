@@ -8,7 +8,7 @@ namespace Amadeus
 {
     partial class LoginWin
     {
-        private readonly ComponentResourceManager Resources = new ComponentResourceManager(typeof(LoginWin));
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(LoginWin));
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -35,29 +35,24 @@ namespace Amadeus
         /// </summary>
         void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager res = new System.ComponentModel.ComponentResourceManager(typeof(LoginWin));
-            loginButton = new BaseButton(res, Color.YellowGreen, DialogResult.Cancel, 0, "loginButton", false);
-            registerButton = new BaseButton(res, Color.DarkTurquoise, DialogResult.Cancel, 0, "registerButton", false);
-            quitButton = new BaseButton(res, Color.Violet, DialogResult.Cancel, 0, "quitButton", false);
-            saveUserInfoChckBox = new BaseCheckBox(res, "saveUserInfoChkBox", true, "Save User Info", ContAlign.MiddleCenter, ContAlign.MiddleLeft);
-            usersSavedBox = new BaseComboBox(res, "usersSavedBox");
-            passwordTxtBox = new BaseTextBox(res, "passwordTxtBox");
-            usernameTxtBox = new BaseTextBox(res, "usernameTxtBox");
+            loginButton = new BaseButton(_res, Color.YellowGreen, DialogResult.Cancel, 0, "loginButton", false);
+            registerButton = new BaseButton(_res, Color.DarkTurquoise, DialogResult.Cancel, 0, "registerButton", false);
+            quitButton = new BaseButton(_res, Color.Violet, DialogResult.Cancel, 0, "quitButton", false);
+            saveUserInfoChckBox = new BaseCheckBox(_res, "saveUserInfoChkBox", true, "Save User Info", ContAlign.MiddleCenter, ContAlign.MiddleLeft);
+            usersSavedBox = new BaseComboBox(_res, "usersSavedBox");
+            passwordTxtBox = new BaseTextBox(_res, "passwordTxtBox");
+            usernameTxtBox = new BaseTextBox(_res, "usernameTxtBox");
+            loginBottomPanel = new BasePanel(_res, "loginBottomPanel", new[] { loginButton, quitButton, registerButton });
+            loginTopPanel = new BasePanel(_res, "loginTopPanel", new Control[] { saveUserInfoChckBox, passwordTxtBox, usernameTxtBox, usersSavedBox });
 
-            loginBottomPanel = new BasePanel(res, "loginBottomPanel", new[] { loginButton, quitButton, registerButton });
-            loginTopPanel = new BasePanel(res, "loginTopPanel", new Control[] { saveUserInfoChckBox, passwordTxtBox, usernameTxtBox, usersSavedBox });
-
-            loginBottomPanel.SuspendLayout();
-            loginTopPanel.SuspendLayout();
             SuspendLayout();
-
-            InitLoginWin(Resources);
+            InitLoginWin();
         }
 
-        private void InitLoginWin(System.ComponentModel.ComponentResourceManager resources)
+        private void InitLoginWin()
         {
             AcceptButton = loginButton;
-            resources.ApplyResources(this, "$this");
+            _res.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.WhiteSmoke;
             CancelButton = quitButton;
