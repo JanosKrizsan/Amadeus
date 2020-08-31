@@ -58,31 +58,7 @@
             importProxiesPnl.SuspendLayout();
             SuspendLayout();
 
-            InitaddNewProxyPnl();
-            InitipAddyLbl();
-            InitipAddyTxtBox();
-            InitportLbl();
-            InitportTxtBox();
-            InituNameLbl();
-            InituNameTxtBox();
-            InitpassLbl();
-            InitpassTextBox();
-            InitauthReqChckBox();
-            InitsaveProxyBtn();
-            InitsaveNConnectProxyBtn();
-            InitproxyHelpBtn();
-            InitsavedProxiesPnl();
-            InitsavedProxiesLbl();
-            InitsavedProxiesCombBox();
-            InitproxyInfoLbl();
-            InitproxyInfoTxtBox();
-            InitconnectToSavedBtn();
-            IniteditSavedBtn();
-            InitdeleteSavedBtn();
-            InitimportProxiesPnl();
-            InitimportProxiesLbl();
-            InitselectTextFileBtn();
-            InithelpImportBtn();
+
             InitProxy();
 
         }

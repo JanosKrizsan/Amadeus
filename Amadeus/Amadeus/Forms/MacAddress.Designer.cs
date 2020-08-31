@@ -50,24 +50,7 @@
             savedAddrsPnl.SuspendLayout();
             SuspendLayout();
 
-            InitmacDetailsPnl();
-            InitgenerateRndmBtn();
-            InitapplyFullAddBtn();
-            InitsaveToFileBtn();
-            InitfullMacTxtBox();
-            InitconstFullLbl();
-            InitgenerateAddrBtn();
-            InitaddVendorBtn();
-            InitgenAddLbl();
-            InitgeneratedTxtBox();
-            InitmacVendorsLbl();
-            InitmacVendorsLstBox();
-            InitsavedAddrsPnl();
-            InitsavedAddysLbl();
-            InitsavedMacsCmboBox();
-            InitapplySelectBtn();
-            InitremoveSelectBtn();
-            InitmacAddHelpBtn();
+
             InitMacAddress();
 
         }

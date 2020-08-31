@@ -77,47 +77,7 @@
             screenSettingsPnl.SuspendLayout();
             SuspendLayout();
 
-            InitconnectionSettingsPnl();
-            InitconnLbl();
-            InitconnTxtBox();
-            InitaddressLbl();
-            InitaddressTxtBox();
-            InitportLbl();
-            InitportTxtBox();
-            InitgatewayLbl();
-            InitgatewTxtBox();
-            InituseGatewayChckBox();
-            InitasAdminChckBox();
-            InitremGuardChckBox();
-            InitrestrictedAdminChckBox();
-            InitrdpCredsHelpBtn();
-            InitcurrentRdpsPnl();
-            InitrecheckConnBtn();
-            InitconnStatusLbl();
-            InitisMstcRunningImgBox();
-            IniteditCrntBtn();
-            InitdelCrntBtn();
-            InitconnectCrntBtn();
-            InitrefreshRdpsBtn();
-            InitsavedRdpsResults();
-            InitsavedRdpsLbl();
-            InitonlyRdpFilesRdio();
-            InitscreenSettingsHolderPnl();
-            InitrdpButtonsPnl();
-            InitsaveNUpdtBtn();
-            InitsaveToRdpFileBtn();
-            InitsaveToXmlBtn();
-            InitconnGivenBtn();
-            InitresetBtn();
-            InitscreenSettingsHelpBtn();
-            InitscreenSettingsPnl();
-            InitfullscreenChckBox();
-            InitmultiMonitorChckBox();
-            InitspanMonitorsChckBox();
-            InitscreenWidthLbl();
-            InitscreenWidthTxtBox();
-            InitscreenHeightLbl();
-            InitscreenHeightTxtBox();
+
             InitRdp();
 
         }

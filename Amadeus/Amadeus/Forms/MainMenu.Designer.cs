@@ -43,18 +43,7 @@
             mainMenuSelectPanel.SuspendLayout();
 
             SuspendLayout();
-            InitmainMenuSelectPanel();
-            InitmainMenuBtn();
-            InitsettingsBtn();
-            InitproxyBtn();
-            InitvpnBtn();
-            InitrdpBtn();
-            InitipBtn();
-            InitmacBtn();
-            InitsyslangBtn();
-            InitlogoutBtn();
-            InitquitBtn();
-            InitviewPanel();
+
             InitSelectionScreen();
 
         }

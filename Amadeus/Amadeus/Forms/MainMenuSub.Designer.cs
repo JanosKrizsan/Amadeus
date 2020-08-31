@@ -47,22 +47,7 @@
             reportingOpersPnl.SuspendLayout();
             SuspendLayout();
 
-            InitreportingOpersPnl();
-            InitmenuSubHelpBtn();
-            InitremoveSelectedBtn();
-            InitstopCurrentBtn();
-            InitrunCustomBtn();
-            InitcreateNewBtn();
-            InitscriptLbl();
-            InitsaveAsCsvBtn();
-            InitsaveAsXmlBtn();
-            InitresetCrntBtn();
-            InitopenFileBtn();
-            InitreportingLbl();
-            InitsaveAsTxtBtn();
-            InitcurrentStatusBar();
-            InitrichTextBox1();
-            InitprocStatusLbl();
+
             InitMainMenuSub();
 
         }

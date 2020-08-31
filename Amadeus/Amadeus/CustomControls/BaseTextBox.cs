@@ -6,14 +6,13 @@ namespace Amadeus.CustomControls
 {
     public class BaseTextBox : TextBox
     {
-        private Font _defFont = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        public BaseTextBox(ComponentResourceManager res, string name, int tabIndex, Point point, Size size, Font font = null)
+        public BaseTextBox(ComponentResourceManager res, string name, int tabIndex, Point point = default, Size size = default, Font font = default)
         {
             Name = name;
             TabIndex = tabIndex;
             Location = point;
             Size = size;
-            Font = font ?? _defFont;
+            Font = font;
             res.ApplyResources(this, name);
         }
     }

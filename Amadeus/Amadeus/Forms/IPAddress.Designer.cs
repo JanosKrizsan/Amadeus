@@ -51,25 +51,6 @@
             dynamicPnl.SuspendLayout();
             SuspendLayout();
 
-            InitstaticPnl();
-            InitgatewayTxtBox();
-            InitipAddTxtBox();
-            InitmaskTxtBox();
-            InitdnsTxtBox();
-            InitsetStaticIPBtn();
-            InitdnsLbl();
-            InitgatewayLbl();
-            InitmaskLbl();
-            InitipaddressLbl();
-            InitstaticAddLbl();
-            InitdynamicPnl();
-            InitcurrNetAdDataLbl();
-            InitselectedAdapterData();
-            InitsetDynamicIPBtn();
-            InitDynamicAddLbl();
-            InitadapterIpsListBox();
-            InitadapterListLbl();
-            InitipAddressesHlpBtn();
             InitIPAddress();
 
         }

@@ -51,25 +51,7 @@
             newLangListPanel.SuspendLayout();
             SuspendLayout();
 
-            InitLangTagListBox();
-            InitcurrLangOpPanel();
-            InitcurrentInstLangsLbl();
-            InitcurrentLangsCmboBox();
-            InitremoveCurrBtn();
-            InitsetSelectedBtn();
-            InitsetAsDefBtn();
-            InitsetToDefBtn();
-            InitcheckGeoDataBtn();
-            InitcustomInpLbl();
-            InitcustomTagInpBox();
-            InitaddCustomBtn();
-            InitaddNSetCustBtn();
-            InitremoveSimilarBtn();
-            InitcurrHelpBtn();
-            InitnewLangListPanel();
-            InitaddNewBtn();
-            InitaddnSetNewBtn();
-            InithelpNewBtn();
+
             InitSysLanguage();
 
         }

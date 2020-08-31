@@ -65,37 +65,6 @@
             emailPnl.SuspendLayout();
             SuspendLayout();
 
-            InitusrnameLbl();
-            InitreloadStngsBtn();
-            InitsaveStngsBtn();
-            InitloadStngsBtn();
-            InituserinfoPnl();
-            InitsetUserinfoBtn();
-            InitgpgTxtBox();
-            InitgpgLbl();
-            InitpasswordTxtBox();
-            InitpasswordLbl();
-            InitusernameTxtBox();
-            InitsettingsBtnsPnl();
-            InituseRecommBtn();
-            InitaddUserBtn();
-            InitremoveUserBtn();
-            InitwipeAllnRemoveBtn();
-            InitcheckBoxLayoutPnl();
-            InitautoLoginCheck();
-            InitdoNotSaveCheck();
-            InitwipeDataQuitCheck();
-            InitresetSysDefsCheck();
-            InitalwaysPGPCheck();
-            InitsendRepEmailCheck();
-            InitemailPnl();
-            InithelpBtn();
-            InitsetEmailBtn();
-            InitforcePGPEmailCheck();
-            InitemailAddConfTxtBox();
-            InitemailAddConfLbl();
-            InitemailAddTxtBox();
-            InitemailAddLbl();
             InitSettings();
 
         }
