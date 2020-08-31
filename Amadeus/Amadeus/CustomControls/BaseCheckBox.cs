@@ -8,12 +8,12 @@ namespace Amadeus.CustomControls
     {
         public BaseCheckBox(ComponentResourceManager res, string name, bool visStyleBackColor, string text, ContentAlignment alignText, ContentAlignment alignBox)
         {
-            res.ApplyResources(this, name);
             Name = name;
             UseVisualStyleBackColor = visStyleBackColor;
             Text = text;
             TextAlign = alignText;
             CheckAlign = alignBox;
+            res.ApplyResources(this, name);
         }
     }
 }

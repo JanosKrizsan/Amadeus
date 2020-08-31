@@ -7,13 +7,13 @@ namespace Amadeus.CustomControls
     {
         public BasePanel(ComponentResourceManager res, string name, Control[] controllers)
         {
-            res.ApplyResources(this, name);
             Name = name;
             foreach (var ctrl in controllers)
             {
                 Controls.Add(ctrl);
             }
             SuspendLayout();
+            res.ApplyResources(this, name);
         }
     }
 }

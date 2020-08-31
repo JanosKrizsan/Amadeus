@@ -1,10 +1,7 @@
 ﻿using Amadeus.CustomControls;
 using System.ComponentModel;
 using System.Windows.Forms;
-using FontType = System.Drawing.Font;
-using Point = System.Drawing.Point;
-using Size = System.Drawing.Size;
-using BorderStyle = System.Windows.Forms.BorderStyle;
+using System.Drawing;
 
 namespace Amadeus.Forms
 {
@@ -30,52 +27,61 @@ namespace Amadeus.Forms
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Controller Initialization
 
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
 
+
         private void InitializeComponent()
         {
-            bottomInfosPnl = new BaseFlowPanel(_res, new Control[] { currOpersPnl, currInfoPnl, currPnl }, new Point(12, 335), new Size(590, 175), "bottomInfosPnl", 2, BorderStyle.Fixed3D);
-            currOpersPnl = new BaseFlowPanel(_res, new Control[] { selectConnBtn, selectEditBtn, selectRmvBtn, vpnHelpBtn }, new Point(383, 3), new Size(200, 170), "currOpersPnl", 6, new object[] { null, FlowDirection.TopDown });
-            selectConnBtn = new BaseButton(_res, );
-            selectEditBtn = new BaseButton(_res, );
-            selectRmvBtn = new BaseButton(_res, );
-            vpnHelpBtn = new BaseButton(_res, );
-            currInfoPnl = new Panel(_res, );
-            selectedInfoTxtBox = new BaseRichTextBox(_res, );
+            #region Controls
+            var regularBtnSize = new Size(80, 23);
+            var largeBtnSize = new Size(120, 23);
+            var defaultButtonPadding = new Padding(60, 10, 0, 5);
+
+            selectConnBtn = new BaseButton(_res, "selectConnBtn", true, args: new object[] { null, new Point(60, 20), new Padding(60, 20, 0, 5), regularBtnSize, "Connect to Selected" });
+            selectEditBtn = new BaseButton(_res, "selectEditBtn", true, args: new object[] { null, new Point(60, 58), defaultButtonPadding, regularBtnSize, "Edit" });
+            selectRmvBtn = new BaseButton(_res, "selectRmvBtn", true, args: new object[] { null, new Point(60, 96), defaultButtonPadding, regularBtnSize, "Remove" });
+            vpnHelpBtn = new BaseButton(_res, "vpnHelpBtn", true, 3, new object[] { null, new Point(100, 139), new Padding(100, 15, 0, 5), regularBtnSize, "Help!" });
+            clearValsBtn = new BaseButton(_res, "clearValsBtn", true, 5, new object[] { null, new Point(132, 96), null, new Size(120, 23), "Clear Values" });
+            saveConnBtn = new BaseButton(_res, "saveConnBtn", true, 3, new object[] { null, new Point(74, 136), null, largeBtnSize, "Save and Connect" });
+            saveVpnNewBtn = new BaseButton(_res, "saveVpnNewBtn", true, 2, new object[] { null, new Point(), null, largeBtnSize, "Save New / Edited" });
+            vpnsTxtBox = new BaseTextBox(_res, "vpnsTxtBox", 1, new Point(6, 57), new Size(135, 21));
+            vpnNameTxtBox = new BaseTextBox(_res, "vpnNameTxtBox", 1, new Point(6, 57), new Size(135, 21));
+            selectedInfoTxtBox = new BaseRichTextBox(_res, "selectedInfoTxtBox", 1, SystemColors.MenuText, Color.YellowGreen, new Point(6, 31), new Size(212, 134));
             selectedsLbl = new BaseLabel(_res, );
-            currPnl = new Panel(_res, );
-            currentVpnsComBox = new BaseComboBox();
             currentVpnsLbl = new BaseLabel(_res, );
-            vpnSettingsPnl = new BaseFlowPanel(_res, );
-            namePnl = new Panel(_res, );
-            vpnsTxtBox = new BaseTextBox(_res, );
             nameVpnLbl = new BaseLabel(_res, );
-            addressPnl = new Panel(_res, );
-            vpnNameTxtBox = new BaseTextBox(_res, );
             addressVpnLbl = new BaseLabel(_res, );
-            tunnelPnl = new Panel(_res, );
-            tTypeSelectCombBox = new BaseComboBox(_res, );
             ttypeVpnLbl = new BaseLabel(_res, );
-            encryptionPnl = new Panel(_res, );
-            encrLvlCombBox = new BaseComboBox(_res, );
             encryptLvlVpnLbl = new BaseLabel(_res, );
-            authPnl = new Panel(_res, );
-            authMetCombBox = new BaseComboBox(_res, );
             authMetLbl = new BaseLabel(_res, );
-            btnsTopPnl = new Panel(_res, );
-            clearValsBtn = new BaseButton(_res, );
-            saveConnBtn = new BaseButton(_res, );
-            saveVpnNewBtn = new BaseButton(_res, );
+            currentVpnsComBox = new BaseComboBox();
+            tTypeSelectCombBox = new BaseComboBox(_res, );
+            encrLvlCombBox = new BaseComboBox(_res, );
+            authMetCombBox = new BaseComboBox(_res, );
             availForAllCheckBox = new BaseCheckBox(_res, );
             splitTunCheckBox = new BaseCheckBox(_res, );
+            #endregion
+
+            #region Panels
+            bottomInfosPnl = new BaseFlowPanel(_res, new Control[] { currOpersPnl, currInfoPnl, currPnl }, new Point(12, 335), new Size(590, 175), "bottomInfosPnl", 2, BorderStyle.Fixed3D);
+            currOpersPnl = new BaseFlowPanel(_res, new Control[] { selectConnBtn, selectEditBtn, selectRmvBtn, vpnHelpBtn }, new Point(383, 3), new Size(200, 170), "currOpersPnl", 6, new object[] { null, FlowDirection.TopDown });
+            vpnSettingsPnl = new BaseFlowPanel(_res, );
+            currInfoPnl = new Panel(_res, );
+            currPnl = new Panel(_res, );
+            namePnl = new Panel(_res, );
+            addressPnl = new Panel(_res, );
+            tunnelPnl = new Panel(_res, );
+            encryptionPnl = new Panel(_res, );
+            authPnl = new Panel(_res, );
+            btnsTopPnl = new Panel(_res, );
+            #endregion
 
             SuspendLayout();
-
             InitVpnElements();
 
         }
@@ -139,35 +145,11 @@ namespace Amadeus.Forms
             availForAllCheckBox.UseVisualStyleBackColor = true;
         }
 
-        private void InitsaveVpnNewBtn()
-        {
-            saveVpnNewBtn.Location = new System.Drawing.Point(6, 96);
-            saveVpnNewBtn.Name = "saveVpnNewBtn";
-            saveVpnNewBtn.Size = new System.Drawing.Size(120, 23);
-            saveVpnNewBtn.TabIndex = 2;
-            saveVpnNewBtn.Text = "Save New / Edited";
-            saveVpnNewBtn.UseVisualStyleBackColor = true;
-        }
 
-        private void InitsaveConnBtn()
-        {
-            saveConnBtn.Location = new System.Drawing.Point(74, 136);
-            saveConnBtn.Name = "saveConnBtn";
-            saveConnBtn.Size = new System.Drawing.Size(120, 23);
-            saveConnBtn.TabIndex = 3;
-            saveConnBtn.Text = "Save and Connect";
-            saveConnBtn.UseVisualStyleBackColor = true;
-        }
 
-        private void InitclearValsBtn()
-        {
-            clearValsBtn.Location = new System.Drawing.Point(132, 96);
-            clearValsBtn.Name = "clearValsBtn";
-            clearValsBtn.Size = new System.Drawing.Size(120, 23);
-            clearValsBtn.TabIndex = 5;
-            clearValsBtn.Text = "Clear Values";
-            clearValsBtn.UseVisualStyleBackColor = true;
-        }
+
+
+
 
         private void InitbtnsTopPnl()
         {
@@ -289,15 +271,7 @@ namespace Amadeus.Forms
             addressVpnLbl.Text = "Address:";
         }
 
-        private void InitvpnNameTxtBox()
-        {
-            vpnNameTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            vpnNameTxtBox.Location = new System.Drawing.Point(6, 57);
-            vpnNameTxtBox.Margin = new System.Windows.Forms.Padding(0);
-            vpnNameTxtBox.Name = "textBox1";
-            vpnNameTxtBox.Size = new System.Drawing.Size(135, 21);
-            vpnNameTxtBox.TabIndex = 1;
-        }
+
 
         private void InitaddressPnl()
         {
@@ -320,15 +294,7 @@ namespace Amadeus.Forms
             nameVpnLbl.Text = "Name:";
         }
 
-        private void InitvpnsTxtBox()
-        {
-            vpnsTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            vpnsTxtBox.Location = new System.Drawing.Point(6, 57);
-            vpnsTxtBox.Margin = new System.Windows.Forms.Padding(0);
-            vpnsTxtBox.Name = "vpnsTxtBox";
-            vpnsTxtBox.Size = new System.Drawing.Size(135, 21);
-            vpnsTxtBox.TabIndex = 1;
-        }
+
 
         private void InitnamePnl()
         {
@@ -397,16 +363,7 @@ namespace Amadeus.Forms
             selectedsLbl.Text = "Selected\'s Info:";
         }
 
-        private void InitselectedInfoTxtBox()
-        {
-            selectedInfoTxtBox.BackColor = System.Drawing.SystemColors.MenuText;
-            selectedInfoTxtBox.ForeColor = System.Drawing.Color.YellowGreen;
-            selectedInfoTxtBox.Location = new System.Drawing.Point(6, 31);
-            selectedInfoTxtBox.Name = "selectedInfoTxtBox";
-            selectedInfoTxtBox.Size = new System.Drawing.Size(212, 134);
-            selectedInfoTxtBox.TabIndex = 1;
-            selectedInfoTxtBox.Text = "";
-        }
+
 
         private void InitcurrInfoPnl()
         {
@@ -418,52 +375,17 @@ namespace Amadeus.Forms
             currInfoPnl.TabIndex = 5;
         }
 
-        private void InitvpnHelpBtn()
-        {
-            vpnHelpBtn.Location = new System.Drawing.Point(100, 139);
-            vpnHelpBtn.Margin = new System.Windows.Forms.Padding(100, 15, 0, 5);
-            vpnHelpBtn.Name = "vpnHelpBtn";
-            vpnHelpBtn.Size = new System.Drawing.Size(80, 23);
-            vpnHelpBtn.TabIndex = 3;
-            vpnHelpBtn.Text = "Help!";
-            vpnHelpBtn.UseVisualStyleBackColor = true;
-        }
 
-        private void InitselectRmvBtn()
-        {
-            selectRmvBtn.Location = new System.Drawing.Point(60, 96);
-            selectRmvBtn.Margin = new System.Windows.Forms.Padding(60, 10, 0, 5);
-            selectRmvBtn.Name = "selectRmvBtn";
-            selectRmvBtn.Size = new System.Drawing.Size(80, 23);
-            selectRmvBtn.TabIndex = 2;
-            selectRmvBtn.Text = "Remove ";
-            selectRmvBtn.UseVisualStyleBackColor = true;
-        }
 
-        private void InitselectEditBtn()
-        {
-            selectEditBtn.Location = new System.Drawing.Point(60, 58);
-            selectEditBtn.Margin = new System.Windows.Forms.Padding(60, 10, 0, 5);
-            selectEditBtn.Name = "selectEditBtn";
-            selectEditBtn.Size = new System.Drawing.Size(80, 23);
-            selectEditBtn.TabIndex = 1;
-            selectEditBtn.Text = "Edit";
-            selectEditBtn.UseVisualStyleBackColor = true;
-        }
 
-        private void InitselectConnBtn()
-        {
-            selectConnBtn.Location = new System.Drawing.Point(60, 20);
-            selectConnBtn.Margin = new System.Windows.Forms.Padding(60, 20, 0, 5);
-            selectConnBtn.Name = "selectConnBtn";
-            selectConnBtn.Size = new System.Drawing.Size(80, 23);
-            selectConnBtn.TabIndex = 0;
-            selectConnBtn.Text = "Connect to Selected";
-            selectConnBtn.UseVisualStyleBackColor = true;
-        }
+
+
+
+
 
 
         #endregion
+
         private System.Windows.Forms.Panel bottomInfosPnl;
         private System.Windows.Forms.FlowLayoutPanel vpnSettingsPnl;
         private System.Windows.Forms.Panel namePnl;

@@ -1,8 +1,7 @@
 ﻿using Amadeus.CustomControls;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Color = System.Drawing.Color;
-using ContAlign = System.Drawing.ContentAlignment;
+using System.Drawing;
 
 namespace Amadeus
 {
@@ -27,7 +26,7 @@ namespace Amadeus
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Controller Initialization
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -35,15 +34,20 @@ namespace Amadeus
         /// </summary>
         void InitializeComponent()
         {
-            loginButton = new BaseButton(_res, Color.YellowGreen, DialogResult.Cancel, 0, "loginButton", false);
-            registerButton = new BaseButton(_res, Color.DarkTurquoise, DialogResult.Cancel, 0, "registerButton", false);
-            quitButton = new BaseButton(_res, Color.Violet, DialogResult.Cancel, 0, "quitButton", false);
-            saveUserInfoChckBox = new BaseCheckBox(_res, "saveUserInfoChkBox", true, "Save User Info", ContAlign.MiddleCenter, ContAlign.MiddleLeft);
+            #region Controls
+            loginButton = new BaseButton(_res, "loginButton", false, args: new object[] { Color.YellowGreen });
+            registerButton = new BaseButton(_res, "registerButton", false, args: new object[] { Color.DarkTurquoise });
+            quitButton = new BaseButton(_res, "quitButton", false, args: new object[] { Color.Violet });
+            saveUserInfoChckBox = new BaseCheckBox(_res, "saveUserInfoChkBox", true, "Save User Info", ContentAlignment.MiddleCenter, ContentAlignment.MiddleLeft);
             usersSavedBox = new BaseComboBox(_res, "usersSavedBox");
             passwordTxtBox = new BaseTextBox(_res, "passwordTxtBox");
             usernameTxtBox = new BaseTextBox(_res, "usernameTxtBox");
+            #endregion
+
+            #region Panels
             loginBottomPanel = new BasePanel(_res, "loginBottomPanel", new[] { loginButton, quitButton, registerButton });
             loginTopPanel = new BasePanel(_res, "loginTopPanel", new Control[] { saveUserInfoChckBox, passwordTxtBox, usernameTxtBox, usersSavedBox });
+            #endregion
 
             SuspendLayout();
             InitLoginWin();
@@ -54,7 +58,7 @@ namespace Amadeus
             AcceptButton = loginButton;
             _res.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.Color.WhiteSmoke;
+            BackColor = Color.WhiteSmoke;
             CancelButton = quitButton;
             ControlBox = false;
             Controls.Add(loginTopPanel);

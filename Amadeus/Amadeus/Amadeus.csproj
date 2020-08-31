@@ -74,11 +74,16 @@
     <Compile Include="CustomControls\BaseComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CustomControls\BaseFlowPanel.cs" />
+    <Compile Include="CustomControls\BaseFlowPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\BaseLabel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseRichTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\BaseTextBox.cs">

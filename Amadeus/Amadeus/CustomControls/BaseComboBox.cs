@@ -7,8 +7,8 @@ namespace Amadeus.CustomControls
     {
         public BaseComboBox(ComponentResourceManager res, string name)
         {
-            res.ApplyResources(this, name);
             Name = name;
+            res.ApplyResources(this, name);
         }
     }
 }

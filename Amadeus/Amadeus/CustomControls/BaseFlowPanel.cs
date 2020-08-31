@@ -1,8 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Windows.Forms;
-using BorderStyle = System.Windows.Forms.BorderStyle;
-using Point = System.Drawing.Point;
-using Size = System.Drawing.Size;
+using System.Drawing;
 
 namespace Amadeus.CustomControls
 {
@@ -21,6 +19,7 @@ namespace Amadeus.CustomControls
             BorderStyle = (BorderStyle)pars[0];
             FlowDirection = (FlowDirection)pars[1];
             SuspendLayout();
+            res.ApplyResources(this, name);
         }
     }
 }
