@@ -50,11 +50,11 @@ namespace Amadeus.Forms
             addNewBtn = new BaseButton(_res, "addNewBtn", true, 0, new object[] { null, new Point(84, 15), new Padding(84, 15, 3, 3), defBigButtonSize, "Add New" });
             addnSetNewBtn = new BaseButton(_res, "addnSetNewBtn", true, 1, new object[] { null, new Point(84, 56), new Padding(84, 15, 3, 3), defBigButtonSize, "Add and Set New" });
             helpNewBtn = new BaseButton(_res, "helpNewBtn", true, 2, new object[] { null, new Point(183, 107), new Padding(183, 25, 15, 3), new Size(80, 23), "Help!", DockStyle.Right });
-            customTagInpBox = new BaseTextBox(_res, "customTagInpBox", 8, new Point(5, 302), new Size(270, 20), padding: new Padding(5, 10, 5, 5));
+            customTagInpBox = new BaseTextBox(_res, "customTagInpBox", 8, new Point(5, 302), new Size(270, 20), padding: defControlPadding);
             langTagListBox = new BaseListBox(_res, "langTagListBox", true, true, args: new object[] { SystemColors.MenuText, Color.OliveDrab, new Point(317, 12), new Size(288, 346), 18, SelectionMode.MultiSimple });
-            customInpLbl = new BaseLabel(_res, "customInpLbl", 7, new Point(5, 269), new Size(96, 18), "Custom Input", padding: new Padding(5, 10, 5, 5), autoSize: true);
-            currentInstLangsLbl = new BaseLabel(_res, "currentInstLangsLbl", 1, new Point(5, 10), new Size(186, 18), "Current Installed Languages:", autoSize: true, padding: new Padding(5, 10, 5, 5));
-            currentLangsCmboBox = new BaseComboBox(_res, "currentLangsCmboBox", point: new Point(5, 43), size: new Size(270, 21), padding: new Padding(5, 10, 5, 5));
+            customInpLbl = new BaseLabel(_res, "customInpLbl", 7, new Point(5, 269), new Size(96, 18), "Custom Input", padding: defControlPadding, autoSize: true);
+            currentInstLangsLbl = new BaseLabel(_res, "currentInstLangsLbl", 1, new Point(5, 10), new Size(186, 18), "Current Installed Languages:", autoSize: true, padding: defControlPadding);
+            currentLangsCmboBox = new BaseComboBox(_res, "currentLangsCmboBox", point: new Point(5, 43), size: new Size(270, 21), padding: defControlPadding);
             currLangOpPanel = new BaseFlowPanel(_res, new Control[] { currentInstLangsLbl, currentLangsCmboBox, removeCurrBtn, setSelectedBtn, setAsDefBtn, setToDefBtn, checkGeoDataBtn, customInpLbl, customTagInpBox, addCustomBtn, addNSetCustBtn, removeSimilarBtn, currHelpBtn },
                 new Point(12, 12), new Size(290, 498), "currLangOpPanel", 1, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
             newLangListPanel = new BaseFlowPanel(_res, new Control[] { addNewBtn, addnSetNewBtn, helpNewBtn }, new Point(317, 364), new Size(288, 146), "newLangListPanel", 2, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
