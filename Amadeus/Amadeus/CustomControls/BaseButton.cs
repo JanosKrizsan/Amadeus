@@ -13,6 +13,7 @@ namespace Amadeus.CustomControls
             Margin = (Padding)args[2];
             Size = (Size)args[3];
             Text = (string)args[4];
+            Dock = (DockStyle)args[5];
             TabIndex = tabIndex;
             Name = name;
             UseVisualStyleBackColor = visStyleBackColor;

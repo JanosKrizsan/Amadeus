@@ -6,13 +6,14 @@ namespace Amadeus.CustomControls
 {
     public class BaseTextBox : TextBox
     {
-        public BaseTextBox(ComponentResourceManager res, string name, int tabIndex, Point point = default, Size size = default, Font font = default)
+        public BaseTextBox(ComponentResourceManager res, string name, int tabIndex, Point point = default, Size size = default, Font font = default, Padding padding = default)
         {
             Name = name;
             TabIndex = tabIndex;
             Location = point;
             Size = size;
             Font = font;
+            Margin = padding;
             res.ApplyResources(this, name);
         }
     }

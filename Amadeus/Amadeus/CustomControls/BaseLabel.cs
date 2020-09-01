@@ -6,16 +6,17 @@ namespace Amadeus.CustomControls
 {
     public class BaseLabel : Label
     {
-        private Font _default = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        public BaseLabel(ComponentResourceManager res, string name, int tabIndex, Point point, Size size, string text, Font font = null)
+        public BaseLabel(ComponentResourceManager res, string name, int tabIndex, Point point, Size size, string text, Font font = default, bool autoSize = false, Padding padding = default)
         {
 
             Location = point;
+            AutoSize = autoSize;
             Size = size;
+            Margin = padding;
             Name = name;
             TabIndex = tabIndex;
             Text = text;
-            Font = font ?? _default;
+            Font = font;
             res.ApplyResources(this, name);
         }
     }
