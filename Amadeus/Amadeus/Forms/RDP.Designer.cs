@@ -72,12 +72,8 @@
             connectionSettingsPnl.SuspendLayout();
             currentRdpsPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(isMstcRunningImgBox)).BeginInit();
-            screenSettingsHolderPnl.SuspendLayout();
-            rdpButtonsPnl.SuspendLayout();
-            screenSettingsPnl.SuspendLayout();
+
             SuspendLayout();
-
-
             InitRdp();
 
         }

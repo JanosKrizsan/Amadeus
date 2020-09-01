@@ -47,10 +47,8 @@
             adapterIpsListBox = new System.Windows.Forms.ListBox();
             adapterListLbl = new System.Windows.Forms.Label();
             ipAddressesHlpBtn = new System.Windows.Forms.Button();
-            staticPnl.SuspendLayout();
-            dynamicPnl.SuspendLayout();
-            SuspendLayout();
 
+            SuspendLayout();
             InitIPAddress();
 
         }

@@ -44,10 +44,8 @@
             currentStatusBar = new System.Windows.Forms.ProgressBar();
             richTextBox1 = new System.Windows.Forms.RichTextBox();
             procStatusLbl = new System.Windows.Forms.Label();
-            reportingOpersPnl.SuspendLayout();
+
             SuspendLayout();
-
-
             InitMainMenuSub();
 
         }

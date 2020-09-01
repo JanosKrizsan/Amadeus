@@ -53,12 +53,8 @@
             importProxiesLbl = new System.Windows.Forms.Label();
             selectTextFileBtn = new System.Windows.Forms.Button();
             helpImportBtn = new System.Windows.Forms.Button();
-            addNewProxyPnl.SuspendLayout();
-            savedProxiesPnl.SuspendLayout();
-            importProxiesPnl.SuspendLayout();
+
             SuspendLayout();
-
-
             InitProxy();
 
         }

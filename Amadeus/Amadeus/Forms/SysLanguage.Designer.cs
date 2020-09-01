@@ -37,7 +37,7 @@ namespace Amadeus.Forms
             var defBigButtonSize = new Size(120, 23);
             var defButtonPadding = new Padding(85, 10, 85, 5);
             var defControlPadding = new Padding(5, 10, 5, 5);
-
+            #region Controls
             removeCurrBtn = new BaseButton(_res, "removeCurrBtn", true, 2, new object[] { null, new Point(85, 79), defButtonPadding, defBigButtonSize, "Remove Selected" });
             setSelectedBtn = new BaseButton(_res, "setSelectedBtn", true, 11, new object[] { null, new Point(85, 117), defButtonPadding, defBigButtonSize, "Set Selected" });
             setAsDefBtn = new BaseButton(_res, "setAsDefBtn", true, 6, new object[] { null, new Point(85, 155), defButtonPadding, defBigButtonSize, "Set as Default" });
@@ -55,12 +55,15 @@ namespace Amadeus.Forms
             customInpLbl = new BaseLabel(_res, "customInpLbl", 7, new Point(5, 269), new Size(96, 18), "Custom Input", padding: defControlPadding, autoSize: true);
             currentInstLangsLbl = new BaseLabel(_res, "currentInstLangsLbl", 1, new Point(5, 10), new Size(186, 18), "Current Installed Languages:", autoSize: true, padding: defControlPadding);
             currentLangsCmboBox = new BaseComboBox(_res, "currentLangsCmboBox", point: new Point(5, 43), size: new Size(270, 21), padding: defControlPadding);
+            #endregion
+
+            #region Panels
             currLangOpPanel = new BaseFlowPanel(_res, new Control[] { currentInstLangsLbl, currentLangsCmboBox, removeCurrBtn, setSelectedBtn, setAsDefBtn, setToDefBtn, checkGeoDataBtn, customInpLbl, customTagInpBox, addCustomBtn, addNSetCustBtn, removeSimilarBtn, currHelpBtn },
                 new Point(12, 12), new Size(290, 498), "currLangOpPanel", 1, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
             newLangListPanel = new BaseFlowPanel(_res, new Control[] { addNewBtn, addnSetNewBtn, helpNewBtn }, new Point(317, 364), new Size(288, 146), "newLangListPanel", 2, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
+            #endregion
 
             SuspendLayout();
-
             InitSysLanguage();
 
         }

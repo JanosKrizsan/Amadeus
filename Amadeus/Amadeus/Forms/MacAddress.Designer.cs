@@ -46,11 +46,8 @@
             applySelectBtn = new System.Windows.Forms.Button();
             removeSelectBtn = new System.Windows.Forms.Button();
             macAddHelpBtn = new System.Windows.Forms.Button();
-            macDetailsPnl.SuspendLayout();
-            savedAddrsPnl.SuspendLayout();
+
             SuspendLayout();
-
-
             InitMacAddress();
 
         }

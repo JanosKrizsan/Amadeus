@@ -59,12 +59,8 @@
             emailAddConfLbl = new System.Windows.Forms.Label();
             emailAddTxtBox = new System.Windows.Forms.TextBox();
             emailAddLbl = new System.Windows.Forms.Label();
-            userinfoPnl.SuspendLayout();
-            settingsBtnsPnl.SuspendLayout();
-            checkBoxLayoutPnl.SuspendLayout();
-            emailPnl.SuspendLayout();
-            SuspendLayout();
 
+            SuspendLayout();
             InitSettings();
 
         }

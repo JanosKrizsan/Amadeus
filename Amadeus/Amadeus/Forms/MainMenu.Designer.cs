@@ -40,10 +40,8 @@
             logoutBtn = new System.Windows.Forms.Button();
             quitBtn = new System.Windows.Forms.Button();
             viewPanel = new System.Windows.Forms.Panel();
-            mainMenuSelectPanel.SuspendLayout();
 
             SuspendLayout();
-
             InitSelectionScreen();
 
         }
