@@ -34,17 +34,21 @@ namespace Amadeus.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            removeCurrBtn = new BaseButton(_res, "removeCurrBtn", true, 2, new object[] { null, new Point(85, 79), new Padding(85, 10, 85, 5), new Size(120, 23), "Remove Selected" });
-            setSelectedBtn = new BaseButton(_res, "setSelectedBtn", true, 11, new object[] { null, new Point(85, 117), new Padding(85, 10, 85, 5), new Size(120, 23), "Set Selected" });
-            setAsDefBtn = new BaseButton(_res, "setAsDefBtn", true, 6, new object[] { null, new Point(85, 155), new Padding(85, 10, 85, 5), new Size(120, 23), "Set as Default" });
-            setToDefBtn = new BaseButton(_res, "setToDefBtn", true, 3, new object[] { null, new Point(85, 193), new Padding(85, 10, 85, 5), new Size(120, 23), "Set to Default" });
-            checkGeoDataBtn = new BaseButton(_res, "checkGeoDataBtn", true, 5, new object[] { null, new Point(85, 231), new Padding(85, 10, 85, 5), new Size(120, 23), "Check Geo-Data" });
-            addCustomBtn = new BaseButton(_res, "addCustomBtn", true, 9, new object[] { null, new Point(85, 337), new Padding(85, 10, 85, 5), new Size(120, 23), "Add Custom" });
-            addNSetCustBtn = new BaseButton(_res, "addNSetCustBtn", true, 12, new object[] { null, new Point(85, 375), new Padding(85, 10, 85, 5), new Size(120, 23), "Add and Set Custom" });
-            removeSimilarBtn = new BaseButton(_res, "removeSimilarBtn", true, 10, new object[] { null, new Point(85, 413), new Padding(85, 10, 85, 5), new Size(120, 23), "Remove Similar", });
+            var defBigButtonSize = new Size(120, 23);
+            var defButtonPadding = new Padding(85, 10, 85, 5);
+            var defControlPadding = new Padding(5, 10, 5, 5);
+
+            removeCurrBtn = new BaseButton(_res, "removeCurrBtn", true, 2, new object[] { null, new Point(85, 79), defButtonPadding, defBigButtonSize, "Remove Selected" });
+            setSelectedBtn = new BaseButton(_res, "setSelectedBtn", true, 11, new object[] { null, new Point(85, 117), defButtonPadding, defBigButtonSize, "Set Selected" });
+            setAsDefBtn = new BaseButton(_res, "setAsDefBtn", true, 6, new object[] { null, new Point(85, 155), defButtonPadding, defBigButtonSize, "Set as Default" });
+            setToDefBtn = new BaseButton(_res, "setToDefBtn", true, 3, new object[] { null, new Point(85, 193), defButtonPadding, defBigButtonSize, "Set to Default" });
+            checkGeoDataBtn = new BaseButton(_res, "checkGeoDataBtn", true, 5, new object[] { null, new Point(85, 231), defButtonPadding, defBigButtonSize, "Check Geo-Data" });
+            addCustomBtn = new BaseButton(_res, "addCustomBtn", true, 9, new object[] { null, new Point(85, 337), defButtonPadding, defBigButtonSize, "Add Custom" });
+            addNSetCustBtn = new BaseButton(_res, "addNSetCustBtn", true, 12, new object[] { null, new Point(85, 375), defButtonPadding, defBigButtonSize, "Add and Set Custom" });
+            removeSimilarBtn = new BaseButton(_res, "removeSimilarBtn", true, 10, new object[] { null, new Point(85, 413), defButtonPadding, defBigButtonSize, "Remove Similar", });
             currHelpBtn = new BaseButton(_res, "currHelpBtn", true, 4, new object[] { null, new Point(190, 461), new Padding(0, 20, 25, 5), new Size(75, 23), "Help!", DockStyle.Right });
-            addNewBtn = new BaseButton(_res, "addNewBtn", true, 0, new object[] { null, new Point(84, 15), new Padding(84, 15, 3, 3), new Size(120, 23), "Add New" });
-            addnSetNewBtn = new BaseButton(_res, "addnSetNewBtn", true, 1, new object[] { null, new Point(84, 56), new Padding(84, 15, 3, 3), new Size(120, 23), "Add and Set New" });
+            addNewBtn = new BaseButton(_res, "addNewBtn", true, 0, new object[] { null, new Point(84, 15), new Padding(84, 15, 3, 3), defBigButtonSize, "Add New" });
+            addnSetNewBtn = new BaseButton(_res, "addnSetNewBtn", true, 1, new object[] { null, new Point(84, 56), new Padding(84, 15, 3, 3), defBigButtonSize, "Add and Set New" });
             helpNewBtn = new BaseButton(_res, "helpNewBtn", true, 2, new object[] { null, new Point(183, 107), new Padding(183, 25, 15, 3), new Size(80, 23), "Help!", DockStyle.Right });
             customTagInpBox = new BaseTextBox(_res, "customTagInpBox", 8, new Point(5, 302), new Size(270, 20), padding: new Padding(5, 10, 5, 5));
             langTagListBox = new BaseListBox(_res, "langTagListBox", true, true, args: new object[] { SystemColors.MenuText, Color.OliveDrab, new Point(317, 12), new Size(288, 346), 18, SelectionMode.MultiSimple });
