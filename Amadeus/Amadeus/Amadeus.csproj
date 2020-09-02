@@ -80,6 +80,9 @@
     <Compile Include="CustomControls\BaseLabel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomControls\BaseListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\BasePanel.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -1,7 +1,12 @@
-﻿namespace Amadeus.Forms
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+
+namespace Amadeus.Forms
 {
     partial class IPAddress
     {
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(SysLanguage));
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,25 +33,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            staticPnl = new System.Windows.Forms.Panel();
-            gatewayTxtBox = new System.Windows.Forms.TextBox();
-            ipAddTxtBox = new System.Windows.Forms.TextBox();
-            maskTxtBox = new System.Windows.Forms.TextBox();
-            dnsTxtBox = new System.Windows.Forms.TextBox();
-            setStaticIPBtn = new System.Windows.Forms.Button();
-            dnsLbl = new System.Windows.Forms.Label();
-            gatewayLbl = new System.Windows.Forms.Label();
-            maskLbl = new System.Windows.Forms.Label();
-            ipaddressLbl = new System.Windows.Forms.Label();
-            staticAddLbl = new System.Windows.Forms.Label();
-            dynamicPnl = new System.Windows.Forms.Panel();
-            currNetAdDataLbl = new System.Windows.Forms.Label();
-            selectedAdapterData = new System.Windows.Forms.RichTextBox();
-            setDynamicIPBtn = new System.Windows.Forms.Button();
-            DynamicAddLbl = new System.Windows.Forms.Label();
-            adapterIpsListBox = new System.Windows.Forms.ListBox();
-            adapterListLbl = new System.Windows.Forms.Label();
-            ipAddressesHlpBtn = new System.Windows.Forms.Button();
+            staticPnl = new BasePanel();
+            dynamicPnl = new BasePanel();
+            adapterIpsListBox = new BaseListBox();
+            selectedAdapterData = new BaseRichTextBox();
+            gatewayTxtBox = new BaseTextBox();
+            ipAddTxtBox = new BaseTextBox();
+            maskTxtBox = new BaseTextBox();
+            dnsTxtBox = new BaseTextBox();
+            dnsLbl = new BaseLabel();
+            gatewayLbl = new BaseLabel();
+            maskLbl = new BaseLabel();
+            ipaddressLbl = new BaseLabel();
+            staticAddLbl = new BaseLabel();
+            currNetAdDataLbl = new BaseLabel();
+            DynamicAddLbl = new BaseLabel();
+            adapterListLbl = new BaseLabel();
+            ipAddressesHlpBtn = new BaseLabel();
+            setDynamicIPBtn = new BaseLabel();
+            setStaticIPBtn = new BaseLabel();
+
+
 
             SuspendLayout();
             InitIPAddress();

@@ -1,7 +1,12 @@
-﻿namespace Amadeus.Forms
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+
+namespace Amadeus.Forms
 {
     partial class Proxy
     {
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(SysLanguage));
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,32 +33,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            addNewProxyPnl = new System.Windows.Forms.FlowLayoutPanel();
-            ipAddyLbl = new System.Windows.Forms.Label();
-            ipAddyTxtBox = new System.Windows.Forms.TextBox();
-            portLbl = new System.Windows.Forms.Label();
-            portTxtBox = new System.Windows.Forms.TextBox();
-            uNameLbl = new System.Windows.Forms.Label();
-            uNameTxtBox = new System.Windows.Forms.TextBox();
-            passLbl = new System.Windows.Forms.Label();
-            passTextBox = new System.Windows.Forms.TextBox();
-            authReqChckBox = new System.Windows.Forms.CheckBox();
-            saveProxyBtn = new System.Windows.Forms.Button();
-            saveNConnectProxyBtn = new System.Windows.Forms.Button();
-            proxyHelpBtn = new System.Windows.Forms.Button();
-            savedProxiesPnl = new System.Windows.Forms.FlowLayoutPanel();
-            savedProxiesLbl = new System.Windows.Forms.Label();
-            savedProxiesCombBox = new System.Windows.Forms.ComboBox();
-            proxyInfoLbl = new System.Windows.Forms.Label();
-            proxyInfoTxtBox = new System.Windows.Forms.RichTextBox();
-            connectToSavedBtn = new System.Windows.Forms.Button();
-            editSavedBtn = new System.Windows.Forms.Button();
-            deleteSavedBtn = new System.Windows.Forms.Button();
-            importProxiesPnl = new System.Windows.Forms.FlowLayoutPanel();
-            importProxiesLbl = new System.Windows.Forms.Label();
-            selectTextFileBtn = new System.Windows.Forms.Button();
-            helpImportBtn = new System.Windows.Forms.Button();
+            saveProxyBtn = new BaseButton();
+            saveNConnectProxyBtn = new BaseButton();
+            proxyHelpBtn = new BaseButton();
+            connectToSavedBtn = new BaseButton();
+            editSavedBtn = new BaseButton();
+            deleteSavedBtn = new BaseButton();
+            selectTextFileBtn = new BaseButton();
+            helpImportBtn = new BaseButton();
+            ipAddyLbl = new BaseLabel();
+            portLbl = new BaseLabel();
+            passLbl = new BaseLabel();
+            uNameLbl = new BaseLabel();
+            proxyInfoLbl = new BaseLabel();
+            savedProxiesLbl = new BaseLabel();
+            importProxiesLbl = new BaseLabel();
+            ipAddyTxtBox = new BaseTextBox();
+            portTxtBox = new BaseTextBox();
+            uNameTxtBox = new BaseTextBox();
+            passTextBox = new BaseTextBox();
+            authReqChckBox = new BaseCheckBox();
+            savedProxiesCombBox = new BaseComboBox();
+            proxyInfoTxtBox = new BaseRichTextBox();
 
+            importProxiesPnl = new BaseFlowPanel();
+            savedProxiesPnl = new BaseFlowPanel();
+            addNewProxyPnl = new BaseFlowPanel();
             SuspendLayout();
             InitProxy();
 

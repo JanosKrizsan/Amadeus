@@ -1,7 +1,12 @@
-﻿namespace Amadeus.Forms
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+
+namespace Amadeus.Forms
 {
     partial class MainMenu
     {
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(SysLanguage));
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,18 +33,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            mainMenuSelectPanel = new System.Windows.Forms.FlowLayoutPanel();
-            mainMenuBtn = new System.Windows.Forms.Button();
-            settingsBtn = new System.Windows.Forms.Button();
-            proxyBtn = new System.Windows.Forms.Button();
-            vpnBtn = new System.Windows.Forms.Button();
-            rdpBtn = new System.Windows.Forms.Button();
-            ipBtn = new System.Windows.Forms.Button();
-            macBtn = new System.Windows.Forms.Button();
-            syslangBtn = new System.Windows.Forms.Button();
-            logoutBtn = new System.Windows.Forms.Button();
-            quitBtn = new System.Windows.Forms.Button();
-            viewPanel = new System.Windows.Forms.Panel();
+            mainMenuBtn = new BaseButton();
+            settingsBtn = new BaseButton();
+            proxyBtn = new BaseButton();
+            vpnBtn = new BaseButton();
+            rdpBtn = new BaseButton();
+            ipBtn = new BaseButton();
+            macBtn = new BaseButton();
+            syslangBtn = new BaseButton();
+            logoutBtn = new BaseButton();
+            quitBtn = new BaseButton();
+
+            viewPanel = new BasePanel();
+            mainMenuSelectPanel = new BaseFlowPanel();
+
 
             SuspendLayout();
             InitSelectionScreen();

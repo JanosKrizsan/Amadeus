@@ -1,7 +1,12 @@
-﻿namespace Amadeus.Forms
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+
+namespace Amadeus.Forms
 {
     partial class MainMenuSub
     {
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(SysLanguage));
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,22 +33,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            reportingOpersPnl = new System.Windows.Forms.Panel();
-            menuSubHelpBtn = new System.Windows.Forms.Button();
-            removeSelectedBtn = new System.Windows.Forms.Button();
-            stopCurrentBtn = new System.Windows.Forms.Button();
-            runCustomBtn = new System.Windows.Forms.Button();
-            createNewBtn = new System.Windows.Forms.Button();
-            scriptLbl = new System.Windows.Forms.Label();
-            saveAsCsvBtn = new System.Windows.Forms.Button();
-            saveAsXmlBtn = new System.Windows.Forms.Button();
-            resetCrntBtn = new System.Windows.Forms.Button();
-            openFileBtn = new System.Windows.Forms.Button();
-            reportingLbl = new System.Windows.Forms.Label();
-            saveAsTxtBtn = new System.Windows.Forms.Button();
-            currentStatusBar = new System.Windows.Forms.ProgressBar();
-            richTextBox1 = new System.Windows.Forms.RichTextBox();
-            procStatusLbl = new System.Windows.Forms.Label();
+            menuSubHelpBtn = new BaseButton();
+            removeSelectedBtn = new BaseButton();
+            stopCurrentBtn = new BaseButton();
+            runCustomBtn = new BaseButton();
+            createNewBtn = new BaseButton();
+            saveAsCsvBtn = new BaseButton();
+            saveAsXmlBtn = new BaseButton();
+            resetCrntBtn = new BaseButton();
+            openFileBtn = new BaseButton();
+            saveAsTxtBtn = new BaseButton();
+            scriptLbl = new BaseLabel();
+            procStatusLbl = new BaseLabel();
+            reportingLbl = new BaseLabel();
+            currentStatusBar = new BaseProgressBar();
+            richTextBox1 = new BaseRichTextBox();
+
+            reportingOpersPnl = new BasePanel();
 
             SuspendLayout();
             InitMainMenuSub();

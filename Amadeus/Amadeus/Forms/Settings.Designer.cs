@@ -1,7 +1,12 @@
-﻿namespace Amadeus.Forms
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+
+namespace Amadeus.Forms
 {
     partial class Settings
     {
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(SysLanguage));
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,37 +33,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            usrnameLbl = new System.Windows.Forms.Label();
-            reloadStngsBtn = new System.Windows.Forms.Button();
-            saveStngsBtn = new System.Windows.Forms.Button();
-            loadStngsBtn = new System.Windows.Forms.Button();
-            userinfoPnl = new System.Windows.Forms.Panel();
-            setUserinfoBtn = new System.Windows.Forms.Button();
-            gpgTxtBox = new System.Windows.Forms.TextBox();
-            gpgLbl = new System.Windows.Forms.Label();
-            passwordTxtBox = new System.Windows.Forms.TextBox();
-            passwordLbl = new System.Windows.Forms.Label();
-            usernameTxtBox = new System.Windows.Forms.TextBox();
-            settingsBtnsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            useRecommBtn = new System.Windows.Forms.Button();
-            addUserBtn = new System.Windows.Forms.Button();
-            removeUserBtn = new System.Windows.Forms.Button();
-            wipeAllnRemoveBtn = new System.Windows.Forms.Button();
-            checkBoxLayoutPnl = new System.Windows.Forms.FlowLayoutPanel();
-            autoLoginCheck = new System.Windows.Forms.CheckBox();
-            doNotSaveCheck = new System.Windows.Forms.CheckBox();
-            wipeDataQuitCheck = new System.Windows.Forms.CheckBox();
-            resetSysDefsCheck = new System.Windows.Forms.CheckBox();
-            alwaysPGPCheck = new System.Windows.Forms.CheckBox();
-            sendRepEmailCheck = new System.Windows.Forms.CheckBox();
-            emailPnl = new System.Windows.Forms.Panel();
-            helpBtn = new System.Windows.Forms.Button();
-            setEmailBtn = new System.Windows.Forms.Button();
-            forcePGPEmailCheck = new System.Windows.Forms.CheckBox();
-            emailAddConfTxtBox = new System.Windows.Forms.TextBox();
-            emailAddConfLbl = new System.Windows.Forms.Label();
-            emailAddTxtBox = new System.Windows.Forms.TextBox();
-            emailAddLbl = new System.Windows.Forms.Label();
+            passwordTxtBox = new BaseTextBox();
+            usernameTxtBox = new BaseTextBox();
+            emailAddConfTxtBox = new BaseTextBox();
+            emailAddTxtBox = new BaseTextBox();
+            gpgTxtBox = new BaseTextBox();
+            usrnameLbl = new BaseLabel();
+            gpgLbl = new BaseLabel();
+            passwordLbl = new BaseLabel();
+            emailAddConfLbl = new BaseLabel();
+            emailAddLbl = new BaseLabel();
+            helpBtn = new BaseButton();
+            setEmailBtn = new BaseButton();
+            reloadStngsBtn = new BaseButton();
+            saveStngsBtn = new BaseButton();
+            loadStngsBtn = new BaseButton();
+            setUserinfoBtn = new BaseButton();
+            useRecommBtn = new BaseButton();
+            addUserBtn = new BaseButton();
+            removeUserBtn = new BaseButton();
+            wipeAllnRemoveBtn = new BaseButton();
+            autoLoginCheck = new BaseCheckBox();
+            doNotSaveCheck = new BaseCheckBox();
+            wipeDataQuitCheck = new BaseCheckBox();
+            resetSysDefsCheck = new BaseCheckBox();
+            alwaysPGPCheck = new BaseCheckBox();
+            sendRepEmailCheck = new BaseCheckBox();
+            forcePGPEmailCheck = new BaseCheckBox();
+
+            emailPnl = new BasePanel();
+            userinfoPnl = new BasePanel();
+            settingsBtnsPnl = new BaseFlowPanel();
+            checkBoxLayoutPnl = new BaseFlowPanel();
 
             SuspendLayout();
             InitSettings();

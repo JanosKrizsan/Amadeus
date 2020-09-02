@@ -1,7 +1,12 @@
-﻿namespace Amadeus.Forms
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+
+namespace Amadeus.Forms
 {
     partial class MacAddress
     {
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(SysLanguage));
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,24 +33,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            macDetailsPnl = new System.Windows.Forms.Panel();
-            generateRndmBtn = new System.Windows.Forms.Button();
-            applyFullAddBtn = new System.Windows.Forms.Button();
-            saveToFileBtn = new System.Windows.Forms.Button();
-            fullMacTxtBox = new System.Windows.Forms.TextBox();
-            constFullLbl = new System.Windows.Forms.Label();
-            generateAddrBtn = new System.Windows.Forms.Button();
-            addVendorBtn = new System.Windows.Forms.Button();
-            genAddLbl = new System.Windows.Forms.Label();
-            generatedTxtBox = new System.Windows.Forms.TextBox();
-            macVendorsLbl = new System.Windows.Forms.Label();
-            macVendorsLstBox = new System.Windows.Forms.ListBox();
-            savedAddrsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            savedAddysLbl = new System.Windows.Forms.Label();
-            savedMacsCmboBox = new System.Windows.Forms.ComboBox();
-            applySelectBtn = new System.Windows.Forms.Button();
-            removeSelectBtn = new System.Windows.Forms.Button();
-            macAddHelpBtn = new System.Windows.Forms.Button();
+            constFullLbl = new BaseLabel();
+            genAddLbl = new BaseLabel();
+            macVendorsLbl = new BaseLabel();
+            savedAddysLbl = new BaseLabel();
+            generateRndmBtn = new BaseButton();
+            applyFullAddBtn = new BaseButton();
+            saveToFileBtn = new BaseButton();
+            generateAddrBtn = new BaseButton();
+            addVendorBtn = new BaseButton();
+            applySelectBtn = new BaseButton();
+            removeSelectBtn = new BaseButton();
+            macAddHelpBtn = new BaseButton();
+            fullMacTxtBox = new BaseTextBox();
+            generatedTxtBox = new BaseTextBox();
+            macVendorsLstBox = new BaseListBox();
+            savedMacsCmboBox = new BaseComboBox();
+
+            macDetailsPnl = new BasePanel();
+            savedAddrsPnl = new BaseFlowPanel();
 
             SuspendLayout();
             InitMacAddress();

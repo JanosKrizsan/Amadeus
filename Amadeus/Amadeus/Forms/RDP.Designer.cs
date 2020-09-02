@@ -1,7 +1,12 @@
-﻿namespace Amadeus.Forms
+﻿using Amadeus.CustomControls;
+using System.ComponentModel;
+
+namespace Amadeus.Forms
 {
     partial class Rdp
     {
+        private readonly ComponentResourceManager _res = new ComponentResourceManager(typeof(SysLanguage));
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,51 +33,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            connectionSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            connLbl = new System.Windows.Forms.Label();
-            connTxtBox = new System.Windows.Forms.TextBox();
-            addressLbl = new System.Windows.Forms.Label();
-            addressTxtBox = new System.Windows.Forms.TextBox();
-            portLbl = new System.Windows.Forms.Label();
-            portTxtBox = new System.Windows.Forms.TextBox();
-            gatewayLbl = new System.Windows.Forms.Label();
-            gatewTxtBox = new System.Windows.Forms.TextBox();
-            useGatewayChckBox = new System.Windows.Forms.CheckBox();
-            asAdminChckBox = new System.Windows.Forms.CheckBox();
-            remGuardChckBox = new System.Windows.Forms.CheckBox();
-            restrictedAdminChckBox = new System.Windows.Forms.CheckBox();
-            rdpCredsHelpBtn = new System.Windows.Forms.Button();
-            currentRdpsPnl = new System.Windows.Forms.Panel();
-            recheckConnBtn = new System.Windows.Forms.Button();
-            connStatusLbl = new System.Windows.Forms.Label();
-            isMstcRunningImgBox = new System.Windows.Forms.PictureBox();
-            editCrntBtn = new System.Windows.Forms.Button();
-            delCrntBtn = new System.Windows.Forms.Button();
-            connectCrntBtn = new System.Windows.Forms.Button();
-            refreshRdpsBtn = new System.Windows.Forms.Button();
-            savedRdpsResults = new System.Windows.Forms.ComboBox();
-            savedRdpsLbl = new System.Windows.Forms.Label();
-            onlyRdpFilesRdio = new System.Windows.Forms.RadioButton();
-            screenSettingsHolderPnl = new System.Windows.Forms.Panel();
-            rdpButtonsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            saveNUpdtBtn = new System.Windows.Forms.Button();
-            saveToRdpFileBtn = new System.Windows.Forms.Button();
-            saveToXmlBtn = new System.Windows.Forms.Button();
-            connGivenBtn = new System.Windows.Forms.Button();
-            resetBtn = new System.Windows.Forms.Button();
-            screenSettingsHelpBtn = new System.Windows.Forms.Button();
-            screenSettingsPnl = new System.Windows.Forms.FlowLayoutPanel();
-            fullscreenChckBox = new System.Windows.Forms.CheckBox();
-            multiMonitorChckBox = new System.Windows.Forms.CheckBox();
-            spanMonitorsChckBox = new System.Windows.Forms.CheckBox();
-            screenWidthLbl = new System.Windows.Forms.Label();
-            screenWidthTxtBox = new System.Windows.Forms.TextBox();
-            screenHeightLbl = new System.Windows.Forms.Label();
-            screenHeightTxtBox = new System.Windows.Forms.TextBox();
-            connectionSettingsPnl.SuspendLayout();
-            currentRdpsPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(isMstcRunningImgBox)).BeginInit();
+            connTxtBox = new BaseTextBox();
+            addressTxtBox = new BaseTextBox();
+            portTxtBox = new BaseTextBox();
+            gatewTxtBox = new BaseTextBox();
+            screenWidthTxtBox = new BaseTextBox();
+            screenHeightTxtBox = new BaseTextBox();
+            connLbl = new BaseLabel();
+            addressLbl = new BaseLabel();
+            portLbl = new BaseLabel();
+            gatewayLbl = new BaseLabel();
+            connStatusLbl = new BaseLabel();
+            savedRdpsLbl = new BaseLabel();
+            screenWidthLbl = new BaseLabel();
+            screenHeightLbl = new BaseLabel();
+            useGatewayChckBox = new BaseCheckBox();
+            asAdminChckBox = new BaseCheckBox();
+            remGuardChckBox = new BaseCheckBox();
+            restrictedAdminChckBox = new BaseCheckBox();
+            fullscreenChckBox = new BaseCheckBox();
+            multiMonitorChckBox = new BaseCheckBox();
+            spanMonitorsChckBox = new BaseCheckBox();
+            rdpCredsHelpBtn = new BaseButton();
+            recheckConnBtn = new BaseButton();
+            editCrntBtn = new BaseButton();
+            delCrntBtn = new BaseButton();
+            connectCrntBtn = new BaseButton();
+            refreshRdpsBtn = new BaseButton();
+            saveNUpdtBtn = new BaseButton();
+            saveToRdpFileBtn = new BaseButton();
+            saveToXmlBtn = new BaseButton();
+            connGivenBtn = new BaseButton();
+            resetBtn = new BaseButton();
+            screenSettingsHelpBtn = new BaseButton();
+            isMstcRunningImgBox = new BasePicBox();
+            savedRdpsResults = new BaseComboBox();
+            onlyRdpFilesRdio = new BaseRadioButton();
 
+
+            currentRdpsPnl = new BasePanel();
+            screenSettingsHolderPnl = new BasePanel();
+            connectionSettingsPnl = new BaseFlowPanel();
+            rdpButtonsPnl = new BaseFlowPanel();
+            screenSettingsPnl = new BaseFlowPanel();
+
+            ((System.ComponentModel.ISupportInitialize)(isMstcRunningImgBox)).BeginInit();
             SuspendLayout();
             InitRdp();
 
