@@ -34,10 +34,11 @@ namespace Amadeus.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            #region Controls
             var defBigButtonSize = new Size(120, 23);
             var defButtonPadding = new Padding(85, 10, 85, 5);
             var defControlPadding = new Padding(5, 10, 5, 5);
-            #region Controls
+
             removeCurrBtn = new BaseButton(_res, "removeCurrBtn", true, 2, new object[] { null, new Point(85, 79), defButtonPadding, defBigButtonSize, "Remove Selected" });
             setSelectedBtn = new BaseButton(_res, "setSelectedBtn", true, 11, new object[] { null, new Point(85, 117), defButtonPadding, defBigButtonSize, "Set Selected" });
             setAsDefBtn = new BaseButton(_res, "setAsDefBtn", true, 6, new object[] { null, new Point(85, 155), defButtonPadding, defBigButtonSize, "Set as Default" });

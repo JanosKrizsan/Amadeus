@@ -63,7 +63,6 @@ namespace Amadeus.Forms
             addressVpnLbl = new BaseLabel(_res, "addressVpnLbl", 0, defLblPoint, new Size(66, 18), "Address:");
             ttypeVpnLbl = new BaseLabel(_res, "tTypeVpnLbl", 0, defLblPoint, new Size(92, 18), "Tunnel Type:");
             encryptLvlVpnLbl = new BaseLabel(_res, "encryptLvlVpnLbl", 0, defLblPoint, new Size(120, 18), "Encryption LEvel:");
-
             authMetLbl = new BaseLabel(_res, "authMetLbl", 0, defLblPoint, new Size(99, 18), "Auth. Method:");
             currentVpnsComBox = new BaseComboBox(_res, "currentVpnsCombox", 2, defComboPoint, defComboSize);
             tTypeSelectCombBox = new BaseComboBox(_res, "tTypeSelectComBox", 1, defComboPoint, defComboSize);

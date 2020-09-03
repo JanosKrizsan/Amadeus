@@ -35,6 +35,7 @@ namespace Amadeus.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            #region Controls
             var anchorForBtn = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             var defButtonPadding = new Padding(3, 10, 0, 0);
@@ -69,11 +70,14 @@ namespace Amadeus.Forms
             alwaysPGPCheck = new BaseCheckBox(_res, "alwaysPGPCheck", true, "Always Use PGP", new Point(5, 201), new Size(116, 19), margin: defCheckBoxPadding, tabIndex: 4);
             sendRepEmailCheck = new BaseCheckBox(_res, "sendRepEmailCheck", true, "Send Reports to Email", new Point(5, 245), new Size(149, 19), margin: defCheckBoxPadding, tabIndex: 5);
             forcePGPEmailCheck = new BaseCheckBox(_res, "forcePGPEmailCheck", true, "Force PGP in Email", new Point(277, 72), new Size(133, 19), margin: defCheckBoxPadding, tabIndex: 13);
+            #endregion
 
+            #region Panels
             emailPnl = new BasePanel(_res, "emailPnl", new Control[] { helpBtn, setEmailBtn, forcePGPEmailCheck, emailAddConfTxtBox, emailAddConfLbl, emailAddTxtBox, emailAddLbl }, new Point(12, 342), new Size(573, 168), 13);
             userinfoPnl = new BasePanel(_res, "userinfoPnl", new Control[] { setUserinfoBtn, gpgTxtBox, gpgLbl, passwordTxtBox, passwordLbl, usernameTxtBox, usernameLbl }, new Point(255, 12), new Size(207, 300), 1);
             settingsBtnsPnl = new BaseFlowPanel(_res, new Control[] { loadStngsBtn, saveStngsBtn, reloadStngsBtn, useRecommBtn, addUserBtn, removeUserBtn, wipeAllnRemoveBtn }, new Point(453, 12), new Size(132, 300), "settingsBtnsPnl", 6, new object[] { BorderStyle.Fixed3D, null, AnchorStyles.Top });
             checkBoxLayoutPnl = new BaseFlowPanel(_res, new Control[] { autoLoginCheck, doNotSaveCheck, wipeDataQuitCheck, resetSysDefsCheck, alwaysPGPCheck, sendRepEmailCheck }, new Point(12, 12), new Size(192, 300), "checkBoxLayoutPnl", 12, new object[] { BorderStyle.Fixed3D, null, AnchorStyles.Top });
+            #endregion
 
             SuspendLayout();
             InitSettings();
