@@ -38,7 +38,7 @@ namespace Amadeus.Forms
             connTxtBox = new BaseTextBox();
             addressTxtBox = new BaseTextBox();
             portTxtBox = new BaseTextBox();
-            gatewTxtBox = new BaseTextBox();
+            gatewayTxtBox = new BaseTextBox();
             screenWidthTxtBox = new BaseTextBox();
             screenHeightTxtBox = new BaseTextBox();
             connLbl = new BaseLabel();
@@ -191,208 +191,93 @@ namespace Amadeus.Forms
 
         private void InitonlyRdpFilesRdio()
         {
-            onlyRdpFilesRdio.AutoSize = true;
-            onlyRdpFilesRdio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            onlyRdpFilesRdio.Location = new System.Drawing.Point(173, 25);
-            onlyRdpFilesRdio.Name = "onlyRdpFilesRdio";
-            onlyRdpFilesRdio.Size = new System.Drawing.Size(125, 21);
-            onlyRdpFilesRdio.TabIndex = 0;
-            onlyRdpFilesRdio.TabStop = true;
-            onlyRdpFilesRdio.Text = "Only .RDP Files";
-            onlyRdpFilesRdio.UseVisualStyleBackColor = true;
+            new BaseRadioButton(_res, "onlyRdpFilesRdio", "Only .RDP Files", 0, true, new Point(173, 25), new Size(125, 21), true, true);
         }
 
         private void InitsavedRdpsLbl()
         {
-            savedRdpsLbl.AutoSize = true;
-            savedRdpsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            savedRdpsLbl.Location = new System.Drawing.Point(31, 28);
-            savedRdpsLbl.Name = "savedRdpsLbl";
-            savedRdpsLbl.Size = new System.Drawing.Size(97, 18);
-            savedRdpsLbl.TabIndex = 1;
-            savedRdpsLbl.Text = "Saved RDPs:";
+            new BaseLabel(_res, "savedRdpsLbl", 1, new Point(31, 28), new Size(97, 18), "Saved RDPs:", autoSize: true);
         }
 
         private void InitsavedRdpsResults()
         {
-            savedRdpsResults.FormattingEnabled = true;
-            savedRdpsResults.Location = new System.Drawing.Point(33, 59);
-            savedRdpsResults.Name = "savedRdpsResults";
-            savedRdpsResults.Size = new System.Drawing.Size(181, 21);
-            savedRdpsResults.TabIndex = 2;
+            new BaseComboBox(_res, "savedRdpsResults", 2, new Point(33, 59), new Size(181, 21));
         }
 
         private void InitrefreshRdpsBtn()
         {
-            refreshRdpsBtn.Location = new System.Drawing.Point(237, 57);
-            refreshRdpsBtn.Name = "refreshRdpsBtn";
-            refreshRdpsBtn.Size = new System.Drawing.Size(60, 23);
-            refreshRdpsBtn.TabIndex = 3;
-            refreshRdpsBtn.Text = "Refresh";
-            refreshRdpsBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "refreshRdpBtn", true, 3, new object[] { null, new Point(237, 57), new Size(60, 23), "Refresh" });
         }
 
         private void InitconnectCrntBtn()
         {
-            connectCrntBtn.Location = new System.Drawing.Point(33, 129);
-            connectCrntBtn.Name = "connectCrntBtn";
-            connectCrntBtn.Size = new System.Drawing.Size(75, 23);
-            connectCrntBtn.TabIndex = 4;
-            connectCrntBtn.Text = "Connect To";
-            connectCrntBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "connectCrntBtn", true, 4, new object[] { null, new Point(33, 129), new Size(75, 23), "Connect To" });
         }
 
         private void InitdelCrntBtn()
         {
-            delCrntBtn.Location = new System.Drawing.Point(33, 161);
-            delCrntBtn.Name = "delCrntBtn";
-            delCrntBtn.Size = new System.Drawing.Size(75, 23);
-            delCrntBtn.TabIndex = 5;
-            delCrntBtn.Text = "Delete";
-            delCrntBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "delCrntBtn", true, 5, new object[] { null, new Point(33, 161), new Size(75, 23), "Delete" });
         }
 
         private void IniteditCrntBtn()
         {
-            editCrntBtn.Location = new System.Drawing.Point(33, 190);
-            editCrntBtn.Name = "editCrntBtn";
-            editCrntBtn.Size = new System.Drawing.Size(75, 23);
-            editCrntBtn.TabIndex = 6;
-            editCrntBtn.Text = "Edit";
-            editCrntBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "editCrntBtn", true, 6, new object[] { null, new Point(33, 190), new Size(75, 23), "Edit" });
         }
 
         private void InitisMstcRunningImgBox()
         {
-            isMstcRunningImgBox.Location = new System.Drawing.Point(191, 161);
-            isMstcRunningImgBox.Name = "isMstcRunningImgBox";
-            isMstcRunningImgBox.Size = new System.Drawing.Size(106, 90);
-            isMstcRunningImgBox.TabIndex = 7;
-            isMstcRunningImgBox.TabStop = false;
+            new BasePicBox(_res, "isMstcRunningImgBox", new Point(191, 161), new Size(106, 90), 7, false);
         }
 
         private void InitconnStatusLbl()
         {
-            connStatusLbl.AutoSize = true;
-            connStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            connStatusLbl.Location = new System.Drawing.Point(175, 129);
-            connStatusLbl.Name = "connStatusLbl";
-            connStatusLbl.Size = new System.Drawing.Size(127, 17);
-            connStatusLbl.TabIndex = 8;
-            connStatusLbl.Text = "Connection Status:";
+            new BaseLabel(_res, "connStatusLbl", 8, new Point(175, 129), new Size(127, 17), "Connection Status", autoSize: true);
         }
 
         private void InitrecheckConnBtn()
         {
-            recheckConnBtn.Location = new System.Drawing.Point(33, 228);
-            recheckConnBtn.Name = "recheckConnBtn";
-            recheckConnBtn.Size = new System.Drawing.Size(120, 23);
-            recheckConnBtn.TabIndex = 9;
-            recheckConnBtn.Text = "Recheck Connection";
-            recheckConnBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "recheckConnBtn", true, 9, new object[] { null, new Point(33, 228), null, new Size(120, 23), "Recheck Connection" });
         }
 
         private void InitcurrentRdpsPnl()
         {
-            currentRdpsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            currentRdpsPnl.Controls.Add(recheckConnBtn);
-            currentRdpsPnl.Controls.Add(connStatusLbl);
-            currentRdpsPnl.Controls.Add(isMstcRunningImgBox);
-            currentRdpsPnl.Controls.Add(editCrntBtn);
-            currentRdpsPnl.Controls.Add(delCrntBtn);
-            currentRdpsPnl.Controls.Add(connectCrntBtn);
-            currentRdpsPnl.Controls.Add(refreshRdpsBtn);
-            currentRdpsPnl.Controls.Add(savedRdpsResults);
-            currentRdpsPnl.Controls.Add(savedRdpsLbl);
-            currentRdpsPnl.Controls.Add(onlyRdpFilesRdio);
-            currentRdpsPnl.Location = new System.Drawing.Point(276, 12);
-            currentRdpsPnl.Name = "currentRdpsPnl";
-            currentRdpsPnl.Size = new System.Drawing.Size(327, 264);
-            currentRdpsPnl.TabIndex = 3;
+            new BaseFlowPanel(_res, new Control[] { recheckConnBtn, connStatusLbl, isMstcRunningImgBox, editCrntBtn, delCrntBtn, connectCrntBtn, refreshRdpsBtn, savedRdpsResults, savedRdpsLbl, saveToRdpFileBtn, onlyRdpFilesRdio },
+                new Point(276, 12), new Size(327, 264), "currentRdpsPnl", 3, new object[] { BorderStyle.Fixed3D });
         }
 
         private void InitrdpCredsHelpBtn()
         {
-            rdpCredsHelpBtn.Location = new System.Drawing.Point(174, 458);
-            rdpCredsHelpBtn.Margin = new System.Windows.Forms.Padding(174, 55, 3, 3);
-            rdpCredsHelpBtn.Name = "rdpCredsHelpBtn";
-            rdpCredsHelpBtn.Size = new System.Drawing.Size(40, 23);
-            rdpCredsHelpBtn.TabIndex = 16;
-            rdpCredsHelpBtn.Text = "Help!";
-            rdpCredsHelpBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "rdpCredsHelpBtn", true, 16, new object[] { null, new Point(174, 458), new Padding(174, 55, 3, 3), new Size(40, 23) });
         }
 
         private void InitrestrictedAdminChckBox()
         {
-            restrictedAdminChckBox.AutoSize = true;
-            restrictedAdminChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            restrictedAdminChckBox.Location = new System.Drawing.Point(30, 381);
-            restrictedAdminChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
-            restrictedAdminChckBox.Name = "restrictedAdminChckBox";
-            restrictedAdminChckBox.Size = new System.Drawing.Size(135, 19);
-            restrictedAdminChckBox.TabIndex = 15;
-            restrictedAdminChckBox.Text = "As Restricted Admin";
-            restrictedAdminChckBox.UseVisualStyleBackColor = true;
+            new BaseCheckBox(_res, "restrictedAdminChckBox", true, "As Restricted Admin", new Point(30, 381), new Size(135, 19), margin: new Padding(30, 10, 3, 3), tabIndex: 15);
         }
 
         private void InitremGuardChckBox()
         {
-            remGuardChckBox.AutoSize = true;
-            remGuardChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            remGuardChckBox.Location = new System.Drawing.Point(30, 349);
-            remGuardChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
-            remGuardChckBox.Name = "remGuardChckBox";
-            remGuardChckBox.Size = new System.Drawing.Size(107, 19);
-            remGuardChckBox.TabIndex = 10;
-            remGuardChckBox.Text = "Remote Guard";
-            remGuardChckBox.UseVisualStyleBackColor = true;
+            new BaseCheckBox(_res, "remGuardChckBox", true, "Remote Guard", new Point(30, 349), new Size(107, 19), margin: new Padding(30, 10, 3, 3), tabIndex: 10);
         }
 
         private void InitasAdminChckBox()
         {
-            asAdminChckBox.AutoSize = true;
-            asAdminChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            asAdminChckBox.Location = new System.Drawing.Point(30, 317);
-            asAdminChckBox.Margin = new System.Windows.Forms.Padding(30, 10, 3, 3);
-            asAdminChckBox.Name = "asAdminChckBox";
-            asAdminChckBox.Size = new System.Drawing.Size(77, 19);
-            asAdminChckBox.TabIndex = 9;
-            asAdminChckBox.Text = "As Admin";
-            asAdminChckBox.UseVisualStyleBackColor = true;
+            new BaseCheckBox(_res, "asAdminChckBox", true, "As Admin", new Point(30, 317), new Size(77, 19), margin: new Padding(30, 10, 3, 3), tabIndex: 9);
         }
 
         private void InituseGatewayChckBox()
         {
-            useGatewayChckBox.AutoSize = true;
-            useGatewayChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            useGatewayChckBox.Location = new System.Drawing.Point(30, 285);
-            useGatewayChckBox.Margin = new System.Windows.Forms.Padding(30, 30, 3, 3);
-            useGatewayChckBox.Name = "useGatewayChckBox";
-            useGatewayChckBox.Size = new System.Drawing.Size(98, 19);
-            useGatewayChckBox.TabIndex = 8;
-            useGatewayChckBox.Text = "Use Gateway";
-            useGatewayChckBox.UseVisualStyleBackColor = true;
+            new BaseCheckBox(_res, "useGatewayChckBox", true, "Use Gateway", new Point(30, 285), new Size(98, 19), margin: new Padding(30, 30, 3, 3), tabIndex: 8);
         }
 
         private void InitgatewTxtBox()
         {
-            gatewTxtBox.Location = new System.Drawing.Point(30, 232);
-            gatewTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            gatewTxtBox.Name = "gatewTxtBox";
-            gatewTxtBox.Size = new System.Drawing.Size(120, 20);
-            gatewTxtBox.TabIndex = 7;
+            new BaseTextBox(_res, "gatewayTxtBox", 7, new Point(30, 232), new Size(120, 20), padding: new Padding(30, 5, 3, 3));
         }
 
         private void InitgatewayLbl()
         {
-            gatewayLbl.AutoSize = true;
-            gatewayLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            gatewayLbl.Location = new System.Drawing.Point(30, 210);
-            gatewayLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
-            gatewayLbl.Name = "gatewayLbl";
-            gatewayLbl.Size = new System.Drawing.Size(67, 17);
-            gatewayLbl.TabIndex = 6;
-            gatewayLbl.Text = "Gateway:";
+            new BaseLabel(_res, "gatewayLbl", 6, new Point(30, 120), new Size(67, 17), "Gateway:", autoSize: true, padding: new Padding(30, 15, 3, 0));
         }
 
         private void InitportTxtBox()
@@ -427,7 +312,7 @@ namespace Amadeus.Forms
 
         private void InitconnectionSettingsPnl()
         {
-            new BaseFlowPanel(_res, new Control[] { connLbl, connTxtBox, addressLbl, addressTxtBox, portLbl, portTxtBox, gatewayLbl, gatewTxtBox, useGatewayChckBox, asAdminChckBox, remGuardChckBox, restrictedAdminChckBox, rdpCredsHelpBtn },
+            new BaseFlowPanel(_res, new Control[] { connLbl, connTxtBox, addressLbl, addressTxtBox, portLbl, portTxtBox, gatewayLbl, gatewayTxtBox, useGatewayChckBox, asAdminChckBox, remGuardChckBox, restrictedAdminChckBox, rdpCredsHelpBtn },
                 new Point(), new Size(), "connectionSettingsPnl", 0, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
         }
 
@@ -451,7 +336,7 @@ namespace Amadeus.Forms
         private System.Windows.Forms.Label portLbl;
         private System.Windows.Forms.TextBox portTxtBox;
         private System.Windows.Forms.Label gatewayLbl;
-        private System.Windows.Forms.TextBox gatewTxtBox;
+        private System.Windows.Forms.TextBox gatewayTxtBox;
         private System.Windows.Forms.CheckBox useGatewayChckBox;
         private System.Windows.Forms.CheckBox asAdminChckBox;
         private System.Windows.Forms.CheckBox remGuardChckBox;
