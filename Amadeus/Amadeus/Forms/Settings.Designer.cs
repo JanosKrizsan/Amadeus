@@ -75,7 +75,6 @@ namespace Amadeus.Forms
             settingsBtnsPnl = new BaseFlowPanel(_res, new Control[] { loadStngsBtn, saveStngsBtn, reloadStngsBtn, useRecommBtn, addUserBtn, removeUserBtn, wipeAllnRemoveBtn }, new Point(453, 12), new Size(132, 300), "settingsBtnsPnl", 6, new object[] { BorderStyle.Fixed3D, null, AnchorStyles.Top });
             checkBoxLayoutPnl = new BaseFlowPanel(_res, new Control[] { autoLoginCheck, doNotSaveCheck, wipeDataQuitCheck, resetSysDefsCheck, alwaysPGPCheck, sendRepEmailCheck }, new Point(12, 12), new Size(192, 300), "checkBoxLayoutPnl", 12, new object[] { BorderStyle.Fixed3D, null, AnchorStyles.Top });
 
-
             SuspendLayout();
             InitSettings();
 

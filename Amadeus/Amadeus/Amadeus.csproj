@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\BaseProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\BaseButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -84,6 +90,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BasePicBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\BaseRichTextBox.cs">

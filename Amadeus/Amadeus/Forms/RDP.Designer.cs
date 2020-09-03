@@ -1,5 +1,7 @@
 ﻿using Amadeus.CustomControls;
 using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace Amadeus.Forms
 {
@@ -51,7 +53,7 @@ namespace Amadeus.Forms
             asAdminChckBox = new BaseCheckBox();
             remGuardChckBox = new BaseCheckBox();
             restrictedAdminChckBox = new BaseCheckBox();
-            fullscreenChckBox = new BaseCheckBox();
+            fullScreenChckBox = new BaseCheckBox();
             multiMonitorChckBox = new BaseCheckBox();
             spanMonitorsChckBox = new BaseCheckBox();
             rdpCredsHelpBtn = new BaseButton();
@@ -69,7 +71,6 @@ namespace Amadeus.Forms
             isMstcRunningImgBox = new BasePicBox();
             savedRdpsResults = new BaseComboBox();
             onlyRdpFilesRdio = new BaseRadioButton();
-
 
             currentRdpsPnl = new BasePanel();
             screenSettingsHolderPnl = new BasePanel();
@@ -110,189 +111,82 @@ namespace Amadeus.Forms
 
         private void InitscreenHeightTxtBox()
         {
-            screenHeightTxtBox.Location = new System.Drawing.Point(20, 184);
-            screenHeightTxtBox.Margin = new System.Windows.Forms.Padding(20, 5, 3, 3);
-            screenHeightTxtBox.Name = "screenHeightTxtBox";
-            screenHeightTxtBox.Size = new System.Drawing.Size(105, 20);
-            screenHeightTxtBox.TabIndex = 25;
+            new BaseTextBox(_res, "screenHeightTxtBox", 25, new Point(20, 184), new Size(105, 20), padding: new Padding(20, 5, 3, 3));
         }
 
         private void InitscreenHeightLbl()
         {
-            screenHeightLbl.AutoSize = true;
-            screenHeightLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            screenHeightLbl.Location = new System.Drawing.Point(20, 162);
-            screenHeightLbl.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
-            screenHeightLbl.Name = "screenHeightLbl";
-            screenHeightLbl.Size = new System.Drawing.Size(102, 17);
-            screenHeightLbl.TabIndex = 24;
-            screenHeightLbl.Text = "Screen Height:";
+            new BaseLabel(_res, "screenHeightLbl", 24, new Point(20, 162), new Size(102, 17), "Screen Height:", autoSize: true, padding: new Padding(20, 15, 3, 0));
         }
 
         private void InitscreenWidthTxtBox()
         {
-            screenWidthTxtBox.Location = new System.Drawing.Point(20, 124);
-            screenWidthTxtBox.Margin = new System.Windows.Forms.Padding(20, 5, 3, 3);
-            screenWidthTxtBox.Name = "screenWidthTxtBox";
-            screenWidthTxtBox.Size = new System.Drawing.Size(105, 20);
-            screenWidthTxtBox.TabIndex = 23;
+            new BaseTextBox(_res, "screenWidthTxtBox", 23, new Point(20, 124), new Size(105, 20), padding: new Padding(20, 5, 3, 3));
         }
 
         private void InitscreenWidthLbl()
         {
-            screenWidthLbl.AutoSize = true;
-            screenWidthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            screenWidthLbl.Location = new System.Drawing.Point(20, 102);
-            screenWidthLbl.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
-            screenWidthLbl.Name = "screenWidthLbl";
-            screenWidthLbl.Size = new System.Drawing.Size(97, 17);
-            screenWidthLbl.TabIndex = 22;
-            screenWidthLbl.Text = "Screen Width:";
+            new BaseLabel(_res, "screenWidthLbl", 22, new Point(20, 102), new Size(97, 17), "Screen Width:", autoSize: true, padding: new Padding(20, 15, 3, 0));
         }
 
         private void InitspanMonitorsChckBox()
         {
-            spanMonitorsChckBox.AutoSize = true;
-            spanMonitorsChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            spanMonitorsChckBox.Location = new System.Drawing.Point(10, 65);
-            spanMonitorsChckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            spanMonitorsChckBox.Name = "spanMonitorsChckBox";
-            spanMonitorsChckBox.Size = new System.Drawing.Size(141, 19);
-            spanMonitorsChckBox.TabIndex = 21;
-            spanMonitorsChckBox.Text = "Span Monitors Mode";
-            spanMonitorsChckBox.UseVisualStyleBackColor = true;
+            new BaseCheckBox(_res, "spanMonitorsChckBox", true, "Span Monitors Mode", new Point(10, 65), new Size(141, 19), margin: new Padding(10, 3, 3, 3), tabIndex: 21);
         }
 
         private void InitmultiMonitorChckBox()
         {
-            multiMonitorChckBox.AutoSize = true;
-            multiMonitorChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            multiMonitorChckBox.Location = new System.Drawing.Point(10, 40);
-            multiMonitorChckBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            multiMonitorChckBox.Name = "multiMonitorChckBox";
-            multiMonitorChckBox.Size = new System.Drawing.Size(133, 19);
-            multiMonitorChckBox.TabIndex = 20;
-            multiMonitorChckBox.Text = "Multi Monitor Mode";
-            multiMonitorChckBox.UseVisualStyleBackColor = true;
+            new BaseCheckBox(_res, "multiMonitorChckBox", true, "Multi Monitor Mode", new Point(10, 40), new Size(133, 19), margin: new Padding(10, 3, 3, 3), tabIndex: 20);
         }
 
         private void InitfullscreenChckBox()
         {
-            fullscreenChckBox.AutoSize = true;
-            fullscreenChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            fullscreenChckBox.Location = new System.Drawing.Point(10, 15);
-            fullscreenChckBox.Margin = new System.Windows.Forms.Padding(10, 15, 3, 3);
-            fullscreenChckBox.Name = "fullscreenChckBox";
-            fullscreenChckBox.Size = new System.Drawing.Size(111, 19);
-            fullscreenChckBox.TabIndex = 19;
-            fullscreenChckBox.Text = "Start Fullscreen";
-            fullscreenChckBox.UseVisualStyleBackColor = true;
+            new BaseCheckBox(_res, "fullScreenChckBox", true, "Start Fullscreen", new Point(10, 15), new Size(111, 19), margin: new Padding(10, 15, 3, 3), tabIndex: 19);
         }
 
         private void InitscreenSettingsPnl()
         {
-            screenSettingsPnl.Controls.Add(fullscreenChckBox);
-            screenSettingsPnl.Controls.Add(multiMonitorChckBox);
-            screenSettingsPnl.Controls.Add(spanMonitorsChckBox);
-            screenSettingsPnl.Controls.Add(screenWidthLbl);
-            screenSettingsPnl.Controls.Add(screenWidthTxtBox);
-            screenSettingsPnl.Controls.Add(screenHeightLbl);
-            screenSettingsPnl.Controls.Add(screenHeightTxtBox);
-            screenSettingsPnl.Location = new System.Drawing.Point(3, 3);
-            screenSettingsPnl.Name = "screenSettingsPnl";
-            screenSettingsPnl.Size = new System.Drawing.Size(164, 215);
-            screenSettingsPnl.TabIndex = 0;
+            new BaseFlowPanel(_res, new Control[] { fullScreenChckBox, multiMonitorChckBox, spanMonitorsChckBox, screenWidthLbl, screenWidthTxtBox, screenHeightLbl, screenHeightTxtBox }, new Point(3, 3), new Size(164, 215), "screenSettingsPnl", 0);
         }
 
         private void InitscreenSettingsHelpBtn()
         {
-            screenSettingsHelpBtn.Location = new System.Drawing.Point(88, 185);
-            screenSettingsHelpBtn.Margin = new System.Windows.Forms.Padding(88, 5, 3, 3);
-            screenSettingsHelpBtn.Name = "screenSettingsHelpBtn";
-            screenSettingsHelpBtn.Size = new System.Drawing.Size(40, 23);
-            screenSettingsHelpBtn.TabIndex = 3;
-            screenSettingsHelpBtn.Text = "Help!";
-            screenSettingsHelpBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "screenSettingsHelpBtn", true, 3, new object[] { null, new Point(88, 185), new Padding(88, 5, 3, 3), new Size(40, 23), "Help!" });
         }
 
         private void InitresetBtn()
         {
-            resetBtn.Location = new System.Drawing.Point(19, 154);
-            resetBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            resetBtn.Name = "resetBtn";
-            resetBtn.Size = new System.Drawing.Size(110, 23);
-            resetBtn.TabIndex = 1;
-            resetBtn.Text = "Reset To Defaults";
-            resetBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "resetBtn", true, 1, new object[] { null, new Point(19, 154), new Padding(19, 10, 3, 3), new Size(110, 23), "Reset To Defaults" });
         }
 
         private void InitconnGivenBtn()
         {
-            connGivenBtn.Location = new System.Drawing.Point(19, 118);
-            connGivenBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            connGivenBtn.Name = "connGivenBtn";
-            connGivenBtn.Size = new System.Drawing.Size(110, 23);
-            connGivenBtn.TabIndex = 2;
-            connGivenBtn.Text = "Quick Connect";
-            connGivenBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "connGivenBtn", true, 2, new object[] { null, new Point(19, 118), new Padding(19, 10, 3, 3), new Size(110, 23), "Quick Connect" });
         }
 
         private void InitsaveToXmlBtn()
         {
-            saveToXmlBtn.Location = new System.Drawing.Point(19, 82);
-            saveToXmlBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            saveToXmlBtn.Name = "saveToXmlBtn";
-            saveToXmlBtn.Size = new System.Drawing.Size(110, 23);
-            saveToXmlBtn.TabIndex = 4;
-            saveToXmlBtn.Text = "Save as .XML";
-            saveToXmlBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "saveToXmlBtn", true, 4, new object[] { null, new Point(19, 82), new Padding(19, 10, 3, 3), new Size(110, 23), "Save as .XML" });
         }
 
         private void InitsaveToRdpFileBtn()
         {
-            saveToRdpFileBtn.Location = new System.Drawing.Point(19, 46);
-            saveToRdpFileBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            saveToRdpFileBtn.Name = "saveToRdpFileBtn";
-            saveToRdpFileBtn.Size = new System.Drawing.Size(110, 23);
-            saveToRdpFileBtn.TabIndex = 5;
-            saveToRdpFileBtn.Text = "Save as .RDP";
-            saveToRdpFileBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "saveToRdpFileBtn", true, 5, new object[] { null, new Point(19, 46), new Padding(19, 10, 3, 3), new Size(110, 23), "Save as .RDP" });
         }
 
         private void InitsaveNUpdtBtn()
         {
-            saveNUpdtBtn.Location = new System.Drawing.Point(19, 10);
-            saveNUpdtBtn.Margin = new System.Windows.Forms.Padding(19, 10, 3, 3);
-            saveNUpdtBtn.Name = "saveNUpdtBtn";
-            saveNUpdtBtn.Size = new System.Drawing.Size(110, 23);
-            saveNUpdtBtn.TabIndex = 0;
-            saveNUpdtBtn.Text = "Save / Update";
-            saveNUpdtBtn.UseVisualStyleBackColor = true;
+            new BaseButton(_res, "saveNUpdtBtn", true, args: new object[] { null, new Point(19, 10), new Padding(19, 10, 3, 3), new Size(110, 23), "Save / Update" });
         }
 
         private void InitrdpButtonsPnl()
         {
-            rdpButtonsPnl.Controls.Add(saveNUpdtBtn);
-            rdpButtonsPnl.Controls.Add(saveToRdpFileBtn);
-            rdpButtonsPnl.Controls.Add(saveToXmlBtn);
-            rdpButtonsPnl.Controls.Add(connGivenBtn);
-            rdpButtonsPnl.Controls.Add(resetBtn);
-            rdpButtonsPnl.Controls.Add(screenSettingsHelpBtn);
-            rdpButtonsPnl.Location = new System.Drawing.Point(173, 3);
-            rdpButtonsPnl.Name = "rdpButtonsPnl";
-            rdpButtonsPnl.Size = new System.Drawing.Size(148, 215);
-            rdpButtonsPnl.TabIndex = 1;
+            new BaseFlowPanel(_res, new Control[] { saveNUpdtBtn, saveToRdpFileBtn, saveToXmlBtn, connGivenBtn, resetBtn, screenSettingsHelpBtn }, new Point(173, 3), new Size(148, 215), "rdpButtonsPnl", 1);
         }
 
         private void InitscreenSettingsHolderPnl()
         {
-            screenSettingsHolderPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            screenSettingsHolderPnl.Controls.Add(rdpButtonsPnl);
-            screenSettingsHolderPnl.Controls.Add(screenSettingsPnl);
-            screenSettingsHolderPnl.Location = new System.Drawing.Point(276, 285);
-            screenSettingsHolderPnl.Name = "screenSettingsHolderPnl";
-            screenSettingsHolderPnl.Size = new System.Drawing.Size(328, 225);
-            screenSettingsHolderPnl.TabIndex = 4;
+            new BaseFlowPanel(_res, new Control[] { rdpButtonsPnl, screenSettingsPnl }, new Point(276, 285), new Size(328, 225), "screenSettingsHolderPnl", 4, new object[] { BorderStyle.Fixed3D });
         }
 
         private void InitonlyRdpFilesRdio()
@@ -503,88 +397,38 @@ namespace Amadeus.Forms
 
         private void InitportTxtBox()
         {
-            portTxtBox.Location = new System.Drawing.Point(30, 172);
-            portTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            portTxtBox.Name = "portTxtBox";
-            portTxtBox.Size = new System.Drawing.Size(120, 20);
-            portTxtBox.TabIndex = 5;
+            new BaseTextBox(_res, "portTxtBox", 5, new Point(30, 172), new Size(120, 20), padding: new Padding(30, 5, 3, 3));
         }
 
         private void InitportLbl()
         {
-            portLbl.AutoSize = true;
-            portLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            portLbl.Location = new System.Drawing.Point(30, 150);
-            portLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
-            portLbl.Name = "portLbl";
-            portLbl.Size = new System.Drawing.Size(84, 17);
-            portLbl.TabIndex = 4;
-            portLbl.Text = "Server Port:";
+            new BaseLabel(_res, "portLbl", 4, new Point(30, 150), new Size(84, 17), "Server Port:", autoSize: true, padding: new Padding(30, 15, 3, 0));
         }
 
         private void InitaddressTxtBox()
         {
-            addressTxtBox.Location = new System.Drawing.Point(30, 112);
-            addressTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            addressTxtBox.Name = "addressTxtBox";
-            addressTxtBox.Size = new System.Drawing.Size(120, 20);
-            addressTxtBox.TabIndex = 3;
+            new BaseTextBox(_res, "addressTxtBox", 3, new Point(30, 112), new Size(120, 20), padding: new Padding(30, 5, 3, 3));
         }
 
         private void InitaddressLbl()
         {
-            addressLbl.AutoSize = true;
-            addressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            addressLbl.Location = new System.Drawing.Point(30, 90);
-            addressLbl.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
-            addressLbl.Name = "addressLbl";
-            addressLbl.Size = new System.Drawing.Size(110, 17);
-            addressLbl.TabIndex = 2;
-            addressLbl.Text = "Server Address:";
+            new BaseLabel(_res, "addressLbl", 2, new Point(30, 90), new Size(110, 17), "Server Address:", autoSize: true, padding: new Padding(30, 15, 3, 0));
         }
 
         private void InitconnTxtBox()
         {
-            connTxtBox.Location = new System.Drawing.Point(30, 52);
-            connTxtBox.Margin = new System.Windows.Forms.Padding(30, 5, 3, 3);
-            connTxtBox.Name = "connTxtBox";
-            connTxtBox.Size = new System.Drawing.Size(120, 20);
-            connTxtBox.TabIndex = 1;
+            new BaseTextBox(_res, "connTxtBox", 1, new Point(30, 52), new Size(120, 20), padding: new Padding(30, 5, 3, 3));
         }
 
         private void InitconnLbl()
         {
-            connLbl.AutoSize = true;
-            connLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            connLbl.Location = new System.Drawing.Point(30, 30);
-            connLbl.Margin = new System.Windows.Forms.Padding(30, 30, 3, 0);
-            connLbl.Name = "connLbl";
-            connLbl.Size = new System.Drawing.Size(124, 17);
-            connLbl.TabIndex = 0;
-            connLbl.Text = "Connection Name:";
+            new BaseLabel(_res, "connLbl", 0, new Point(30, 30), new Size(124, 17), "Connection Name:", autoSize: true, padding: new Padding(30, 30, 3, 0));
         }
 
         private void InitconnectionSettingsPnl()
         {
-            connectionSettingsPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            connectionSettingsPnl.Controls.Add(connLbl);
-            connectionSettingsPnl.Controls.Add(connTxtBox);
-            connectionSettingsPnl.Controls.Add(addressLbl);
-            connectionSettingsPnl.Controls.Add(addressTxtBox);
-            connectionSettingsPnl.Controls.Add(portLbl);
-            connectionSettingsPnl.Controls.Add(portTxtBox);
-            connectionSettingsPnl.Controls.Add(gatewayLbl);
-            connectionSettingsPnl.Controls.Add(gatewTxtBox);
-            connectionSettingsPnl.Controls.Add(useGatewayChckBox);
-            connectionSettingsPnl.Controls.Add(asAdminChckBox);
-            connectionSettingsPnl.Controls.Add(remGuardChckBox);
-            connectionSettingsPnl.Controls.Add(restrictedAdminChckBox);
-            connectionSettingsPnl.Controls.Add(rdpCredsHelpBtn);
-            connectionSettingsPnl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            connectionSettingsPnl.Location = new System.Drawing.Point(12, 12);
-            connectionSettingsPnl.Name = "connectionSettingsPnl";
-            connectionSettingsPnl.Size = new System.Drawing.Size(244, 498);
-            connectionSettingsPnl.TabIndex = 0;
+            new BaseFlowPanel(_res, new Control[] { connLbl, connTxtBox, addressLbl, addressTxtBox, portLbl, portTxtBox, gatewayLbl, gatewTxtBox, useGatewayChckBox, asAdminChckBox, remGuardChckBox, restrictedAdminChckBox, rdpCredsHelpBtn },
+                new Point(), new Size(), "connectionSettingsPnl", 0, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
         }
 
         #endregion
@@ -620,7 +464,7 @@ namespace Amadeus.Forms
         private System.Windows.Forms.Button resetBtn;
         private System.Windows.Forms.Button screenSettingsHelpBtn;
         private System.Windows.Forms.FlowLayoutPanel screenSettingsPnl;
-        private System.Windows.Forms.CheckBox fullscreenChckBox;
+        private System.Windows.Forms.CheckBox fullScreenChckBox;
         private System.Windows.Forms.CheckBox multiMonitorChckBox;
         private System.Windows.Forms.CheckBox spanMonitorsChckBox;
         private System.Windows.Forms.Label screenWidthLbl;
