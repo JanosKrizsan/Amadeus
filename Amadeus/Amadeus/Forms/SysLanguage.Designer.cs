@@ -39,29 +39,31 @@ namespace Amadeus.Forms
             var defButtonPadding = new Padding(85, 10, 85, 5);
             var defControlPadding = new Padding(5, 10, 5, 5);
 
-            removeCurrBtn = new BaseButton(_res, "removeCurrBtn", true, 2, new object[] { default, new Point(85, 79), defButtonPadding, defBigButtonSize, "Remove Selected" });
-            setSelectedBtn = new BaseButton(_res, "setSelectedBtn", true, 11, new object[] { default, new Point(85, 117), defButtonPadding, defBigButtonSize, "Set Selected" });
-            setAsDefBtn = new BaseButton(_res, "setAsDefBtn", true, 6, new object[] { default, new Point(85, 155), defButtonPadding, defBigButtonSize, "Set as Default" });
-            setToDefBtn = new BaseButton(_res, "setToDefBtn", true, 3, new object[] { default, new Point(85, 193), defButtonPadding, defBigButtonSize, "Set to Default" });
-            checkGeoDataBtn = new BaseButton(_res, "checkGeoDataBtn", true, 5, new object[] { default, new Point(85, 231), defButtonPadding, defBigButtonSize, "Check Geo-Data" });
-            addCustomBtn = new BaseButton(_res, "addCustomBtn", true, 9, new object[] { default, new Point(85, 337), defButtonPadding, defBigButtonSize, "Add Custom" });
-            addNSetCustBtn = new BaseButton(_res, "addNSetCustBtn", true, 12, new object[] { default, new Point(85, 375), defButtonPadding, defBigButtonSize, "Add and Set Custom" });
-            removeSimilarBtn = new BaseButton(_res, "removeSimilarBtn", true, 10, new object[] { default, new Point(85, 413), defButtonPadding, defBigButtonSize, "Remove Similar", });
-            currHelpBtn = new BaseButton(_res, "currHelpBtn", true, 4, new object[] { default, new Point(190, 461), new Padding(0, 20, 25, 5), new Size(75, 23), "Help!", DockStyle.Right });
-            addNewBtn = new BaseButton(_res, "addNewBtn", true, 0, new object[] { default, new Point(84, 15), new Padding(84, 15, 3, 3), defBigButtonSize, "Add New" });
-            addnSetNewBtn = new BaseButton(_res, "addnSetNewBtn", true, 1, new object[] { default, new Point(84, 56), new Padding(84, 15, 3, 3), defBigButtonSize, "Add and Set New" });
-            helpNewBtn = new BaseButton(_res, "helpNewBtn", true, 2, new object[] { default, new Point(183, 107), new Padding(183, 25, 15, 3), new Size(80, 23), "Help!", DockStyle.Right });
+            removeCurrBtn = new BaseButton(_res, "removeCurrBtn", 2, visStyleBackColor: true, point: new Point(85, 79), margin: defButtonPadding, size: defBigButtonSize, text: "Remove Selected");
+            setSelectedBtn = new BaseButton(_res, "setSelectedBtn", 11, visStyleBackColor: true, point: new Point(85, 117), margin: defButtonPadding, size: defBigButtonSize, text: "Set Selected");
+            setAsDefBtn = new BaseButton(_res, "setAsDefBtn", 6, visStyleBackColor: true, point: new Point(85, 155), margin: defButtonPadding, size: defBigButtonSize, text: "Set as Default");
+            setToDefBtn = new BaseButton(_res, "setToDefBtn", 3, visStyleBackColor: true, point: new Point(85, 193), margin: defButtonPadding, size: defBigButtonSize, text: "Set to Default");
+            checkGeoDataBtn = new BaseButton(_res, "checkGeoData", 5, visStyleBackColor: true, point: new Point(85, 231), margin: defButtonPadding, size: defBigButtonSize, text: "Check Geo-Data");
+            addCustomBtn = new BaseButton(_res, "addCustomBtn", 9, visStyleBackColor: true, point: new Point(85, 337), margin: defButtonPadding, size: defBigButtonSize, text: "Add Custom");
+            addNSetCustBtn = new BaseButton(_res, "addNSetCustBtn", 12, visStyleBackColor: true, point: new Point(85, 375), margin: defButtonPadding, size: defBigButtonSize, text: "Add and Set Custom");
+            removeSimilarBtn = new BaseButton(_res, "removeSimilarBtn", 10, visStyleBackColor: true, point: new Point(85, 413), margin: defButtonPadding, size: defBigButtonSize, text: "Remove Similar");
+            currHelpBtn = new BaseButton(_res, "currHelpBtn", 4, visStyleBackColor: true, point: new Point(190, 461), margin: new Padding(0, 20, 25, 5), size: new Size(75, 23), text: "Help!", dock: DockStyle.Right);
+            addNewBtn = new BaseButton(_res, "addNewBtn", 0, visStyleBackColor: true, point: new Point(84, 15), margin: new Padding(84, 15, 3, 3), size: defBigButtonSize, text: "Add New");
+            addnSetNewBtn = new BaseButton(_res, "addnSetNewBtn", 1, visStyleBackColor: true, point: new Point(84, 56), margin: new Padding(84, 15, 3, 3), size: defBigButtonSize, text: "Add and Set New");
+            helpNewBtn = new BaseButton(_res, "helpNewBtn", 2, visStyleBackColor: true, point: new Point(183, 107), margin: new Padding(183, 25, 15, 3), size: new Size(80, 23), text: "Help!", dock: DockStyle.Right);
             customTagInpBox = new BaseTextBox(_res, "customTagInpBox", 8, new Point(5, 302), new Size(270, 20), padding: defControlPadding);
-            langTagListBox = new BaseListBox(_res, "langTagListBox", true, true, args: new object[] { SystemColors.MenuText, Color.OliveDrab, new Point(317, 12), new Size(288, 346), 18, SelectionMode.MultiSimple });
+            langTagListBox = new BaseListBox(_res, "langTagListBox", 18, formatting: true, scrollAlwaysVisible: true, backColor: SystemColors.MenuText, foreColor: Color.OliveDrab, point: new Point(317, 12), size: new Size(288, 346), selMode: SelectionMode.MultiSimple);
             customInpLbl = new BaseLabel(_res, "customInpLbl", 7, new Point(5, 269), new Size(96, 18), "Custom Input", padding: defControlPadding, autoSize: true);
             currentInstLangsLbl = new BaseLabel(_res, "currentInstLangsLbl", 1, new Point(5, 10), new Size(186, 18), "Current Installed Languages:", autoSize: true, padding: defControlPadding);
             currentLangsCmboBox = new BaseComboBox(_res, "currentLangsCmboBox", point: new Point(5, 43), size: new Size(270, 21), padding: defControlPadding);
             #endregion
 
             #region Panels
-            currLangOpPanel = new BaseFlowPanel(_res, new Control[] { currentInstLangsLbl, currentLangsCmboBox, removeCurrBtn, setSelectedBtn, setAsDefBtn, setToDefBtn, checkGeoDataBtn, customInpLbl, customTagInpBox, addCustomBtn, addNSetCustBtn, removeSimilarBtn, currHelpBtn },
-                new Point(12, 12), new Size(290, 498), "currLangOpPanel", 1, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
-            newLangListPanel = new BaseFlowPanel(_res, new Control[] { addNewBtn, addnSetNewBtn, helpNewBtn }, new Point(317, 364), new Size(288, 146), "newLangListPanel", 2, new object[] { BorderStyle.Fixed3D, FlowDirection.TopDown });
+            currLangOpPanel = new BaseFlowPanel(_res, "currLangOpPanel", 1, controls: new Control[] { currentInstLangsLbl, currentLangsCmboBox, removeCurrBtn, setSelectedBtn, setAsDefBtn, setToDefBtn, checkGeoDataBtn, customInpLbl, customTagInpBox, addCustomBtn, addNSetCustBtn, removeSimilarBtn, currHelpBtn
+    },
+                new Point(12, 12), new Size(290, 498), borderStyle: BorderStyle.Fixed3D, flow: FlowDirection.TopDown);
+            newLangListPanel = new BaseFlowPanel(_res, "newLangListPanel", 2, controls: new Control[] { addNewBtn, addnSetNewBtn, helpNewBtn
+}, new Point(317, 364), new Size(288, 146), borderStyle: BorderStyle.Fixed3D, flow: FlowDirection.TopDown);
             #endregion
 
             SuspendLayout();

@@ -38,6 +38,7 @@ namespace Amadeus.Forms
             #region Controls
             var anchorForBtn = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
+            var defVisStlye = true;
             var defButtonPadding = new Padding(3, 10, 0, 0);
             var defButtonSize = new Size(120, 30);
             var defTextBoxSize = new Size(194, 20);
@@ -53,30 +54,30 @@ namespace Amadeus.Forms
             passwordLbl = new BaseLabel(_res, "passwordLbl", 6, new Point(3, 90), new Size(79, 18), "Password:", autoSize: true);
             emailAddConfLbl = new BaseLabel(_res, "emailAddConfLbl", 11, new Point(2, 92), new Size(65, 18), "Confirm:", autoSize: true);
             emailAddLbl = new BaseLabel(_res, "emailAddLbl", 10, new Point(3, 12), new Size(147, 18), "Your E-Mail Address:", autoSize: true);
-            helpBtn = new BaseButton(_res, "helpBtn", true, 15, new object[] { default, new Point(494, 113), defButtonPadding, new Size(70, 30), "Help!" });
-            setEmailBtn = new BaseButton(_res, "setEmailBtn", true, 14, new object[] { default, new Point(494, 24), defButtonPadding, new Size(70, 29), "Set Email" });
-            reloadStngsBtn = new BaseButton(_res, "reloadStngsBtn", true, 5, new object[] { default, new Point(3, 90), defButtonPadding, defButtonSize, "Reload Settings" });
-            saveStngsBtn = new BaseButton(_res, "saveStngsBtn", true, 6, new object[] { default, new Point(3, 50), defButtonPadding, defButtonSize, "Save Settings" });
-            loadStngsBtn = new BaseButton(_res, "loadStngsBtn", true, 7, new object[] { default, new Point(3, 10), defButtonPadding, defButtonSize, "Load Settings", default, anchorForBtn });
-            setUserinfoBtn = new BaseButton(_res, "setUserinfoBtn", true, 15, new object[] { default, new Point(114, 251), defButtonPadding, new Size(83, 29), "Set User Info" });
-            useRecommBtn = new BaseButton(_res, "useRecommBtn", true, 8, new object[] { default, new Point(3, 130), defButtonPadding, defButtonSize, "Use Recommended" });
-            addUserBtn = new BaseButton(_res, "addUserBtn", true, 9, new object[] { default, new Point(3, 170), defButtonPadding, defButtonSize, "Add User" });
-            removeUserBtn = new BaseButton(_res, "removeUserBtn", true, 10, new object[] { default, new Point(3, 210), defButtonPadding, defButtonSize, "Remove User" });
-            wipeAllnRemoveBtn = new BaseButton(_res, "wipeAllnRemoveBtn", true, 11, new object[] { default, new Point(3, 250), defButtonPadding, defButtonSize, "Wipe Everything" });
-            autoLoginCheck = new BaseCheckBox(_res, "autoLoginCheck", true, "Log In Automatically", new Point(5, 25), new Size(135, 19), margin: defCheckBoxPadding, tabIndex: 1);
-            doNotSaveCheck = new BaseCheckBox(_res, "doNotSaveCheck", true, "Do Not Save Data", new Point(5, 69), new Size(123, 19), margin: defCheckBoxPadding, tabIndex: 2);
-            wipeDataQuitCheck = new BaseCheckBox(_res, "wipeDataQuitCheck", true, "Wipe Data on Quit", new Point(5, 113), new Size(125, 19), margin: defCheckBoxPadding, tabIndex: 0);
-            resetSysDefsCheck = new BaseCheckBox(_res, "resetSysDefsCheck", true, "Reset To Sys Defaults on Quit", new Point(5, 157), new Size(187, 19), margin: defCheckBoxPadding, tabIndex: 3);
-            alwaysPGPCheck = new BaseCheckBox(_res, "alwaysPGPCheck", true, "Always Use PGP", new Point(5, 201), new Size(116, 19), margin: defCheckBoxPadding, tabIndex: 4);
-            sendRepEmailCheck = new BaseCheckBox(_res, "sendRepEmailCheck", true, "Send Reports to Email", new Point(5, 245), new Size(149, 19), margin: defCheckBoxPadding, tabIndex: 5);
-            forcePGPEmailCheck = new BaseCheckBox(_res, "forcePGPEmailCheck", true, "Force PGP in Email", new Point(277, 72), new Size(133, 19), margin: defCheckBoxPadding, tabIndex: 13);
+            helpBtn = new BaseButton(_res, "helpBtn", 15, visStyleBackColor: defVisStlye, point: new Point(494, 113), margin: defButtonPadding, size: new Size(70, 30), text: "Help!");
+            setEmailBtn = new BaseButton(_res, "setEmailBtn", 14, visStyleBackColor: defVisStlye, point: new Point(494, 24), margin: defButtonPadding, size: new Size(70, 29), text: "Set Email");
+            reloadStngsBtn = new BaseButton(_res, "reloadStngsBtn", 5, visStyleBackColor: defVisStlye, point: new Point(3, 90), margin: defButtonPadding, size: defButtonSize, text: "Reload Settings");
+            saveStngsBtn = new BaseButton(_res, "saveStngsBtn", 6, visStyleBackColor: defVisStlye, point: new Point(3, 50), margin: defButtonPadding, size: defButtonSize, text: "Save Settings");
+            loadStngsBtn = new BaseButton(_res, "loadStngsBtn", 7, visStyleBackColor: defVisStlye, point: new Point(3, 10), margin: defButtonPadding, size: defButtonSize, text: "Load Settings", anchor: anchorForBtn);
+            setUserinfoBtn = new BaseButton(_res, "setUserinfoBtn", 15, visStyleBackColor: defVisStlye, point: new Point(114, 251), margin: defButtonPadding, size: new Size(83, 29), text: "Set User Info");
+            useRecommBtn = new BaseButton(_res, "useRecommBtn", 8, visStyleBackColor: defVisStlye, point: new Point(3, 130), margin: defButtonPadding, size: defButtonSize, text: "Use Recommended");
+            addUserBtn = new BaseButton(_res, "addUserBtn", 9, visStyleBackColor: defVisStlye, point: new Point(3, 170), margin: defButtonPadding, size: defButtonSize, text: "Add User");
+            removeUserBtn = new BaseButton(_res, "removeUserBtn", 10, visStyleBackColor: defVisStlye, point: new Point(3, 210), margin: defButtonPadding, size: defButtonSize, text: "Remove User");
+            wipeAllnRemoveBtn = new BaseButton(_res, "wipeAllnRemoveBtn", 11, visStyleBackColor: defVisStlye, point: new Point(3, 250), margin: defButtonPadding, size: defButtonSize, text: "Wipe Everything");
+            autoLoginCheck = new BaseCheckBox(_res, "autoLoginCheck", 1, defVisStlye, "Log In Automatically", new Point(5, 25), new Size(135, 19), margin: defCheckBoxPadding);
+            doNotSaveCheck = new BaseCheckBox(_res, "doNotSaveCheck", 2, defVisStlye, "Do Not Save Data", new Point(5, 69), new Size(123, 19), margin: defCheckBoxPadding);
+            wipeDataQuitCheck = new BaseCheckBox(_res, "wipeDataQuitCheck", visStyleBackColor: defVisStlye, text: "Wipe Data on Quit", point: new Point(5, 113), size: new Size(125, 19), margin: defCheckBoxPadding);
+            resetSysDefsCheck = new BaseCheckBox(_res, "resetSysDefsCheck", 3, defVisStlye, "Reset To Sys Defaults on Quit", new Point(5, 157), new Size(187, 19), margin: defCheckBoxPadding);
+            alwaysPGPCheck = new BaseCheckBox(_res, "alwaysPGPCheck", 4, defVisStlye, "Always Use PGP", new Point(5, 201), new Size(116, 19), margin: defCheckBoxPadding);
+            sendRepEmailCheck = new BaseCheckBox(_res, "sendRepEmailCheck", 5, defVisStlye, "Send Reports to Email", new Point(5, 245), new Size(149, 19), margin: defCheckBoxPadding);
+            forcePGPEmailCheck = new BaseCheckBox(_res, "forcePGPEmailCheck", 13, defVisStlye, "Force PGP in Email", new Point(277, 72), new Size(133, 19), margin: defCheckBoxPadding);
             #endregion
 
             #region Panels
-            emailPnl = new BasePanel(_res, "emailPnl", new Control[] { helpBtn, setEmailBtn, forcePGPEmailCheck, emailAddConfTxtBox, emailAddConfLbl, emailAddTxtBox, emailAddLbl }, new Point(12, 342), new Size(573, 168), 13);
-            userinfoPnl = new BasePanel(_res, "userinfoPnl", new Control[] { setUserinfoBtn, gpgTxtBox, gpgLbl, passwordTxtBox, passwordLbl, usernameTxtBox, usernameLbl }, new Point(255, 12), new Size(207, 300), 1);
-            settingsBtnsPnl = new BaseFlowPanel(_res, new Control[] { loadStngsBtn, saveStngsBtn, reloadStngsBtn, useRecommBtn, addUserBtn, removeUserBtn, wipeAllnRemoveBtn }, new Point(453, 12), new Size(132, 300), "settingsBtnsPnl", 6, new object[] { BorderStyle.Fixed3D, default, AnchorStyles.Top });
-            checkBoxLayoutPnl = new BaseFlowPanel(_res, new Control[] { autoLoginCheck, doNotSaveCheck, wipeDataQuitCheck, resetSysDefsCheck, alwaysPGPCheck, sendRepEmailCheck }, new Point(12, 12), new Size(192, 300), "checkBoxLayoutPnl", 12, new object[] { BorderStyle.Fixed3D, default, AnchorStyles.Top });
+            emailPnl = new BasePanel(_res, "emailPnl", 13, new Control[] { helpBtn, setEmailBtn, forcePGPEmailCheck, emailAddConfTxtBox, emailAddConfLbl, emailAddTxtBox, emailAddLbl }, new Point(12, 342), new Size(573, 168));
+            userinfoPnl = new BasePanel(_res, "userinfoPnl", 1, new Control[] { setUserinfoBtn, gpgTxtBox, gpgLbl, passwordTxtBox, passwordLbl, usernameTxtBox, usernameLbl }, new Point(255, 12), new Size(207, 300));
+            settingsBtnsPnl = new BaseFlowPanel(_res, "settingsBtnsPnl", 6, new Control[] { loadStngsBtn, saveStngsBtn, reloadStngsBtn, useRecommBtn, addUserBtn, removeUserBtn, wipeAllnRemoveBtn }, new Point(453, 12), new Size(132, 300), BorderStyle.Fixed3D, anchor: AnchorStyles.Top);
+            checkBoxLayoutPnl = new BaseFlowPanel(_res, "checkBoxLayoutPnl", 12, new Control[] { autoLoginCheck, doNotSaveCheck, wipeDataQuitCheck, resetSysDefsCheck, alwaysPGPCheck, sendRepEmailCheck }, new Point(12, 12), new Size(192, 300), BorderStyle.Fixed3D, anchor: AnchorStyles.Top);
             #endregion
 
             SuspendLayout();
