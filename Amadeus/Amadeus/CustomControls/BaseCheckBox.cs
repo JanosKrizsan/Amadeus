@@ -6,7 +6,7 @@ namespace Amadeus.CustomControls
 {
     public class BaseCheckBox : CheckBox
     {
-        public BaseCheckBox(ComponentResourceManager res, string name, bool visStyleBackColor, string text, Point point, Size size, ContentAlignment alignText = default, ContentAlignment alignBox = default, Padding margin = default, int tabIndex = default)
+        public BaseCheckBox(ComponentResourceManager res, string name, int tabIndex = default, bool visStyleBackColor = default, string text = default, Point point = default, Size size = default, ContentAlignment alignText = default, ContentAlignment alignBox = default, Padding margin = default)
         {
             Name = name;
             Location = point;

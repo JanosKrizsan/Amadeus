@@ -6,7 +6,7 @@ namespace Amadeus.CustomControls
 {
     public class BaseRadioButton : RadioButton
     {
-        public BaseRadioButton(ComponentResourceManager res, string name, string text, int tabIndex, bool autoSize, Point point, Size size, bool tabStop, bool visualStyleCol)
+        public BaseRadioButton(ComponentResourceManager res, string name, int tabIndex = default, string text = default, bool autoSize = default, Point point = default, Size size = default, bool tabStop = default, bool visualStyleCol = default)
         {
             AutoSize = autoSize;
             Name = name;

@@ -47,13 +47,13 @@ namespace Amadeus.Forms
             var defComboSize = new Size(135, 21);
             var defPanelSize = new Size(150, 100);
 
-            selectConnBtn = new BaseButton(_res, "selectConnBtn", true, args: new object[] { null, new Point(60, 20), new Padding(60, 20, 0, 5), regularBtnSize, "Connect to Selected" });
-            selectEditBtn = new BaseButton(_res, "selectEditBtn", true, args: new object[] { null, new Point(60, 58), defaultButtonPadding, regularBtnSize, "Edit" });
-            selectRmvBtn = new BaseButton(_res, "selectRmvBtn", true, args: new object[] { null, new Point(60, 96), defaultButtonPadding, regularBtnSize, "Remove" });
-            vpnHelpBtn = new BaseButton(_res, "vpnHelpBtn", true, 3, new object[] { null, new Point(100, 139), new Padding(100, 15, 0, 5), regularBtnSize, "Help!" });
-            clearValsBtn = new BaseButton(_res, "clearValsBtn", true, 5, new object[] { null, new Point(132, 96), null, new Size(120, 23), "Clear Values" });
-            saveConnBtn = new BaseButton(_res, "saveConnBtn", true, 3, new object[] { null, new Point(74, 136), null, largeBtnSize, "Save and Connect" });
-            saveVpnNewBtn = new BaseButton(_res, "saveVpnNewBtn", true, 2, new object[] { null, new Point(), null, largeBtnSize, "Save New / Edited" });
+            selectConnBtn = new BaseButton(_res, "selectConnBtn", true, args: new object[] { default, new Point(60, 20), new Padding(60, 20, 0, 5), regularBtnSize, "Connect to Selected" });
+            selectEditBtn = new BaseButton(_res, "selectEditBtn", true, args: new object[] { default, new Point(60, 58), defaultButtonPadding, regularBtnSize, "Edit" });
+            selectRmvBtn = new BaseButton(_res, "selectRmvBtn", true, args: new object[] { default, new Point(60, 96), defaultButtonPadding, regularBtnSize, "Remove" });
+            vpnHelpBtn = new BaseButton(_res, "vpnHelpBtn", true, 3, new object[] { default, new Point(100, 139), new Padding(100, 15, 0, 5), regularBtnSize, "Help!" });
+            clearValsBtn = new BaseButton(_res, "clearValsBtn", true, 5, new object[] { default, new Point(132, 96), default, new Size(120, 23), "Clear Values" });
+            saveConnBtn = new BaseButton(_res, "saveConnBtn", true, 3, new object[] { default, new Point(74, 136), default, largeBtnSize, "Save and Connect" });
+            saveVpnNewBtn = new BaseButton(_res, "saveVpnNewBtn", true, 2, new object[] { default, new Point(), default, largeBtnSize, "Save New / Edited" });
             vpnsTxtBox = new BaseTextBox(_res, "vpnsTxtBox", 1, defTxtBoxPoint, defTxtBoxSize);
             vpnNameTxtBox = new BaseTextBox(_res, "vpnNameTxtBox", 1, defTxtBoxPoint, defTxtBoxSize);
             selectedInfoTxtBox = new BaseRichTextBox(_res, "selectedInfoTxtBox", 1, SystemColors.MenuText, Color.YellowGreen, new Point(6, 31), new Size(212, 134));
@@ -74,7 +74,7 @@ namespace Amadeus.Forms
 
             #region Panels
             bottomInfosPnl = new BaseFlowPanel(_res, new Control[] { currOpersPnl, currInfoPnl, currPnl }, new Point(12, 335), new Size(590, 175), "bottomInfosPnl", 2, BorderStyle.Fixed3D);
-            currOpersPnl = new BaseFlowPanel(_res, new Control[] { selectConnBtn, selectEditBtn, selectRmvBtn, vpnHelpBtn }, new Point(383, 3), new Size(200, 170), "currOpersPnl", 6, new object[] { null, FlowDirection.TopDown });
+            currOpersPnl = new BaseFlowPanel(_res, new Control[] { selectConnBtn, selectEditBtn, selectRmvBtn, vpnHelpBtn }, new Point(383, 3), new Size(200, 170), "currOpersPnl", 6, new object[] { default, FlowDirection.TopDown });
             vpnSettingsPnl = new BaseFlowPanel(_res, new Control[] { namePnl, addressPnl, tunnelPnl, encryptionPnl, authPnl, btnsTopPnl }, new Point(12, 12), new Size(590, 306), "vpnSettingsPnl", 3);
             currInfoPnl = new BasePanel(_res, "currInfoPnl", new Control[] { selectedInfoTxtBox, selectedsLbl }, new Point(150, 3), new Size(231, 170), 5);
             currPnl = new BasePanel(_res, "currPnl", new Control[] { currentVpnsComBox, currentVpnsLbl }, new Point(3, 3), new Size(150, 170), 4);

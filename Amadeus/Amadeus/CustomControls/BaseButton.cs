@@ -6,15 +6,15 @@ namespace Amadeus.CustomControls
 {
     public class BaseButton : Button
     {
-        public BaseButton(ComponentResourceManager res, string name, bool visStyleBackColor, int tabIndex = 0, params object[] args)
+        public BaseButton(ComponentResourceManager res, string name, int tabIndex = default, Color backColor = default, Point point = default, Padding margin = default, Size size = default, string text = default, DockStyle dock = default, AnchorStyles anchor = default, bool visStyleBackColor = default)
         {
-            BackColor = (Color)args[0];
-            Location = (Point)args[1];
-            Margin = (Padding)args[2];
-            Size = (Size)args[3];
-            Text = (string)args[4];
-            Dock = (DockStyle)args[5];
-            Anchor = (AnchorStyles)args[6];
+            BackColor = backColor;
+            Location = point;
+            Margin = margin;
+            Size = size;
+            Text = text;
+            Dock = dock;
+            Anchor = anchor;
             TabIndex = tabIndex;
             Name = name;
             UseVisualStyleBackColor = visStyleBackColor;

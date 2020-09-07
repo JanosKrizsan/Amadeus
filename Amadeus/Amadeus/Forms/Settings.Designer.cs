@@ -53,16 +53,16 @@ namespace Amadeus.Forms
             passwordLbl = new BaseLabel(_res, "passwordLbl", 6, new Point(3, 90), new Size(79, 18), "Password:", autoSize: true);
             emailAddConfLbl = new BaseLabel(_res, "emailAddConfLbl", 11, new Point(2, 92), new Size(65, 18), "Confirm:", autoSize: true);
             emailAddLbl = new BaseLabel(_res, "emailAddLbl", 10, new Point(3, 12), new Size(147, 18), "Your E-Mail Address:", autoSize: true);
-            helpBtn = new BaseButton(_res, "helpBtn", true, 15, new object[] { null, new Point(494, 113), defButtonPadding, new Size(70, 30), "Help!" });
-            setEmailBtn = new BaseButton(_res, "setEmailBtn", true, 14, new object[] { null, new Point(494, 24), defButtonPadding, new Size(70, 29), "Set Email" });
-            reloadStngsBtn = new BaseButton(_res, "reloadStngsBtn", true, 5, new object[] { null, new Point(3, 90), defButtonPadding, defButtonSize, "Reload Settings" });
-            saveStngsBtn = new BaseButton(_res, "saveStngsBtn", true, 6, new object[] { null, new Point(3, 50), defButtonPadding, defButtonSize, "Save Settings" });
-            loadStngsBtn = new BaseButton(_res, "loadStngsBtn", true, 7, new object[] { null, new Point(3, 10), defButtonPadding, defButtonSize, "Load Settings", null, anchorForBtn });
-            setUserinfoBtn = new BaseButton(_res, "setUserinfoBtn", true, 15, new object[] { null, new Point(114, 251), defButtonPadding, new Size(83, 29), "Set User Info" });
-            useRecommBtn = new BaseButton(_res, "useRecommBtn", true, 8, new object[] { null, new Point(3, 130), defButtonPadding, defButtonSize, "Use Recommended" });
-            addUserBtn = new BaseButton(_res, "addUserBtn", true, 9, new object[] { null, new Point(3, 170), defButtonPadding, defButtonSize, "Add User" });
-            removeUserBtn = new BaseButton(_res, "removeUserBtn", true, 10, new object[] { null, new Point(3, 210), defButtonPadding, defButtonSize, "Remove User" });
-            wipeAllnRemoveBtn = new BaseButton(_res, "wipeAllnRemoveBtn", true, 11, new object[] { null, new Point(3, 250), defButtonPadding, defButtonSize, "Wipe Everything" });
+            helpBtn = new BaseButton(_res, "helpBtn", true, 15, new object[] { default, new Point(494, 113), defButtonPadding, new Size(70, 30), "Help!" });
+            setEmailBtn = new BaseButton(_res, "setEmailBtn", true, 14, new object[] { default, new Point(494, 24), defButtonPadding, new Size(70, 29), "Set Email" });
+            reloadStngsBtn = new BaseButton(_res, "reloadStngsBtn", true, 5, new object[] { default, new Point(3, 90), defButtonPadding, defButtonSize, "Reload Settings" });
+            saveStngsBtn = new BaseButton(_res, "saveStngsBtn", true, 6, new object[] { default, new Point(3, 50), defButtonPadding, defButtonSize, "Save Settings" });
+            loadStngsBtn = new BaseButton(_res, "loadStngsBtn", true, 7, new object[] { default, new Point(3, 10), defButtonPadding, defButtonSize, "Load Settings", default, anchorForBtn });
+            setUserinfoBtn = new BaseButton(_res, "setUserinfoBtn", true, 15, new object[] { default, new Point(114, 251), defButtonPadding, new Size(83, 29), "Set User Info" });
+            useRecommBtn = new BaseButton(_res, "useRecommBtn", true, 8, new object[] { default, new Point(3, 130), defButtonPadding, defButtonSize, "Use Recommended" });
+            addUserBtn = new BaseButton(_res, "addUserBtn", true, 9, new object[] { default, new Point(3, 170), defButtonPadding, defButtonSize, "Add User" });
+            removeUserBtn = new BaseButton(_res, "removeUserBtn", true, 10, new object[] { default, new Point(3, 210), defButtonPadding, defButtonSize, "Remove User" });
+            wipeAllnRemoveBtn = new BaseButton(_res, "wipeAllnRemoveBtn", true, 11, new object[] { default, new Point(3, 250), defButtonPadding, defButtonSize, "Wipe Everything" });
             autoLoginCheck = new BaseCheckBox(_res, "autoLoginCheck", true, "Log In Automatically", new Point(5, 25), new Size(135, 19), margin: defCheckBoxPadding, tabIndex: 1);
             doNotSaveCheck = new BaseCheckBox(_res, "doNotSaveCheck", true, "Do Not Save Data", new Point(5, 69), new Size(123, 19), margin: defCheckBoxPadding, tabIndex: 2);
             wipeDataQuitCheck = new BaseCheckBox(_res, "wipeDataQuitCheck", true, "Wipe Data on Quit", new Point(5, 113), new Size(125, 19), margin: defCheckBoxPadding, tabIndex: 0);
@@ -75,8 +75,8 @@ namespace Amadeus.Forms
             #region Panels
             emailPnl = new BasePanel(_res, "emailPnl", new Control[] { helpBtn, setEmailBtn, forcePGPEmailCheck, emailAddConfTxtBox, emailAddConfLbl, emailAddTxtBox, emailAddLbl }, new Point(12, 342), new Size(573, 168), 13);
             userinfoPnl = new BasePanel(_res, "userinfoPnl", new Control[] { setUserinfoBtn, gpgTxtBox, gpgLbl, passwordTxtBox, passwordLbl, usernameTxtBox, usernameLbl }, new Point(255, 12), new Size(207, 300), 1);
-            settingsBtnsPnl = new BaseFlowPanel(_res, new Control[] { loadStngsBtn, saveStngsBtn, reloadStngsBtn, useRecommBtn, addUserBtn, removeUserBtn, wipeAllnRemoveBtn }, new Point(453, 12), new Size(132, 300), "settingsBtnsPnl", 6, new object[] { BorderStyle.Fixed3D, null, AnchorStyles.Top });
-            checkBoxLayoutPnl = new BaseFlowPanel(_res, new Control[] { autoLoginCheck, doNotSaveCheck, wipeDataQuitCheck, resetSysDefsCheck, alwaysPGPCheck, sendRepEmailCheck }, new Point(12, 12), new Size(192, 300), "checkBoxLayoutPnl", 12, new object[] { BorderStyle.Fixed3D, null, AnchorStyles.Top });
+            settingsBtnsPnl = new BaseFlowPanel(_res, new Control[] { loadStngsBtn, saveStngsBtn, reloadStngsBtn, useRecommBtn, addUserBtn, removeUserBtn, wipeAllnRemoveBtn }, new Point(453, 12), new Size(132, 300), "settingsBtnsPnl", 6, new object[] { BorderStyle.Fixed3D, default, AnchorStyles.Top });
+            checkBoxLayoutPnl = new BaseFlowPanel(_res, new Control[] { autoLoginCheck, doNotSaveCheck, wipeDataQuitCheck, resetSysDefsCheck, alwaysPGPCheck, sendRepEmailCheck }, new Point(12, 12), new Size(192, 300), "checkBoxLayoutPnl", 12, new object[] { BorderStyle.Fixed3D, default, AnchorStyles.Top });
             #endregion
 
             SuspendLayout();

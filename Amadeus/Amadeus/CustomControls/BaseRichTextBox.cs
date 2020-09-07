@@ -7,7 +7,7 @@ namespace Amadeus.CustomControls
 {
     class BaseRichTextBox : RichTextBox
     {
-        public BaseRichTextBox(ComponentResourceManager res, string name, int tabIndex, Color backColor, Color frontColor, Point point, Size size, Padding margin = default)
+        public BaseRichTextBox(ComponentResourceManager res, string name, int tabIndex = default, Color backColor = default, Color frontColor = default, Point point = default, Size size = default, Padding margin = default)
         {
             BackColor = backColor;
             ForeColor = frontColor;

@@ -6,18 +6,18 @@ namespace Amadeus.CustomControls
 {
     class BaseListBox : ListBox
     {
-        public BaseListBox(ComponentResourceManager res, string name, bool formatting, bool scrollAlwaysVisible, int tabIndex = default, params object[] args)
+        public BaseListBox(ComponentResourceManager res, string name, int tabIndex = default, bool formatting = default, bool scrollAlwaysVisible = default, Color backColor = default, Color foreColor = default, Point point = default, Size size = default, int itemHeight = default, SelectionMode selMode = default)
         {
             Name = name;
             FormattingEnabled = formatting;
             ScrollAlwaysVisible = scrollAlwaysVisible;
             TabIndex = tabIndex;
-            BackColor = (Color)args[0];
-            ForeColor = (Color)args[1];
-            Location = (Point)args[2];
-            Size = (Size)args[3];
-            ItemHeight = (int)args[4];
-            SelectionMode = (SelectionMode)args[5];
+            BackColor = backColor;
+            ForeColor = foreColor;
+            Location = point;
+            Size = size;
+            ItemHeight = itemHeight;
+            SelectionMode = selMode;
             res.ApplyResources(this, name);
         }
     }

@@ -35,18 +35,18 @@ namespace Amadeus
         void InitializeComponent()
         {
             #region Controls
-            loginButton = new BaseButton(_res, "loginButton", false, args: new object[] { Color.YellowGreen });
-            registerButton = new BaseButton(_res, "registerButton", false, args: new object[] { Color.DarkTurquoise });
-            quitButton = new BaseButton(_res, "quitButton", false, args: new object[] { Color.Violet });
-            saveUserInfoChckBox = new BaseCheckBox(_res, "saveUserInfoChkBox", true, "Save User Info", ContentAlignment.MiddleCenter, ContentAlignment.MiddleLeft);
+            loginButton = new BaseButton(_res, "loginButton", backColor: Color.YellowGreen);
+            registerButton = new BaseButton(_res, "registerButton", backColor: Color.DarkTurquoise);
+            quitButton = new BaseButton(_res, "quitButton", backColor: Color.Violet);
+            saveUserInfoChckBox = new BaseCheckBox(_res, "saveUserInfoChkBox", visStyleBackColor: true, text: "Save User Info", alignText: ContentAlignment.MiddleCenter, alignBox: ContentAlignment.MiddleLeft);
             usersSavedBox = new BaseComboBox(_res, "usersSavedBox");
             passwordTxtBox = new BaseTextBox(_res, "passwordTxtBox");
             usernameTxtBox = new BaseTextBox(_res, "usernameTxtBox");
             #endregion
 
             #region Panels
-            loginBottomPanel = new BasePanel(_res, "loginBottomPanel", new[] { loginButton, quitButton, registerButton });
-            loginTopPanel = new BasePanel(_res, "loginTopPanel", new Control[] { saveUserInfoChckBox, passwordTxtBox, usernameTxtBox, usersSavedBox });
+            loginBottomPanel = new BasePanel(_res, "loginBottomPanel", controls: new Control[] { loginButton, quitButton, registerButton });
+            loginTopPanel = new BasePanel(_res, "loginTopPanel", controls: new Control[] { saveUserInfoChckBox, passwordTxtBox, usernameTxtBox, usersSavedBox });
             #endregion
 
             SuspendLayout();
