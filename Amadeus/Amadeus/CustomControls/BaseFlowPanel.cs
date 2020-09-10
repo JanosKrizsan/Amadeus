@@ -19,7 +19,7 @@ namespace Amadeus.CustomControls
             BorderStyle = borderStyle;
             FlowDirection = flow;
             Anchor = anchor;
-            Dock = dockStyle;
+            Dock = dock;
             SuspendLayout();
             res.ApplyResources(this, name);
         }
