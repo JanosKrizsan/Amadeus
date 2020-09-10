@@ -1,5 +1,7 @@
 ﻿using Amadeus.CustomControls;
 using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Amadeus.Forms
 {
@@ -33,20 +35,27 @@ namespace Amadeus.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            mainMenuBtn = new BaseButton();
-            settingsBtn = new BaseButton();
-            proxyBtn = new BaseButton();
-            vpnBtn = new BaseButton();
-            rdpBtn = new BaseButton();
-            ipBtn = new BaseButton();
-            macBtn = new BaseButton();
-            syslangBtn = new BaseButton();
-            logoutBtn = new BaseButton();
-            quitBtn = new BaseButton();
+            #region Controls
+            var defBtnSize = new Size(150, 30);
+            var defBtnMargin = new Padding(0, 25, 0, 0);
 
-            viewPanel = new BasePanel();
-            mainMenuSelectPanel = new BaseFlowPanel();
+            mainMenuBtn = new BaseButton(_res, "mainMenuBtn", 0, point: new Point(0, 25), size: defBtnSize, text: "Main Menu", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            settingsBtn = new BaseButton(_res, "settingsBtn", 1, point: new Point(0, 80), size: defBtnSize, text: "Settings", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            proxyBtn = new BaseButton(_res, "proxyBtn", 2, point: new Point(0, 135), size: defBtnSize, text: "Proxy", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            vpnBtn = new BaseButton(_res, "vpnBtn", 3, point: new Point(0, 190), size: defBtnSize, text: "VPN", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            rdpBtn = new BaseButton(_res, "rdpBtn", 4, point: new Point(0, 245), size: defBtnSize, text: "RDP", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            ipBtn = new BaseButton(_res, "ipBtn", 5, point: new Point(0, 300), size: defBtnSize, text: "IP Address", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            macBtn = new BaseButton(_res, "macBtn", 6, point: new Point(0, 355), size: defBtnSize, text: "MAC Address", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            sysLangBtn = new BaseButton(_res, "sysLangBtn", 7, point: new Point(0, 410), size: defBtnSize, text: "System Language", visStyleBackColor: true, margin: defBtnMargin, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            logoutBtn = new BaseButton(_res, "logoutBtn", 8, point: new Point(0, 500), size: defBtnSize, text: "Log Out", visStyleBackColor: true, margin: new Padding(0, 60, 0, 0), anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            quitBtn = new BaseButton(_res, "quitBtn", 9, point: new Point(0, 530), size: defBtnSize, text: "Quit", visStyleBackColor: true, anchor: AnchorStyles.Top, flat: FlatStyle.Flat);
+            #endregion
 
+            #region Panels
+            viewPanel = new BasePanel(_res, "viewPanel", 1, point: new Point(153, 0), size: new Size(632, 561), backColor: Color.Gainsboro);
+            mainMenuSelectPnl = new BaseFlowPanel(_res, "mainMenuSelectPnl", 0, new Control[] { mainMenuBtn, settingsBtn, proxyBtn, vpnBtn, rdpBtn, ipBtn, macBtn, sysLangBtn, logoutBtn, quitBtn },
+                new Point(0, 0), new Size(150, 561), dock: DockStyle.Left, flow: FlowDirection.TopDown);
+            #endregion
 
             SuspendLayout();
             InitSelectionScreen();
@@ -60,177 +69,17 @@ namespace Amadeus.Forms
             ClientSize = new System.Drawing.Size(784, 561);
             ControlBox = false;
             Controls.Add(viewPanel);
-            Controls.Add(mainMenuSelectPanel);
+            Controls.Add(mainMenuSelectPnl);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Name = "SelectionScreen";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "SelectionScreen";
-            mainMenuSelectPanel.ResumeLayout(false);
+            mainMenuSelectPnl.ResumeLayout(false);
             ResumeLayout(false);
         }
-
-        private void InitviewPanel()
-        {
-            viewPanel.BackColor = System.Drawing.Color.Gainsboro;
-            viewPanel.Location = new System.Drawing.Point(153, 0);
-            viewPanel.Name = "viewPanel";
-            viewPanel.Size = new System.Drawing.Size(632, 561);
-            viewPanel.TabIndex = 1;
-        }
-
-        private void InitquitBtn()
-        {
-            quitBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            quitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            quitBtn.Location = new System.Drawing.Point(0, 530);
-            quitBtn.Margin = new System.Windows.Forms.Padding(0);
-            quitBtn.Name = "quitBtn";
-            quitBtn.Size = new System.Drawing.Size(150, 30);
-            quitBtn.TabIndex = 9;
-            quitBtn.Text = "Quit";
-            quitBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitlogoutBtn()
-        {
-            logoutBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            logoutBtn.Location = new System.Drawing.Point(0, 500);
-            logoutBtn.Margin = new System.Windows.Forms.Padding(0, 60, 0, 0);
-            logoutBtn.Name = "logoutBtn";
-            logoutBtn.Size = new System.Drawing.Size(150, 30);
-            logoutBtn.TabIndex = 8;
-            logoutBtn.Text = "Log Out";
-            logoutBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitsyslangBtn()
-        {
-            syslangBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            syslangBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            syslangBtn.Location = new System.Drawing.Point(0, 410);
-            syslangBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            syslangBtn.Name = "syslangBtn";
-            syslangBtn.Size = new System.Drawing.Size(150, 30);
-            syslangBtn.TabIndex = 7;
-            syslangBtn.Text = "System Language";
-            syslangBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitmacBtn()
-        {
-            macBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            macBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            macBtn.Location = new System.Drawing.Point(0, 355);
-            macBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            macBtn.Name = "macBtn";
-            macBtn.Size = new System.Drawing.Size(150, 30);
-            macBtn.TabIndex = 6;
-            macBtn.Text = "MAC Address";
-            macBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitipBtn()
-        {
-            ipBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            ipBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            ipBtn.Location = new System.Drawing.Point(0, 300);
-            ipBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            ipBtn.Name = "ipBtn";
-            ipBtn.Size = new System.Drawing.Size(150, 30);
-            ipBtn.TabIndex = 5;
-            ipBtn.Text = "IP Address";
-            ipBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitrdpBtn()
-        {
-            rdpBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            rdpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            rdpBtn.Location = new System.Drawing.Point(0, 245);
-            rdpBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            rdpBtn.Name = "rdpBtn";
-            rdpBtn.Size = new System.Drawing.Size(150, 30);
-            rdpBtn.TabIndex = 4;
-            rdpBtn.Text = "RDP";
-            rdpBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitvpnBtn()
-        {
-            vpnBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            vpnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            vpnBtn.Location = new System.Drawing.Point(0, 190);
-            vpnBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            vpnBtn.Name = "vpnBtn";
-            vpnBtn.Size = new System.Drawing.Size(150, 30);
-            vpnBtn.TabIndex = 3;
-            vpnBtn.Text = "VPN";
-            vpnBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitproxyBtn()
-        {
-            proxyBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            proxyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            proxyBtn.Location = new System.Drawing.Point(0, 135);
-            proxyBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            proxyBtn.Name = "proxyBtn";
-            proxyBtn.Size = new System.Drawing.Size(150, 30);
-            proxyBtn.TabIndex = 2;
-            proxyBtn.Text = "Proxy";
-            proxyBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitsettingsBtn()
-        {
-            settingsBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            settingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            settingsBtn.Location = new System.Drawing.Point(0, 80);
-            settingsBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            settingsBtn.Name = "settingsBtn";
-            settingsBtn.Size = new System.Drawing.Size(150, 30);
-            settingsBtn.TabIndex = 1;
-            settingsBtn.Text = "Settings";
-            settingsBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitmainMenuBtn()
-        {
-            mainMenuBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            mainMenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            mainMenuBtn.Location = new System.Drawing.Point(0, 25);
-            mainMenuBtn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
-            mainMenuBtn.Name = "mainMenuBtn";
-            mainMenuBtn.Size = new System.Drawing.Size(150, 30);
-            mainMenuBtn.TabIndex = 0;
-            mainMenuBtn.Text = "Main Menu";
-            mainMenuBtn.UseVisualStyleBackColor = true;
-        }
-
-        private void InitmainMenuSelectPanel()
-        {
-            mainMenuSelectPanel.Controls.Add(mainMenuBtn);
-            mainMenuSelectPanel.Controls.Add(settingsBtn);
-            mainMenuSelectPanel.Controls.Add(proxyBtn);
-            mainMenuSelectPanel.Controls.Add(vpnBtn);
-            mainMenuSelectPanel.Controls.Add(rdpBtn);
-            mainMenuSelectPanel.Controls.Add(ipBtn);
-            mainMenuSelectPanel.Controls.Add(macBtn);
-            mainMenuSelectPanel.Controls.Add(syslangBtn);
-            mainMenuSelectPanel.Controls.Add(logoutBtn);
-            mainMenuSelectPanel.Controls.Add(quitBtn);
-            mainMenuSelectPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            mainMenuSelectPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            mainMenuSelectPanel.Location = new System.Drawing.Point(0, 0);
-            mainMenuSelectPanel.Name = "mainMenuSelectPanel";
-            mainMenuSelectPanel.Size = new System.Drawing.Size(150, 561);
-            mainMenuSelectPanel.TabIndex = 0;
-        }
-
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel mainMenuSelectPanel;
+        private System.Windows.Forms.FlowLayoutPanel mainMenuSelectPnl;
         private System.Windows.Forms.Button mainMenuBtn;
         private System.Windows.Forms.Button settingsBtn;
         private System.Windows.Forms.Button proxyBtn;
@@ -238,7 +87,7 @@ namespace Amadeus.Forms
         private System.Windows.Forms.Button rdpBtn;
         private System.Windows.Forms.Button ipBtn;
         private System.Windows.Forms.Button macBtn;
-        private System.Windows.Forms.Button syslangBtn;
+        private System.Windows.Forms.Button sysLangBtn;
         private System.Windows.Forms.Button logoutBtn;
         private System.Windows.Forms.Button quitBtn;
         private System.Windows.Forms.Panel viewPanel;

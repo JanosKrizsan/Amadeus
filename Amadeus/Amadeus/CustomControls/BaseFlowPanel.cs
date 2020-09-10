@@ -6,7 +6,7 @@ namespace Amadeus.CustomControls
 {
     class BaseFlowPanel : FlowLayoutPanel
     {
-        public BaseFlowPanel(ComponentResourceManager res, string name, int tabIndex = default, Control[] controls = default, Point point = default, Size size = default, BorderStyle borderStyle = default, FlowDirection flow = default, AnchorStyles anchor = default)
+        public BaseFlowPanel(ComponentResourceManager res, string name, int tabIndex = default, Control[] controls = default, Point point = default, Size size = default, BorderStyle borderStyle = default, FlowDirection flow = default, AnchorStyles anchor = default, DockStyle dock = default)
         {
             foreach (var ctrl in controls)
             {
@@ -19,6 +19,7 @@ namespace Amadeus.CustomControls
             BorderStyle = borderStyle;
             FlowDirection = flow;
             Anchor = anchor;
+            Dock = dockStyle;
             SuspendLayout();
             res.ApplyResources(this, name);
         }
