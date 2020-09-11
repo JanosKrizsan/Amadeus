@@ -4,33 +4,29 @@
 
 ## What is this
 
-A handy tool to access anonimizing settings within the Win. Environment.
+A C# WinForms app that could use the PS scripts included. Partial implementation, this is a project to showcase a possible WinForms MVP structure.
+This showcase-project is now deemed finished by the author.
 
 ## Tech Used
 - PS
 - C#
-- C++ (maybe)
 - WinForms
 
-## Structure and Features
+## Structure
 
 ### PS Scripts
 These are ran via C#:<br>
 The C# desktop app runs various PS scripts to change states, connect to services and apply changes to the environment.
-- Connect to VPN 🟢
-- Connect to Proxy 🟢
-- Connect to RDP 🟢
-- Spoof Mac Address 🟢
-- Change Sys Language 🟢
-- Change IP 🟢
-
-Additional Must Have:<br>
-- Need to update scripts in order to confirm to Winforms panels
-- Additional supplementary scripts might be required to ease the editing
+- Connect to VPN 
+- Connect to Proxy
+- Connect to RDP
+- Spoof Mac Address
+- Change Sys Language
+- Change IP
 
 Additional:<br>
-- Force scripts to run in elevated mode 🟢
-- Notification of system language and location language 🟢
+- Force scripts to run in elevated mode
+- Notification of system language and location language
 - Password choices, encrypted saving
 - PS scripts are protected
 
@@ -43,6 +39,7 @@ Additional:<br>
 
 ### WinForms
 - Understanding is 80% of the battle here
+- Refactored Designer code
 
 #### Windows
 Login / Register:<br>
@@ -82,22 +79,18 @@ Positives:<br>
 
 Note: I could structure it within a tab controller but I'm not really sure that would be the best application-design for this. It might become too beefy due to that and less clear.
 
-## Usage
-
-1. Download the release and run the executable as Administrator
-2. Check Whoer.net to see your changes
-3. Be happy and rejoice
-
-This readme will be updated consistently.
-
 ## Development and Testing
 
 ### Development
  - In VS Community and VS Code
  - Separation of parts in Version Control
+ - Refactoring of the designer generated code
+ 
+ Note:<br>
+ The refactoring the designer generated code is not advised normally, as it might cause non-errors to appear. Either better to write the WinForms code yourself, or rely on the designer to do so.
  
 ### Testing
- - Will either need a VM or an RDP to test functions without making my laptop useless
+ - Will either need a VM or an RDP to test the scripts without rendering your computer useless
 
 ## Resources / Info / Documentation
 
