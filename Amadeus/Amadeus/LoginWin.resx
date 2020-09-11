@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="stayLoggedInChck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 7</value>
+    <value>3, 7</value>
   </data>
   <data name="stayLoggedInChck.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 17</value>
@@ -291,9 +291,6 @@
   <data name="passwordTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="passwordTxtBox.Text" xml:space="preserve">
-    <value>Password...</value>
-  </data>
   <data name="passwordTxtBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -317,9 +314,6 @@
   </data>
   <data name="usernameTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="usernameTxtBox.Text" xml:space="preserve">
-    <value>Username...</value>
   </data>
   <data name="usernameTxtBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
