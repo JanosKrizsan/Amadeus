@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B5F7993-8204-49F4-84DB-87546358E2D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Amadeus</RootNamespace>
+    <AssemblyName>Amadeus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=15.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>packages\CsvHelper.15.0.5\lib\net47\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\WindowsFormsApp1\packages\Microsoft.PowerShell.5.ReferenceAssemblies.1.1.0\lib\net4\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControls\BaseProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseFlowPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BasePicBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BaseTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InfoStructs\IPInfo.cs" />
+    <Compile Include="InfoStructs\MacInfo.cs" />
+    <Compile Include="InfoStructs\ProxyInfo.cs" />
+    <Compile Include="InfoStructs\RdpInfo.cs" />
+    <Compile Include="InfoStructs\ReportInfo.cs" />
+    <Compile Include="InfoStructs\ScriptInfo.cs" />
+    <Compile Include="InfoStructs\VpnInfo.cs" />
+    <Compile Include="InterfacesForModels\ILoginMod.cs" />
+    <Compile Include="InterfacesForModels\IMacMod.cs" />
+    <Compile Include="InterfacesForModels\IMainMenuMod.cs" />
+    <Compile Include="InterfacesForModels\IMainMenuSubMod.cs" />
+    <Compile Include="InterfacesForModels\ICommonModel.cs" />
+    <Compile Include="InterfacesForModels\IVpnMod.cs" />
+    <Compile Include="InterfacesForModels\ISysLanguageMod.cs" />
+    <Compile Include="InterfacesForModels\ISettingsMod.cs" />
+    <Compile Include="InterfacesForModels\IRdpMod.cs" />
+    <Compile Include="InterfacesForModels\IProxyMod.cs" />
+    <Compile Include="InterfacesForModels\IIpMod.cs" />
+    <Compile Include="InterfacesForPresenters\IIPPres.cs" />
+    <Compile Include="InterfacesForPresenters\ILoginPres.cs" />
+    <Compile Include="InterfacesForPresenters\IMacPres.cs" />
+    <Compile Include="InterfacesForPresenters\IMainMenuPres.cs" />
+    <Compile Include="InterfacesForPresenters\IMainMenuSubPres.cs" />
+    <Compile Include="InterfacesForPresenters\ICommonPres.cs" />
+    <Compile Include="InterfacesForPresenters\IProxyPres.cs" />
+    <Compile Include="InterfacesForPresenters\IRdpPres.cs" />
+    <Compile Include="InterfacesForPresenters\ISettingsPres.cs" />
+    <Compile Include="InterfacesForPresenters\ISysLangPres.cs" />
+    <Compile Include="InterfacesForPresenters\IVpnPres.cs" />
+    <Compile Include="InterfacesForUtilities\IDataScriptHandler.cs" />
+    <Compile Include="InterfacesForUtilities\IPGPEncryptionHandler.cs" />
+    <Compile Include="InterfacesForUtilities\IFileHandler.cs" />
+    <Compile Include="InterfacesForUtilities\IHelperFunctions.cs" />
+    <Compile Include="InterfacesForUtilities\IMailHandler.cs" />
+    <Compile Include="InterfacesForViews\ICommonView.cs" />
+    <Compile Include="InterfacesForViews\ISettingsView.cs" />
+    <Compile Include="InterfacesForViews\IMacAddressView.cs" />
+    <Compile Include="InterfacesForViews\IMainMenuView.cs" />
+    <Compile Include="InterfacesForViews\IMainMenuSubView.cs" />
+    <Compile Include="InterfacesForViews\IProxyView.cs" />
+    <Compile Include="InterfacesForViews\ISysLanguageView.cs" />
+    <Compile Include="InterfacesForViews\IRdpView.cs" />
+    <Compile Include="InterfacesForViews\IIpAddressView.cs" />
+    <Compile Include="InterfacesForViews\IVpnView.cs" />
+    <Compile Include="InterfacesForViews\ILoginWinView.cs" />
+    <Compile Include="LoginWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWin.Designer.cs">
+      <DependentUpon>LoginWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.cs" />
+    <Compile Include="Models\CommonModel.cs" />
+    <Compile Include="Models\MainMenuSubModel.cs" />
+    <Compile Include="Models\MainMenuModel.cs" />
+    <Compile Include="Models\SettingsModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\VpnModel.cs" />
+    <Compile Include="Models\SysLanguageModel.cs" />
+    <Compile Include="Models\RdpModel.cs" />
+    <Compile Include="Models\ProxyModel.cs" />
+    <Compile Include="Models\MacModel.cs" />
+    <Compile Include="Models\IPModel.cs" />
+    <Compile Include="Presenters\CommonPresenter.cs" />
+    <Compile Include="Presenters\MainMenuSubPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presenters\IPPresenter.cs" />
+    <Compile Include="Presenters\LoginPresenter.cs" />
+    <Compile Include="Presenters\MacPresenter.cs" />
+    <Compile Include="Presenters\MainMenuPresenter.cs" />
+    <Compile Include="Presenters\SettingsPresenter.cs" />
+    <Compile Include="Presenters\ProxyPresenter.cs" />
+    <Compile Include="Presenters\RdpPresenter.cs" />
+    <Compile Include="Presenters\SysLangPresenter.cs" />
+    <Compile Include="Presenters\VpnPresenter.cs" />
+    <Compile Include="Forms\IPAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IPAddress.Designer.cs">
+      <DependentUpon>IPAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MacAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MacAddress.Designer.cs">
+      <DependentUpon>MacAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenuSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenuSub.Designer.cs">
+      <DependentUpon>MainMenuSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rdp.Designer.cs">
+      <DependentUpon>Rdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proxy.Designer.cs">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SysLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SysLanguage.Designer.cs">
+      <DependentUpon>SysLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Vpn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Vpn.Designer.cs">
+      <DependentUpon>Vpn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\TypeHolder.cs" />
+    <Compile Include="Utilities\DataScriptHandler.cs" />
+    <Compile Include="Utilities\PgpEncryptionHandler.cs" />
+    <Compile Include="Utilities\FileHandler.cs" />
+    <Compile Include="InfoStructs\UserInfo.cs" />
+    <Compile Include="Utilities\MailHandler.cs" />
+    <Compile Include="Views\CommonView.cs" />
+    <Compile Include="Views\IPAddressView.cs" />
+    <Compile Include="Views\LoginWinView.cs" />
+    <Compile Include="Views\MacAddressView.cs" />
+    <Compile Include="Views\MainMenuView.cs" />
+    <Compile Include="Views\MainMenuSubView.cs" />
+    <Compile Include="Views\ProxyView.cs" />
+    <Compile Include="Views\RdpView.cs" />
+    <Compile Include="Views\SettingsView.cs" />
+    <Compile Include="Views\SysLangView.cs" />
+    <Compile Include="Views\VpnView.cs" />
+    <EmbeddedResource Include="LoginWin.resx">
+      <DependentUpon>LoginWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\IPAddress.resx">
+      <DependentUpon>IPAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MacAddress.resx">
+      <DependentUpon>MacAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenuSub.resx">
+      <DependentUpon>MainMenuSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rdp.resx">
+      <DependentUpon>Rdp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proxy.resx">
+      <DependentUpon>Proxy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SysLanguage.resx">
+      <DependentUpon>SysLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vpn.resx">
+      <DependentUpon>Vpn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="DataScripts\Add-VPNConnection.ps1" />
+    <None Include="DataScripts\AddOrRemove-WindowsLanguage.ps1" />
+    <None Include="DataScripts\Change-IPAddress.ps1" />
+    <None Include="DataScripts\Execute-As-Admin.ps1" />
+    <None Include="DataScripts\Generate-MacAddress.ps1" />
+    <None Include="DataScripts\Get-Adapters.ps1" />
+    <None Include="DataScripts\Get-Geolocation.ps1" />
+    <None Include="DataScripts\Get-IPAddresses.ps1" />
+    <None Include="DataScripts\Get-Languages.ps1" />
+    <None Include="DataScripts\Get-VPNs.ps1" />
+    <None Include="DataScripts\Is-Language-Contained.ps1" />
+    <None Include="DataScripts\Notify-LanguageSettings.ps1" />
+    <None Include="DataScripts\Remove-VPNConnection.ps1" />
+    <None Include="DataScripts\Scan-AvilableIPs.ps1" />
+    <None Include="DataScripts\Set-LangOverride.ps1" />
+    <None Include="DataScripts\Set-MacAddress.ps1" />
+    <None Include="DataScripts\Set-VPNConnection.ps1" />
+    <None Include="DataScripts\Toggle-Proxy-Connection.ps1" />
+    <None Include="DataScripts\Toggle-RDP-Connection.ps1" />
+    <None Include="DataScripts\Toggle-VPNAutoConnectionApp.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataFiles\lang_codes.txt" />
+    <Content Include="DataFiles\macVendors.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
