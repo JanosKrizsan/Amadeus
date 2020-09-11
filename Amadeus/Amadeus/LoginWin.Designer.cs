@@ -49,12 +49,12 @@ namespace Amadeus
             loginTopPanel = new BasePanel(_res, "loginTopPanel", controls: new Control[] { saveUserInfoChckBox, passwordTxtBox, usernameTxtBox, usersSavedBox });
             #endregion
 
-            SuspendLayout();
             InitLoginWin();
         }
 
         private void InitLoginWin()
         {
+            SuspendLayout();
             AcceptButton = loginButton;
             _res.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,7 +69,7 @@ namespace Amadeus
             loginBottomPanel.ResumeLayout(false);
             loginTopPanel.ResumeLayout(false);
             loginTopPanel.PerformLayout();
-            ResumeLayout(false);
+            ResumeLayout(true);
         }
 
         #endregion

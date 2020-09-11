@@ -1,7 +1,5 @@
 ﻿using Amadeus.InterfacesForUtilities;
 using System;
-using System.Security.Cryptography;
-using System.Text;
 
 namespace Amadeus.Utilities
 {

@@ -122,7 +122,7 @@ namespace Amadeus.Utilities
                 var targetDir = GetDirectory(targetFolder);
                 if (string.IsNullOrEmpty(targetDir))
                 {
-                    throw new InvalidDataException(); //TODO create normal exception handling, this is just a reminder
+                    throw new InvalidDataException();
                 }
                 var pathBuilder = new StringBuilder();
                 pathBuilder.Append(targetDir).Append(namePreFace).Append(fileName).Append(extension);
